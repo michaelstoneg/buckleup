@@ -147,7 +147,7 @@
 									<li><i class="icon-phone"></i>+1 (44) 123-45-67</li>
 								</ul>
 								<h3>Get In Touch</h3>
-								<form action="#" id="contacts_form">
+								<!-- <form action="#" id="contacts_form">
 									<div class="form_row">
 										<input class="form_item" type="text" name="name" placeholder="Name" id="name">
 									</div>
@@ -159,7 +159,21 @@
 										<a href="#" class="form_submit">Submit</a>
 									</div>
 									<div id="contact_results"></div>
-								</form>
+								</form> -->
+
+
+                <form action="mailto:stonedrone001@gmail.com" method="post" enctype="text/plain">
+                  Name:<br>
+                  <input type="text" name="name"><br>
+                  E-mail:<br>
+                  <input type="text" name="mail"><br>
+                  Comment:<br>
+                  <input type="text" name="comment" size="50"><br><br>
+                  <input type="submit" value="Send">
+                  <input type="reset" value="Reset">
+                </form>
+
+
 							</div>
 						</li>
 
@@ -223,5 +237,16 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.min.js"></script>
 	<script src="js/_front.js"></script>
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 8680676;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<!-- End of LiveChat code -->
 </body>
 </html>
