@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BuckleUp by AirDates</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='icons/css/fontello.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/preloader.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="galaxy/css/galaxy.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+</head>
+<body class='clouds_bg'>
+	<script id="vs" type="x-shader/x-vertex">
+		varying vec2 vUv;
+		void main() {
+			vUv = uv;
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+		}
+
+	</script>
+	<script id="fs" type="x-shader/x-fragment">
+		uniform sampler2D map;
+		uniform vec3 fogColor;
+		uniform float fogNear;
+		uniform float fogFar;
+		varying vec2 vUv;
+		void main() {
+			float depth = gl_FragCoord.z / gl_FragCoord.w;
+			float fogFactor = smoothstep( fogNear, fogFar, depth );
+	
+			gl_FragColor = texture2D( map, vUv );
+			gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+			gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+		}
+	</script>
+	<script type="text/javascript" src="js/three.min.js"></script>
+	<script type="text/javascript" src="js/detector.js"></script>
+	<script type="text/javascript">
+		if (!Detector.webgl)
+			Detector.addGetWebGLMessage();
+
+		var container;
+		var camera, scene, renderer;
+		var mesh, geometry, material;
+
+		var mouseX = 0, mouseY = 0;
+		var start_time = Date.now();
+
+		var windowHalfX = window.innerWidth / 2;
+		var windowHalfY = window.innerHeight / 2;
+
+		init();
+
+		function init() {
+
+			container = document.createElement('div');
+			container.className = "cloud";
+			document.body.appendChild(container);
+
+			// Bg gradient
+
+			var canvas = document.createElement('canvas');
+			canvas.width = 32;
+			canvas.height = window.innerHeight;
+
+			var context = canvas.getContext('2d');
+
+			var gradient = context.createLinearGradient(0, 0, 0, canvas.height);
+			gradient.addColorStop(0, "#1e4877");
+			gradient.addColorStop(0.5, "#4584b4");
+
+			context.fillStyle = gradient;
+			context.fillRect(0, 0, canvas.width, canvas.height);
+
+			//
+
+			camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 3000);
+			camera.position.z = 6000;
+
+			scene = new THREE.Scene();
+
+			geometry = new THREE.Geometry();
+
+			var texture = THREE.ImageUtils.loadTexture('images/cloud.png', null, animate);
+			texture.magFilter = THREE.LinearMipMapLinearFilter;
+			texture.minFilter = THREE.LinearMipMapLinearFilter;
+
+			var fog = new THREE.Fog(0x4584b4, -100, 3000);
+
+			material = new THREE.ShaderMaterial({
+
+				uniforms : {
+
+					"map" : {
+						type : "t",
+						value : texture
+					},
+					"fogColor" : {
+						type : "c",
+						value : fog.color
+					},
+					"fogNear" : {
+						type : "f",
+						value : fog.near
+					},
+					"fogFar" : {
+						type : "f",
+						value : fog.far
+					},
+
+				},
+				vertexShader : document.getElementById('vs').textContent,
+				fragmentShader : document.getElementById('fs').textContent,
+				depthWrite : false,
+				depthTest : false,
+				transparent : true
+
+			});
+
+			var plane = new THREE.Mesh(new THREE.PlaneGeometry(64, 64));
+
+			for (var i = 0; i < 8000; i++) {
+
+				plane.position.x = Math.random() * 1000 - 500;
+				plane.position.y = -Math.random() * Math.random() * 200 - 15;
+				plane.position.z = i;
+				plane.rotation.z = Math.random() * Math.PI;
+				plane.scale.x = plane.scale.y = Math.random() * Math.random() * 1.5 + 0.5;
+
+				THREE.GeometryUtils.merge(geometry, plane);
+
+			}
+
+			mesh = new THREE.Mesh(geometry, material);
+			scene.add(mesh);
+
+			mesh = new THREE.Mesh(geometry, material);
+			mesh.position.z = -8000;
+			scene.add(mesh);
+
+			renderer = new THREE.WebGLRenderer({
+				antialias : false
+			});
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			container.appendChild(renderer.domElement);
+
+		//	document.addEventListener('mousemove', onDocumentMouseMove, false);
+			window.addEventListener('resize', onWindowResize, false);
+
+		}
+
+		function onDocumentMouseMove(event) {
+
+			mouseX = (event.clientX - windowHalfX ) * 0.25;
+			mouseY = (event.clientY - windowHalfY ) * 0.15;
+
+		}
+
+		function onWindowResize(event) {
+
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+		}
+
+		function animate() {
+
+			requestAnimationFrame(animate);
+
+			position = ((Date.now() - start_time ) * 0.03 ) % 8000;
+
+			camera.position.x += (mouseX - camera.position.x ) * 0.01;
+			camera.position.y += (-mouseY - camera.position.y ) * 0.01;
+			camera.position.z = -position + 8000;
+
+			renderer.render(scene, camera);
+
+		}
+
+	</script>
+	<!-- Site Header -->
+	<header id="header">
+		<h1 id="sitename">
+			<img src="images/logo.png" alt="">
+		</h1>
+		<h4 id="tagline">Responsive Web Template</h4>
+	</header>
+	<div id="main">
+		<div id="countdown_block">
+			<h4>Public launch</h4>
+			<div id="countdown"></div>
+		</div>
+		
+		<a href="#" id="show_content"><span class="stripe"></span></a>	
+		
+		<section id="content">
+			<span class="close_content"></span>
+			<div id="content_inner">
+				<ul id="mainmenu">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Subscribe</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+				<div id="tab_contents">					
+					<ul class='slides'>
+						
+						<!-- About Tab -->
+						
+						<li class="content_tab_item" id="about">
+							<div class="content_tab_inner">
+								<h2>About</h2>
+								<p><img src="http://placehold.it/488x169" alt=""></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a href="#">Excepteur sint occaecat</a> cupidatat non proident, sunt in c
+								ulpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							</div>
+						</li>
+						
+						<!-- /About Tab -->	
+						
+						<!-- Services Tab -->
+						
+						<li class="content_tab_item" id="services">
+							<div class="content_tab_inner">
+								<h2>Services</h2>
+								<div class="columns">
+									<div class="column1_3 aligncenter">
+										<img src="http://placehold.it/72x69" alt="">
+										<h3>Promotion</h3>
+									</div>
+									<div class="column1_3 aligncenter">
+										<img src="http://placehold.it/72x69" alt="">
+										<h3>Web Design</h3>									
+									</div>
+									<div class="column1_3 aligncenter">
+										<img src="http://placehold.it/72x69" alt="">
+										<h3>Photography</h3>									
+									</div>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a href="#">Excepteur sint occaecat</a> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem se qui nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							</div>													
+						</li>													
+																											
+						<!-- /Services Tab -->							
+						
+						<!-- Subscribe Tab -->	
+						
+						<li class="content_tab_item" id="subscribe">
+							<div class="content_tab_inner">
+								<h2>Subscribe</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							
+								<form action="#" id="subscribe_form">
+									<div class="form_inner">
+										<div class="input_wrap"><input type="email" class='form_item' name="subscribe_email" id="subscribe_email" placeholder="Enter your email"></div>
+										<a href="#" class="form_submit">Submit</a>
+									</div>
+									<div id="form_results"></div>
+								</form>
+							</div>
+						</li>
+						
+						<!-- /Subscribe Tab -->
+						
+						<!-- Contacts Tab -->	
+						
+						<li class="content_tab_item" id="contacts">
+						
+							<div class="content_tab_inner">
+								<h2>Contacts</h2>
+								
+								<ul id="contacts_list">
+									<li><i class="icon-home"></i>378 Main Street London England</li>
+									<li><i class="icon-mail-alt"></i>info@sunloverstheme.com</li>
+									<li><i class="icon-phone"></i>+1 (44) 123-45-67</li>
+								</ul>
+								<h3>Get In Touch</h3>
+								<form action="#" id="contacts_form">
+									<div class="form_row">
+										<input class="form_item" type="text" name="name" placeholder="Name" id="name">
+									</div>
+									<div class="form_row">
+										<input class="form_item" type="email" name="email" placeholder="E-mail" id="email">
+									</div>
+									<div class="form_row row_last">
+										<textarea class="form_item" placeholder="Message" name="message" id="message"></textarea>
+										<a href="#" class="form_submit">Submit</a>
+									</div>
+									<div id="contact_results"></div>
+								</form>
+							</div>
+						</li>
+						
+						<!-- /Contacts Tab -->
+						
+					</ul>
+				</div>			
+			</div>
+		</section>
+		
+		<!-- Site Footer -->
+		<footer id="footer">
+			<div id="soc_links">
+				<ul>
+					<li class="soc_icon_link"><a href="https://twitter.com/AirDatesApp"><i class="icon-twitter-bird"></i></a></li>
+					<li class="soc_icon_link"><a href="https://www.facebook.com/airdatesapp/"><i class="icon-facebook"></i></a></li>
+					<li class="soc_icon_link"><a href="#"><i class="icon-gplus-1"></i></a></li>
+				</ul>
+			</div>
+		</footer>	
+	</div>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.plugin.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="js/_front.js"></script>
+</body>
+</html>
