@@ -399,9 +399,9 @@ ul#bg_slides li {
 	top: -100%;
 	bottom: 100%;
 	right: 0;
-	width: 668px;
+	width: 70%;
 	background: rgba(0, 0, 0, .53);
-	max-width: 50%;
+	max-width: 100%;
 	min-height: 100%;
 	-webkit-transition: all ease-in-out 1s 0s;
 	-moz-transition: all ease-in-out 1s 0s;

@@ -71,7 +71,8 @@
 		right: 0;
 	}
 	#content.visible {
-		bottom: 406px;
+		/*bottom: 406px;*/
+    bottom: 30%;
 		min-height: 0;
 	}
 	.content_vis #header {

@@ -60,7 +60,7 @@
 	}
 	#content.visible {
 		/*bottom: 406px;*/
-		bottom: 10%;
+		bottom: 20%;
 		min-height: 0;
 	}
 	.content_vis #header {
