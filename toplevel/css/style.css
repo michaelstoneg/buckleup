@@ -816,3 +816,11 @@ input:-moz-placeholder { /* Firefox 18- */
   height: 20px;
   width: 20px;
 }
+
+#livechat-full{
+  height: 300px !important;
+  width: 400px !important;
+}
+.title_bg {
+  background-color: #66ccff !important;
+}
