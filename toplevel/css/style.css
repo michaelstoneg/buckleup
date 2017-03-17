@@ -605,6 +605,11 @@ ul.slides:after {
 	padding-top: 25px;
 }
 
+.servicesImage {
+  width: 200px;
+  height: 200px;
+}
+
 /*
 ***********************************************
 	Subscribe
