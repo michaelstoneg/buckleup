@@ -359,8 +359,12 @@ ul#bg_slides li {
 #mainmenu {
 	padding: 0 25px;
 	overflow: hidden;
+  display: inline-block;
 }
-#mainmenu li {
+#help {
+  display: inline-block;
+}
+#mainmenu li, #help li {
 	float: left;
 	list-style: none;
 	font-size: 14px;
@@ -371,15 +375,15 @@ ul#bg_slides li {
 #mainmenu li + li {
 	margin-left: 31px;
 }
-#mainmenu li a {
+#mainmenu li a, #help li a {
 	-webkit-transition: all ease .5s;
 	-moz-transition: all ease .5s;
 	-ms-transition: all ease .5s;
 	-o-transition: all ease .5s;
 	transition: all ease .5s;
 }
-#mainmenu li a:hover,
-#mainmenu li a.flex-active {
+#mainmenu li a:hover, #help li a:hover,
+#mainmenu li a.flex-active  {
 	color: #66ccff;
 }
 
@@ -630,6 +634,15 @@ ul.slides:after {
   color: #66ccff;
 }
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #66ccff;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #66ccff;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #66ccff;
+}
+input:-moz-placeholder { /* Firefox 18- */
   color: #66ccff;
 }
 
