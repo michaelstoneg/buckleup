@@ -79,9 +79,12 @@
 		right: 30px;
 		left: auto;
 	}
-	/*.content_tab_inner img {
-		max-width: 100%;
-	}*/
+
+  .linkTextingWidgetWrapper {
+    position: absolute;
+    left: 33.6%;
+    bottom: 20%;
+  }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -125,10 +128,26 @@
   .aboutImage {
     width: 90%;
   }
+
   #screen1, #screen2 {
     float: none;
   }
+
   .servicesImage {
     width: 80%;
+  }
+
+  .linkTextingWidgetWrapper {
+    position: absolute;
+    left: 10%;
+    bottom: 13%;
+  }
+}
+
+@media (max-width: 400px) {
+  .linkTextingWidgetWrapper {
+    position: absolute;
+    left: 4%;
+    bottom: 10%;
   }
 }

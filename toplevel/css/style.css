@@ -353,6 +353,24 @@ ul#bg_slides li {
 
 /*
 ***********************************************
+Text Download
+*/
+.linkTextingWidgetWrapper {
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+}
+.linkTextingWidget .linkTextingInput {
+  width: 110px !important;
+  height: 25px !important;
+}
+
+/*#sendButton_linkTexting {
+  background-color: white;
+  color: #66ccff;
+}*/
+/*
+***********************************************
 	Main Menu
 */
 
@@ -608,6 +626,7 @@ ul.slides:after {
 .servicesImage {
   width: 200px;
   height: 200px;
+  border-radius: 30px;
 }
 
 /*
