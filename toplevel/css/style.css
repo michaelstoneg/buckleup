@@ -570,8 +570,8 @@ ul.slides:after {
 .aboutImage {
   display: inline-block;
   height: 80%;
-  width: 40%;
-  margin: 2% 4%;
+  width: 45%;
+  margin: 0% 4% 2% 2%;
 }
 
 #screen1 {
