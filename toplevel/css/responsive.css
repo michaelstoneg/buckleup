@@ -132,6 +132,7 @@
 @media (max-width: 550px) {
   .aboutImage {
     width: 90%;
+    padding: 1% 4%;
   }
 
   #screen1, #screen2 {

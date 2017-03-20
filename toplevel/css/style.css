@@ -590,6 +590,8 @@ ul.slides:after {
   height: 80%;
   width: 45%;
   margin: 0% 4% 2% 2%;
+  padding: 1% 26%;
+  border-radius: 10px;
 }
 
 #screen1 {
@@ -609,6 +611,13 @@ ul.slides:after {
   text-align: center;
 }
 
+.contentTabText {
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul {
+  list-style: none;
+}
 /*
 ***********************************************
 	Services

@@ -128,26 +128,17 @@ jQuery(document).ready(function(){
 		});
 	}
 
-  // $.ajax({
-  //       url: 'https://api.medium.com/v1/patlaw',
-  //       method: 'GET',
-  //       // crossDomain: true,
-  //       // dataType: 'jsonp',
-  //       success: function(response) {
-  //         console.log('response', response);
-  //         }
-  //       }).
-  //       error( function(jqXHR, textStatus, errorThrown) {
-  //         console.log('shiiiiiit!');
-  //       });
-  //
-  //   url: 'https://medium.com/@ev/latest',
-  //   headers: {'Accept': 'application/json'},
-  //   method: 'GET',
-  //   success: function (response) {
-  //     console.log('response', response);
-  //   }
-  // });
+  $.ajax({
+    url: 'https://clay.run/services/nicoslepicos/medium-get-users-posts',
+    method: 'GET',
+    contentType: 'application/json',
+    data: {
+      'username': 'patlaw'
+    },
+    success: function(result) {
+      console.log('response', result);
+    }
+  });
 });
 
 /* Vertical Alignment */
