@@ -82,8 +82,8 @@
 
   .linkTextingWidgetWrapper {
     position: absolute;
-    left: 33.6%;
-    bottom: 20%;
+    left: 31.5%;
+    bottom: 10%;
   }
 }
 
@@ -122,6 +122,11 @@
 	#mainmenu li + li {
 		margin-left: 15px;
 	}
+  .linkTextingWidgetWrapper {
+    position: absolute;
+    left: 28%;
+    bottom: 20%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -148,6 +153,14 @@
   .linkTextingWidgetWrapper {
     position: absolute;
     left: 4%;
+    bottom: 10%;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 1024px) {
+  .linkTextingWidgetWrapper {
+    position: absolute;
+    left: 33%;
     bottom: 10%;
   }
 }

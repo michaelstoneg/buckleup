@@ -357,8 +357,8 @@ Text Download
 */
 .linkTextingWidgetWrapper {
   position: absolute;
-  left: 5%;
-  bottom: 25%;
+  left: 60px;
+  bottom: 20%;
 }
 .linkTextingWidget .linkTextingInput {
   width: 110px !important;
