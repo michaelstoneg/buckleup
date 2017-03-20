@@ -428,7 +428,7 @@ Text Download
 	transition: all ease-in-out 1s 0s;
 }
 #content p {
-	padding: 0 0 20px;
+	padding: 15px 0 20px;
 	margin: 0;
 }
 .content_tab_item a {
