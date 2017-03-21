@@ -129,15 +129,12 @@ jQuery(document).ready(function(){
 	}
 
   $.ajax({
-    url: 'https://clay.run/services/nicoslepicos/medium-get-users-posts',
-    method: 'GET',
-    contentType: 'application/json',
-    data: {
-      'username': 'patlaw'
-    },
-    success: function(result) {
-      console.log('response', result);
-    }
+    type: 'GET',
+    url: 'api.tumblr.com/v2/blog/prettypeachy.tumblr.com/posts?api_key=7hqHnCrISSOa2sL67JTC6YpgArXlkgun9Y9JmL9FP962MAN1d2'
+    // cache: false,
+    // success: function(result) {
+    //   console.log('response', result);
+    // }
   });
 });
 
