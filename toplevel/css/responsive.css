@@ -148,6 +148,20 @@
     left: 10%;
     bottom: 13%;
   }
+
+  #mainmenu li, #help li {
+    font-size: 17px;
+  }
+
+  .textBox {
+    width: 150%;
+    margin: 4%;
+  }
+
+  .textBox2 {
+    width: 90%;
+    margin: 5%;
+  }
 }
 
 @media (max-width: 400px) {
