@@ -599,15 +599,12 @@ ul.slides:after {
   width: 30%;
   margin: 2% 4% 2% 4%;
   /*padding: 1% 26%;*/
-  border-radius: 10px;
+  /*border-radius: 10px;*/
 }
 
-/*#screen1 {
-  float: left;
+#screen3 {
+  display: none;
 }
-#screen2 {
-  float: right;
-}*/
 
 /*.aboutWrapper:after {
   content:'';
@@ -644,17 +641,17 @@ ul {
   list-style: none;
 }
 .textBox {
-  border: 1px solid #fff;
-  border-radius: 15px;
+  /*border: 1px solid #fff;*/
+  /*border-radius: 15px;*/
   margin: 3%;
   padding: 0% 4%;
   /*background-color: #66ccff;*/
 }
 .textBox2 {
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
   width: 60%;
   margin: 5% 0 0 20%;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   /*background-color: #66ccff;*/
 }
 /*

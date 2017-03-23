@@ -132,7 +132,7 @@
 @media (max-width: 550px) {
   .aboutImage {
     width: 90%;
-    padding: 1% 4%;
+    padding: 1% 1%;
   }
 
   #screen1, #screen2 {
@@ -161,6 +161,19 @@
   .textBox2 {
     width: 90%;
     margin: 5%;
+  }
+
+  #screen2 {
+    display: none;
+  }
+
+  #screen3 {
+    display: inline-block;
+  }
+
+  #contacts_form {
+    padding: 12px 16px 12px 12px;
+    margin: 1%;
   }
 }
 
