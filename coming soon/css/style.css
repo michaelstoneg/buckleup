@@ -887,7 +887,8 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .help {
-  margin-left: 30px;
+  margin-left: 40px;
+  fill: #66ccff;
 }
 
 #livechat-full{
