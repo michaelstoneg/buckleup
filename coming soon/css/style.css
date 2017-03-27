@@ -494,7 +494,7 @@ ul.slides:after {
 	padding: 0 25px;
 	max-height: 100%;
 	overflow: scroll;
-  background: black;
+  background: #66ccff;
 }
 
 #content .close_content {
@@ -881,9 +881,13 @@ input:-moz-placeholder { /* Firefox 18- */
 	color: #66ccff;
 }
 
-.instagram, .facebook, .twitter {
-  height: 20px;
-  width: 20px;
+.instagram, .facebook, .twitter, .help {
+  height: 25px;
+  width: 25px;
+}
+
+.help {
+  margin-left: 30px;
 }
 
 #livechat-full{
