@@ -650,10 +650,18 @@ ul {
 .textBox2 {
   /*border: 1px solid #fff;*/
   width: 60%;
-  margin: 5% 0 0 20%;
+  margin: 0% 0 0 20%;
   /*border-radius: 15px;*/
   /*background-color: #66ccff;*/
 }
+
+.headingIcon {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-left: 48%;
+}
+
 /*
 ***********************************************
 	Services
@@ -703,16 +711,44 @@ ul {
   color: #66ccff;
 }
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #66ccff;
+  color: #fff;
 }
 input::-moz-placeholder { /* Firefox 19+ */
-  color: #66ccff;
+  color: #fff;
 }
 input:-ms-input-placeholder { /* IE 10+ */
-  color: #66ccff;
+  color: #fff;
 }
 input:-moz-placeholder { /* Firefox 18- */
-  color: #66ccff;
+  color: #fff;
+}
+
+.subscribePopup {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  height: 250px;
+  width: 450px;
+  border-radius: 20px;
+  z-index: 9999;
+  background-color: #66ccff;
+}
+.subscribePopup > p {
+  color: white;
+  font-family: 'Futura', sans-serif !important;
+  font-size: 15px !important;
+  padding: 4% 2% 2% 4%;
+}
+
+#mc_embed_signup {
+  padding: 0% 2% 2% 6%;
+}
+
+#subscribePopupClose {
+  position: inherit;
+  top: 8px;
+  right: 8px;
 }
 
 /*
@@ -897,32 +933,4 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 .title_bg {
   background-color: #66ccff !important;
-}
-
-.subscribePopup {
-  display: none;
-  position: absolute;
-  top: 40%;
-  left: 36%;
-  height: 250px;
-  width: 450px;
-  border-radius: 20px;
-  z-index: 9999;
-  background-color: #66ccff;
-}
-.subscribePopup > p {
-  color: white;
-  font-family: 'Futura', sans-serif !important;
-  font-size: 15px !important;
-  padding: 4% 2% 2% 4%;
-}
-
-#mc_embed_signup {
-  padding: 0% 2% 2% 6%;
-}
-
-#subscribePopupClose {
-  position: inherit;
-  top: 8px;
-  right: 8px;
 }

@@ -131,7 +131,12 @@ jQuery(document).ready(function(){
   // $('.subscribePopupButton').click(function () {
   $('.subscribePopup').show();
   // });
+
   $('#subscribePopupClose').click(function () {
+    $('.subscribePopup').hide();
+  })
+
+  $('#mc_embed_signup').submit(function () {
     $('.subscribePopup').hide();
   })
 
