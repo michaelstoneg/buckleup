@@ -233,6 +233,10 @@
     right: 3%;
   }
 
+  footer {
+    padding: 12px;
+  }
+
 }
 
 @media (max-width: 400px) {
