@@ -597,7 +597,7 @@ ul.slides:after {
   display: inline-block;
   height: 80%;
   width: 30%;
-  margin: 2% 4% 2% 4%;
+  margin: 2% 4% 4% 4%;
   /*padding: 1% 26%;*/
   /*border-radius: 10px;*/
 }
@@ -633,6 +633,7 @@ ul.slides:after {
 .contentTabText {
   font-size: 20px;
   line-height: 1.5;
+  margin: 0%;
 }
 .contentTabHeading {
   text-align: center;
@@ -643,7 +644,7 @@ ul {
 .textBox {
   /*border: 1px solid #fff;*/
   /*border-radius: 15px;*/
-  margin: 3%;
+  /*margin: 3%;*/
   padding: 0% 4%;
   /*background-color: #66ccff;*/
 }
@@ -655,11 +656,18 @@ ul {
   /*background-color: #66ccff;*/
 }
 
-.headingIcon {
+.headingIcon{
   height: 40px;
   width: 40px;
   display: inline-block;
   margin-left: 48%;
+}
+
+.headingIcon2 {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-left: 42%;
 }
 
 /*

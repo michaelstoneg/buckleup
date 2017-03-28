@@ -163,6 +163,21 @@
     margin: 5%;
   }
 
+  .contentTabText {
+    text-align: center;
+  }
+
+  .headingIcon {
+    margin-left: 44%;
+  }
+
+  .headingIcon2 {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-left: 73%;
+  }
+
   #screen2 {
     display: none;
   }
