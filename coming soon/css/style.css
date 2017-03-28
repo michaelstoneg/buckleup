@@ -623,8 +623,8 @@ ul.slides:after {
 }
 .featuresText {
   text-align: center;
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
+  /*margin-left: 20%;*/
 }
 .content_tab_header {
   text-align: center;
@@ -656,8 +656,8 @@ ul {
 }
 
 .headingIcon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
   margin-left: 48%;
 }
@@ -728,13 +728,23 @@ input:-moz-placeholder { /* Firefox 18- */
   position: absolute;
   top: 40%;
   left: 36%;
+  height: 270px;
+  width: 470px;
+  /*border-radius: 20px;*/
+  z-index: 9999;
+  background-color: #ff738e;
+  border: 3px solid #fff;
+}
+.subscribePopupWrapper {
+  /*z-index: 9999;*/
+  /*top: 40%;*/
+  /*left: 36%;*/
+  margin: 2%;
   height: 250px;
   width: 450px;
-  border-radius: 20px;
-  z-index: 9999;
-  background-color: #66ccff;
+  border: 3px solid #fff;
 }
-.subscribePopup > p {
+.subscribePopupWrapper > p {
   color: white;
   font-family: 'Futura', sans-serif !important;
   font-size: 15px !important;
@@ -746,9 +756,9 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 #subscribePopupClose {
-  position: inherit;
-  top: 8px;
-  right: 8px;
+  position: absolute;
+  top: 6%;
+  right: 3%;
 }
 
 /*
