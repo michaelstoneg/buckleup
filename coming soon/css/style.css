@@ -38,7 +38,7 @@ body {
 	top: 0;
 	position: relative;
 	margin: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Futura', sans-serif;
 	background: #000;
 	color: #fff;
 	font-size: 15px;
@@ -897,4 +897,32 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 .title_bg {
   background-color: #66ccff !important;
+}
+
+.subscribePopup {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  height: 250px;
+  width: 450px;
+  border-radius: 20px;
+  z-index: 9999;
+  background-color: #66ccff;
+}
+.subscribePopup > p {
+  color: white;
+  font-family: 'Futura', sans-serif !important;
+  font-size: 15px !important;
+  padding: 4% 2% 2% 4%;
+}
+
+#mc_embed_signup {
+  padding: 0% 2% 2% 6%;
+}
+
+#subscribePopupClose {
+  position: inherit;
+  top: 8px;
+  right: 8px;
 }
