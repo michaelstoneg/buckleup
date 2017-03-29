@@ -59,7 +59,6 @@
 		right: 0;
 	}
 	#content.visible {
-		/*bottom: 406px;*/
 		bottom: 20%;
 		min-height: 0;
 	}
@@ -202,15 +201,11 @@
     left: 8%;
     height: 250px;
     width: 340px;
-    /*border-radius: 20px;*/
     z-index: 9999;
     background-color: #ff738e;
     border: 3px solid #fff;
   }
   .subscribePopupWrapper {
-    /*z-index: 9999;*/
-    /*top: 40%;*/
-    /*left: 36%;*/
     margin: 2%;
     height: 230px;
     width: 320px;

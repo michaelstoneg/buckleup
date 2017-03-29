@@ -355,7 +355,7 @@ ul#bg_slides li {
 ***********************************************
 Text Download
 */
-.linkTextingWidgetWrapper {
+/*.linkTextingWidgetWrapper {
   position: absolute;
   left: 60px;
   bottom: 20%;
@@ -367,7 +367,7 @@ Text Download
 .selected-flag {
   z-index: 0 !important;
 }
-/*#sendButton_linkTexting {
+#sendButton_linkTexting {
   background-color: white;
   color: #66ccff;
 }*/
@@ -598,24 +598,16 @@ ul.slides:after {
   height: 80%;
   width: 30%;
   margin: 2% 4% 4% 4%;
-  /*padding: 1% 26%;*/
-  /*border-radius: 10px;*/
 }
 
 #screen3 {
   display: none;
 }
 
-/*.aboutWrapper:after {
-  content:'';
-  display:block;
-  clear: both;
-}*/
 .aboutWrapper {
   display: inline-block;
   width: 60%;
   vertical-align: top;
-  /*margin: 1% 2% 0% 4%;*/
 }
 
 .aboutText {
@@ -624,7 +616,6 @@ ul.slides:after {
 .featuresText {
   text-align: center;
   width: 100%;
-  /*margin-left: 20%;*/
 }
 .content_tab_header {
   text-align: center;
@@ -642,18 +633,11 @@ ul {
   list-style: none;
 }
 .textBox {
-  /*border: 1px solid #fff;*/
-  /*border-radius: 15px;*/
-  /*margin: 3%;*/
   padding: 0% 4%;
-  /*background-color: #66ccff;*/
 }
 .textBox2 {
-  /*border: 1px solid #fff;*/
   width: 60%;
   margin: 0% 0 0 20%;
-  /*border-radius: 15px;*/
-  /*background-color: #66ccff;*/
 }
 
 .headingIcon{
@@ -745,15 +729,11 @@ input:-moz-placeholder { /* Firefox 18- */
   left: 36%;
   height: 270px;
   width: 470px;
-  /*border-radius: 20px;*/
   z-index: 9999;
   background-color: #ff738e;
   border: 3px solid #fff;
 }
 .subscribePopupWrapper {
-  /*z-index: 9999;*/
-  /*top: 40%;*/
-  /*left: 36%;*/
   margin: 2%;
   height: 250px;
   width: 450px;
@@ -899,7 +879,6 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .legalLink {
-  /*display: inline-block;*/
 	font-size: 12px;
 	line-height: 20px;
   color: #fff;

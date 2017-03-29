@@ -129,14 +129,14 @@ jQuery(document).ready(function(){
 	}
 
   // $('.subscribePopup').show();
-
-  $('#subscribePopupClose').click(function () {
-    $('.subscribePopup').hide();
-  })
-
-  $('#mc_embed_signup').submit(function () {
-    $('.subscribePopup').hide();
-  })
+  //
+  // $('#subscribePopupClose').click(function () {
+  //   $('.subscribePopup').hide();
+  // })
+  //
+  // $('#mc_embed_signup').submit(function () {
+  //   $('.subscribePopup').hide();
+  // })
 
 });
 
