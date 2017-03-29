@@ -1,65 +1,271 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8"> 
-	<title>Top Level - Under Cunstruction Page</title>
+	<title>BuckleUp by Airdates (soon)</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='icons/css/fontello.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//d22hhoe037sl7u.cloudfront.net/1.7/css/link_texting_gz.min.css">
+	<link rel="stylesheet" href="css/preloader.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+  <!-- MailMunch for AirDates -->
+  <!-- Paste this code right before the </head> tag on every page of your site. -->
+  <script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="359215" async="async"></script>
+
 </head>
-<body class="demo_view">
-	<div id="main" class="thumbs_view">
-		<ul id="demo_thumbs">
-			<li>
-				<a href="index-1.html">
-					<h4>Full Screen Gallery Background</h4>
-					<img src="images/demo/demo_link1.png" alt="">
-				</a>
-			</li><!-- 
-		 --><li>
-				<a href="index-5.html">
-					<h4>Full Screen Image Background</h4>
-					<img src="images/demo/demo_link2.png" alt="">
-				</a>
-			</li><!-- 
-		 --><li>
-				<a href="index-3.html">
-					<h4>Full Screen Video Background</h4>
-					<img src="images/demo/demo_link3.png" alt="">
-				</a>
-			</li><!-- 
-		 --><li>
-				<a href="index-7.html">
-					<h4>Slider with Controls</h4>
-					<img src="images/demo/demo_link7.png" alt="">
-				</a>
-			</li><!--  
-		 --><li>
-				<a href="index-2.html">
-					<h4>Animated Background</h4>
-					<img src="images/demo/demo_link4.png" alt="">
-				</a>
-			</li><!-- 
-		 --><li>
-				<a href="index-4.html">
-					<h4>Color Background</h4>
-					<img src="images/demo/demo_link5.png" alt="">
-				</a>
-			</li><!-- 
-		 --><li>
-				<a href="index-6.html">
-					<h4>Full Screen Clouds Background</h4>
-					<img src="images/demo/demo_link6.png" alt="">
-				</a>
-			</li><!-- 
-		 --><li>
-				<a href="#">
-					<h4>Comming Soon</h4>
-					<img src="images/demo/demo_link8.png" alt="">
-				</a>
-			</li>
+<body>
+	<!-- Site Header -->
+	<header id="header">
+		<h1 id="sitename">
+			<img src="images/transitionlogo.png" alt="">
+		</h1>
+		<h4 id="tagline"></h4>
+	</header>
+	<div id="main">
+		<div id="countdown_block">
+			<h3>Arriving in:</h3>
+			<div id="countdown"></div>
+		</div>
+
+		<a href="#" id="show_content"><span class="stripe"></span></a>
+
+		<section id="content">
+			<span class="close_content"></span>
+			<div id="content_inner">
+
+        <div id="tab_contents">
+          <ul class='slides'>
+
+						<!-- About Tab -->
+
+						<li class="content_tab_item" id="about">
+							<div class="content_tab_inner content_tab_about">
+								<h2 class="content_tab_header">How does BuckleUp work?</h2>
+
+                <div class="columns">
+                  <div class="column1_3 aligncenter">
+                    <img class="servicesImage" src="./images/plane.png" alt="">
+                    <!-- <h3>Promotion</h3> -->
+                  </div>
+                  <div class="column1_3 aligncenter">
+                    <img class="servicesImage" src="./images/train.png" alt="">
+                    <!-- <h3>Web Design</h3> -->
+                  </div>
+                  <div class="column1_3 aligncenter">
+                    <img class="servicesImage" src="./images/tube.png" alt="">
+                    <!-- <h3>Photography</h3> -->
+                  </div>
+                </div>
+                <img src="./images/headericon1.png" alt="" class="headingIcon"/>
+
+                <div class="textBox2">
+                  <!-- <h3 class="contentTabHeading">This!!!</h3> -->
+                  <p class="featuresText contentTabText">
+                    We are all about making connections.
+                  </p>
+                </div>
+                <img src="./images/headericon2.svg" alt="" class="headingIcon"/>
+
+                <div class="textBox2">
+                  <!-- <h3 class="contentTabHeading">This!!!</h3> -->
+                  <p class="featuresText contentTabText">
+                    The truth is travelling, either by flying, taking a train or just your morning commute, can be an incredibly boring activity.
+                  </p>
+                </div>
+                <img src="./images/headericon3a.svg" alt="" class="headingIcon"/>
+
+                <div class="textBox2">
+                  <!-- <h3 class="contentTabHeading">This!!!</h3> -->
+                  <p class="featuresText contentTabText">
+                    The main point here is the amount of down-time they experience in settings where internet access is all but inexistent, creating a gap in the market for a communication tool that works in an offline setting.
+                  </p>
+                </div>
+                <img src="./images/headericon4.svg" alt="" class="headingIcon"/>
+
+                <div class="textBox2">
+                  <!-- <h3 class="contentTabHeading">This!!!</h3> -->
+                  <p class="featuresText contentTabText">
+                    In a time when doors are being closed due to ignorance and prejudice, BuckleUp will aim to connect people regardless of cultural background, ethnicity, gender or sexual orientation.
+                  </p>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+                <img src="./images/phonescreen5.png" alt="" class="aboutImage" id="screen1">
+                <div class="aboutWrapper">
+                  <ul>
+                    <li>
+                      <img src="./images/headericon5.svg" alt="" class="headingIcon2"/>
+
+                      <div class="textBox">
+                        <p class="aboutText contentTabText">
+                          Whether you’re up in the air, underground or somewhere in between, we let you to chat with your fellow passengers without needing an internet connection.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="./images/headericon6a.svg" alt="" class="headingIcon2"/>
+
+                      <div class="textBox">
+                        <p class="aboutText contentTabText">
+                          You can either fill out your profile manually with your meeting/sexual preferences or you can match one of your social media accounts.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="./images/headericon7.svg" alt="" class="headingIcon2"/>
+
+                      <div class="textBox">
+                        <p class="aboutText contentTabText">
+                          From this point, the user can either scan their e-ticket/boarding pass or put in their travel details if they’re using the app in a travel scenario.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <img src="./images/phonescreen3.png" alt="" class="aboutImage" id="screen3">
+                <div class="aboutWrapper">
+                <ul>
+                  <li>
+                    <img src="./images/headericon8.svg" alt="" class="headingIcon2"/>
+
+                    <div class="textBox">
+                      <p class="aboutText contentTabText">
+                        The app also works if they’re looking to date on the go, as it has the built-in capability of scanning matches in close proximity, regardless of the setting.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/headericon9.svg" alt="" class="headingIcon2"/>
+
+                    <div class="textBox">
+                      <p class="aboutText contentTabText">
+                        Once they have been matched with another user they can invite them to chat, without requiring an internet connection. The rest is up to you.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+							</div>
+              <img src="./images/phonescreen3.png" alt="" class="aboutImage" id="screen2">
+            </div>
+						</li>
+
+						<!-- /About Tab -->
+
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Site Footer -->
+		<footer id="footer">
+			<div id="soc_links">
+				<ul>
+					<li class="soc_icon_link"><a href="https://twitter.com/AirDatesApp" target="_blank"><i class="icon-twitter"><img class="twitter" src="./images/twitter-logo.svg" alt="" /></i></a></li>
+					<li class="soc_icon_link"><a href="https://www.facebook.com/airdatesapp/" target="_blank"><i class="icon-facebook"><img class="facebook" src="./images/facebook-logo.svg" alt="" /></i></a></li>
+					<li class="soc_icon_link"><a href="https://www.instagram.com/airdatesapp" target="_blank"><i class="icon-instagram"><img class="instagram" src="./images/instagram-logo.svg" alt="" /></i></a></li>
+					<li class="soc_icon_link"><a href="http://www.airdates.co/pages/pages-terms-conditions.html" target="_blank"><i class="icon-help"><img class="help" src="./images/helpicon2.svg" alt="" /></i></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<div id="bg_slideshow">
+		<ul id="bg_slides" class="slides">
+			<li style="background: url(images/bg/bg_img1.jpg) 0 0 no-repeat;"></li>
+			<li style="background: url(images/bg/bg_img2.jpg) 0 0 no-repeat;"></li>
+			<li style="background: url(images/bg/bg_img3.jpg) 0 0 no-repeat;"></li>
+			<li style="background: url(images/bg/bg_img4.jpg) 0 0 no-repeat;"></li>
 		</ul>
 	</div>
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/_front.js"></script>
+
+	<div class="preloader-overlay">
+		<div class="preloader">
+			<div class='spinner'>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="subscribePopup">
+      <div class="subscribePopupWrapper">
+        <p>We are launching in May so if you want to be fully ready for this Summer’s party season, leave your email address here and we’ll keep you posted on our launch!</p>
+        <button type="button" name="subscribePopupClose" id="subscribePopupClose">X</button>
+        <div class="form_inner" id="mc_embed_signup">
+        <form action="//emct-investments.us10.list-manage.com/subscribe/post?u=f1f45b2b9a1c5eb4a01c5bc8c&amp;id=d99a549a07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe_form" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+        <div class="mc-field-group">
+          <div class="input_wrap">
+            <input type="email" value="" name="EMAIL" class='form_item' class="required email" id="mce-EMAIL" placeholder="Email">
+          </div>
+        </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_f1f45b2b9a1c5eb4a01c5bc8c_d99a549a07" tabindex="-1" value="">
+            </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button form_submit">
+              </div>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.plugin.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/_front.js"></script>
+
+  <!-- <script type='text/javascript'>
+    (function(){var tp=document.createElement('script');
+    tp.src='https://textpuff.com/textwidget/js/textpuffv2.js';
+    tp.type='text/javascript';tp.async ='true';
+    tp.onload=tp.onreadystatechange=function(){var rs=this.readyState;
+    if(rs&&rs!='complete'&&rs!='loaded')return;try{var lng='en';var sbtp='';
+    verify._vd('dc2c872b5af0d7579f8abbfbbc1c84c7906fe09d','tp1',sbtp,lng);}
+    catch(e){}};var s=document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tp,s);})();
+  </script> -->
+
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8680676;
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+  <!-- End of LiveChat code -->
 </body>
 </html>
