@@ -669,6 +669,13 @@ ul {
   display: inline-block;
   margin-left: 42%;
 }
+#headingIcona {
+  margin-left: 41%;
+}
+
+#headingIconb, #headingIconc {
+  margin-left: 2%;
+}
 
 /*
 ***********************************************

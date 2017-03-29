@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>button_profilephotos_editprofile_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button_profilephotos_editprofile_white">
+            <g id="Group-2" transform="translate(8.000000, 7.000000)">
+                <circle id="Oval-2" stroke="#66CCFF" stroke-width="3" fill="#FFFFFF" cx="15.5" cy="15.872583" r="15.5"></circle>
+                <path d="M20.5845438,8.03353291 C20.5845438,8.03353291 22.0620872,8.28510524 22.8263349,9.14041761 C23.5905827,9.99569644 24.2019741,11.1025811 24.1000698,11.5050633 L13.9101565,21.4165099 C13.9101565,21.4165099 13.5025396,20.1084008 12.4835653,19.1524595 C11.4645569,18.1965518 10.5474868,18.0456084 10.5474868,18.0456084 L20.5845438,8.03353291 Z" id="Fill-1" fill="#66CCFF"></path>
+                <path d="M8.0000034,23.9824134 L12.8911686,22.1208788 C11.9231124,19.1021451 9.88512972,19.1021451 9.88512972,19.1021451 L8.0000034,23.9824134 Z" id="Fill-4" fill="#66CCFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

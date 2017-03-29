@@ -128,7 +128,7 @@ jQuery(document).ready(function(){
 		});
 	}
 
-  $('.subscribePopup').show();
+  // $('.subscribePopup').show();
 
   $('#subscribePopupClose').click(function () {
     $('.subscribePopup').hide();
