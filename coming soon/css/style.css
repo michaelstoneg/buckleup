@@ -77,8 +77,8 @@ h1 {
 }
 h2 {
 	color: #fff;
-	margin: 30px 0 38px;
-	font-size: 30px;
+	margin: 30px 0 100px;
+	font-size: 56px;
 	line-height: 44px;
 	/*text-transform: uppercase;*/
 	font-weight: 700;
@@ -89,7 +89,7 @@ h3 {
 	font-weight: 300;
 	line-height: 22px;
 	color: #fff;
-	margin: 15px 0 0 15px;
+	margin: 15px 0 15px 15px;
 }
 h4 {
 	font-size: 22px;
@@ -616,16 +616,44 @@ ul.slides:after {
 .featuresText {
   text-align: center;
   width: 100%;
+  margin-top: 5%;
 }
 .content_tab_header {
   text-align: center;
 }
 
-.contentTabText {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0%;
+.content_tab_subheader {
+  margin: 42px 0 45px 0;
+  text-align: center;
+  text-transform: none;
+  font-size: 50px;
 }
+
+.sellingPoints li h3, .listHeading {
+  text-align: center;
+  font-size: 40px;
+  text-transform: none;
+  margin: 5%;
+}
+
+
+.bigFigures {
+  /*color: #ff738e;*/
+}
+
+.contentTabText {
+  font-size: 28px;
+  line-height: 1.5;
+  /*margin: 0%;*/
+}
+
+.contentTabTextList {
+  font-size: 28px;
+  line-height: 1.5;
+  /*margin: 0%;*/
+  padding: 0% !important;
+}
+
 .contentTabHeading {
   text-align: center;
 }
@@ -641,24 +669,24 @@ ul {
 }
 
 .headingIcon{
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
   display: inline-block;
-  margin-left: 48%;
+  margin-left: 45%;
 }
 
 .headingIcon2 {
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
   display: inline-block;
   margin-left: 42%;
 }
 #headingIcona {
-  margin-left: 41%;
+  margin-left: 27%;
 }
 
 #headingIconb, #headingIconc {
-  margin-left: 2%;
+  margin-left: 8%;
 }
 
 /*
@@ -676,9 +704,15 @@ ul {
 }
 
 .servicesImage {
-  width: 80%;
-  height: 80%;
-  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+
+  /*border-radius: 30px;*/
+}
+#servicesImage3 {
+  width: 120px;
+  height: 120px;
+  margin-top: 6%;
 }
 
 /*
