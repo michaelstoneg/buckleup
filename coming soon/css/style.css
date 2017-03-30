@@ -597,14 +597,14 @@ ul.slides:after {
   display: inline-block;
   height: 80%;
   width: 37%;
-  margin: 11% 1% 4% 1%;
+  margin: 6% 1% 4% 1%;
 }
 
 .aboutImage2 {
   display: inline-block;
   height: 80%;
   width: 37%;
-  margin: 11% 1% 4% 1%;
+  margin: 7% 1% 4% 1%;
 }
 
 #screen3 {
@@ -639,6 +639,7 @@ ul.slides:after {
 .sellingPoints li h3, .listHeading {
   text-align: center;
   font-size: 40px;
+  line-height: 1;
   text-transform: none;
   margin: 5%;
 }
@@ -719,14 +720,14 @@ ul {
 }
 
 .servicesImage {
-  width: 150px;
-  height: 150px;
+  width: 137px;
+  height: 137px;
 
   /*border-radius: 30px;*/
 }
 #servicesImage3 {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   margin-top: 6%;
 }
 

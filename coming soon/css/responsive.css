@@ -44,7 +44,7 @@
 		text-align: center;
 	}
 	#show_content > span {
-		left: 50%;
+		left: 47%;
 		margin-right: -12px;
 	}
 	.content_vis #show_content {
@@ -129,9 +129,20 @@
 }
 
 @media (max-width: 550px) {
+
+  #tab_contents {
+    top: 60px;
+    bottom: 60px;
+  }
+
   .aboutImage {
     width: 90%;
     padding: 1% 1%;
+  }
+
+  .aboutImage1, .aboutImage2 {
+    width: 81%;
+    margin: 7% 10% 8% 10%;
   }
 
   #screen1, #screen2 {
@@ -140,6 +151,17 @@
 
   .servicesImage {
     width: 80%;
+  }
+
+  #servicesImage3 {
+    height: 95px;
+    width: 95px;
+    margin-top: 12%;
+  }
+
+  .tripleTransport {
+    height: 120px;
+    margin-left: 6%;
   }
 
   .linkTextingWidgetWrapper {
@@ -154,7 +176,7 @@
 
   .textBox {
     width: 150%;
-    margin: 4%;
+    margin: 8%;
   }
 
   .textBox2 {
@@ -162,23 +184,44 @@
     margin: 5%;
   }
 
+  .content_tab_subheader {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
   .contentTabText {
     text-align: center;
+    font-size: 22px;
+  }
+
+  .contentTabTextList {
+    font-size: 18px;
+  }
+
+  .listHeading {
+    font-size: 22px;
+  }
+
+  .sellingPoints li h3 {
+    font-size: 25px;
+    line-height: 1.25;
   }
 
   .headingIcon {
-    margin-left: 44%;
-  }
-
-  .headingIcon2 {
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    margin-left: 73%;
+    height: 50px;
+    width: 50px;
+    margin-left: 42%;
   }
 
   #headingIcona {
-    margin-left: 26%;
+    margin-left: 19%;
+  }
+
+  .headingIcon2 {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    margin-left: 65%;
   }
 
   #screen2 {

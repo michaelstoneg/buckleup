@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>mapIcon thin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M68.435,31.719 C68.435,54 39.716,75.435 39.716,75.435 C39.716,75.435 11,52.5 11,31.719 C11,15.858 23.858,3 39.716,3 C55.577,3 68.435,15.858 68.435,31.719" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M39.593944,19.8614614 C31.9651398,19.8614614 25.7826567,25.9446449 25.7956088,33.4482452 C25.8042436,40.9086718 31.9824093,46.9875379 39.5680398,46.9875379 C47.1493529,46.9918552 53.3404707,40.9129892 53.3534229,33.4525626 C53.3620576,25.9878187 47.196844,19.878731 39.628483,19.8614614 L39.593944,19.8614614 Z" id="path-3"></path>
+    </defs>
+    <g id="Other-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mapIcon-thin">
+            <g id="Fill-1">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#EF718C" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="circle_small_white" stroke="#EF718C" stroke-width="2" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>
