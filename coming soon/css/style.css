@@ -593,11 +593,18 @@ ul.slides:after {
 	background: #cacaca;
 }
 
-.aboutImage {
+.aboutImage1 {
   display: inline-block;
   height: 80%;
-  width: 30%;
-  margin: 2% 4% 4% 4%;
+  width: 37%;
+  margin: 11% 1% 4% 1%;
+}
+
+.aboutImage2 {
+  display: inline-block;
+  height: 80%;
+  width: 37%;
+  margin: 11% 1% 4% 1%;
 }
 
 #screen3 {
@@ -636,6 +643,13 @@ ul.slides:after {
   margin: 5%;
 }
 
+.sellingPointsText {
+  list-style: initial;
+}
+
+.sellingPointsText li p {
+  margin: 12% 0% 4% 0%;
+}
 
 .bigFigures {
   /*color: #ff738e;*/
@@ -648,7 +662,7 @@ ul.slides:after {
 }
 
 .contentTabTextList {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.5;
   /*margin: 0%;*/
   padding: 0% !important;
@@ -662,6 +676,7 @@ ul {
 }
 .textBox {
   padding: 0% 4%;
+  margin-left: 4%;
 }
 .textBox2 {
   width: 60%;
