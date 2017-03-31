@@ -322,6 +322,7 @@ ul#bg_slides li {
 	left: 60px;
 	top: 55%;
 	color: #66CCFF;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6));
 }
 .countdown-row {
 	overflow: hidden;
@@ -713,12 +714,17 @@ ul {
   width: 80px;
   display: inline-block;
   margin-left: 45%;
-  /*justify-content: center;*/
 }
-/*
-.noNetwork {
-  justify-content: center;
-}*/
+
+#headingIcon1a {
+
+}
+
+#headingIcon1b{
+  height: 100px;
+  width: 100px;
+  margin-left: 45.5%;
+}
 
 .headingIcon2 {
   height: 80px;
@@ -732,6 +738,10 @@ ul {
 
 #headingIconb, #headingIconc {
   margin-left: 8%;
+}
+
+.screen2wrapper {
+  margin-top: 6%
 }
 
 /*
@@ -1016,4 +1026,10 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 .title_bg {
   background-color: #66ccff !important;
+}
+
+#copyright {
+  margin: .6% 0% 0% 4%;
+  font-size: small;
+  width: 700px;
 }
