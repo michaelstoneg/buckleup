@@ -636,13 +636,26 @@ ul.slides:after {
   font-size: 50px;
 }
 
-.sellingPoints li h3, .listHeading {
+.sellingPoints {
+  margin-left: 3%;
+}
+
+.sellingPoints li h3 {
   text-align: center;
   font-size: 40px;
   line-height: 1;
   text-transform: none;
   margin: 5%;
-  margin-right: 20%;
+  /*margin-right: 20%;*/
+}
+
+.listHeading {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: none;
+  margin: 5%;
+  margin-right: 21%;
 }
 
 .sellingPointsText {
@@ -659,7 +672,7 @@ ul.slides:after {
 
 .tripleTransport {
   height: 120px;
-  margin-left: 17%;
+  margin-left: 21%;
 }
 
 .contentTabText {
@@ -701,7 +714,7 @@ ul {
   height: 80px;
   width: 80px;
   display: inline-block;
-  margin-left: 35%;
+  margin-left: 38%;
 }
 #headingIcona {
   margin-left: 32%;
