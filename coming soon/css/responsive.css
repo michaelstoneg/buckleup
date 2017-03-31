@@ -111,28 +111,45 @@
 		overflow: hidden;
 		height: 0;
 	}
+
 	#content.visible {
 		height: 100%;
 	}
+
 	#content_inner {
 		padding: 20px;
 	}
+
 	#tab_contents {
 		left: 20px;
 	}
+
 	.content_tab_item .content_tab_inner {
 		padding: 0 10px;
 	}
+
 	#mainmenu {
 		padding: 0 10px;
 	}
+
 	#mainmenu li + li {
 		margin-left: 15px;
 	}
+
   .linkTextingWidgetWrapper {
     position: absolute;
     left: 28%;
     bottom: 20%;
+  }
+
+  .tripleTransport {
+    /*display: none;*/
+    height: 100px;
+    margin-left: 8%;
+  }
+
+  #headingIcona {
+    margin-left: 25%;
   }
 }
 
