@@ -657,7 +657,7 @@ ul.slides:after {
   line-height: 1;
   text-transform: none;
   margin: 5%;
-  margin-right: 21%;
+  margin-right: 145px;
 }
 
 .sellingPointsText {
@@ -674,7 +674,7 @@ ul.slides:after {
 
 .tripleTransport {
   height: 120px;
-  margin-left: 21%;
+  margin-left: 245px;
 }
 
 .tripleTransport2 {
@@ -717,23 +717,23 @@ ul {
 }
 
 #headingIcon1a {
-
+  margin-left: 520px;
 }
 
 #headingIcon1b{
   height: 100px;
   width: 100px;
-  margin-left: 45.5%;
+  margin-left: 520px;
 }
 
 .headingIcon2 {
   height: 80px;
   width: 80px;
   display: inline-block;
-  margin-left: 38%;
+  margin-left: 270px;
 }
 #headingIcona {
-  margin-left: 30%;
+  margin-left: 355px;
 }
 
 #headingIconb, #headingIconc {
