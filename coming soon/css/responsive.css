@@ -84,6 +84,14 @@
     left: 31.5%;
     bottom: 10%;
   }
+
+  .tripleTransport {
+    margin-left: 10%;
+  }
+
+  #headingIcona {
+    margin-left: 28%;
+  }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -160,8 +168,12 @@
   }
 
   .tripleTransport {
-    height: 120px;
-    margin-left: 6%;
+    display: none;
+  }
+
+  .tripleTransport2 {
+    display: inline-block;
+    margin-left: 4%;
   }
 
   .linkTextingWidgetWrapper {
@@ -200,6 +212,7 @@
 
   .listHeading {
     font-size: 22px;
+    margin-right: 8%;
   }
 
   .sellingPoints li h3 {

@@ -87,7 +87,7 @@ h3 {
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 300;
-	line-height: 22px;
+	line-height: 1.2;
 	color: #fff;
 	margin: 15px 0 15px 15px;
 }
@@ -637,7 +637,8 @@ ul.slides:after {
 }
 
 .sellingPoints {
-  margin-left: 3%;
+  /*margin-left: 3%;*/
+  justify-content: center;
 }
 
 .sellingPoints li h3 {
@@ -675,6 +676,10 @@ ul.slides:after {
   margin-left: 21%;
 }
 
+.tripleTransport2 {
+  display: none;
+}
+
 .contentTabText {
   font-size: 28px;
   line-height: 1.5;
@@ -708,7 +713,12 @@ ul {
   width: 80px;
   display: inline-block;
   margin-left: 45%;
+  /*justify-content: center;*/
 }
+/*
+.noNetwork {
+  justify-content: center;
+}*/
 
 .headingIcon2 {
   height: 80px;
