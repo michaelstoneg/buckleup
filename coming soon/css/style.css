@@ -642,6 +642,7 @@ ul.slides:after {
   line-height: 1;
   text-transform: none;
   margin: 5%;
+  margin-right: 20%;
 }
 
 .sellingPointsText {
@@ -654,6 +655,11 @@ ul.slides:after {
 
 .bigFigures {
   /*color: #ff738e;*/
+}
+
+.tripleTransport {
+  height: 120px;
+  margin-left: 17%;
 }
 
 .contentTabText {
@@ -695,10 +701,10 @@ ul {
   height: 80px;
   width: 80px;
   display: inline-block;
-  margin-left: 42%;
+  margin-left: 35%;
 }
 #headingIcona {
-  margin-left: 27%;
+  margin-left: 32%;
 }
 
 #headingIconb, #headingIconc {
