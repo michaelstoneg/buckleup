@@ -1,6 +1,6 @@
 /* --------------------------------------
 =========================================
-COLOR : BLUE 
+COLOR : BLUE
 
 MAIN COLOR CODE: #008ed6
 
@@ -9,7 +9,7 @@ DEEP COLOR CODE: #005885
 ----------------------------------------- */
 
 .color-overlay {
-     background: rgba(0, 0, 0, 0.45); 
+     background: rgba(0, 0, 0, 0.45);
    /* background: url(../patterns/06.png); */
 }
 
@@ -25,9 +25,9 @@ DEEP COLOR CODE: #005885
     background: #005885;
 }
 
-.btn-primary:focus, 
-.btn-primary:active, 
-.btn-primary.active, 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     background: #005885;
     border-color: inherit;
@@ -91,4 +91,33 @@ footer .contact-box .expanded-contact-form .textarea-box:focus {
 
 footer .social-icons li a:hover {
     color: #008ed6;
+}
+
+#content {
+  background-color: #66ccff;
+}
+
+p {
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.entry-title {
+  color: #66ccff;
+}
+
+.section-title {
+  color: #66ccff;
+}
+
+.social-icons {
+  border-color: #fff;
+}
+
+.btn.style4 {
+  color: #fff;
 }
