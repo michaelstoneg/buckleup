@@ -122,6 +122,8 @@
 
 	#tab_contents {
 		left: 20px;
+    bottom: 80px;
+    top: 50px;
 	}
 
 	.content_tab_item .content_tab_inner {
@@ -148,9 +150,51 @@
     margin-left: 8%;
   }
 
-  #headingIcona {
-    margin-left: 25%;
+  #headingIcon1a {
+    margin-left: 290px;
   }
+
+  #headingIcon1b {
+    margin-left: 290px;
+  }
+
+  #headingIcona {
+    margin-left: 150px;
+  }
+
+  #screen2 {
+    display: none;
+  }
+
+  #screen3 {
+    display: inline-block;
+  }
+
+  .aboutImage1 {
+    width: 70%;
+    margin: 6% 1% 12% 15%;
+  }
+
+  .aboutImage2 {
+    width: 70%;
+    margin: 6% 1% 12% 15%;
+  }
+
+  .listHeading {
+    margin-right: 50px;
+  }
+
+  .aboutWrapper {
+    width: 100%;
+  }
+
+  .headingIcon2 {
+    width: 150px;
+    height: 150px;
+    margin-left: 260px;
+  }
+
+
 
   #copyright {
     margin: .6% 0% 0% -1%;
