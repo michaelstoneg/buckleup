@@ -3072,7 +3072,8 @@ ul.filter-categories > li {
   .page-title-container .entry-title {
     font-weight: 300;
     font-size: 3.3333em;
-    color: #343434;
+    /*color: #343434;*/
+    color: #66ccff;
     text-align: center; }
   .page-title-container .page-title {
     padding: 120px 0 25px; }
