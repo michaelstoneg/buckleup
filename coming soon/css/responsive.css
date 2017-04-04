@@ -446,3 +446,32 @@
     bottom: 10%;
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1620px) {
+  .tripleTransport {
+    margin-left: 142px;
+    }
+
+    #headingIcon1a {
+      margin-left: 465px;
+    }
+
+    #headingIcona {
+      margin-left: 306px
+    }
+
+    #headingIcon1b {
+      margin-left: 458px;
+    }
+
+    .headingIcon2 {
+      margin-left: 236px;
+    }
+
+    .listHeading {
+      margin-right: 60px;
+    }
+
+
+
+}
