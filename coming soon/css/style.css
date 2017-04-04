@@ -651,13 +651,21 @@ ul.slides:after {
   /*margin-right: 20%;*/
 }
 
+#pressKitTextWrap {
+  height: 45px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-left: 430px;
+}
+
 #pressKitText {
   text-align: center;
   font-size: 20px;
   line-height: 1;
   text-transform: none;
   margin: 5%;
-  color: #fff;
+  color: #66ccff;
   /*margin-right: 20%;*/
 }
 
@@ -676,6 +684,7 @@ ul.slides:after {
 
 .sellingPointsText li p {
   margin: 8.5% 0% 4% 0%;
+  text-align: left;
 }
 
 .usp {
@@ -684,7 +693,7 @@ ul.slides:after {
 
 .tripleTransport {
   height: 120px;
-  margin-left: 245px;
+  margin-left: 250px;
 }
 
 .tripleTransport2 {
@@ -727,13 +736,13 @@ ul {
 }
 
 #headingIcon1a {
-  margin-left: 520px;
+  margin-left: 570px;
 }
 
 #headingIcon1b{
   height: 100px;
   width: 100px;
-  margin-left: 520px;
+  margin-left: 580px;
 }
 
 .headingIcon2 {
@@ -743,7 +752,7 @@ ul {
   margin-left: 270px;
 }
 #headingIcona {
-  margin-left: 355px;
+  margin-left: 400px;
 }
 
 #headingIconb, #headingIconc {

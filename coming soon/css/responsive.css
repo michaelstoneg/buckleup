@@ -151,15 +151,15 @@
   }
 
   #headingIcon1a {
-    margin-left: 290px;
+    margin-left: 310px;
   }
 
   #headingIcon1b {
-    margin-left: 290px;
+    margin-left: 310px;
   }
 
   #headingIcona {
-    margin-left: 150px;
+    margin-left: 180px;
   }
 
   #screen2 {
@@ -194,7 +194,9 @@
     margin-left: 260px;
   }
 
-
+  #pressKitTextWrap {
+    margin-left: 200px;
+  }
 
   #copyright {
     margin: .6% 0% 0% -1%;
@@ -234,6 +236,10 @@
   #tab_contents {
     top: 60px;
     bottom: 60px;
+  }
+
+  .aboutWrapper {
+    width: 61%;
   }
 
   .aboutImage {
@@ -300,7 +306,7 @@
   }
 
   .contentTabTextList {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .listHeading {
@@ -322,13 +328,13 @@
   #headingIcon1a {
     height: 80px;
     width: 80px;
-    margin-left: 37%;
+    margin-left: 128px;
   }
 
   #headingIcon1b {
     height: 80px;
     width: 80px;
-    margin-left: 37%;
+    margin-left: 135px;
   }
 
   #headingIcona {
@@ -391,6 +397,24 @@
     position: absolute;
     top: 6%;
     right: 3%;
+  }
+
+  #pressKitTextWrap {
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 65px;
+  }
+
+  #pressKitText {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
+    text-transform: none;
+    margin: 5%;
+    color: #66ccff;
+    /*margin-right: 20%;*/
   }
 
   footer {
