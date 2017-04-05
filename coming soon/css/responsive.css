@@ -89,10 +89,80 @@
     margin-left: 10%;
   }
 
-  #headingIcona {
-    margin-left: 28%;
+  #headingIcon1a {
+    margin-left: 415px;
   }
+
+  #headingIcona {
+    margin-left: 270px
+  }
+
+  #headingIcon1b {
+    margin-left: 420px;
+  }
+
+  .headingIcon2 {
+    margin-left: 210px;
+  }
+
+
 }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .tripleTransport {
+    margin-left: 85px;
+    }
+
+    #headingIcon1a {
+      margin-left: 380px;
+    }
+
+    #headingIcona {
+      margin-left: 234px
+    }
+
+    #headingIcon1b {
+      margin-left: 378px;
+    }
+
+    .headingIcon2 {
+      margin-left: 190px;
+    }
+
+    .listHeading {
+      margin-right: 70px;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .tripleTransport {
+    margin-left: 28px;
+    }
+
+    #headingIcon1a {
+      margin-left: 326px;
+    }
+
+    #headingIcona {
+      margin-left: 193px
+    }
+
+    #headingIcon1b {
+      margin-left: 326px;
+    }
+
+    .headingIcon2 {
+      margin-left: 170px;
+    }
+
+    .listHeading {
+      margin-right: 55px;
+    }
+
+}
+
+
 
 @media (max-width: 1024px) and (orientation: landscape) {
   #header {
@@ -151,15 +221,15 @@
   }
 
   #headingIcon1a {
-    margin-left: 310px;
+    margin-left: 295px;
   }
 
   #headingIcon1b {
-    margin-left: 310px;
+    margin-left: 162px;
   }
 
   #headingIcona {
-    margin-left: 180px;
+    margin-left: 290px;
   }
 
   #screen2 {
@@ -191,7 +261,7 @@
   .headingIcon2 {
     width: 150px;
     height: 150px;
-    margin-left: 260px;
+    margin-left: 275px;
   }
 
   #pressKitTextWrap {
@@ -310,7 +380,7 @@
   }
 
   .listHeading {
-    font-size: 22px;
+    font-size: 25px;
     margin-right: 8%;
   }
 
@@ -328,17 +398,17 @@
   #headingIcon1a {
     height: 80px;
     width: 80px;
-    margin-left: 128px;
+    margin-left: 122px;
   }
 
   #headingIcon1b {
     height: 80px;
     width: 80px;
-    margin-left: 135px;
+    margin-left: 125px;
   }
 
   #headingIcona {
-    margin-left: 19%;
+    margin-left: 56px;
   }
 
   .headingIcon2 {
@@ -447,7 +517,7 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1620px) {
+/*@media (min-width: 1025px) and (max-width: 1440px) {
   .tripleTransport {
     margin-left: 142px;
     }
@@ -472,6 +542,4 @@
       margin-right: 60px;
     }
 
-
-
-}
+}*/

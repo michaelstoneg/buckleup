@@ -128,15 +128,19 @@ jQuery(document).ready(function(){
 		});
 	}
 
-  // $('.subscribePopup').show();
-  //
-  // $('#subscribePopupClose').click(function () {
-  //   $('.subscribePopup').hide();
-  // })
-  //
-  // $('#mc_embed_signup').submit(function () {
-  //   $('.subscribePopup').hide();
-  // })
+  $('.subscribePopup').hide();
+
+  $('#pressKit').click(function () {
+    $('.subscribePopup').show();
+  })
+
+  $('#subscribePopupClose').click(function () {
+    $('.subscribePopup').hide();
+  })
+
+  $('#mc_embed_signup').submit(function () {
+    $('.subscribePopup').hide();
+  })
 
 });
 
