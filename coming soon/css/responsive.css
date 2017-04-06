@@ -225,11 +225,11 @@
   }
 
   #headingIcon1b {
-    margin-left: 162px;
+    margin-left: 292px;
   }
 
   #headingIcona {
-    margin-left: 290px;
+    margin-left: 158px;
   }
 
   #screen2 {
@@ -517,29 +517,33 @@
   }
 }
 
-/*@media (min-width: 1025px) and (max-width: 1440px) {
-  .tripleTransport {
-    margin-left: 142px;
+@media (max-width: 375px) {
+  .tripleTransport2 {
+    /*margin-left: -7px;*/
+    margin-left: 8px;
+    width: 95%;
     }
 
     #headingIcon1a {
-      margin-left: 465px;
+      height: 80px;
+      width: 80px;
+      margin-left: 104px;
     }
 
     #headingIcona {
-      margin-left: 306px
+      margin-left: 40px
     }
 
     #headingIcon1b {
-      margin-left: 458px;
+      margin-left: 104px;
     }
 
-    .headingIcon2 {
+    /*.headingIcon2 {
       margin-left: 236px;
     }
 
     .listHeading {
       margin-right: 60px;
-    }
+    }*/
 
-}*/
+}
