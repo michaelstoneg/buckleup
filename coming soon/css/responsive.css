@@ -276,33 +276,33 @@
 
 @media (max-width: 550px) {
 
-  /*#bgMobile1[style] {
-    background: url(images/bg/bg1.jpg) -560px 0px no-repeat !important;
+  #bgMobile1 {
+    background: url(../images/bg/bg1.jpg) -560px 0px no-repeat !important;
   }
-  #bgMobile2[style] {
-    background: url(images/bg/bg2.jpg) -180px 0px no-repeat !important;
+  #bgMobile2 {
+    background: url(../images/bg/bg2.jpg) -180px 0px no-repeat !important;
   }
-  #bgMobile3[style] {
-    background: url(images/bg/bg2a.jpg) -400px 0px no-repeat !important;
+  #bgMobile3 {
+    background: url(../images/bg/bg2a.jpg) -400px 0px no-repeat !important;
   }
-  #bgMobile4[style] {
-    background: url(images/bg/bg3.jpg) -560px 0px no-repeat !important;
+  #bgMobile4 {
+    background: url(../images/bg/bg3.jpg) -310px 0px no-repeat !important;
   }
-  #bgMobile5[style] {
-    background: url(images/bg/bg4.jpg) -180px 0px no-repeat !important;
+  #bgMobile5 {
+    background: url(../images/bg/bg4.jpg) -180px 0px no-repeat !important;
   }
-  #bgMobile6[style] {
-    background: url(images/bg/bg5.jpg) -400px 0px no-repeat !important;
+  #bgMobile6 {
+    background: url(../images/bg/bg5.jpg) -400px 0px no-repeat !important;
   }
-  #bgMobile7[style] {
-    background: url(images/bg/bg6.jpg) -400px 0px no-repeat !important;
+  #bgMobile7 {
+    background: url(../images/bg/bg6.jpg) -400px 0px no-repeat !important;
   }
-  #bgMobile8[style] {
-    background: url(images/bg/bg7.jpg) -400px 0px no-repeat !important;
+  #bgMobile8 {
+    background: url(../images/bg/bg7.jpg) -400px 0px no-repeat !important;
   }
-  #bgMobile9[style] {
-    background: url(images/bg/bg8.jpg) -180px 0px no-repeat !important;
-  }*/
+  #bgMobile9 {
+    background: url(../images/bg/bg8.jpg) -180px 0px no-repeat !important;
+  }
 
   #tab_contents {
     top: 60px;

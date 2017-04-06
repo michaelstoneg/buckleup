@@ -312,6 +312,34 @@ ul#bg_slides li {
 	margin-left: 0;
 }
 
+#bgMobile1 {
+  background: url(../images/bg/bg1.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile2 {
+  background: url(../images/bg/bg2.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile3 {
+  background: url(../images/bg/bg2a.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile4 {
+  background: url(../images/bg/bg3.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile5 {
+  background: url(../images/bg/bg4.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile6 {
+  background: url(../images/bg/bg5.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile7 {
+  background: url(../images/bg/bg6.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile8 {
+  background: url(../images/bg/bg7.jpg) 0px 0px no-repeat !important;
+}
+#bgMobile9 {
+  background: url(../images/bg/bg8.jpg) 0px 0px no-repeat !important;
+}
+
 /*
 ***********************************************
 	Countdown
