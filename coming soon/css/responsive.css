@@ -270,6 +270,7 @@
 
   #copyright {
     margin: .6% 0% 0% -1%;
+    text-align: left;
   }
 }
 
@@ -489,7 +490,7 @@
 
   footer {
     padding: 12px !important;
-    bottom: -15px !important;
+    bottom: -9px !important;
     left: 10px !important;
     padding: 20px 0;
   }
@@ -497,6 +498,7 @@
   #copyright {
     margin: .6% 0% 0% -1%;
     font-size: xx-small;
+    text-align: left;
   }
 
 }
@@ -545,5 +547,9 @@
     .listHeading {
       margin-right: 60px;
     }*/
+
+    #copyright {
+      font-size: 8px;
+    }
 
 }
