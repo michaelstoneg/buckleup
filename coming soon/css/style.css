@@ -861,13 +861,13 @@ input:-moz-placeholder { /* Firefox 18- */
 .subscribePopup {
   display: none;
   position: absolute;
-  top: 40%;
+  top: 13%;
   left: 36%;
   height: 270px;
   width: 470px;
   z-index: 9999;
-  background-color: #ff738e;
-  border: 3px solid #fff;
+  /*background-color: #ff738e;*/
+  /*border: 3px solid #fff;*/
 }
 .subscribePopupWrapper {
   margin: 2%;

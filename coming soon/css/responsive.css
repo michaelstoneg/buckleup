@@ -264,6 +264,10 @@
     margin-left: 275px;
   }
 
+  .subscribePopup {
+    left: 20%;
+  }
+
   #pressKitTextWrap {
     margin-left: 200px;
   }
@@ -435,13 +439,13 @@
   .subscribePopup {
     display: none;
     position: absolute;
-    top: 38%;
+    top: 1.5%;
     left: 8%;
     height: 250px;
     width: 340px;
     z-index: 9999;
-    background-color: #ff738e;
-    border: 3px solid #fff;
+    /*background-color: #ff738e;*/
+    /*border: 3px solid #fff;*/
   }
   .subscribePopupWrapper {
     margin: 2%;
@@ -547,6 +551,26 @@
     .listHeading {
       margin-right: 60px;
     }*/
+
+    #pressKitTextWrap {
+      height: 40px;
+      width: 200px;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-left: 46px;
+    }
+
+    #pressKitText {
+      font-size: 13px;
+    }
+
+    .subscribePopup {
+      left: 5%;
+    }
+
+    footer {
+      left: 2px !important;
+    }
 
     #copyright {
       font-size: 8px;
