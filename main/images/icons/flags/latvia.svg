@@ -1,0 +1,20 @@
+
+<svg width="23px" height="15px" viewBox="0 0 23 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="5" width="22.5" height="5"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-3" transform="translate(-472.000000, -975.000000)" fill-rule="nonzero">
+            <g id="1492194941_flag-country-nation-latvia" transform="translate(472.000000, 975.000000)">
+                <path d="M0,10 L0,12.5 C1.32877034e-07,15 2.5,15 2.5,15 L20,15 C20,15 22.5,15 22.5,12.5 L22.5,10 L0,10 Z" id="rounded" fill="#AA3751"></path>
+                <path d="M0,2.5 L0,5 L22.5,5 L22.5,2.5 C22.5,0 20,0 20,0 L2.5,0 C2.5,0 0,0 0,2.5 Z" id="rounded" fill="#AA3751"></path>
+                <g id="Path">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#C6C6C6" stroke-width="0.5" x="0.25" y="5.25" width="22" height="4.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

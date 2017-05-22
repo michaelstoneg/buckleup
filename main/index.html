@@ -1,976 +1,418 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="The Only Inflight Dating App">
-<meta name="keywords" content="Dating, Airdates, Inflight, Milehighclub, urban, chat, wifi direct, multipeer, firechat, Party, Rooftop, escort, tinder, grinder, happn, techhub, techcity, shoreditch, a small world, online dating,airport, date, dating, online dating, online dating personals, social network, personals, dating personals, single men, single women, meet at airport, meet at the airport, met on a plane, we met on a plane, met on a plane, met on the plane, meet on a plane, meet on the plane, flight, travel, travelers, romance, flight schedule, departure time, frequent flyer, airfare, travel agent, united airlines, cheap ticket, airline, airline reservation, airline ticket, plane ticket, fly cheap, airfare, airplane ticket, flight, flights, flight schedule, travel agent, dating singles, jewish dating, jewish dating site, dating women, date women, dating men, date men, dating service, gay dating service, gay dating, single dating site, best dating site, new dating site, international dating site, interracial dating site, best online dating, dating older men, dating older women, dating rich men, dating rich women, local dating, mature women dating, mature men dating, personals service, college dating, senior dating, black dating, gay singles, single parent dating, dating site in usa, dating sites in uk, dating site in United States, dating site in United Kingdom, cougar dating, @mikebuc71, @Michael_airdates, @airdatesapp">
-<meta name="author" content="Michael RICHARD">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- SITE TITLE -->
-<title>AirDates App (public beta)</title>
-
-<!-- =========================
-      FAV AND TOUCH ICONS  
-============================== -->
-<link rel="icon" href="images/favicon.ico">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-<!-- =========================
-     STYLESHEETS   
-============================== -->
-<!-- BOOTSTRAP -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-
-<!-- FONT ICONS -->
-<link rel="stylesheet" href="assets/elegant-icons/style.css">
-<link rel="stylesheet" href="assets/app-icons/styles.css">
-<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-
-<!-- WEB FONTS -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
-
-<!-- CAROUSEL AND LIGHTBOX -->
-<link rel="stylesheet" href="css/owl.theme.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/nivo-lightbox.css">
-<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-
-<!-- ANIMATIONS -->
-<link rel="stylesheet" href="css/animate.min.css">
-
-<!-- CUSTOM STYLESHEETS -->
-<link rel="stylesheet" href="css/styles.css">
-
-<!-- COLORS -->
-<link rel="stylesheet" href="css/colors/red.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
-<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
-
-<!-- RESPONSIVE FIXES -->
-<link rel="stylesheet" href="css/responsive.css">
-
-
-<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
-<![endif]-->
-
-<!-- JQUERY -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59696051-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</head>
-
-<body>
-
-<!-- =========================
-     PRE LOADER       
-============================== -->
-<div class="preloader">
-  <div class="status">&nbsp;</div>
-</div>
-
-<!-- =========================
-     HEADER   
-============================== -->
-<header class="header" id="home">
-
-<!-- COLOR OVER IMAGE -->
-<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
-
-	<!-- STICKY NAVIGATION -->
-	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
-		<div class="container">
-			<div class="navbar-header">
-				
-				<!-- LOGO ON STICKY NAV BAR -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-
-				<a class="navbar-brand" href="#"><img src="images/logo2home.png" alt=""></a>
-				
-			</div>
-			
-			<!-- NAVIGATION LINKS -->
-			<div class="navbar-collapse collapse" id="kane-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#brief1">You Fly</a></li>
-					<li><a href="#brief2">You Chat</a></li>
-					<li><a href="#services">We Rock</a></li>
-					<li><a href="#screenshot-section">Moments</a></li>
-					<li><a href="#download">Contact</a></li>
-                    <li><a href="http://airdatesapp.tumblr.com" target="_blank">BLOG</a></li>
-					<li><a href="pages/pages-terms-conditions.html">HELP<class="external"></a></li>
-				</ul>
-			</div>
-		</div> <!-- /END CONTAINER -->
-	</div> <!-- /END STICKY NAVIGATION -->
-	
-	
-	<!-- CONTAINER -->
-	<div class="container">
-		
-		<!-- ONLY LOGO ON HEADER -->
-		<div class="only-logo">
-			<div class="navbar">
-				<div class="navbar-header">
-					<img src="images/logo.png" alt="">
-				</div>
-			</div>
-		</div> <!-- /END ONLY LOGO ON HEADER -->
-		
-		<div class="row home-contents">
-			<div class="col-md-6 col-sm-6">
-				
-				<!-- HEADING AND BUTTONS -->
-				<div class="intro-section">
-					
-					<!-- WELCOM MESSAGE -->
-					<h1 class="intro">The Only Inflight Dating App ! </h1>
-                    <h1 class="intro">Chat on the Plane between Passengers <br><br>WITHOUT INTERNET</h2>
-					
-					
-					<!-- BUTTON -->
-					<div class="buttons" id="download-button">
-						
-                        <a href="https://itunes.apple.com/app/airdates/id1007217176"><img src="images/appstore.png" alt="" width="208" height="62" ></a>
-						
-						
-					</div>
-					<!-- /END BUTTONS -->
-					
-				</div>
-				<!-- /END HEADNING AND BUTTONS -->
-				
-			</div>
-			
-			
-			<div class="col-md-6 col-sm-6 hidden-xs">
-			    
-			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
-			    <div class="phone-image">
-			    <img src="images/Home-Iphone-Right-var2.png" class="img-responsive" alt="">
-			    </div>
-			    
-			</div>
-			
-		</div>
-		<!-- /END ROW -->
-		
-	</div>
-	<!-- /END CONTAINER -->
-</div>
-<!-- /END COLOR OVERLAY -->
-</header>
-<!-- /END HEADER -->
-
-<!-- =========================
-     FEATURES 
-============================== -->
-<section class="features" id="features">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="white-text">Disrupt Dating App</h2>
-		<div class="colored-line">
-		</div>
-		<div class="section-description">
-			Start in the Lounge - Chat on the Plane
-		</div>
-		<div class="colored-line">
-		</div>
-	</div>
-	<!-- /END SECTION HEADER -->
-	
-	
-	<div class="row">
-		
-		<!-- FEATURES LEFT -->
-		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_heart"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Offline Dating</h4>
-					<p>
-						 Just Transform your Airline in to the best spot for Offline Dating, regardless of your internet connection. Enjoy yourself together via Airdates App, It’s simple to use and absolutely free.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="social_rss"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Flight Mode + Wifi + Bluetooth</h4>
-					<p>
-						 Switch on Airplane mode, turn on WiFi and Bluetooth, scan your fellow passengers for their preferences, connect your devices and enjoy your conversation.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="social_share"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Share with your friends</h4>
-					<p>
-						 Enjoying your newly found connections? Share it with your friends and become an ambassador for AirDates and receive exclusive advantages.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-		</div>
-		<!-- /END FEATURES LEFT -->
-		
-		<!-- PHONE IMAGE -->
-		<div class="col-md-4 col-sm-4">
-			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-				<img src="images/disrupt-dating-Ip6.png" alt="">
-			</div>
-		</div>
-		
-		<!-- FEATURES RIGHT -->
-		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_pin"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Precise Geolocation</h4>
-					<p>
-						 Enter your flight details prior to arriving at the Terminal. Scan your surroundings, update your preferences and connect to fellow passengers.
-
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_chat"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Chat During your Flight</h4>
-					<p>
-						 You can chat in the Terminal with an Internet connection, as well as using multipeer offline connectivity during your flight to communicate with fellow passengers.
- 
-					</p>
-				</div>
-				
-			</div>
-			
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_toolbox"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Set your Privacy</h4>
-					<p>
-						 It is up to you, to set your preferences depending on your mood. You can be visible for your surroundings or remain hidden, while still being able to chat.
-
-
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-		</div>
-		<!-- /END FEATURES RIGHT -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END FEATURES SECTION -->
-
-
-<!-- =========================
-     BRIEF LEFT SECTION 
-============================== -->
-<section class="app-brief deep-dark-bg" id="brief1">
-
-<div class="container">
-	
-	<div class="row">
-		
-		<!-- PHONES IMAGE -->
-		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="phone-image">
-				<img src="images/Enjoy-your-flight-IP-left-var2.png" alt="">
-			</div>
-		</div>
-		
-		<!-- RIGHT SIDE WITH BRIEF -->
-		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SECTION TITLE -->
-			<h2 class="white-text">Enjoy Your Flights</h2>
-			
-			<div class="colored-line-left">
-			</div>
-			
-			<p>
-				Every traveller has experienced the boredom of Airports, ranging from check-in to boarding, while noticing interesting people in your surrounding The difficulty remain to make a lasting connection in the brief moment available to you in the process of getting to your destination. AirDates allows you to scan, connect and remain in contact with your fellow passengers.
-
-
-
-
-			</p>
-			
-			<!-- FEATURE LIST -->
-			<ul class="feature-list">
-				<li><i class="icon_group"></i> Anybody in the Area ?</li>
-				<li><i class="icon_chat"></i> Start to Chat</li>
-				<li><i class="icon_mobile"></i> Board your Flight, Turn ON : Flight Mode, Wifi, Bluetooth</li>
-				<li><i class="icon_like_alt"></i> Continue to Chat during the Flight</li>
-			</ul>
-			
-		</div>
-		<!-- /END RIGHT BRIEF -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SECTION -->
-
-
-
-<!-- =========================
-     BRIEF LEFT SECTION WITH VIDEO 
-============================== -->
-<section class="app-brief deep-dark-bg" id="brief1">
-
-<div class="container">
-	
-	<div class="row">
-		
-		<!-- PHONES IMAGE -->
-		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="video-container">
-				
-                <!--
-				<div class="video">
-					
-					<iframe src="//player.vimeo.com/video/88902745?byline=0&amp;portrait=0&amp;color=ffffff" width="600" height="338" frameborder="0" allowfullscreen>
-					</iframe> 
-				</div>
-				-->
-				
-				<div class="video">
-					
-					
-					<iframe width="640" height="360" <video src="video/Sequence_01_2.mp4" muted ><frameborder="0" allowfullscreen></iframe>
-					
-					
-                </div>
-				
-			</div>
-
-		</div>
-		
-		<!-- RIGHT SIDE WITH BRIEF -->
-		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SECTION TITLE -->
-			<h2 class="white-text">From Plane to Rooftop Party !</h2>
-			
-			<div class="colored-line-left">
-			</div>
-			
-			<p>
-				You made a connection during the flight, shared experiences and tips about the destination, making the flight enjoyable. How about sharing a taxi to your next location, having a drink or even going to a rooftop party in your city? Enjoy your connection, make new friends, share experiences… The possibilities with AirDates are endless! <br/><br/>
-				
-			</p>
-			
-			
-		</div>
-		<!-- /END RIGHT BRIEF -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SECTION -->
-
-
-<!-- =========================
-     TESTIMONIALS 
-============================== -->
-<section class="testimonials">
-
-<div class="color-overlay">
-	
-	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="15s">
-		
-		<!-- FEEDBACKS -->
-		<div id="feedbacks" class="owl-carousel owl-theme">
-			
-			<!-- SINGLE FEEDBACK -->
-			<div class="feedback">
-				
-				<!-- IMAGE -->
-				<div class="image">
-					<!-- i class=" icon_quotations"></i -->
-					<img src="images/clients-pic/1.jpg" alt="">
-				</div>
-				
-				<div class="message">
-					 Social Dater, Worldwide Traveler, Cook and DJ… Spent a lot of my Days and Nights flying or at Airport. Urban Addict and disrupt entrepreneur, always early adopter. Really passionate about meeting new people and Dating addict… Really like nice places in a good company… Airdates was obvious for me to develop… Flying, Dating, Enjoying the Party together at destination….
-
-				</div>
-				
-				<div class="white-line">
-				</div>
-				
-				<!-- INFORMATION -->
-				<div class="name">
-					Michael RICHARD
-				</div>
-				<div class="company-info">
-					Founder Airdates.co
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEEDBACK -->
-			
-			
-			
-			<!-- SINGLE FEEDBACK -->
-			<div class="feedback">
-				
-				<!-- IMAGE -->
-				<div class="image">
-					<!-- i class=" icon_quotations"></i -->
-					<img src="images/clients-pic/3.jpg" alt="">
-				</div>
-				
-				<div class="message">
-					 If you are able to Swipe Right the Next answers, We are Waiting For You!
-				</div>
-                <ul class="feature-list">
-				<li><i class="icon_circle-slelected"></i> You Like Challenges</li>
-				<li><i class="icon_circle-slelected"></i> You are Direct and Team Player</li>
-				<li><i class="icon_circle-slelected"></i> You have Design Skills</li>
-				<li><i class="icon_circle-slelected"></i> You are Social Media Experienced</li>
-			</ul>
-				
-				<div class="white-line">
-				</div>
-				
-				<!-- INFORMATION -->
-				<div class="name">
-					You
-				</div>
-				<div class="company-info">
-					<a href="#download">Junior Developper @Airdates.co</a>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEEDBACK -->
-            
-            
-	<!-- SINGLE FEEDBACK -->
-			<div class="feedback">
-				
-				<!-- IMAGE -->
-				<div class="image">
-					<!-- i class=" icon_quotations"></i -->
-					<img src="images/clients-pic/3.jpg" alt="">
-				</div>
-				
-				<div class="message">
-					 Want To Grow and Learn from an Entrepreneur.<br/>
-					 Can handle heavy workload in the heart of London TechCity ? Let’s Talk !
-				</div>
-				<ul class="feature-list">
-				<li><i class="icon_circle-slelected"></i> Marketing & PR</li>
-				<li><i class="icon_circle-slelected"></i> Design</li>
-				<li><i class="icon_circle-slelected"></i> Social Media</li>
-				<li><i class="icon_circle-slelected"></i> Developper</li>
-			</ul>
-				<div class="white-line">
-				</div>
-				
-				<!-- INFORMATION -->
-				<div class="name">
-					You
-				</div>
-				<div class="company-info">
-					<a href="#download">Internship @Airdates.co</a>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEEDBACK -->		
-		</div>
-		<!-- /END FEEDBACKS -->
-		
-	</div>
-	<!-- /END CONTAINER -->
-	
-</div>
-<!-- /END COLOR OVERLAY -->
-
-</section>
-<!-- /END TESTIMONIALS SECTION -->
-
-
-<!-- =========================
-     SERVICES
-============================== -->
-<section class="services" id="services">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="white-text">Smart Dating App</h2>
-		
-		<div class="colored-line">
-		</div>
-		<div class="section-description">
-			The Only Inflight Dating App 
-		</div>
-		<div class="colored-line">
-		</div>
-		
-	</div>
-	<!-- /END SECTION HEADER -->
-	
-	<div class="row">
-		
-		<!-- SINGLE SERVICE -->
-		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SERVICE ICON -->
-			<div class="service-icon">
-				<i class="icon_heart_alt"></i>
-			</div>
-			
-			<!-- SERVICE HEADING -->
-			<h3>Coolest Dating App</h3>
-			
-			<!-- SERVICE DESCRIPTION -->
-			<p>
-				 It’s Dating, It’s Chatting, It’s Disrupt.</br>
-You will love to use Airdates App, just because it is different , it is sexy and it is Urban.
-From London to any Party Spot, it is the </br>Must Have.
-
-			</p>
-			
-		</div>
-		<!-- /END SINGLE SERVICE -->
-		
-		<!-- SINGLE SERVICE -->
-		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SERVICE ICON -->
-			<div class="service-icon">
-				<i class="icon_globe_alt"></i>
-			</div>
-			
-			<!-- SERVICE HEADING -->
-			<h3>Worldwide</h3>
-			
-			<!-- SERVICE DESCRIPTION -->
-			<p>
-				 Dating is global - We are global- Internet Network is not. </br>
-We solve this problem, the first Dating App which works everywhere, even in the plane round around the world. </br>Join the Club!
-
-
-			</p>
-			
-		</div>
-		<!-- /END SINGLE SERVICE -->
-		
-		<!-- SINGLE SERVICE -->
-		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SERVICE ICON -->
-			<div class="service-icon">
-				<i class="icon_chat_alt"></i>
-			</div>
-			
-			<!-- SERVICE HEADING -->
-			<h3>OffLine Chatting</h3>
-			
-			<!-- SERVICE DESCRIPTION -->
-			<p>
-				 Direct Wifi or Bluetooth, Multipeer connectivity (up to 70 meters) bound up with your Chatting/Dating partner for NO cost and in total privacy.
-Airdates - The Only Inflight Dating App
-
-			</p>
-			
-		</div>
-		<!-- /END SINGLE SERVICE -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END FEATURES SECTION -->
-
-
-
-<!-- =========================
-     SCREENSHOTS
-============================== -->
-<section class="screenshots deep-dark-bg" id="screenshot-section">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="white-text">MOMENTS</h2>
-		
-		<div class="colored-line">
-		</div>
-		<div class="section-description">
-			From a necessity to a disrupt pleasure
-		</div>
-		<div class="colored-line">
-		</div>
-		
-	</div>
-	<!-- /END SECTION HEADER -->
-	
-	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<div id="screenshots" class="owl-carousel owl-theme">
-			
-			
-			
-			<div class="shot">
-				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/ss1.png" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/ss2.png" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/ss3.png" alt="Screenshot"></a>
-			</div>
-			
-			
-			
-			<div class="shot">
-				<a href="images/screenshots/6.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/ss4.png" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/7.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/ss5.png" alt="Screenshot"></a>
-			</div>
-			
-			
-			
-		</div>
-		<!-- /END SCREENSHOTS -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SCREENSHOTS SECTION -->
-
-<!-- /END PRICING TABLE SECTION -->
-
-
-<!-- =========================
-     DOWNLOAD NOW 
-============================== -->
-<section class="download" id="download">
-
-<div class="color-overlay">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				
-				<!-- DOWNLOAD BUTTONS AREA -->
-				<div class="download-container">
-					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Download AirDates Now</h2>
-					
-					<!-- BUTTONS -->
-					<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-						
-						<a href="https://itunes.apple.com/app/airdates/id1007217176" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
-						
-						
-					</div>
-					<!-- /END BUTTONS -->
-					
-				</div>
-				<!-- END OF DOWNLOAD BUTTONS AREA -->
-				
-				
-				<!-- SUBSCRIPTION FORM WITH TITLE -->
-				<div class="subscription-form-container">
-					
-					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Subscribe ! For Android</h2>
-					
-					<!-- =====================
-					     MAILCHIMP FORM STARTS 
-					     ===================== -->
-					
-					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
-						
-						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
-						<h4 class="subscription-success"></h4>
-						<h4 class="subscription-error"></h4>
-						
-						<!-- EMAIL INPUT BOX -->
-						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
-						
-						<!-- SUBSCRIBE BUTTON -->
-						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
-						
-					</form>
-					<!-- /END MAILCHIMP FORM STARTS -->
-					
-					<!-- =====================
-					     LOCAL TXT FORM STARTS 
-					     ===================== -->
-					     
-					<!-- THIS FORM IS COMMENTED TO HIDE 
-					
-					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
-						
-						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
-						<h4 class="subscription-error">Something Wrong!</h4>
-						
-						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
-						
-						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
-						
-					</form>
-					
-					-->
-					
-					<!-- / LOCAL TXT SAVING FORM END -->
-
-				</div>
-                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
-				
-			</div> 
-			<!-- END COLUMN -->
-			
-		</div> 
-		<!-- END ROW -->
-		
-	</div>
-	<!-- /END CONTAINER -->
-</div>
-<!-- /END COLOR OVERLAY -->
-
-</section>
-<!-- /END DOWNLOAD SECTION -->
-
-
-<!-- =========================
-     FOOTER 
-============================== -->
-<footer>
-
-<div class="container">
-	
-	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
-		
-		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
-		
-		<!-- EXPANDED CONTACT FORM -->
-		<div class="row expanded-contact-form">
-			
-			<div class="col-md-8 col-md-offset-2">
-				
-				<!-- FORM -->
-				<form class="contact-form" id="contact" role="form">
-					
-					<!-- IF MAIL SENT SUCCESSFULLY -->
-					<h4 class="success">
-						<i class="icon_check"></i> Your message has been sent successfully.
-					</h4>
-					
-					<!-- IF MAIL SENDING UNSUCCESSFULL -->
-					<h4 class="error">
-						<i class="icon_error-circle_alt"></i> E-mail must be valid and message must be longer than 1 character.
-					</h4>
-					
-					<div class="col-md-6">
-						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name">
-					</div>
-					
-					<div class="col-md-6">
-						<input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email">
-					</div>
-					
-					<div class="col-md-12">
-						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
-						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Message"></textarea>
-					</div>
-					
-					<button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
-					
-				</form>
-				<!-- /END FORM -->
-				
-			</div>
-			
-		</div>
-		<!-- /END EXPANDED CONTACT FORM -->
-		
-	</div>
-	<!-- /END CONTACT BOX -->
-	
-	<!-- LOGO -->
-	<img src="images/logo.png" alt="LOGO" class="responsive-img">
-	
-	<!-- SOCIAL ICONS -->
-	<ul class="social-icons">
-		<li><a href="https://www.facebook.com/pages/AirDates/1548166682100083"target="_blank"><i class="social_facebook_square"></i></a></li>
-		<li><a href="https://twitter.com/airdatesapp"target="_blank"><i class="social_twitter_square"></i></a></li>
-		<li><a href="https://plus.google.com/106523791959041413652"target="_blank"><i class="social_googleplus_square"></i></a></li>
-		<li><a href="http://www.instagram.com/airdatesapp"target="_blank"><i class="social_instagram_square"></i></a></li>
-	</ul>
-	
-	<!-- COPYRIGHT TEXT -->
-	<p class="copyright">
-		©2015 AirDates.co - An EMCT Investments Ltd. Co -  All Rights Reserved
-	</p>
-
-</div>
-<!-- /END CONTAINER -->
- 
-</footer>
-<!-- /END FOOTER -->
-
-
-<!-- =========================
-     SCRIPTS 
-============================== -->
-
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.localScroll.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/simple-expand.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/retina.min.js"></script>
-<script src="js/matchMedia.js"></script>
-<script src="js/jquery.backgroundvideo.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/jquery.fitvids.js"></script>
-<script src="js/custom.js"></script>
-
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Only Inflight Dating App">
+    <meta name="keywords" content="Dating, Airdates, Inflight, Milehighclub, urban, chat, wifi direct, multipeer, firechat, Party, Rooftop, escort, tinder, grinder, happn, techhub, techcity, shoreditch, a small world, online dating,airport, date, dating, online dating, online dating personals, social network, personals, dating personals, single men, single women, meet at airport, meet at the airport, met on a plane, we met on a plane, met on a plane, met on the plane, meet on a plane, meet on the plane, flight, travel, travelers, romance, flight schedule, departure time, frequent flyer, airfare, travel agent, united airlines, cheap ticket, airline, airline reservation, airline ticket, plane ticket, fly cheap, airfare, airplane ticket, flight, flights, flight schedule, travel agent, dating singles, jewish dating, jewish dating site, dating women, date women, dating men, date men, dating service, gay dating service, gay dating, single dating site, best dating site, new dating site, international dating site, interracial dating site, best online dating, dating older men, dating older women, dating rich men, dating rich women, local dating, mature women dating, mature men dating, personals service, college dating, senior dating, black dating, gay singles, single parent dating, dating site in usa, dating sites in uk, dating site in United States, dating site in United Kingdom, cougar dating, @mikebuc71, @Michael_airdates, @airdatesapp">
+    <meta name="author" content="Michael RICHARD">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<title>BuckleUp by Airdates</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+
+      <div class="container main_container" id="1">
+
+
+        <div class="burger_menu_img_wrapper">
+          <img src="images/icons/menU.svg" alt="menu" class="burger_menu_img">
+        </div>
+
+        <div class="burger_menu_wrapper">
+          <ul class="burger_menu_list">
+            <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_download"><p>Download</p></a></li>
+            <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_features"><p>Features</p></a></li>
+            <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_press"><p>Press</p></a></li>
+            <li class="burger_menu_list_item"><a href="blog/blog.html" class="burger_menu_link" id="burger_menu_link_blog"><p>Blog</p></a></li>
+            <li class="burger_menu_list_item"><a href="https://airdates.breezy.hr/" class="burger_menu_link" id="burger_menu_link_jobs"><p>Jobs</p></a></li>
+            <li class="burger_menu_list_item"><a href="t_and_c/pages-terms-conditions.html" class="burger_menu_link" id="burger_menu_link_tc" target="_blank"><p>T&C</p></a></li>
+            <li class="burger_menu_list_item"><a href="mailto:support@airdates.co" class="burger_menu_link" id="burger_menu_link_support"><p>Support</p></a></li>
+            <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_contact"><p>Contact</p></a></li>
+
+              <li class="menu_social_link"><a href="https://www.facebook.com/airdatesapp/" target="_blank"><img src="images/icons/facebook_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+              <li class="menu_social_link"><a href="https://twitter.com/AirDatesApp" target="_blank"><img src="images/icons/twitter_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+              <li class="menu_social_link"><a href="https://www.instagram.com/airdatesapp" target="_blank"><img src="images/icons/instagram_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+              <li class="menu_social_link"><a href="#" target="_blank"><img src="images/icons/pinterest_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+              <li class="menu_social_link"><a href="#" target="_blank"><img src="images/icons/tumbler_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+
+          </ul>
+
+        </div>
+
+
+        <img src="images/logos/main_logo_white.svg" alt="" class="main_logo_1">
+        <img src="images/logos/magnet_logo_1.svg" alt="" class="main_logo_2">
+        <h1 class="main_tagline">... more than just in-flight dating ...</h1>
+        <div class="download_badges_wrapper">
+          <a href="#"><img src="images/logos/playstore_badge.svg" alt="" class="download_badges_main download_badges" id="download_badge_1"></a>
+          <a href="#"><img src="images/logos/appstore_badge.svg" alt="" class="download_badges_main download_badges" id="download_badge_2"></a>
+        </div>
+      </div>
+
+      <div class="media_scroll">
+        <ul class="media_scroll_list">
+          <li class="media_scroll_list_item">
+            <a href="http://mashable.com/2016/12/10/air-dates-in-flight-dating-app/#2ZtThm9hdOqj" target="_blank">
+              <img src="images/logos/media/mashable_2_media.svg" alt="" class="media_scroll_list_item_img" id="mashable_img">
+            </a>
+          </li>
+          <li class="media_scroll_list_item">
+            <a href="https://www.bustle.com/articles/101163-8-new-mobile-dating-apps-for-everyone-from-stoners-to-binge-watchers-because-online-dating-is-a" target="_blank">
+              <img src="images/logos/media/bustle_white_media.svg" alt="" class="media_scroll_list_item_img" id="bustle_img">
+            </a>
+          </li>
+          <li class="media_scroll_list_item">
+            <a href="http://www.bild.de/digital/smartphone-und-tablet/dating-apps/airdates-dating-app-fuer-flieger-49203950.bild.html#fromWall" target="_blank">
+              <img src="images/logos/media/bild_media.svg" alt="" class="media_scroll_list_item_img bild_li" id="bild_img">
+            </a>
+          </li>
+          <li class="media_scroll_list_item">
+            <a href="https://www.cnet.com/news/romance-at-30000-feet-airdates-wants-to-be-your-inflight-dating-app/" target="_blank">
+              <img src="images/logos/media/test.svg" alt="" class="media_scroll_list_item_img cnet_li" id="cnet_img">
+            </a>
+          </li>
+          <li class="media_scroll_list_item" id="cnet_list_item">
+            <a href="http://www.maxim.com/gear/airdates-in-flight-flirting-app-2016-12" target="_blank">
+              <img src="images/logos/media/maxim_white_media.svg" alt="" class="media_scroll_list_item_img" id="maxim_img">
+            </a>
+          </li>
+          <li class="media_scroll_list_item">
+            <a href="http://abcnews.go.com/GMA/video/app-fliers-flirt-skies-44035312?cid=share_twitter_widget" target="_blank">
+              <img src="images/logos/media/gma_media.svg" alt="" class="media_scroll_list_item_img" id="gma_img">
+            </a>
+          </li>
+          <li class="media_scroll_list_item">
+            <a href="https://www.thesun.co.uk/living/2339852/could-this-be-the-tinder-of-travel-new-app-can-help-you-hook-up-mid-flight/" target="_blank">
+              <img src="images/logos/media/sun_2_media.svg" alt="" class="media_scroll_list_item_img" id="sun_img">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="container unknown_container">
+        <div class="animation_container">
+          <div class="animation_subcontainer">
+            <div class="animation_step_set">
+              <img src="images/screens/screen_animation/press_1.svg" alt="" class="animation_press_1 animation_step">
+              <img src="images/screens/screen_animation/press_2.svg" alt="" class="animation_press_2 animation_step">
+              <img src="images/screens/screen_animation/press_3.svg" alt="" class="animation_press_3 animation_step">
+              <img src="images/screens/screen_animation/press_4.svg" alt="" class="animation_press_4 animation_step">
+              <img src="images/screens/screen_animation/press_5.svg" alt="" class="animation_press_5 animation_step">
+              <img src="images/screens/screen_animation/press_6.png" alt="" class="animation_press_6 animation_step">
+              <div class="location_slide_line"></div>
+              <img src="images/screens/screen_animation/press_7.png" alt="" class="animation_press_7 animation_step">
+              <img src="images/screens/screen_animation/press_8.svg" alt="" class="animation_press_8 animation_step">
+              <img src="images/screens/screen_animation/press_9.svg" alt="" class="animation_press_9 animation_step">
+              <img src="images/screens/screen_animation/press_10.svg" alt="" class="animation_press_10 animation_step">
+            </div>
+            <div class="animation_step_set_2">
+              <img src="images/screens/screen_animation/press_11.svg" alt="" class="animation_press_11 animation_step">
+              <img src="images/screens/screen_animation/press_12.svg" alt="" class="animation_press_12 animation_step">
+              <img src="images/screens/screen_animation/press_13.svg" alt="" class="animation_press_13 animation_step">
+              <img src="images/screens/screen_animation/press_14.svg" alt="" class="animation_press_14 animation_step">
+              <img src="images/screens/screen_animation/press_15.svg" alt="" class="animation_press_15 animation_step">
+              <img src="images/screens/screen_animation/press_16.png" alt="" class="animation_press_16 animation_step">
+              <div class="animation_press_17 animation_step"></div>
+            </div>
+            <div class="animation_step_set_3">
+              <img src="images/screens/screen_animation/press_18.svg" alt="" class="animation_press_18 animation_step">
+              <img src="images/screens/screen_animation/press_19.svg" alt="" class="animation_press_19 animation_step">
+              <img src="images/screens/screen_animation/press_20.svg" alt="" class="animation_press_20 animation_step">
+              <img src="images/screens/screen_animation/press_21.svg" alt="" class="animation_press_21 animation_step">
+              <img src="images/screens/screen_animation/press_22.svg" alt="" class="animation_press_22 animation_step">
+              <div class="animation_press_23 animation_step"></div>
+            </div>
+            <img src="images/screens/screen_animation/animation_screen_2.png" alt="" class="animation_sheet">
+            <img src="images/screens/screen_animation/animation_screen_3.png" alt="" class="animation_sheet_2">
+            <img src="images/screens/screen_animation/animation_screen_4.png" alt="" class="animation_sheet_3">
+            <img src="images/screens/screen_animation/animation_screen_5.png" alt="" class="animation_sheet_4">
+            <img src="images/screens/screen_animation/animation_screen_6.png" alt="" class="animation_sheet_5">
+          </div>
+        </div>
+
+        <div class="animation_text_container">
+          <div class="animation_text_subcontainer">
+            <ul class="animation_text_list">
+              <li class="animation_text_list_item">
+                <h3 class="animation_text_heading"><b>Easy Onboarding</b></h3>
+                <p class="animation_text">Be who you are and find what you're looking for. We don't discriminate against preferene or orientaion. We're about diversity no division.</p>
+              </li>
+              <li class="animation_text_list_item">
+                <p class="animation_text">We're all about making connections. Use interests, date-type etc to find the perfect match.</p>
+              </li>
+              <li class="animation_text_list_item">
+                <h3 class="animation_text_heading">Swipe & Browse</h3>
+                <p class="animation_text">Search by swiping or location. Discover and be discovered with our map feature that shows you who's nearby</p>
+              </li>
+              <li class="animation_text_list_item">
+                <p class="animation_text">Make and impression. Detailed profiles with social integration show your digital foorprint and tell the story of you.</p>
+              </li>
+              <li class="animation_text_list_item">
+                <h3 class="animation_text_heading">Digital Nomads</h3>
+                <p class="animation_text">Date on the En-Route and On-the-Go. Track past trips and add new ones with ease by sending us your travel information.</p>
+              </li>
+              <li class="animation_text_list_item">
+                <p class="animation_text">By seeing who you cross paths with, you never travel alone. Every part of the journey is a chance to make connections</p>
+              </li>
+              <li class="animation_text_list_item" id="animation_text_list_item_last">
+                <h3 class="animation_text_heading">Buckle Up!!</h3>
+                <p class="animation_text">Turning travel matches into real meetups.</p>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="container team_container responsive_off">
+      <h1 class="team_header">Team</h1>
+      <ul class="team_list_1">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_france">Michael Richard </p>
+            <p class="team_text">CEO | Founder | Serial Dater</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_france">Gaetan Pacton </p>
+            <p class="team_text">Board Member | French Touch</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_italy">Filippo Minelle </p>
+            <p class="team_text">CTO | Code Wizzard</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="team_list_2">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_romania">David Dimulescu </p>
+            <p class="team_text">Android Dev | Code Sniper</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_poland">Marcin Skorek </p>
+            <p class="team_text">Back-end Dev | Key Master</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_morocco">Ayoub Nouri </p>
+            <p class="team_text">iOS Dev | Swift Genius</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="team_list_3">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_jamaica">Michael Grandison </p>
+            <p class="team_text">Web Dev | Social Jedi</p>
+          </div>
+        </li>
+        <!-- <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_latvia">Maria Emberg </p>
+            <p class="team_text">iOS Designer | Miss Cookies</p>
+          </div>
+        </li> -->
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_slovenia">Primoz Planko </p>
+            <p class="team_text">Android Designer | Beard & Bike</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <a href="#" class="new_team_link">
+            <div class="team_list_item_box">
+              <img src="images/icons/question.svg" alt="" class="team_list_item_img" id="new_team_member">
+              <p class="team_text">Your name here</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container team_container responsive_on">
+      <h1 class="team_header">Team</h1>
+      <ul class="team_list_1">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_france">Michael Richard </p>
+            <p class="team_text">CEO | Founder | Serial Dater</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_france">Gaetan Pacton </p>
+            <p class="team_text">Board Member | French Touch</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="team_list_2">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_italy">Filippo Minelle </p>
+            <p class="team_text">CTO | Code Wizzard</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_romania">David Dimulescu </p>
+            <p class="team_text">Android Dev | Code Sniper</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="team_list_3">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_poland">Marcin Skorek </p>
+            <p class="team_text">Back-end Dev | Key Master</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_morocco">Ayoub Nouri </p>
+            <p class="team_text">iOS Dev | Swift Genius</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="team_list_4">
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_jamaica">Michael Grandison </p>
+            <p class="team_text">Web Dev | Social Jedi</p>
+          </div>
+        </li>
+        <li class="team_list_item">
+          <div class="team_list_item_box">
+            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
+            <p class="team_text flag_slovenia">Primoz Planko </p>
+            <p class="team_text">Android Designer | Beard & Bike</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="team_list_5">
+        <li class="team_list_item">
+          <a href="#" class="new_team_link">
+            <div class="team_list_item_box">
+              <img src="images/icons/question.svg" alt="" class="team_list_item_img" id="new_team_member">
+              <p class="team_text">Your name here</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+      <div class="footer_bottom_subcontainer">
+
+        <div class="footer_site_links">
+          <div class="footer_logo_wrapper">
+            <img src="images/logos/magnet_logo_2.svg" alt="" class="footer_logo_img">
+          </div>
+            <ul class="footer_site_links_list">
+              <li class="footer_site_links_list_item"><a href="#" class="footer_site_link" id="footer_site_links_download"><p class="footer_site_links_list_item_text">Download</p></a></li>
+              <li class="footer_site_links_list_item"><a href="#" class="footer_site_link" id="footer_site_links_features"><p class="footer_site_links_list_item_text">Features</p></a></li>
+              <li class="footer_site_links_list_item"><a href="blog/blog.html" class="footer_site_link" id="footer_site_links_blog"><p class="footer_site_links_list_item_text">Blog</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list">
+              <li class="footer_site_links_list_item"><a href="https://airdates.breezy.hr/" class="footer_site_link" id="footer_site_links_jobs"><p class="footer_site_links_list_item_text">Jobs</p></a></li>
+              <li class="footer_site_links_list_item"><a href="t_and_c/pages-terms-conditions.html" class="footer_site_link" id="footer_site_links_tc"><p class="footer_site_links_list_item_text" target="_blank">T&C</p></a></li>
+              <li class="footer_site_links_list_item"><a href="#" class="footer_site_link" id="footer_site_links_support"><p class="footer_site_links_list_item_text">Support</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list">
+              <li class="footer_site_links_list_item"><a href="#" class="footer_subscribe_link" id="subscribe_general"><p class="footer_site_links_list_item_text">Newsletter</p></a></li>
+              <li class="footer_site_links_list_item"><a href="#" class="footer_subscribe_link" id="subscribe_press"><p class="footer_site_links_list_item_text">Press Kit</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list address_ul">
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text">WeWork Chancery lane 14 Gray’s Inn Road WC1X 8HN - London</p></li>
+            </ul>
+            <ul class="footer_site_links_list address_ul">
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text">WeWork Soho 154 Grand Street NY 10013 - New York</p></li>
+              <li class="footer_site_links_list_item"><a href="mailto:info@airdates.co" class="email_link"><p class="email">info@airdates.co</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list footer_social_links_list">
+              <li class="footer_social_links_list_item"><a href="https://www.facebook.com/airdatesapp/" target="_blank"class="footer_social_link"><img src="images/icons/facebook_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="https://twitter.com/AirDatesApp" target="_blank"class="footer_social_link"><img src="images/icons/twitter_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="https://www.instagram.com/airdatesapp" target="_blank"class="footer_social_link"><img src="images/icons/instagram_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="#" target="_blank"class="footer_social_link"><img src="images/icons/pinterest_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="#" target="_blank"class="footer_social_link"><img src="images/icons/tumbler_footer.svg" alt="" class="footer_social_link_img"></a></li>
+            </ul>
+
+
+            <div class="footer_partners_subcontainer ">
+              <ul class="footer_partners_list">
+                <li class="footer_partners_list_item"><a href="https://websummit.com/startups/alpha" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_alpha.png" alt="" class="footer_partners_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://aws.amazon.com/activate/" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_aws.png" alt="" class="footer_partners_img" id="aws_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://developers.facebook.com/fbstart" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_fbstart.png" alt="" class="footer_partners_img" id="fbstart_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://www.wework.com/promos/mission-possible-london" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_wework.png" alt="" class="footer_partners_img" id="wework_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://thenextweb.com/#.tnw_3pQivJ5z" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_tnw.png" alt="" class="footer_partners_img"></a></li>
+              </ul>
+            </div>
+
+
+            <div class="footer_copyright_wrapper">
+              <p class="copyright_text">©2015-2017 AirDates.co | BuckleUp.co | An EMCT Investments Ltd. Co | All Rights Reserved</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- <div class="partners_scroll responsive_on">
+        <ul class="partners_scroll_list">
+          <li class="partners_scroll_list_item"><a href="https://websummit.com/startups/alpha" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_alpha.png" alt="" class="partners_scroll_list_item_img"></a></li>
+          <li class="partners_scroll_list_item"><a href="https://aws.amazon.com/activate/" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_aws.png" alt="" class="partners_scroll_list_item_img" id="aws_img"></a></li>
+          <li class="partners_scroll_list_item"><a href="https://developers.facebook.com/fbstart" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_fbstart.png" alt="" class="partners_scroll_list_item_img" id="fbstart_img"></a></li>
+          <li class="partners_scroll_list_item"><a href="https://www.wework.com/promos/mission-possible-london" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_wework.png" alt="" class="partners_scroll_list_item_img" id="wework_img"></a></li>
+          <li class="partners_scroll_list_item"><a href="https://thenextweb.com/#.tnw_3pQivJ5z" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_tnw.png" alt="" class="partners_scroll_list_item_img"></a></li>
+        </ul>
+      </div> -->
+
+
+
+
+    <div class="subscribe_popup_wrapper">
+      <!-- <div class='mailmunch-forms-widget-477140'> -->
+      <p>mail munch form goes here</p>
+        <button type="button" id="subscribe_popup_close" name="button">X</button>
+      <!-- </div> -->
+    </div>
+
+    <div class="press_subscribe_popup_wrapper">
+      <!-- <div class='mailmunch-forms-widget-477140'> -->
+      <p>mail munch form goes here</p>
+        <button type="button" id="press_subscribe_popup_close" name="button">X</button>
+      <!-- </div> -->
+    </div>
+
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+  </body>
 </html>
