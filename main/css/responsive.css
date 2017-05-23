@@ -180,32 +180,40 @@ right: 227px;
   }
 
   .media_scroll_list_item {
-    vertical-align: top;
+    /*vertical-align: middle;*/
     margin: 15px 120px 15px 120px;
   }
 
   #bustle_img, #maxim_img {
-    height: 50px;
-    width: 240px;
+    height: 80px;
+    width: 220px;
+  }
+
+  .adjust_list_item {
+    margin-top: 20px;
+  }
+
+  .adjust_list_item_2 {
+    margin-top: 25px;
   }
 
   #bild_img {
-    height: 70px;
+    height: 80px;
   }
 
   #cnet_img {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
   }
 
   #sun_img {
-    height: 50px;
-    width: 210px;
+    height: 80px;
+    width: 200px;
   }
 
   #mashable_img {
-    height: 50px;
-    width: 260px;
+    height: 80px;
+    width: 280px;
   }
 
   #gma_img {
@@ -397,6 +405,7 @@ right: 227px;
 
   .partners_scroll_list_item {
     display: inline;
+    vertical-align: middle;
   }
 
   .partners_scroll_list_item_img {
@@ -561,14 +570,30 @@ right: 227px;
     margin: 0;
   }
 
-  .media_scroll_list_item_img {
+  .media_scroll_list_item {
+    /*vertical-align: middle;*/
+    margin: 15px 100px 15px 100px;
+  }
+
+  .adjust_list_item {
+    margin-top: 25px;
+  }
+
+  .adjust_list_item_2 {
+    margin-top: 15px;
+  }
+
+  #gma_list_item {
+    margin-top: 25px
+  }
+
+  #bustle_img, #maxim_img {
     height: 50px;
-    margin: 10px 30px 30px 30px;
+    width: 200px;
   }
 
   #bild_img {
-    height: 80px;
-    margin-bottom: 40px;
+    height: 70px;
   }
 
   #cnet_img {
@@ -576,17 +601,45 @@ right: 227px;
     width: 70px;
   }
 
+  #sun_img {
+    height: 50px;
+    width: 180px;
+  }
+
+  #mashable_img {
+    height: 50px;
+    width: 280px;
+  }
+
+  #gma_img {
+    height: 60px;
+    width: 260px;
+  }
+
   .animation_text_container {
-    background-color: rgba(0,0,0,0.5);
-    height: 200px;
+    /*background-color: rgba(0,0,0,0.5);*/
+    height: 110px;
     width: 395px;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
+
+  }
+
+  .animation_text_list_item {
+    margin: 50px 0;
+  }
+
+  .animation_text_list_item_last {
+    margin: 50px 0 !important;
   }
 
   .animation_text_heading {
     font-size: 30px;
     margin: 10px;
-    margin: 50px 0 50px 0;
+    margin: 10px 0 10px 0;
+  }
+
+  .animation_text {
+    margin: 0;
   }
 
   .features_subcontainer {

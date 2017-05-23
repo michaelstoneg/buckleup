@@ -17,6 +17,7 @@ $(document).ready(function(){
   var tablet_mode = 'off';
 
   $('.responsive_on').hide();
+  $('.responsive_on_2').hide();
   console.log('hiding responsive elements');
   $('.tablet_on').hide();
   console.log('hiding tablet elements');
@@ -36,6 +37,7 @@ $(document).ready(function(){
     $('.responsive_off').hide();
     console.log('non responsive elements ran away!!');
     $('.responsive_on').show();
+    $('.responsive_on_2').show();
     console.log('wild responsive elements appeared!!');
   }
 
@@ -268,11 +270,11 @@ function RotateCarousel() {
 
 
       if ($(window).height() == 1024 && $(window).width() == 768 ) {
-        console.log('whats up short stuff');
+        console.log('tablet animation');
         animation_progress = scroll_position - 1150;
 
 
-        if (scroll_position < 1150) {
+        if (scroll_position < 1100) {
           go_animate = 'off';
 
           $('.animation_container').css({
@@ -288,7 +290,7 @@ function RotateCarousel() {
         }
 
 
-        if (scroll_position > 1040 && scroll_position < 14030 && mobile_mode == 'off') {
+        if (scroll_position > 1100 && scroll_position < 14030 && mobile_mode == 'off') {
           go_animate = 'on';
           console.log('screen animation is ' + go_animate);
           $('.unknown_container').css({height: '1350vh'});
@@ -332,11 +334,11 @@ function RotateCarousel() {
       }
 
       if ($(window).height() <= 750 && $(window).width() <= 450 ) {
-        console.log('pssst small ting');
+        console.log('phone animation');
         animation_progress = scroll_position - 830;
 
 
-        if (scroll_position < 830) {
+        if (scroll_position < 800) {
           go_animate = 'off';
 
           $('.animation_container').css({
@@ -353,7 +355,7 @@ function RotateCarousel() {
         }
 
 
-        if (scroll_position > 830 && scroll_position < 13350 && mobile_mode == 'on') {
+        if (scroll_position > 800 && scroll_position < 13350 && mobile_mode == 'on') {
           go_animate = 'on';
           console.log('screen animation is ' + go_animate);
           $('.unknown_container').css({height: '1820vh'});
@@ -361,18 +363,18 @@ function RotateCarousel() {
 
           $('.animation_container').css({
             position: 'fixed',
-            top: '100px',
+            top: '130px',
             left: '40px'
           });
           $('.animation_text_container').css({
             // display: 'inline-block',
             position: 'fixed',
-            top: '  5px',
+            top: '  15px',
             left: '10px'
           });
 
           $('.animation_text_subcontainer').css({
-            top: -(animation_progress/6)
+            top: -(animation_progress/12.5)
           });
 
         }
@@ -405,7 +407,7 @@ function RotateCarousel() {
 
       animation_progress = scroll_position - 1115;
 
-      if (scroll_position < 1035) {
+      if (scroll_position < 1080) {
         go_animate = 'off';
 
         if ($(window).width() > 1679) {
@@ -458,7 +460,7 @@ function RotateCarousel() {
         }
       }
 
-      if (scroll_position > 1020 && scroll_position < 12030 && mobile_mode == 'off') {
+      if (scroll_position > 1080 && scroll_position < 12030 && mobile_mode == 'off') {
         go_animate = 'on';
         console.log('screen animation is ' + go_animate);
         $('.unknown_container').css({height: '1270vh'});
@@ -478,7 +480,7 @@ function RotateCarousel() {
           console.log('freeze frame');
 
           $('.animation_text_subcontainer').css({
-            top: -(animation_progress/6.5)
+            top: -(animation_progress/7)
           });
         }
         if ($(window).width() == 1679) {
@@ -495,7 +497,7 @@ function RotateCarousel() {
           console.log('freeze frame');
 
           $('.animation_text_subcontainer').css({
-            top: -(animation_progress/6.5)
+            top: -(animation_progress/7)
           });
         }
         if ($(window).width() == 1440) {
@@ -512,7 +514,7 @@ function RotateCarousel() {
           console.log('freeze frame');
 
           $('.animation_text_subcontainer').css({
-            top: -(animation_progress/6.5)
+            top: -(animation_progress/7)
           });
         }
         if ($(window).width() == 1280) {
@@ -529,7 +531,7 @@ function RotateCarousel() {
           console.log('freeze frame');
 
           $('.animation_text_subcontainer').css({
-            top: -(animation_progress/6.5)
+            top: -(animation_progress/7)
           });
         }
       }

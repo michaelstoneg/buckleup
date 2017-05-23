@@ -269,11 +269,19 @@ a {
   width: 290px;*/
   float: left;
   vertical-align: middle;
-  margin: 20px 200px 20px 200px;
+  margin: 15px 200px 0px 200px;
 }
 
-.bild_li, .cnet_li {
-  margin-bottom: 40px;
+.adjust_list_item {
+  margin-top: 20px;
+}
+
+.adjust_list_item_2 {
+  margin-top: 15px;
+}
+
+#gma_list_item {
+  margin-top:
 }
 
 #bustle_img, #maxim_img {
