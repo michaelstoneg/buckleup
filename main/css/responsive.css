@@ -696,6 +696,7 @@ right: 227px;
 
   .slick-slide {
     height: 110px !important;
+    padding: 5px !important;
   }
 
   .animation_text_container {
@@ -704,6 +705,10 @@ right: 227px;
     width: 395px;
     margin: 5px 0 10px 45px;
     /*border-radius: 20px;*/
+  }
+
+  .animation_text_subcontainer {
+    left: 10px;
   }
 
   .animation_text_subcontainer > .slick-list {

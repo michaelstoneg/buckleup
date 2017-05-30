@@ -7,7 +7,6 @@ $(document).ready(function(){
   var scroll_position = 0;
   var direction = undefined;
   var scroll_direction = undefined;
-  // var scroll_direction_prep = $(window).scrollTop();
   var media_scroll_position = 0;
   var go_animate = 'off';
   var animation_progress = undefined;
