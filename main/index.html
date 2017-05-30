@@ -10,6 +10,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
     <script type="text/javascript" src="js/app.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -31,7 +34,6 @@
           <ul class="burger_menu_list">
             <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_download"><p>Download</p></a></li>
             <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_features"><p>Features</p></a></li>
-            <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_press"><p>Press</p></a></li>
             <li class="burger_menu_list_item"><a href="blog/blog.html" class="burger_menu_link" id="burger_menu_link_blog"><p>Blog</p></a></li>
             <li class="burger_menu_list_item"><a href="https://airdates.breezy.hr/" class="burger_menu_link" id="burger_menu_link_jobs"><p>Jobs</p></a></li>
             <li class="burger_menu_list_item"><a href="t_and_c/pages-terms-conditions.html" class="burger_menu_link" id="burger_menu_link_tc" target="_blank"><p>T&C</p></a></li>
@@ -100,143 +102,121 @@
 
 
       <div class="container unknown_container">
-        <div class="animation_container">
-          <div class="animation_subcontainer">
-            <div class="animation_step_set">
-              <img src="images/screens/screen_animation/press_1.svg" alt="" class="animation_press_1 animation_step">
-              <img src="images/screens/screen_animation/press_2.svg" alt="" class="animation_press_2 animation_step">
-              <img src="images/screens/screen_animation/press_3.svg" alt="" class="animation_press_3 animation_step">
-              <img src="images/screens/screen_animation/press_4.svg" alt="" class="animation_press_4 animation_step">
-              <img src="images/screens/screen_animation/press_5.svg" alt="" class="animation_press_5 animation_step">
-              <img src="images/screens/screen_animation/press_6.png" alt="" class="animation_press_6 animation_step">
-              <div class="location_slide_line"></div>
-              <img src="images/screens/screen_animation/press_7.png" alt="" class="animation_press_7 animation_step">
-              <img src="images/screens/screen_animation/press_8.svg" alt="" class="animation_press_8 animation_step">
-              <img src="images/screens/screen_animation/press_9.svg" alt="" class="animation_press_9 animation_step">
-              <img src="images/screens/screen_animation/press_10.svg" alt="" class="animation_press_10 animation_step">
-            </div>
-            <div class="animation_step_set_2">
-              <img src="images/screens/screen_animation/press_11.svg" alt="" class="animation_press_11 animation_step">
-              <img src="images/screens/screen_animation/press_12.svg" alt="" class="animation_press_12 animation_step">
-              <img src="images/screens/screen_animation/press_13.svg" alt="" class="animation_press_13 animation_step">
-              <img src="images/screens/screen_animation/press_14.svg" alt="" class="animation_press_14 animation_step">
-              <img src="images/screens/screen_animation/press_15.svg" alt="" class="animation_press_15 animation_step">
-              <img src="images/screens/screen_animation/press_16.png" alt="" class="animation_press_16 animation_step">
-              <div class="animation_press_17 animation_step"></div>
-            </div>
-            <div class="animation_step_set_3">
-              <img src="images/screens/screen_animation/press_18.svg" alt="" class="animation_press_18 animation_step">
-              <img src="images/screens/screen_animation/press_19.svg" alt="" class="animation_press_19 animation_step">
-              <img src="images/screens/screen_animation/press_20.svg" alt="" class="animation_press_20 animation_step">
-              <img src="images/screens/screen_animation/press_21.svg" alt="" class="animation_press_21 animation_step">
-              <img src="images/screens/screen_animation/press_22.svg" alt="" class="animation_press_22 animation_step">
-              <div class="animation_press_23 animation_step"></div>
-            </div>
-            <img src="images/screens/screen_animation/animation_screen_2.png" alt="" class="animation_sheet">
-            <img src="images/screens/screen_animation/animation_screen_3.png" alt="" class="animation_sheet_2">
-            <img src="images/screens/screen_animation/animation_screen_4.png" alt="" class="animation_sheet_3">
-            <img src="images/screens/screen_animation/animation_screen_5.png" alt="" class="animation_sheet_4">
-            <img src="images/screens/screen_animation/animation_screen_6.png" alt="" class="animation_sheet_5">
-          </div>
-        </div>
+
+        <div class="animation_master_container">
+
 
         <div class="animation_text_container">
-          <div class="animation_text_subcontainer responsive_off">
-            <ul class="animation_text_list">
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading"><b>Easy Onboarding</b></h3>
-                <p class="animation_text">Be who you are and find what you're looking for. We don't discriminate against preferene or orientaion. We're about diversity no division.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <p class="animation_text">We're all about making connections. Use interests, date-type etc to find the perfect match.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Swipe & Browse</h3>
-                <p class="animation_text">Search by swiping or location. Discover and be discovered with our map feature that shows you who's nearby</p>
-              </li>
-              <li class="animation_text_list_item">
-                <p class="animation_text">Make an impression. Detailed profiles with social integration show your digital foorprint and tell the story of you.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Digital Nomads</h3>
-                <p class="animation_text">Date En-Route and On-the-Go. Track past trips and add new ones with ease by sending us your travel information.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <p class="animation_text">By seeing who you cross paths with, you never travel alone. Every part of the journey is a chance to make connections</p>
-              </li>
-              <li class="animation_text_list_item" id="animation_text_list_item_last">
-                <h3 class="animation_text_heading">Buckle Up!!</h3>
-                <p class="animation_text">Turning travel matches into real meetups.</p>
-              </li>
-            </ul>
-          </div>
 
-          <div class="animation_text_subcontainer tablet_on">
-            <ul class="animation_text_list">
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading"><b>Easy Onboarding</b></h3>
-                <p class="animation_text">Be who you are and find what you're looking for. We don't discriminate against preferene or orientaion. We're about diversity no division.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <p class="animation_text">We're all about making connections. Use interests, date-type etc to find the perfect match.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Swipe & Browse</h3>
-                <p class="animation_text">Search by swiping or location. Discover and be discovered with our map feature that shows you who's nearby</p>
-              </li>
-              <li class="animation_text_list_item">
-                <p class="animation_text">Make an impression. Detailed profiles with social integration show your digital foorprint and tell the story of you.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Digital Nomads</h3>
-                <p class="animation_text">Date En-Route and On-the-Go. Track past trips and add new ones with ease by sending us your travel information.</p>
-              </li>
-              <li class="animation_text_list_item">
-                <p class="animation_text">By seeing who you cross paths with, you never travel alone. Every part of the journey is a chance to make connections</p>
-              </li>
-              <li class="animation_text_list_item" id="animation_text_list_item_last">
-                <h3 class="animation_text_heading">Buckle Up!!</h3>
-                <p class="animation_text">Turning travel matches into real meetups.</p>
-              </li>
-            </ul>
-          </div>
 
-          <div class="animation_text_subcontainer responsive_on_2">
-            <ul class="animation_text_list">
-              <li class="animation_text_list_item">
+          <div class="animation_text_subcontainer mobile_off">
+              <div class="animation_text_list_item animation_text_1">
                 <h3 class="animation_text_heading"><b>No Taboos</b></h3>
-                <p class="animation_text">Test</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Easy Onboarding</h3>
-                <p class="animation_text">Test</p>
-              </li>
-              <li class="animation_text_list_item">
+                <p class="animation_text">Be who you are and find what you're looking for. We don't discriminate against preferene or orientaion. We're about diversity no division.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_2">
+                <h3 class="animation_text_heading"><b>Diverse Matches</b></h3>
+                <p class="animation_text">We're all about making connections. Use interests, date-type etc to find the perfect match.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_3">
                 <h3 class="animation_text_heading">Swipe & Browse</h3>
-                <p class="animation_text">Test</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Tell your Story</h3>
-                <p class="animation_text">Test</p>
-              </li>
-              <li class="animation_text_list_item">
+                <p class="animation_text">Search by swiping or location. Discover and be discovered with our map feature that shows you who's nearby</p>
+              </div>
+              <div class="animation_text_list_item animation_text_4">
+                <h3 class="animation_text_heading"><b>Express Yourself</b></h3>
+                <p class="animation_text">Make an impression. Detailed profiles with social integration show your digital foorprint and tell the story of you.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_5">
                 <h3 class="animation_text_heading">Digital Nomads</h3>
-                <p class="animation_text">Test</p>
-              </li>
-              <li class="animation_text_list_item">
-                <h3 class="animation_text_heading">Cross Paths</h3>
-                <p class="animation_text">Test</p>
-              </li>
-              <li class="animation_text_list_item" id="animation_text_list_item_last">
+                <p class="animation_text">Date En-Route and On-the-Go. Track past trips and add new ones with ease by sending us your travel information.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_6">
+                <h3 class="animation_text_heading"><b>Swap Candy Crush for Real Crushes</b></h3>
+                <p class="animation_text">By seeing who you cross paths with, you never travel alone. Every part of the journey is a chance to make connections</p>
+              </div>
+              <div class="animation_text_list_item animation_text_7" id="animation_text_list_item_last">
                 <h3 class="animation_text_heading">Buckle Up!!</h3>
-                <p class="animation_text">Test</p>
-              </li>
-            </ul>
+                <p class="animation_text">Turning travel matches into real meetups.</p>
+              </div>
+          </div>
+
+
+          <div class="animation_text_subcontainer mobile_on">
+              <div class="animation_text_list_item animation_text_1">
+                <h3 class="animation_text_heading"><b>No Taboos</b></h3>
+                <p class="animation_text">Be who you are and find what you're looking for.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_2">
+                <h3 class="animation_text_heading"><b>Diverse Matches</b></h3>
+                <p class="animation_text">We're all about making connections.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_3">
+                <h3 class="animation_text_heading">Swipe & Browse</h3>
+                <p class="animation_text">Search by swiping or Map location.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_4">
+                <h3 class="animation_text_heading"><b>Express Yourself</b></h3>
+                <p class="animation_text">Detailed profiles with social integration.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_5">
+                <h3 class="animation_text_heading">Digital Nomads</h3>
+                <p class="animation_text">Date En-Route and On-the-Go with trips feature.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_6">
+                <h3 class="animation_text_heading"><b>Never Travel Alone</b></h3>
+                <p class="animation_text">By seeing who share trips and cross paths with.</p>
+              </div>
+              <div class="animation_text_list_item animation_text_7" id="animation_text_list_item_last">
+                <h3 class="animation_text_heading">Buckle Up!!</h3>
+                <p class="animation_text">Turning travel matches into real meetups.</p>
+              </div>
           </div>
 
       </div>
 
+      <div class="animation_container">
+        <div class="animation_subcontainer">
+          <div class="animation_step_set">
+            <img src="images/screens/screen_animation/press_1.svg" alt="" class="animation_press_1 animation_step">
+            <img src="images/screens/screen_animation/press_2.svg" alt="" class="animation_press_2 animation_step">
+            <img src="images/screens/screen_animation/press_3.svg" alt="" class="animation_press_3 animation_step">
+            <img src="images/screens/screen_animation/press_4.svg" alt="" class="animation_press_4 animation_step">
+            <img src="images/screens/screen_animation/press_5.svg" alt="" class="animation_press_5 animation_step">
+            <img src="images/screens/screen_animation/press_6.png" alt="" class="animation_press_6 animation_step">
+            <div class="location_slide_line"></div>
+            <img src="images/screens/screen_animation/press_7.png" alt="" class="animation_press_7 animation_step">
+            <img src="images/screens/screen_animation/press_8.svg" alt="" class="animation_press_8 animation_step">
+            <img src="images/screens/screen_animation/press_9.svg" alt="" class="animation_press_9 animation_step">
+            <img src="images/screens/screen_animation/press_10.svg" alt="" class="animation_press_10 animation_step">
+          </div>
+          <div class="animation_step_set_2">
+            <img src="images/screens/screen_animation/press_11.svg" alt="" class="animation_press_11 animation_step">
+            <img src="images/screens/screen_animation/press_12.svg" alt="" class="animation_press_12 animation_step">
+            <img src="images/screens/screen_animation/press_13.svg" alt="" class="animation_press_13 animation_step">
+            <img src="images/screens/screen_animation/press_14.svg" alt="" class="animation_press_14 animation_step">
+            <img src="images/screens/screen_animation/press_15.svg" alt="" class="animation_press_15 animation_step">
+            <img src="images/screens/screen_animation/press_16.png" alt="" class="animation_press_16 animation_step">
+            <div class="animation_press_17 animation_step"></div>
+          </div>
+          <div class="animation_step_set_3">
+            <img src="images/screens/screen_animation/press_18.svg" alt="" class="animation_press_18 animation_step">
+            <img src="images/screens/screen_animation/press_19.svg" alt="" class="animation_press_19 animation_step">
+            <img src="images/screens/screen_animation/press_20.svg" alt="" class="animation_press_20 animation_step">
+            <img src="images/screens/screen_animation/press_21.svg" alt="" class="animation_press_21 animation_step">
+            <img src="images/screens/screen_animation/press_22.svg" alt="" class="animation_press_22 animation_step">
+            <div class="animation_press_23 animation_step"></div>
+          </div>
+          <img src="images/screens/screen_animation/animation_screen_2.png" alt="" class="animation_sheet">
+          <img src="images/screens/screen_animation/animation_screen_3.png" alt="" class="animation_sheet_2">
+          <img src="images/screens/screen_animation/animation_screen_4.png" alt="" class="animation_sheet_3">
+          <img src="images/screens/screen_animation/animation_screen_5.png" alt="" class="animation_sheet_4">
+          <img src="images/screens/screen_animation/animation_screen_6.png" alt="" class="animation_sheet_5">
+        </div>
+      </div>
+
     </div>
+
+  </div>
 
     <div class="container team_container responsive_off">
       <h1 class="team_header">Team</h1>
@@ -262,8 +242,6 @@
             <p class="team_text">CTO | Code Wizzard</p>
           </div>
         </li>
-      </ul>
-      <ul class="team_list_2">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
@@ -271,10 +249,12 @@
             <p class="team_text">Android Dev | Code Sniper</p>
           </div>
         </li>
+      </ul>
+      <ul class="team_list_2">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
-            <p class="team_text flag_poland">Marcin Skorek </p>
+            <p class="team_text flag_poland">Niki Izvorski </p>
             <p class="team_text">Back-end Dev | Key Master</p>
           </div>
         </li>
@@ -285,8 +265,6 @@
             <p class="team_text">iOS Dev | Swift Genius</p>
           </div>
         </li>
-      </ul>
-      <ul class="team_list_3">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
@@ -294,13 +272,6 @@
             <p class="team_text">Web Dev | Social Jedi</p>
           </div>
         </li>
-        <!-- <li class="team_list_item">
-          <div class="team_list_item_box">
-            <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
-            <p class="team_text flag_latvia">Maria Emberg </p>
-            <p class="team_text">iOS Designer | Miss Cookies</p>
-          </div>
-        </li> -->
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
@@ -308,6 +279,8 @@
             <p class="team_text">Android Designer | Beard & Bike</p>
           </div>
         </li>
+      </ul>
+      <ul class="team_list_3">
         <li class="team_list_item">
           <a href="#" class="new_team_link">
             <div class="team_list_item_box">
@@ -336,8 +309,6 @@
             <p class="team_text">Board Member | French Touch</p>
           </div>
         </li>
-      </ul>
-      <ul class="team_list_2">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
@@ -345,6 +316,8 @@
             <p class="team_text">CTO | Code Wizzard</p>
           </div>
         </li>
+      </ul>
+      <ul class="team_list_2">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
@@ -352,12 +325,10 @@
             <p class="team_text">Android Dev | Code Sniper</p>
           </div>
         </li>
-      </ul>
-      <ul class="team_list_3">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
-            <p class="team_text flag_poland">Marcin Skorek </p>
+            <p class="team_text flag_poland">Niki Izvorski </p>
             <p class="team_text">Back-end Dev | Key Master</p>
           </div>
         </li>
@@ -369,7 +340,7 @@
           </div>
         </li>
       </ul>
-      <ul class="team_list_4">
+      <ul class="team_list_3">
         <li class="team_list_item">
           <div class="team_list_item_box">
             <img src="images/logos/main_logo_white.svg" alt="" class="team_list_item_img">
@@ -384,8 +355,6 @@
             <p class="team_text">Android Designer | Beard & Bike</p>
           </div>
         </li>
-      </ul>
-      <ul class="team_list_5">
         <li class="team_list_item">
           <a href="#" class="new_team_link">
             <div class="team_list_item_box">
@@ -395,6 +364,10 @@
           </a>
         </li>
       </ul>
+      <!-- <ul class="team_list_4">
+      </ul>
+      <ul class="team_list_5">
+      </ul> -->
     </div>
 
       <div class="footer_bottom_subcontainer">
@@ -418,10 +391,16 @@
               <li class="footer_site_links_list_item"><a href="#" class="footer_subscribe_link" id="subscribe_press"><p class="footer_site_links_list_item_text">Press Kit</p></a></li>
             </ul>
             <ul class="footer_site_links_list address_ul">
-              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text">WeWork Chancery lane 14 Gray’s Inn Road WC1X 8HN - London</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">WeWork Chancery lane</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">14 Gray’s Inn Road</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">WC1X 8HN - London</p></li>
             </ul>
             <ul class="footer_site_links_list address_ul">
-              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text">WeWork Soho 154 Grand Street NY 10013 - New York</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">WeWork Soho</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">154 Grand Street NY</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">10013 - New York</p></li>
+            </ul>
+            <ul class="footer_site_links_list">
               <li class="footer_site_links_list_item"><a href="mailto:info@airdates.co" class="email_link"><p class="email">info@airdates.co</p></a></li>
             </ul>
             <ul class="footer_site_links_list footer_social_links_list">
