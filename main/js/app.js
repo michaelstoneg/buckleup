@@ -122,8 +122,6 @@ function RotateCarousel() {
 
 
 
-
-
       if ($(window).width() >= 1280 ) {
         console.log('laptop animation');
 
@@ -142,8 +140,8 @@ function RotateCarousel() {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
-          // var animation_container_adjust_1 = $('.main_container').height() / 12;
-          // console.log('animation container adjustment  ' + animation_container_adjust_1);
+          var animation_container_adjust_1 = $('.main_container').height() / 12;
+          console.log('animation container adjustment  ' + animation_container_adjust_1);
 
           animation_progress = (scroll_position - $(window).height())- 300;
           console.log('animation_progress  ' + animation_progress);
@@ -185,9 +183,6 @@ function RotateCarousel() {
         if (($(document).scrollTop() - 300) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
-
-          var animation_container_adjust_1 = $('.main_container').height() / 12;
-          console.log('animation container adjustment  ' + animation_container_adjust_1);
 
           animation_progress = (scroll_position - $(window).height())- 300;
           console.log('animation_progress  ' + animation_progress);
@@ -232,9 +227,6 @@ function RotateCarousel() {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
-          var animation_container_adjust_1 = $('.main_container').height() / 12;
-          console.log('animation container adjustment  ' + animation_container_adjust_1);
-
           animation_progress = (scroll_position - $(window).height())- 300;
           console.log('animation_progress  ' + animation_progress);
 
@@ -261,87 +253,14 @@ function RotateCarousel() {
       // if (scroll_position < 869) {
       //   $('.burger_menu_img').attr('src', 'images/icons/menu_4_white.svg')
       // };
-      // if (scroll_position > 869) {
-      //   $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      // };
-      // if (scroll_position > 1018) {
-      //   $('.burger_menu_img').attr('src', 'images/icons/menu_4_green.svg')
-      // };
-      // if (scroll_position > 1910) {
-      //   $('.burger_menu_img').attr('src', 'images/icons/menu_4_blue.svg')
-      // };
-      // if (scroll_position > 9430) {
-      //   $('.burger_menu_img').attr('src', 'images/icons/menu_4_yellow.svg')
-      // };
-      // if (scroll_position > 10613) {
-      //   $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      // }
-
 
       // if (small_mobile_mode === 'on' && mobile_mode === 'off' && tablet_mode === 'off') {
-      //   if (scroll_position > 625) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      //     console.log('change to pink');
-      //   };
-      //   if (scroll_position > 723) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_green.svg')
-      //     console.log('change to green');
-      //   };
-      //   if (scroll_position > 1757) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_blue.svg')
-      //     console.log('change to blue');
-      //   };
-      //   if (scroll_position > 2424) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_yellow.svg')
-      //     console.log('change to yellow');
-      //   };
-      //   if (scroll_position > 3858) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      //     console.log('change to pink');
-      //   };
       // };
-      //
       //
       // if (mobile_mode === 'on' && tablet_mode === 'off') {
-      //   if (scroll_position > 693) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      //     console.log('change to pink');
-      //   };
-      //   if (scroll_position > 792) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_green.svg')
-      //     console.log('change to green');
-      //   };
-      //   if (scroll_position > 1870) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_blue.svg')
-      //     console.log('change to blue');
-      //   };
-      //   if (scroll_position > 2606) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_yellow.svg')
-      //     console.log('change to yellow');
-      //   };
-      //   if (scroll_position > 4037) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      //     console.log('change to pink');
-      //   };
       // };
       //
-      //
       // if (tablet_mode === 'on') {
-      //   if (scroll_position > 945) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      //   };
-      //   if (scroll_position > 1094) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_green.svg')
-      //   };
-      //   if (scroll_position > 2582) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_blue.svg')
-      //   };
-      //   if (scroll_position > 3607) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_yellow.svg')
-      //   };
-      //   if (scroll_position > 5097) {
-      //     $('.burger_menu_img').attr('src', 'images/icons/menu_4_pink.svg')
-      //   };
       // };
 
       if (scroll_position >= 100 ) {
@@ -356,114 +275,6 @@ function RotateCarousel() {
           position: 'sticky'
         });
       }
-
-
-      // if ($(window).height() == 1024 && $(window).width() == 768 ) {
-      //   console.log('tablet animation');
-      //   animation_progress = scroll_position - 1300;
-      //
-      //
-      //   if (scroll_position < 1100) {
-      //     go_animate = 'off';
-      //
-      //     $('.animation_master_container').css({
-      //       position: 'relative',
-      //       top: '200px'
-      //     });
-      //   }
-      //
-      //
-      //   if (scroll_position > 1300 && scroll_position < 14030 && mobile_mode == 'off') {
-      //     go_animate = 'on';
-      //     console.log('screen animation is ' + go_animate);
-      //     // $('.unknown_container').css({height: '1350vh'});
-      //     console.log('enlarging section');
-      //
-      //     $('.animation_master_container').css({
-      //       position: 'fixed',
-      //       top: '100px'
-      //     });
-      //
-      //   }
-      //
-      //
-      //   if (scroll_position > 14030 ) {
-      //     go_animate = 'off';
-      //     console.log('screen animation is ' + go_animate);
-      //
-      //     $('.animation_master_container').css({
-      //       position: 'relative',
-      //       top: '12950px'
-      //     });
-      //   }
-      //
-      // }
-
-
-
-      // if ($(window).height() <= 750 && $(window).width() <= 450 ) {
-      //   console.log('phone animation');
-      //   animation_progress = scroll_position - 830;
-      //
-      //
-      //   if (scroll_position < 800) {
-      //     go_animate = 'off';
-      //
-      //     $('.animation_container').css({
-      //       position: 'relative',
-      //       top: '80px'
-      //     });
-      //     $('.animation_text_container').css({
-      //       position: 'relative',
-      //       top: '120px'
-      //     });
-      //   }
-      //
-      //
-      //   if (scroll_position > 800 && scroll_position < 13350 && mobile_mode == 'on') {
-      //     go_animate = 'on';
-      //     console.log('screen animation is ' + go_animate);
-      //     // $('.unknown_container').css({height: '1820vh'});
-      //     console.log('enlarging section');
-      //
-      //     $('.animation_container').css({
-      //       position: 'fixed',
-      //       top: '130px'
-      //     });
-      //     $('.animation_text_container').css({
-      //       position: 'fixed',
-      //       top: '  15px'
-      //     });
-      //
-      //     $('.animation_text_subcontainer').css({
-      //       top: -(animation_progress/12.5)
-      //     });
-      //
-      //   }
-      //
-      //
-      //   if (scroll_position > 13350 ) {
-      //     go_animate = 'off';
-      //     console.log('screen animation is ' + go_animate);
-      //
-      //     $('.animation_container').css({
-      //       position: 'relative',
-      //       top: '12550px'
-      //     });
-      //     $('.animation_text_container').css({
-      //       display: 'none'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_text_container').css({
-      //       display: 'inline-block'
-      //     })
-      //   }
-      //
-      // }
-
-
-
 
 
 
