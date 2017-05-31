@@ -1,10 +1,9 @@
 
 
-
 $(document).ready(function(){
   console.log("It's Aliiive!!");
 
-  // var scroll_position = 0;
+  var scroll_position = 0;
   var scroll_position_a = 0;
   var direction = undefined;
   var scroll_direction = undefined;
@@ -122,10 +121,8 @@ function RotateCarousel() {
       scroll_position_a = scroll_position_b;
 
 
-
       if ($(window).width() >= 1280 ) {
         console.log('laptop animation');
-
 
         if (($(document).scrollTop()-300) < $(window).height() ) {
           console.log('Too soon!!!');
@@ -169,7 +166,6 @@ function RotateCarousel() {
       if ($(window).height() == 1024 && $(window).width() == 768 ) {
         console.log('tablet animation');
 
-
         if (($(document).scrollTop() - 100) < $(window).height() ) {
           console.log('Hooldd!!!');
           go_animate = 'off';
@@ -178,7 +174,6 @@ function RotateCarousel() {
             position: 'relative',
             top: '400px'
           });
-
         }
 
         if (($(document).scrollTop() - 300) > $(window).height() ) {
@@ -202,16 +197,12 @@ function RotateCarousel() {
             position: 'relative',
             top: '11146px'
           });
-
         }
-
       }
 
 
-
-      if ($(window).height() <= 736 && $(window).width() <= 414 ) {
-        console.log('tablet animation');
-
+      if ($(window).height() == 736 && $(window).width() == 414 ) {
+        console.log('mobile animation');
 
         if (($(document).scrollTop() - 200) < $(window).height() ) {
           console.log('Hooldd!!!');
@@ -221,7 +212,6 @@ function RotateCarousel() {
             position: 'relative',
             top: '200px'
           });
-
         }
 
         if (($(document).scrollTop() - 300) > $(window).height() ) {
@@ -245,9 +235,44 @@ function RotateCarousel() {
             position: 'relative',
             top: '11146px'
           });
+        }
+      }
 
+      if ($(window).height() <= 680 && $(window).width() <= 375 ) {
+        console.log('small mobile animation');
+
+        if (($(document).scrollTop() - 100) < $(window).height() ) {
+          console.log('Hooldd!!!');
+          go_animate = 'off';
+
+          $('.animation_master_container').css({
+            position: 'relative',
+            top: '100px'
+          });
         }
 
+        if (($(document).scrollTop() - 300) > $(window).height() ) {
+          console.log('Nowwww!!!');
+          go_animate = 'on';
+
+          animation_progress = (scroll_position - $(window).height())- 300;
+          console.log('animation_progress  ' + animation_progress);
+
+          $('.animation_master_container').css({
+            position: 'fixed',
+            top: '-15px'
+          });
+        }
+
+        if (animation_progress > 10950) {
+          go_animate = 'off'
+          console.log('animation is ' + go_animate);
+
+          $('.animation_master_container').css({
+            position: 'relative',
+            top: '11146px'
+          });
+        }
       }
 
 
@@ -264,6 +289,7 @@ function RotateCarousel() {
       // if (tablet_mode === 'on') {
       // };
 
+
       if (scroll_position >= 100 ) {
         $('.burger_menu_img_wrapper').css({
           position: 'fixed',
@@ -278,10 +304,8 @@ function RotateCarousel() {
       }
 
 
-
       if (go_animate  == 'on') {
         console.log('animating...');
-
 
         if (animation_progress < 1230) {
           $('.animation_text_subcontainer').slick('slickGoTo', '0');
@@ -420,13 +444,8 @@ function RotateCarousel() {
           $('.animation_sheet').fadeOut(250);
           $('.animation_step_set').fadeOut(250);
           $('.animation_sheet_2').fadeIn(250);
-
-
           //text change 2
           $('.animation_text_subcontainer').slick('slickGoTo', '2');
-
-
-
         }
         else if (animation_progress < 3000){
           $('.animation_sheet').fadeIn(250);
@@ -508,18 +527,8 @@ function RotateCarousel() {
           $('.animation_press_14').css({display: 'none'});
           $('.animation_press_15').css({display: 'none'});
           $('.animation_sheet_4').slideDown(250);
-
-
           //txt change 3
-          if (direction == 'up') {
-            console.log('previous txt slide');
-          } else if (direction == 'down') {
-            console.log('next carousel slide');
-          }
           $('.animation_text_subcontainer').slick('slickGoTo', '3');
-
-
-
         }
         else if (animation_progress < 4000) {
           $('.animation_sheet_4').slideUp(250);
@@ -565,11 +574,6 @@ function RotateCarousel() {
 
         if (animation_progress > 6200 && animation_progress < 9085) {
           //txt change 4
-          if (direction == 'up') {
-            console.log('previous txt slide');
-          } else if (direction == 'down') {
-            console.log('next carousel slide');
-          }
           $('.animation_text_subcontainer').slick('slickGoTo', '4');
         }
 
@@ -640,16 +644,10 @@ function RotateCarousel() {
           $('.animation_step_set_3').css({
             left: -((animation_progress - 8800) + 559)
           });
-
         }
 
         if (animation_progress > 9083 && animation_progress < 10000 ) {
           //txt change 5
-          if (direction == 'up') {
-            console.log('previous txt slide');
-          } else if (direction == 'down') {
-            console.log('next carousel slide');
-          }
           $('.animation_text_subcontainer').slick('slickGoTo', '5');
         }
 
@@ -658,7 +656,6 @@ function RotateCarousel() {
           $('.animation_sheet_5').css({
             top: -(animation_progress - 9400)
           });
-
         }
 
         if (animation_progress > 10600) {
@@ -670,9 +667,7 @@ function RotateCarousel() {
           }
           $('.animation_text_subcontainer').slick('slickGoTo', '6');
         }
-
       }
-
 
   });
 
