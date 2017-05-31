@@ -289,10 +289,9 @@ function RotateCarousel() {
 
         if (animation_progress > 50 && animation_progress < 1230) {
           console.log('light up icon 1');
-          TweenMax.to($('.animation_press_1'), 0.1, {display: 'inline-block'});
-          // $('.animation_press_1').css({
-          //   display: 'inline-block',
-          //   animation: 'bulge .1s linear'});
+          $('.animation_press_1').css({
+            display: 'inline-block',
+            animation: 'bulge .1s linear'});
         }
         else {
           $('.animation_press_1').css({display: 'none'});
