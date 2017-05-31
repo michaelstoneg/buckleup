@@ -4,7 +4,8 @@
 $(document).ready(function(){
   console.log("It's Aliiive!!");
 
-  var scroll_position = 0;
+  // var scroll_position = 0;
+  var scroll_position_a = 0;
   var direction = undefined;
   var scroll_direction = undefined;
   var media_scroll_position = 0;
@@ -110,15 +111,15 @@ function RotateCarousel() {
       scroll_position = $(window).scrollTop();
       console.log("scroll position: " + scroll_position);
 
-      var scroll_position_2 = $(this).scrollTop();
-      if (scroll_position_2 > scroll_position) {
+      var scroll_position_b = $(this).scrollTop();
+      if (scroll_position_b > scroll_position_a) {
         console.log('going down');
         scroll_direction = 'down';
       } else {
         scroll_direction = 'up';
         console.log('going up');
       }
-      scroll_position = scroll_position_2;
+      scroll_position_a = scroll_position_b;
 
 
 
@@ -288,13 +289,15 @@ function RotateCarousel() {
 
         if (animation_progress > 50 && animation_progress < 1230) {
           console.log('light up icon 1');
-          $('.animation_press_1').css({
-            display: 'inline-block',
-            animation: 'bulge .1s linear'});
+          TweenMax.to($('.animation_press_1'), 0.1, {display: 'inline-block'});
+          // $('.animation_press_1').css({
+          //   display: 'inline-block',
+          //   animation: 'bulge .1s linear'});
         }
         else {
           $('.animation_press_1').css({display: 'none'});
         }
+
 
         if (animation_progress > 80 && animation_progress < 1230) {
           console.log('light up icon 2');
