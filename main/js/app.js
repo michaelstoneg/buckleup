@@ -488,6 +488,10 @@ function RotateCarousel() {
           $('.animation_press_13').css({display: 'inline-block'});
         }
 
+        if (animation_progress < 3500 ) {
+            $('.animation_press_15').css({display: 'none'});
+        }
+
         if (animation_progress > 3800 && animation_progress < 4000) {
           console.log('light up icon 16');
           $('.animation_press_16').css({
@@ -696,37 +700,30 @@ function RotateCarousel() {
 
   $('#footer_site_links_features').click(function () {
     console.log('telporting to features');
-    // window.moveTo(947, 0);
     $('html, body').animate({
-      scrollTop: 950,
-      scrollLeft: 0
+      scrollTop: $('.unknown_container').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
     }, 800);
   });
 
   $('#burger_menu_link_features').click(function () {
     console.log('telporting to features');
-    // window.moveTo(947, 0);
     $('html, body').animate({
-      scrollTop: 950,
-      scrollLeft: 0
+      scrollTop: $('.unknown_container').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
     }, 800);
   });
 
 
   $('#burger_menu_link_contact').click(function () {
     console.log('telporting to contact');
-    // window.moveTo(4199, 0);
     $('html, body').animate({
-      scrollTop: 16030,
-      scrollLeft: 0
+      scrollTop: $('.footer_bottom_subcontainer').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
     }, 800);
   });
+
   $('#footer_site_links_contact').click(function () {
     console.log('telporting to contact');
-    // window.moveTo(4199, 0);
     $('html, body').animate({
-      scrollTop: 16030,
-      scrollLeft: 0
+      scrollTop: $('.footer_bottom_subcontainer').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
     }, 800);
   });
 
