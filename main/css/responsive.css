@@ -50,7 +50,7 @@
   }
 
   .animation_master_container {
-    left: 150px;
+    left: 50px;
 
   }
 
@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 1280px) {
+
+  .main_tagline {
+    margin-bottom: 20px;
+  }
 
   .team_list_item_box {
     margin: 0 40px 0 40px;
@@ -96,7 +100,7 @@
   }
 
   .animation_master_container {
-    left: 100px;
+    left: 00px;
   }
 
   .animation_container {
@@ -314,9 +318,9 @@
   }
 
   .burger_menu_img_wrapper {
-    top: 10px;
-    left: 15px;
-    position: sticky;
+    /*top: 10px;
+    left: 15px;*/
+    /*position: sticky;*/
   }
 
   .main_logo_2 {
@@ -347,6 +351,7 @@
     position: relative;
     top: 200px;
     left: 0px;
+    margin: 0px;
   }
 
   .animation_container {
@@ -434,14 +439,15 @@
 
   .animation_text_container {
     /*background-color: rgba(0,0,0,0.5);*/
+    text-align: center;
     height: 110px;
     width: 395px;
-    margin: 5px 0 10px 45px;
+    margin: 5px 0 10px 20px;
     /*border-radius: 20px;*/
   }
 
   .animation_text_subcontainer {
-    left: 10px;
+    left: 0px;
   }
 
   .animation_text_subcontainer > .slick-list {
@@ -634,6 +640,10 @@
 
 @media (max-width: 375px) {
 
+  .main_logo_2 {
+    width: 330px;
+  }
+
   #download_badge_1 {
     margin: 0 30px 0 0;
   }
@@ -666,8 +676,18 @@
     margin: 0 40px 0 0;
   }
 
+  .slick-slide {
+    height: 110px !important;
+    padding: 5px !important;
+  }
+
+  .animation_text_subcontainer {
+    left: -5px;
+    top: 20px;
+  }
+
   .animation_text_container {
-    margin: 5px 0 0 35px;
+    margin: 5px 0 0 15px;
   }
 
   .animation_text_subcontainer > .slick-list {
@@ -676,6 +696,11 @@
 
   .animation_text_heading {
     margin: 0px;
+  }
+
+  .animation_text {
+    font-size: 14px;
+    margin: 0;
   }
 
   .animation_container {
@@ -721,6 +746,29 @@
 
   .copyright_text {
     /*margin: 60px 0 0 0;*/
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .animation_container {
+    margin: 0 15px 0 10px;
+  }
+
+  .animation_text_subcontainer {
+    left: -5px;
+    top: 35px;
+  }
+
+  .slick-slide {
+    height: 90px !important;
+    width: 330px !important;
+    padding: 5px !important;
+  }
+
+  .animation_text_heading {
+    font-size: 20px;
   }
 
 }

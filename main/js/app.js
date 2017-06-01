@@ -120,6 +120,7 @@ function RotateCarousel() {
       scroll_position_a = scroll_position_b;
 
 
+
       if (scroll_position >= 100 ) {
         $('.burger_menu_img_wrapper').css({
           position: 'fixed',
@@ -132,6 +133,8 @@ function RotateCarousel() {
           position: 'sticky'
         });
       }
+
+
 
 
       if ($(window).width() >= 1280 ) {
@@ -214,7 +217,8 @@ function RotateCarousel() {
       }
 
 
-      if ($(window).height() == 736 && $(window).width() == 414 ) {
+      // if ($(window).height() == 736 && $(window).width() == 414 ) {
+      if (($(window).height() == 736 || $(window).height() == 731) && ($(window).width() == 414 || $(window).width() == 411 )) {
         console.log('mobile animation');
 
         if (($(document).scrollTop() - 200) < $(window).height() ) {
@@ -264,16 +268,16 @@ function RotateCarousel() {
           });
         }
 
-        if (($(document).scrollTop() - 300) > $(window).height() ) {
+        if (($(document).scrollTop() - 200) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
-          animation_progress = (scroll_position - $(window).height())- 300;
+          animation_progress = (scroll_position - $(window).height())- 200;
           console.log('animation_progress  ' + animation_progress);
 
           $('.animation_master_container').css({
             position: 'fixed',
-            top: '-15px'
+            top: '-25px'
           });
         }
 
@@ -287,6 +291,46 @@ function RotateCarousel() {
           });
         }
       }
+
+
+      if ($(window).height() <= 640 && $(window).width() <= 360 ) {
+        console.log('small mobile animation 2');
+
+        if (($(document).scrollTop() - 100) < $(window).height() ) {
+          console.log('Hooldd!!!');
+          go_animate = 'off';
+
+          $('.animation_master_container').css({
+            position: 'relative',
+            top: '100px'
+          });
+        }
+
+        if (($(document).scrollTop() - 300) > $(window).height() ) {
+          console.log('Nowwww!!!');
+          go_animate = 'on';
+
+          animation_progress = (scroll_position - $(window).height())- 300;
+          console.log('animation_progress  ' + animation_progress);
+
+          $('.animation_master_container').css({
+            position: 'fixed',
+            top: '-30px'
+          });
+        }
+
+        if (animation_progress > 10950) {
+          go_animate = 'off'
+          console.log('animation is ' + go_animate);
+
+          $('.animation_master_container').css({
+            position: 'relative',
+            top: '11146px'
+          });
+        }
+      }
+
+
 
 
       if (go_animate  == 'on') {
@@ -563,7 +607,7 @@ function RotateCarousel() {
           console.log('animation sheet 4 is out of horizontal alignment');
           $('.animation_sheet_4').css({left: -280});
         }
-        if (animation_progress > 4880 && animation_progress < 5100 && $('.animation_sheet_4').css('top') != -280 && scroll_direction == 'down') {
+        if (animation_progress > 4880 && animation_progress < 5100 && $('.animation_sheet_4').css('top') != -280 && scroll_direction == 'up') {
           console.log('animation sheet 4 is out of vertical alignment');
           $('.animation_sheet_4').css({top: 0});
         }

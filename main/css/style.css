@@ -24,7 +24,7 @@ a {
 
 .burger_menu_img_wrapper {
   /*position: fixed;*/
-  position: sticky;
+  /*position: sticky;*/
   /*position: absolute;*/
   display: inline-block;
   top: 15px;
@@ -43,7 +43,7 @@ a {
 
 .burger_menu_wrapper {
   /*background-color: rgba(0,0,0,0.25);*/
-  position: fixed;
+  /*position: fixed;*/
   top: 10px;
   left: 18px;
   display: inline-block !important;
@@ -473,6 +473,7 @@ a {
 
 .animation_master_container {
   /*border: 2px solid black;*/
+  margin-left: 100px;
   width: 1400px;
   height: 700px;
   /*position: relative;*/
@@ -824,7 +825,43 @@ a {
   to {transform: scale(3,3);}
 }
 
+@-webkit-keyframes bulge {
+  from {transform: scale(1,1);}
+  to {transform: scale(3,3);}
+}
+
+@-moz-keyframes bulge {
+  from {transform: scale(1,1);}
+  to {transform: scale(3,3);}
+}
+
+@-ms-keyframes bulge {
+  from {transform: scale(1,1);}
+  to {transform: scale(3,3);}
+}
+
 @keyframes wiggle {
+  0% {transform: rotate(0deg);}
+  33% {transform: rotate(45deg);}
+  66% {transform: rotate(-45deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes wiggle {
+  0% {transform: rotate(0deg);}
+  33% {transform: rotate(45deg);}
+  66% {transform: rotate(-45deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@-moz-keyframes wiggle {
+  0% {transform: rotate(0deg);}
+  33% {transform: rotate(45deg);}
+  66% {transform: rotate(-45deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
   0% {transform: rotate(0deg);}
   33% {transform: rotate(45deg);}
   66% {transform: rotate(-45deg);}
