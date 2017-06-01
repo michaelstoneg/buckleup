@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 setTimeout(RotateCarousel, 1000);
 function RotateCarousel() {
-    $(".media_scroll_list li:first-child").animate({ marginLeft: -440 }, 8000, 'linear', function () {
+    $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 10000, 'linear', function () {
         $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
         $(".media_scroll_list li:last-child").css({marginLeft: '0'});
         RotateCarousel();

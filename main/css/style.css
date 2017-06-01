@@ -157,7 +157,9 @@ a {
 .media_scroll_list_item {
   float: left;
   vertical-align: middle;
-  margin: 15px 200px 0px 200px;
+  width: 500px;
+  margin: 15px 0px 0px 0px;
+  text-align: center;
 }
 
 .adjust_list_item {
@@ -188,12 +190,16 @@ a {
 
 #sun_img {
   height: 80px;
-  width: 260px;
+  width: 250px;
 }
 
 #mashable_img {
-  height: 80px;
+  height: 70px;
   width: 290px;
+}
+
+#maxim_img {
+  height: 70px
 }
 
 #gma_img {
@@ -403,7 +409,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block;
+  display: block;
   border-top: 1px solid rgba(225,225,225,.3);
   border-bottom: 1px solid rgba(225,225,225,.3);
 }
