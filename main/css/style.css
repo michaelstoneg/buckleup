@@ -20,7 +20,7 @@ a {
 
 .burger_menu_img_wrapper {
   /*position: fixed;*/
-  /*position: sticky;*/
+  position: sticky;
   /*position: absolute;*/
   display: inline-block;
   top: 15px;
@@ -48,6 +48,9 @@ a {
 
 .burger_menu_list {
   display: none;
+  position: fixed;
+  top: 10px;
+  left: 15px;
   list-style: none;
   width: 160px;
   height: 320px;

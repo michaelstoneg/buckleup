@@ -96,20 +96,21 @@ $(document).ready(function(){
 setTimeout(RotateCarousel, 1000);
 function RotateCarousel() {
 
-  if ($(window).width() > 768) {
-    $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 10000, 'linear', function () {
+  // if ($(window).width() > 768) {
+  //   $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 10000, 'linear', function () {
+  //       $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
+  //       $(".media_scroll_list li:last-child").css({marginLeft: '0'});
+  //       RotateCarousel();
+  //   });
+  // }
+  // else
+  // {
+    $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 8000, 'linear', function () {
         $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
         $(".media_scroll_list li:last-child").css({marginLeft: '0'});
         RotateCarousel();
     });
-  }
-  else {
-    $(".media_scroll_list li:first-child").animate({ marginLeft: -100 }, 7000, 'linear', function () {
-        $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
-        $(".media_scroll_list li:last-child").css({marginLeft: '0'});
-        RotateCarousel();
-    });
-  }
+  // }
 
 }
 
@@ -132,7 +133,7 @@ function RotateCarousel() {
 
 
 
-      if (scroll_position >= 100 ) {
+      if (scroll_position >= 50 ) {
         $('.burger_menu_img_wrapper').css({
           position: 'fixed',
           top: '10px',

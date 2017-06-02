@@ -144,7 +144,7 @@
   .media_scroll_list_item {
     /*vertical-align: middle;*/
     margin: 15px 120px 15px 120px;
-    width: 100px;
+    /*width: 100px;*/
   }
 
   #bustle_img, #maxim_img {
@@ -771,6 +771,20 @@
 
   .animation_text_heading {
     font-size: 20px;
+  }
+
+  .team_list_item_box {
+    margin: 5px 0 5px 0;
+    width: 110px;
+  }
+
+  .footer_site_links_list_item_text {
+    font-size: 9px;
+    margin: 6px 0 10px 0;
+  }
+
+  .footer_partners_img {
+    margin: 5px;
   }
 
 }
