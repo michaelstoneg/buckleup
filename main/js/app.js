@@ -92,6 +92,10 @@ $(document).ready(function(){
     $(".burger_menu_list").slideToggle(1000);
   });
 
+  if ($(window).width() >= 2560) {
+    console.log('0 - 5000 real quick!!!!');
+  }
+
 
 setTimeout(RotateCarousel, 1000);
 function RotateCarousel() {

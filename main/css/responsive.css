@@ -788,3 +788,35 @@
   }
 
 }
+
+@media (min-width: 2560px) {
+
+  .main_logo_2 {
+    margin: 100px auto;
+  }
+
+  .main_tagline {
+    margin: 100px auto 100px;
+  }
+
+  .animation_master_container {
+    left: 500px;
+  }
+
+  .team_list_item_box {
+    margin: 0 200px 0 200px;
+  }
+
+  .team_list_1, .team_list_2, .team_list_3 {
+    margin: 60px 0 60px 0;
+  }
+
+  .footer_partners_img {
+    margin: 10px 150px 10px 150px;
+  }
+
+  .footer_social_links_list {
+    right: -800px;
+  }
+
+}
