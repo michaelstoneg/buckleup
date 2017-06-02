@@ -95,11 +95,22 @@ $(document).ready(function(){
 
 setTimeout(RotateCarousel, 1000);
 function RotateCarousel() {
+
+  if ($(window).width() > 768) {
     $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 10000, 'linear', function () {
         $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
         $(".media_scroll_list li:last-child").css({marginLeft: '0'});
         RotateCarousel();
     });
+  }
+  else {
+    $(".media_scroll_list li:first-child").animate({ marginLeft: -100 }, 7000, 'linear', function () {
+        $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
+        $(".media_scroll_list li:last-child").css({marginLeft: '0'});
+        RotateCarousel();
+    });
+  }
+
 }
 
 
@@ -344,7 +355,8 @@ function RotateCarousel() {
           console.log('light up icon 1');
           $('.animation_press_1').css({
             display: 'inline-block',
-            animation: 'bulge .1s linear'});
+            animation: 'bulge .1s linear'
+          });
         }
         else {
           $('.animation_press_1').css({display: 'none'});
@@ -355,7 +367,8 @@ function RotateCarousel() {
           console.log('light up icon 2');
           $('.animation_press_2').css({
             display: 'inline-block',
-            animation: 'bulge .1s linear'});
+            animation: 'bulge .1s linear'
+          });
         }
         else {
           $('.animation_press_2').css({display: 'none'});
@@ -365,7 +378,8 @@ function RotateCarousel() {
           console.log('light up icon 3');
           $('.animation_press_3').css({
             display: 'inline-block',
-            animation: 'bulge .1s linear'});
+            animation: 'bulge .1s linear'
+          });
           $('.animation_press_2').css({display: 'none'});
         }
         else {
@@ -376,7 +390,8 @@ function RotateCarousel() {
           console.log('light up icon 4');
           $('.animation_press_4').css({
             display: 'inline-block',
-            animation: 'bulge .1s linear'});
+            animation: 'bulge .1s linear'
+          });
         }
         else {
           $('.animation_press_4').css({display: 'none'});
@@ -386,7 +401,8 @@ function RotateCarousel() {
           console.log('light up icon 5');
           $('.animation_press_5').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_5').css({display: 'none'});
@@ -426,7 +442,8 @@ function RotateCarousel() {
           console.log('light up icon 6');
           $('.animation_press_6').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
           $('.location_slide_line').css({display: 'inline-block'})
         }
         else {
@@ -438,7 +455,8 @@ function RotateCarousel() {
           console.log('light up icon 7');
           $('.animation_press_7').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_7').css({display: 'none'});
@@ -448,7 +466,8 @@ function RotateCarousel() {
           console.log('light up icon 8');
           $('.animation_press_8').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_8').css({display: 'none'});
@@ -458,7 +477,8 @@ function RotateCarousel() {
           console.log('light up icon 9');
           $('.animation_press_9').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_9').css({display: 'none'});
@@ -475,7 +495,8 @@ function RotateCarousel() {
           console.log('light up icon 10');
           $('.animation_press_10').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_10').css({display: 'none'});
@@ -556,7 +577,8 @@ function RotateCarousel() {
           console.log('light up icon 16');
           $('.animation_press_16').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_16').css({display: 'none'});
@@ -580,7 +602,8 @@ function RotateCarousel() {
           console.log('pressing the screen... light up icon 17');
           $('.animation_press_17').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_17').css({display: 'none'});
@@ -630,7 +653,8 @@ function RotateCarousel() {
           $('.animation_press_18').css({display: 'inline-block'});
           $('.animation_press_19').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear',
+            animation: 'bulge .15s linear'
+            ,
           });
         }
         else {
@@ -661,10 +685,12 @@ function RotateCarousel() {
           console.log('light up icon 20 & 21');
           $('.animation_press_20').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
           $('.animation_press_21').css({
             display: 'inline-block',
             animation: 'bulge .15s linear'
+
           });
 
             $('.animation_press_18').css({display: 'none'});
@@ -702,7 +728,8 @@ function RotateCarousel() {
           console.log('light up icon 22');
           $('.animation_press_22').css({
             display: 'inline-block',
-            animation: 'bulge .15s linear'});
+            animation: 'bulge .15s linear'
+          });
         }
         else {
           $('.animation_press_22').css({display: 'none'});

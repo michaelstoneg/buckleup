@@ -25,6 +25,7 @@
 
   .footer_site_links_list {
     margin: 10px 75px 0 0;
+    right: -200px;
   }
 
   .footer_partners_img {
@@ -143,6 +144,7 @@
   .media_scroll_list_item {
     /*vertical-align: middle;*/
     margin: 15px 120px 15px 120px;
+    width: 100px;
   }
 
   #bustle_img, #maxim_img {
@@ -236,11 +238,11 @@
   }
 
   .footer_bottom_subcontainer {
-    height: 290px;
+    height: 300px;
   }
 
   .footer_site_links {
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 20px;
   }
 
   .footer_site_links_list {
@@ -263,7 +265,7 @@
   .footer_social_links_list {
     position: relative;
     right: -550px;
-    top: -50px;
+    top: -130px;
   }
 
   .footer_social_link_img {
@@ -516,7 +518,7 @@
   }
 
   .footer_bottom_subcontainer {
-    height: 230px;
+    height: 220px;
   }
 
   .footer_site_links {
@@ -586,7 +588,7 @@
 
   .footer_social_links_list {
     position: relative;
-    right: -160px;
+    right: -115px;
     top: 0px;
   }
 
@@ -712,7 +714,7 @@
   }
 
   .footer_bottom_subcontainer {
-    height: 220px;
+    height: 210px;
   }
 
   .footer_site_links {
@@ -737,7 +739,7 @@
   }
 
   .footer_social_links_list {
-    right: -140px;
+    right: -110px;
   }
 
   .footer_partners_img {
