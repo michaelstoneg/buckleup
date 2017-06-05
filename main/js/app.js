@@ -326,15 +326,15 @@ function RotateCarousel() {
 
           $('.animation_master_container').css({
             position: 'relative',
-            top: '100px'
+            top: '130px'
           });
         }
 
-        if (($(document).scrollTop() - 300) > $(window).height() ) {
+        if (($(document).scrollTop() - 150) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
-          animation_progress = (scroll_position - $(window).height())- 300;
+          animation_progress = (scroll_position - $(window).height())- 150;
           console.log('animation_progress  ' + animation_progress);
 
           $('.animation_master_container').css({
