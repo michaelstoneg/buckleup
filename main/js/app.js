@@ -137,18 +137,18 @@ function RotateCarousel() {
 
 
 
-      if (scroll_position >= 50 ) {
-        $('.burger_menu_img_wrapper').css({
-          position: 'fixed',
-          top: '10px',
-          left: '15px'
-        });
-      }
-      else {
-        $('.burger_menu_img_wrapper').css({
-          position: 'sticky'
-        });
-      }
+      // if (scroll_position >= 50 ) {
+      //   $('.burger_menu_img_wrapper').css({
+      //     position: 'fixed',
+      //     top: '10px',
+      //     left: '15px'
+      //   });
+      // }
+      // else {
+      //   $('.burger_menu_img_wrapper').css({
+      //     position: 'sticky'
+      //   });
+      // }
 
 
 
@@ -156,29 +156,29 @@ function RotateCarousel() {
       if ($(window).width() >= 1280 ) {
         console.log('laptop animation');
 
-        if (($(document).scrollTop()-300) < $(window).height() ) {
+        if (($(document).scrollTop()-200) < $(window).height() ) {
           console.log('Too soon!!!');
           go_animate = 'off';
 
           $('.animation_master_container').css({
             position: 'relative',
-            top: '200px'
+            top: '180px'
           });
         }
 
-        if (($(document).scrollTop()-300) > $(window).height() ) {
+        if (($(document).scrollTop()-200) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
           var animation_container_adjust_1 = $('.main_container').height() / 12;
           console.log('animation container adjustment  ' + animation_container_adjust_1);
 
-          animation_progress = (scroll_position - $(window).height())- 300;
+          animation_progress = (scroll_position - $(window).height())- 200;
           console.log('animation_progress  ' + animation_progress);
 
           $('.animation_master_container').css({
             position: 'fixed',
-            top: '100px'
+            top: '80px'
           });
         }
 
@@ -204,7 +204,7 @@ function RotateCarousel() {
 
           $('.animation_master_container').css({
             position: 'relative',
-            top: '400px'
+            top: '350px'
           });
         }
 
@@ -243,7 +243,7 @@ function RotateCarousel() {
 
           $('.animation_master_container').css({
             position: 'relative',
-            top: '200px'
+            top: '270px'
           });
         }
 
@@ -280,7 +280,7 @@ function RotateCarousel() {
 
           $('.animation_master_container').css({
             position: 'relative',
-            top: '100px'
+            top: '120px'
           });
         }
 

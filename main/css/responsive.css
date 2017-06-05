@@ -189,7 +189,7 @@
     width: 900px;
     height: 700px;
     /*top: 200px;*/
-    left: 10px;
+    left: -90px;
   }
 
   .animation_container {
@@ -218,6 +218,10 @@
 
   .animation_text_heading {
     font-size: 40px;
+  }
+
+  .animation_text_subcontainer > .slick-list {
+    height: 320px !important;
   }
 
   .download_badges {
@@ -322,7 +326,6 @@
   .burger_menu_img_wrapper {
     /*top: 10px;
     left: 15px;*/
-    /*position: sticky;*/
   }
 
   .main_logo_2 {

@@ -19,8 +19,7 @@ a {
 /*burger menu styling*/
 
 .burger_menu_img_wrapper {
-  /*position: fixed;*/
-  position: sticky;
+  position: fixed;
   /*position: absolute;*/
   display: inline-block;
   top: 15px;
