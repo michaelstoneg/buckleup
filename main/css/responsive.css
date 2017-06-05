@@ -143,8 +143,10 @@
 
   .media_scroll_list_item {
     /*vertical-align: middle;*/
-    margin: 15px 120px 15px 120px;
-    /*width: 100px;*/
+    float: left;
+    margin: 15px 0px 15px 0px;
+    width: 350px;
+    text-align: center;
   }
 
   #bustle_img, #maxim_img {
@@ -391,7 +393,8 @@
 
   .media_scroll_list_item {
     /*vertical-align: middle;*/
-    margin: 15px 80px 15px 80px;
+    margin: 15px 0px 15px 0px;
+    width: 250px;
   }
 
   .adjust_list_item {
