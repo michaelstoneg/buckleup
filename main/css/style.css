@@ -134,8 +134,9 @@ a {
 }
 
 #download_badge_1 {
+  /*margin: 10px 0px 10px 0;*/
   margin: 10px 200px 10px 0;
-  height: 58px;
+  /*height: 58px;*/
 }
 
 .download_badges {
@@ -886,14 +887,20 @@ a {
   text-align: center;
 }
 
-.blurb_container {
+/*.blurb_container {
   display: inline-block;
-  /*border: 2px solid #ffffff;*/
-  width: 400px;
-  height: 150px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  width: 650px;
+  height: 190px;
   vertical-align: top;
-}
+  background-color: rgba(0,0,0,.7);
+}*/
 
 .blurb_text {
   color: white;
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 5px 10px 0 10px;
+  text-align: justify;
 }

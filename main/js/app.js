@@ -881,4 +881,64 @@ function RotateCarousel() {
     }, 800);
   });
 
+
+  if ($(window).width() == 768) {
+    console.log('adjust chatlio for tablet');
+    if (go_animate = 'on') {
+      $('.chatlio-widget.closed').css({right: '15px'});
+    }
+    else {
+      $('.chatlio-widget.close').css({right: '155px'});
+    }
+  }
+
+  if ($(window).width() == 414) {
+    console.log('adjust chatlio for mobile');
+    if (go_animate = 'on') {
+      $('.chatlio-widget').css({
+        right: '10px',
+        width: '380px'
+      });
+    }
+    else {
+      $('.chatlio-widget').css({
+        right: '65px',
+        width: '380px'
+      });
+    }
+  }
+
+  if ($(window).width() == 375) {
+    console.log('adjust chatlio for small mobile');
+    if (go_animate = 'on') {
+      $('.chatlio-widget').css({
+        right: '10px',
+        width: '375px'
+      });
+    }
+    else {
+      $('.chatlio-widget').css({
+        right: '65px',
+        width: '375px'
+      });
+    }
+  }
+
+  if ($(window).width() == 360) {
+    console.log('adjust chatlio for x-small mobile');
+    if (go_animate = 'on') {
+      $('.chatlio-widget').css({
+        right: '10px',
+        width: '360px'
+      });
+    }
+    else {
+      $('.chatlio-widget').css({
+        right: '65px',
+        width: '360px'
+      });
+    }
+  }
+
+
 });
