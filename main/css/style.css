@@ -567,34 +567,26 @@ a {
   overflow: hidden;
 }
 
-.animation_sheet {
+.animation_sheet_1 {
   height: 485px;
-  position: relative;
+  width: 274px;
+  position: absolute;
   left: 0px;
-  background-color: #66ccff;
 }
 
-.animation_sheet_2, .animation_sheet_3{
+.animation_sheet_2{
+  position: absolute;
   display: none;
   width: 274px;
   height: 486px;
 }
 
-.animation_sheet_4{
-  display: none;
-  width: 555px;
+.animation_sheet_3 {
   position: absolute;
-  background-color: #ff738e;
+  display: none;
+  width: 840px;
 }
 
-.animation_sheet_5{
-  display: none;
-  width: 1130px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #4be4c4;
-}
 
 .animation_step_set, .animation_step_set_2, .animation_step_set_3 {
   position: absolute;
@@ -603,93 +595,94 @@ a {
 
 .animation_press_1 {
   z-index: 2;
-  height: 34px;
+  height: 25px;
   position: absolute;
-  top: 141px;
-  left: 101px;
-  display: none;
+  top: 23px;
+  left: 115px;
+  /*display: none;*/
 }
 
 .animation_press_2 {
   z-index: 2;
-  height: 12px;
+  height: 24px;
   position: absolute;
-  top: 101px;
-  left: 32px;
-  display: none;
+  top: 22px;
+  left: 172px;
+  /*display: none;*/
 }
 
 .animation_press_3 {
   z-index: 2;
-  height: 28px;
+  height: 25px;
   position: absolute;
-  top: 138px;
-  left: 37px;
+  top: 23px;
+  left: 163px;
   display: none;
 }
 
 .animation_press_4 {
   z-index: 2;
-  height: 12px;
+  height: 23px;
   position: absolute;
-  top: 101px;
-  left: 32px;
+  top: 24px;
+  left: 126px;
   display: none;
 }
 
 .animation_press_5 {
   z-index: 2;
-  height: 28px;
+  height: 30px;
   position: absolute;
-  top: 406px;
-  left: 149px;
+  top: 22px;
+  left: 230px;
   display: none;
 }
 
 .animation_press_6 {
   z-index: 2;
-  height: 12px;
+  height: 50px;
   position: absolute;
-  top: 366px;
-  left: 302px;
-  display: none;
-}
-
-/*.animation_press_6a {
-  z-index: 2;
-  height: 2px;
-  position: absolute;
-  top: 366px;
-  left: 302px;
-  display: none;
-}*/
-
-.location_slide_line {
-  z-index: 2;
-  position: absolute;
-  top: 370px;
-  left: 302px;
-  height: 0px;
-  width: 1px;
-  border: 2px solid white;
+  top: 120px;
+  left: 65px;
   display: none;
 }
 
 .animation_press_7 {
   z-index: 2;
   height: 45px;
-  position: absolute;
-  top: 67px;
-  left: 483px;
+  width: 45px;
+  border: 3px solid #fed274;
+  border-radius: 50%;
+  background-color: rgba(254, 210, 116, .7);
+  position: relative;
+  top: 300px;
+  left: 180px;
   display: none;
+}
+
+.animation_chat_box {
+  z-index: 2;
+  position: absolute;
+  display: none;
+  top: 70px;
+  left: 290px;
+  /*border: 2px solid black;*/
+  height: 360px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.animation_press_chats {
+  position: absolute;
+  top: 0px;
 }
 
 .animation_press_8 {
   z-index: 2;
-  height: 27px;
+  height: 8.5px;
   position: absolute;
-  top: 233px;
-  left: 430px;
+  top: 4px;
+  left: 300px;
   display: none;
 }
 
