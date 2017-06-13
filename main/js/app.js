@@ -496,61 +496,47 @@ function RotateCarousel() {
 
 
           $('.animation_sheet_4').slideDown(300);
-          $('.animation_step_sets_4').slideDown(300);
+          $('.animation_step_set_4').slideDown(300);
+          $('.animation_press_18').css({display: 'inline-block'});
+          $('.animation_press_19').css({
+            display: 'inline-block',
+            animation: 'bulge .15s linear'
+          });
         }
+
 
         if (animation_progress < 3800 && animation_progress > 3780) {
           $('.animation_sheet_3').slideDown(300);
           $('.animation_press_chats').slideDown(300);
           $('.animation_step_set_3').css({display: 'inline-block'});
 
-          $('.animation_press_18').css({display: 'inline-block'});
-          $('.animation_press_19').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-            ,
-          });
-
 
           $('.animation_sheet_4').fadeOut(300);
-          $('.animation_step_sets_4').fadeOut(300);
+          $('.animation_step_set_4').fadeOut(300);
         }
 
 
-          // if (animation_progress > 6200 ) {
-          //   console.log('thats far enough! go to android');
-          //   $('.animation_sheet_4').css({display: 'none'});
-          //   $('.animation_sheet_5').fadeIn(250);
-          //   $('.animation_press_18').css({display: 'inline-block'});
-          //   $('.animation_press_19').css({
-          //     display: 'inline-block',
-          //     animation: 'bulge .15s linear'
-          //     ,
-          //   });
-          // }
-          // else {
-          //   $('.animation_sheet_5').fadeOut(250);
-          //   $('.animation_press_18').css({display: 'none'});
-          //   $('.animation_press_19').css({display: 'none'});
-          // }
 
-          if (animation_progress > 6200 && animation_progress < 9085) {
-            //txt change 4
-            $('.animation_text_subcontainer').slick('slickGoTo', '4');
-          }
+          // //txt change 4
+          // if (animation_progress > 6200 && animation_progress < 9085) {
+          //   $('.animation_text_subcontainer').slick('slickGoTo', '4');
+          // }
+          // //txt change 4
+          //
+          // //animation sheet transition snap 3
+          // if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('left') != 0) {
+          //   console.log('animation sheet 5 is out of horizontal alignment');
+          //   $('.animation_sheet_4').css({ left: 0 });
+          //   $('.animation_step_set_4').css({ left: 0 });
+          // }
+          // if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('top') != 0) {
+          //   console.log('animation sheet 5 is out of vertical alignment yet again');
+          //   $('.animation_sheet_4').css({ top: 0 });
+          //   $('.animation_step_set_4').css({ top: 0 });
+          // }
+          // //animation sheet transition snap 3
 
-          //animation sheet transition snap 3
-          if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('left') != 0) {
-            console.log('animation sheet 5 is out of horizontal alignment');
-            $('.animation_sheet_4').css({ left: 0 });
-            $('.animation_step_set_4').css({ left: 0 });
-          }
-          if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('top') != 0) {
-            console.log('animation sheet 5 is out of vertical alignment yet again');
-            $('.animation_sheet_4').css({ top: 0 });
-            $('.animation_step_set_4').css({ top: 0 });
-          }
-          //animation sheet transition snap 3
+
 
           if (animation_progress > 6500 && animation_progress < 6980) {
             console.log('light up icon 20 & 21');
