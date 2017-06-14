@@ -361,7 +361,72 @@ function RotateCarousel() {
         console.log('animating...');
 
 
-        if (animation_progress > 300 && animation_progress < 700) {
+        //transition snap fixes
+        if (animation_progress > 1700 && animation_progress <2500 && $('.animation_sheet_3').css('left') != 0) {
+          console.log('animation sheet 3 is not aligned');
+          $('.animation_sheet_3').css({left: 0});
+          $('.animation_step_set_3').css({left: 0});
+        }
+
+        if (animation_progress > 2782 && animation_progress < 4900 && $('.animation_sheet_3').css('left') != 281) {
+          console.log('animation sheet 3 is not aligned');
+          $('.animation_sheet_3').css({left: -280});
+          $('.animation_step_set_3').css({left: -280});
+        }
+
+        if (animation_progress > 2500 && animation_progress < 2783 && $('.animation_press_chats').css('top') != 0) {
+          console.log('chats box is not vertically aligned');
+          $('.animation_press_chats').css({top: 0});
+        }
+
+        if (animation_progress > 2853 && animation_progress < 4400 && $('.animation_press_chats').css('top') != -72) {
+          console.log('chats box is not vertically aligned yet again');
+          $('.animation_press_chats').css({top: -72});
+        }
+
+        if (animation_progress > 4470 && animation_progress < 4900 && $('.animation_press_chats').css('top') != -72) {
+          console.log('chats box is not vertically aligned yet again');
+          $('.animation_press_chats').css({top: -72});
+        }
+
+        if (animation_progress > 4900 && animation_progress < 6100 && $('.animation_sheet_4').css('left') != 0) {
+          console.log('animation sheet 4 is out of horizontal alignment');
+          $('.animation_sheet_4').css({ left: 0 });
+          $('.animation_step_set_4').css({ left: 0 });
+        }
+
+        if (animation_progress > 6380 && animation_progress < 7400 && $('.animation_sheet_4').css('left') != -277) {
+          console.log('animation sheet 4 is out of horizontal alignment yet again');
+          $('.animation_sheet_4').css({ left: -277 });
+          $('.animation_step_set_4').css({ left: -277 });
+        }
+
+        if (animation_progress > 7685 && animation_progress < 8700 && $('.animation_sheet_4').css('left') != -561) {
+          console.log('animation sheet 4 is out of horizontal alignment yet again');
+          $('.animation_sheet_4').css({ left: -561 });
+          $('.animation_step_set_4').css({ left: -561 });
+        }
+
+        if (animation_progress > 8983 && animation_progress < 9500 && $('.animation_sheet_4').css('top') != 0) {
+          console.log('animation sheet 4 is out of vertical alignment yet again');
+          $('.animation_sheet_4').css({ top: 0 });
+          $('.animation_step_set_4').css({ top: 0 });
+        }
+
+        if (animation_progress > 8983 && animation_progress < 10950 && $('.animation_sheet_4').css('left') != -840) {
+          console.log('animation sheet 4 is out of horizontal alignment yet again');
+          $('.animation_sheet_4').css({ left: -840 });
+          $('.animation_step_set_4').css({ left: -840 });
+        }
+        //transition snap fixes
+
+
+        //txt changes
+
+
+
+
+        if (animation_progress > 400 && animation_progress < 900) {
           console.log('turning off step 1 - 2');
           console.log('turning on step 3 - 4');
 
@@ -372,19 +437,21 @@ function RotateCarousel() {
           $('.animation_press_4').css({display: 'inline-block', animation: 'bulge .1s linear'});
         }
 
-        if (animation_progress < 300) {
+        if (animation_progress < 400) {
           console.log('turning on step 1 - 2');
           console.log('turning off step 3 - 4');
 
           $('.animation_press_1').css({display: 'inline-block', animation: 'bulge .1s linear'});
           $('.animation_press_2').css({display: 'inline-block', animation: 'bulge .1s linear'});
+          $('.animation_sheet_1').css({display: 'inline-block'});
 
           $('.animation_press_3').css({display: 'none'});
           $('.animation_press_4').css({display: 'none'});
+          $('.animation_sheet_2').css({display: 'none'})
         }
 
 
-        if (animation_progress > 700 && animation_progress < 1200) {
+        if (animation_progress > 900 && animation_progress < 1400) {
           console.log('moving from swipe to map screen');
 
           $('.animation_sheet_1').css({display: 'none'});
@@ -397,9 +464,8 @@ function RotateCarousel() {
           $('.animation_press_5').css({display: 'inline-block', animation: 'wiggle 5s linear'});
         }
 
-        if (animation_progress < 700 && animation_progress > 300) {
+        if (animation_progress < 900 && animation_progress > 400) {
           console.log('back to screen 1');
-
           $('.animation_sheet_2').css({display: 'none'});
           $('.animation_step_set_2').css({display: 'none'});
 
@@ -408,20 +474,15 @@ function RotateCarousel() {
         }
 
 
-        if (animation_progress > 900 && animation_progress < 1200) {
+        if (animation_progress > 1300 && animation_progress < 1700) {
           console.log('turn on step 6');
-
-          $('.animation_press_6').css({display: 'inline-block', animation: 'bulge .1s linear'});
-        }
-
-        if (animation_progress < 900) {
-          console.log('turn off step 6');
-
+          $('.animation_press_6').css({display: 'inline-block', animation: 'bulge .2s linear'});
+        } else {
           $('.animation_press_6').css({display: 'none'});
         }
 
 
-        if (animation_progress > 1200 && animation_progress < 1250 ) {
+        if (animation_progress > 1700 && animation_progress < 2500) {
           console.log('moving to profile cover');
 
           $('.animation_sheet_2').slideUp(500);
@@ -431,7 +492,7 @@ function RotateCarousel() {
           $('.animation_step_set_3').slideDown(500);
         }
 
-        if (animation_progress < 1200 && animation_progress > 700) {
+        if (animation_progress < 1700 && animation_progress > 900) {
           $('.animation_sheet_3').css({display: 'none'});
           $('.animation_step_set_3').css({display: 'none'});
 
@@ -440,7 +501,7 @@ function RotateCarousel() {
         }
 
 
-        if (animation_progress > 1500 && animation_progress < 1800) {
+        if (animation_progress > 2100 && animation_progress < 2500) {
           console.log('turn on step 7');
 
           $('.animation_press_7').css({display: 'inline-block', animation: 'bulge .1s linear'});
@@ -448,48 +509,42 @@ function RotateCarousel() {
           $('.animation_press_7').fadeOut(50);
         }
 
-        if (animation_progress > 1800 && animation_progress < 2084) {
+
+        if (animation_progress > 2500 && animation_progress < 2782) {
           console.log('slding left to chat screen');
 
           $('.animation_chat_box').css({display: 'inline-block'})
 
-          $('.animation_sheet_3').css({left: -(animation_progress - 1800)});
-          $('.animation_step_set_3').css({left: -(animation_progress - 1800)});
+          $('.animation_sheet_3').css({left: -(animation_progress - 2500)});
+          $('.animation_step_set_3').css({left: -(animation_progress - 2500)});
         }
 
-        if (animation_progress > 2400 && animation_progress < 2473 ) {
+
+        if (animation_progress > 2782 && animation_progress < 2855 ) {
           console.log('new chat 1 incoming');
-
-          $('.animation_press_chats').css({top: -(animation_progress - 2400)})
+          $('.animation_press_chats').css({top: -(animation_progress - 2782)})
         }
 
-        if (animation_progress > 2900 && animation_progress < 3300) {
+        if (animation_progress > 3900 && animation_progress < 4400) {
           console.log('look ma! no network!');
 
           $('.animation_press_9').css({
             display: 'inline-block',
             transformOrigin: 'top',
-            animation: 'zoom .3s ease-out',
+            animation: 'zoom .2s ease-out',
             animationFillMode: 'forwards'})
-        }
-
-        if (animation_progress < 2900) {
-          $('.animation_press_9').css({display: 'none'})
-        }
-
-        if (animation_progress > 3300) {
+        } else {
           $('.animation_press_9').fadeOut(300);
         }
 
-        if (animation_progress > 3300 && animation_progress < 3373) {
-          console.log('turn on press 10. 1 more chat');
 
-          $('.animation_press_chats').css({top: -(animation_progress - 3300)})
+        if (animation_progress > 4400 && animation_progress < 4473) {
+          console.log('turn on press 10. 1 more chat');
+          $('.animation_press_chats').css({top: -(animation_progress - 4400)})
         }
 
-        
 
-        if (animation_progress > 3800 && animation_progress < 3850) {
+        if (animation_progress > 4900 && animation_progress < 4980) {
           console.log('back to profiles');
 
           $('.animation_sheet_3').fadeOut(300);
@@ -507,172 +562,105 @@ function RotateCarousel() {
         }
 
 
-        if (animation_progress < 3800 && animation_progress > 3780) {
+        if (animation_progress < 4900 && animation_progress > 4840) {
           $('.animation_sheet_3').slideDown(300);
           $('.animation_press_chats').slideDown(300);
           $('.animation_step_set_3').css({display: 'inline-block'});
-
 
           $('.animation_sheet_4').fadeOut(300);
           $('.animation_step_set_4').fadeOut(300);
         }
 
 
+        if (animation_progress > 5400 && animation_progress < 5900) {
+          console.log('light up icon 20 & 21');
+          $('.animation_press_20').css({
+            display: 'inline-block',
+            animation: 'bulge .15s linear'
+          });
+          $('.animation_press_21').css({
+            display: 'inline-block',
+            animation: 'bulge .15s linear'
+          });
+            $('.animation_press_18').css({display: 'none'});
+            $('.animation_press_19').css({display: 'none'});
+        }
 
-          // //txt change 4
-          // if (animation_progress > 6200 && animation_progress < 9085) {
-          //   $('.animation_text_subcontainer').slick('slickGoTo', '4');
-          // }
-          // //txt change 4
-          //
-          // //animation sheet transition snap 3
-          // if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('left') != 0) {
-          //   console.log('animation sheet 5 is out of horizontal alignment');
-          //   $('.animation_sheet_4').css({ left: 0 });
-          //   $('.animation_step_set_4').css({ left: 0 });
-          // }
-          // if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('top') != 0) {
-          //   console.log('animation sheet 5 is out of vertical alignment yet again');
-          //   $('.animation_sheet_4').css({ top: 0 });
-          //   $('.animation_step_set_4').css({ top: 0 });
-          // }
-          // //animation sheet transition snap 3
+        if (animation_progress > 4900 && animation_progress < 5400) {
+          $('.animation_press_20').css({display: 'none'});
+          $('.animation_press_21').css({display: 'none'});
 
+          $('.animation_press_18').css({
+            display: 'inline-block',
+            animation: 'bulge .15s linear'
+          });
+          $('.animation_press_19').css({
+            display: 'inline-block',
+            animation: 'bulge .15s linear'
+          });
+        }
 
-
-          if (animation_progress > 6500 && animation_progress < 6980) {
-            console.log('light up icon 20 & 21');
-            $('.animation_press_20').css({
-              display: 'inline-block',
-              animation: 'bulge .15s linear'
-            });
-            $('.animation_press_21').css({
-              display: 'inline-block',
-              animation: 'bulge .15s linear'
-
-            });
-
-              $('.animation_press_18').css({display: 'none'});
-              $('.animation_press_19').css({display: 'none'});
-          }
-          else {
-            $('.animation_press_20').css({display: 'none'});
-            $('.animation_press_21').css({display: 'none'});
-          }
-
-          if (animation_progress > 6800 &&  animation_progress < 7080) {
-            console.log('new trips ahoy');
-            $('.animation_sheet_4').css({
-              left: -(animation_progress - 6800)
-            });
-            $('.animation_step_set_4').css({
-              left: -(animation_progress - 6800)
-            });
-          }
-
-          //animation sheet transition snap 4
-          if (animation_progress > 7080 && animation_progress < 7700 && $('.animation_sheet_5').css('left') != -279) {
-            console.log('animation sheet 5 is out of horizontal alignment again');
-            $('.animation_sheet_4').css({ left: -279 });
-            $('.animation_step_set_4').css({ left: -279 });
-          }
-          if (animation_progress > 7080 && animation_progress < 7700 && $('.animation_sheet_5').css('top') != 0) {
-            console.log('animation sheet 5 is out of vertical alignment yet again');
-            $('.animation_sheet_4').css({ top: 0 });
-            $('.animation_step_set_4').css({ top: 0 });
-          }
-          //animation sheet transition snap 4
-
-          if (animation_progress > 7400 && animation_progress < 7700) {
-            console.log('light up icon 22');
-            $('.animation_press_22').css({
-              display: 'inline-block',
-              animation: 'bulge .15s linear'
-            });
-          }
-          else {
-            $('.animation_press_22').css({display: 'none'});
-          }
-
-          if (animation_progress > 7700 && animation_progress < 7985) {
-            console.log('swiping left');
-            var temp_slide_measure = $('.animation_sheet_4').css('left');
-            $('.animation_sheet_4').css({
-              left: -((animation_progress - 7700) + 276)
-            });
-            $('.animation_step_set_4').css({
-              left: -((animation_progress - 7700) + 276)
-            });
-          }
-
-          //animation sheet transition snap 5
-          if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_4').css('left') != -561) {
-            console.log('animation sheet 5 is out of horizontal alignment yet again');
-            $('.animation_sheet_4').css({ left: -561 });
-            $('.animation_step_set_4').css({ left: -561 });
-          }
-          if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_4').css('top') != 0) {
-            console.log('animation sheet 5 is out of vertical alignment yet again');
-            $('.animation_sheet_4').css({ top: 0 });
-            $('.animation_step_set_4').css({ top: 0 });
-          }
-          //animation sheet transition snap 5
+        if (animation_progress > 6100 &&  animation_progress < 6380) {
+          console.log('new trips ahoy');
+          $('.animation_sheet_4').css({
+            left: -(animation_progress - 6100)
+          });
+          $('.animation_step_set_4').css({
+            left: -(animation_progress - 6100)
+          });
+        }
 
 
-          if (animation_progress > 8300 && animation_progress < 8500) {
-            console.log('snap b-code');
-            $('.animation_press_23').css({
-              display: 'inline-block'
-            })
-          }
-          else {
-            $('.animation_press_23').css({display: 'none'});
-          }
+        if (animation_progress > 6900 && animation_progress < 7400) {
+          console.log('light up icon 22');
+          $('.animation_press_22').css({
+            display: 'inline-block',
+            animation: 'bulge .15s linear'
+          });
+        }
+        else {
+          $('.animation_press_22').css({display: 'none'});
+        }
 
-          if (animation_progress > 8800 && animation_progress < 9083) {
-            console.log('swiping left');
-            $('.animation_sheet_4').css({
-              left: -((animation_progress - 8800) + 559)
-            });
-            $('.animation_step_set_4').css({
-              left: -((animation_progress - 8800) + 559)
-            });
-          }
 
-          if (animation_progress < 9411 && animation_progress > 9085 && scroll_direction == 'down' && $('animation_sheet_4').css('top') != 0) {
-            console.log('animation sheet 5 is out of vertical alignment');
-            $('animation_sheet_4').css({top: 0})
-          }
+        if (animation_progress > 7400 && animation_progress < 7685) {
+          console.log('swiping left');
+          var temp_slide_measure = $('.animation_sheet_4').css('left');
+          $('.animation_sheet_4').css({
+            left: -((animation_progress - 7400) + 276)
+          });
+          $('.animation_step_set_4').css({
+            left: -((animation_progress - 7400) + 276)
+          });
+        }
 
-          //animation sheet transition snap 6
-          if (animation_progress > 9085 && $('.animation_sheet_4').css('left') != -841) {
-            console.log('animation sheet 5 is out of horizontal alignment');
-            $('.animation_sheet_4').css({ left: -841 });
-            $('.animation_step_set_4').css({ left: -841 });
-          }
-          //animation sheet transition snap 6
+        if (animation_progress > 8200 && animation_progress < 8700) {
+          console.log('snap b-code');
+          $('.animation_press_23').css({
+            display: 'inline-block'
+          })
+        }
+        else {
+          $('.animation_press_23').css({display: 'none'});
+        }
+        //
+        if (animation_progress > 8700 && animation_progress < 8983) {
+          console.log('swiping left');
+          $('.animation_sheet_4').css({
+            left: -((animation_progress - 8700) + 559)
+          });
+          $('.animation_step_set_4').css({
+            left: -((animation_progress - 8700) + 559)
+          });
+        }
 
-          if (animation_progress > 9083 && animation_progress < 10000 ) {
-            //txt change 5
-            $('.animation_text_subcontainer').slick('slickGoTo', '5');
-          }
 
-          if (animation_progress > 9400 && animation_progress < 10950) {
-            console.log('prepare to dive');
-            $('.animation_sheet_4').css({
-              top: -(animation_progress - 9400)
-            });
-          }
-
-          if (animation_progress > 10600) {
-            //txt change 6
-            if (direction == 'up') {
-              console.log('previous txt slide');
-            } else if (direction == 'down') {
-              console.log('next carousel slide');
-            }
-            $('.animation_text_subcontainer').slick('slickGoTo', '6');
-          }
+        if (animation_progress > 9500 && animation_progress < 11050) {
+          console.log('prepare to dive');
+          $('.animation_sheet_4').css({
+            top: -(animation_progress - 9500)
+          });
+        }
 
 
 

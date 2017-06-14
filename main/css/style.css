@@ -672,7 +672,7 @@ a {
 .animation_chat_box {
   z-index: 2;
   position: absolute;
-  display: none;
+  /*display: none;*/
   top: 70px;
   left: 290px;
   /*border: 2px solid black;*/
