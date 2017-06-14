@@ -272,7 +272,7 @@ function RotateCarousel() {
 
           $('.animation_master_container').css({
             position: 'relative',
-            top: '11146px'
+            top: '11206px'
           });
         }
       }
@@ -318,7 +318,7 @@ function RotateCarousel() {
       if ($(window).height() <= 640 && $(window).width() <= 360 ) {
         console.log('small mobile animation 2');
 
-        if (($(document).scrollTop() - 100) < $(window).height() ) {
+        if (($(document).scrollTop() - 150) < $(window).height() ) {
           console.log('Hooldd!!!');
           go_animate = 'off';
 
@@ -337,7 +337,8 @@ function RotateCarousel() {
 
           $('.animation_master_container').css({
             position: 'fixed',
-            top: '-30px'
+            top: '-40px'
+            // top: '-30px'
           });
         }
 
