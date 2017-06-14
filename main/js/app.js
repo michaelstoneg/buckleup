@@ -159,8 +159,6 @@ function RotateCarousel() {
       // }
 
 
-
-
       if ($(window).width() >= 1280 ) {
         console.log('laptop animation');
 
@@ -423,7 +421,29 @@ function RotateCarousel() {
 
         //txt changes
 
+        if (animation_progress < 400) {
+          $('.animation_text_subcontainer').slick('slickGoTo', '0');
+        }
 
+        if (animation_progress > 400 && animation_progress < 2782) {
+          $('.animation_text_subcontainer').slick('slickGoTo', '1');
+        }
+
+        if (animation_progress > 2782 && animation_progress < 4900) {
+          $('.animation_text_subcontainer').slick('slickGoTo', '2');
+        }
+
+        if (animation_progress > 4900 && animation_progress < 8983) {
+          $('.animation_text_subcontainer').slick('slickGoTo', '3');
+        }
+
+        if (animation_progress > 8983 && animation_progress < 10700) {
+          $('.animation_text_subcontainer').slick('slickGoTo', '4');
+        }
+
+        if (animation_progress > 10700) {
+          $('.animation_text_subcontainer').slick('slickGoTo', '5');
+        }
 
 
         if (animation_progress > 400 && animation_progress < 900) {
@@ -447,7 +467,12 @@ function RotateCarousel() {
 
           $('.animation_press_3').css({display: 'none'});
           $('.animation_press_4').css({display: 'none'});
-          $('.animation_sheet_2').css({display: 'none'})
+          $('.animation_sheet_2').css({display: 'none'});
+          $('.animation_step_set_2').css({display: 'none'});
+          $('.animation_sheet_3').css({display: 'none'});
+          $('.animation_step_set_3').css({display: 'none'});
+          $('.animation_sheet_4').css({display: 'none'});
+          $('.animation_step_set_4').css({display: 'none'});
         }
 
 
@@ -490,11 +515,13 @@ function RotateCarousel() {
 
           $('.animation_sheet_3').slideDown(500);
           $('.animation_step_set_3').slideDown(500);
+          $('.animation_press_chats').css({display: 'inline-block'});
         }
 
         if (animation_progress < 1700 && animation_progress > 900) {
           $('.animation_sheet_3').css({display: 'none'});
           $('.animation_step_set_3').css({display: 'none'});
+          $('.animation_press_chats').css({display: 'none'});
 
           $('.animation_sheet_2').slideDown(500);
           $('.animation_step_set_2').slideDown(500);

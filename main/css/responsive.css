@@ -205,6 +205,12 @@
     display: inline-block;
   }
 
+  .animation_press_9 {
+    width: 250px;
+    top: 65px;
+    left: 370px;
+  }
+
   .animation_text_container {
     width: 350px;
     height: 400px;
@@ -473,6 +479,12 @@
 
   #animation_text_list_item_last {
     margin: 0 !important;
+  }
+
+  .animation_press_9 {
+    width: 200px;
+    top: 183px;
+    left: 95px;
   }
 
   .animation_text_heading {
