@@ -487,6 +487,8 @@ function RotateCarousel() {
           $('.animation_press_chats').css({top: -(animation_progress - 3300)})
         }
 
+        
+
         if (animation_progress > 3800 && animation_progress < 3850) {
           console.log('back to profiles');
 
@@ -560,10 +562,10 @@ function RotateCarousel() {
 
           if (animation_progress > 6800 &&  animation_progress < 7080) {
             console.log('new trips ahoy');
-            $('.animation_sheet_5').css({
+            $('.animation_sheet_4').css({
               left: -(animation_progress - 6800)
             });
-            $('.animation_step_set_3').css({
+            $('.animation_step_set_4').css({
               left: -(animation_progress - 6800)
             });
           }
@@ -571,13 +573,13 @@ function RotateCarousel() {
           //animation sheet transition snap 4
           if (animation_progress > 7080 && animation_progress < 7700 && $('.animation_sheet_5').css('left') != -279) {
             console.log('animation sheet 5 is out of horizontal alignment again');
-            $('.animation_sheet_5').css({ left: -279 });
-            $('.animation_step_set_3').css({ left: -279 });
+            $('.animation_sheet_4').css({ left: -279 });
+            $('.animation_step_set_4').css({ left: -279 });
           }
           if (animation_progress > 7080 && animation_progress < 7700 && $('.animation_sheet_5').css('top') != 0) {
             console.log('animation sheet 5 is out of vertical alignment yet again');
-            $('.animation_sheet_5').css({ top: 0 });
-            $('.animation_step_set_3').css({ top: 0 });
+            $('.animation_sheet_4').css({ top: 0 });
+            $('.animation_step_set_4').css({ top: 0 });
           }
           //animation sheet transition snap 4
 
@@ -594,25 +596,25 @@ function RotateCarousel() {
 
           if (animation_progress > 7700 && animation_progress < 7985) {
             console.log('swiping left');
-            var temp_slide_measure = $('.animation_sheet_5').css('left');
-            $('.animation_sheet_5').css({
+            var temp_slide_measure = $('.animation_sheet_4').css('left');
+            $('.animation_sheet_4').css({
               left: -((animation_progress - 7700) + 276)
             });
-            $('.animation_step_set_3').css({
+            $('.animation_step_set_4').css({
               left: -((animation_progress - 7700) + 276)
             });
           }
 
           //animation sheet transition snap 5
-          if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_5').css('left') != -561) {
+          if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_4').css('left') != -561) {
             console.log('animation sheet 5 is out of horizontal alignment yet again');
-            $('.animation_sheet_5').css({ left: -561 });
-            $('.animation_step_set_3').css({ left: -561 });
+            $('.animation_sheet_4').css({ left: -561 });
+            $('.animation_step_set_4').css({ left: -561 });
           }
-          if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_5').css('top') != 0) {
+          if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_4').css('top') != 0) {
             console.log('animation sheet 5 is out of vertical alignment yet again');
-            $('.animation_sheet_5').css({ top: 0 });
-            $('.animation_step_set_3').css({ top: 0 });
+            $('.animation_sheet_4').css({ top: 0 });
+            $('.animation_step_set_4').css({ top: 0 });
           }
           //animation sheet transition snap 5
 
@@ -629,24 +631,24 @@ function RotateCarousel() {
 
           if (animation_progress > 8800 && animation_progress < 9083) {
             console.log('swiping left');
-            $('.animation_sheet_5').css({
+            $('.animation_sheet_4').css({
               left: -((animation_progress - 8800) + 559)
             });
-            $('.animation_step_set_3').css({
+            $('.animation_step_set_4').css({
               left: -((animation_progress - 8800) + 559)
             });
           }
 
-          if (animation_progress < 9411 && animation_progress > 9085 && scroll_direction == 'down' && $('animation_sheet_5').css('top') != 0) {
+          if (animation_progress < 9411 && animation_progress > 9085 && scroll_direction == 'down' && $('animation_sheet_4').css('top') != 0) {
             console.log('animation sheet 5 is out of vertical alignment');
-            $('animation_sheet_5').css({top: 0})
+            $('animation_sheet_4').css({top: 0})
           }
 
           //animation sheet transition snap 6
-          if (animation_progress > 9085 && $('.animation_sheet_5').css('left') != -841) {
+          if (animation_progress > 9085 && $('.animation_sheet_4').css('left') != -841) {
             console.log('animation sheet 5 is out of horizontal alignment');
-            $('.animation_sheet_5').css({ left: -841 });
-            $('.animation_step_set_3').css({ left: -841 });
+            $('.animation_sheet_4').css({ left: -841 });
+            $('.animation_step_set_4').css({ left: -841 });
           }
           //animation sheet transition snap 6
 
@@ -657,7 +659,7 @@ function RotateCarousel() {
 
           if (animation_progress > 9400 && animation_progress < 10950) {
             console.log('prepare to dive');
-            $('.animation_sheet_5').css({
+            $('.animation_sheet_4').css({
               top: -(animation_progress - 9400)
             });
           }

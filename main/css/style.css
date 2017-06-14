@@ -586,16 +586,18 @@ a {
   display: none;
   width: 840px;
   transform-origin: left top;
+  background: #ff738e;
 }
 
 .animation_sheet_4 {
   position: absolute;
   display: none;
   width: 1130px;
+  background: #4be4c4;
 }
 
 
-.animation_step_set, .animation_step_set_2, .animation_step_set_3 {
+.animation_step_set_2, .animation_step_set_3, .animation_step_set_4 {
   position: absolute;
   left: 0px;
 }
