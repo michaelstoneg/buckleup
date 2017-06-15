@@ -128,10 +128,8 @@ function RotateCarousel() {
 
 
   $(window).scroll(function () {
-
       scroll_position = $(window).scrollTop();
       console.log("scroll position: " + scroll_position);
-
 
       var scroll_position_b = $(this).scrollTop();
       if (scroll_position_b > scroll_position_a) {
@@ -198,7 +196,6 @@ function RotateCarousel() {
           });
         }
       }
-
 
 
       if ($(window).height() == 1024 && $(window).width() == 768 ) {
@@ -269,11 +266,7 @@ function RotateCarousel() {
         if (animation_progress > 10950) {
           go_animate = 'off'
           console.log('animation is ' + go_animate);
-
-          $('.animation_master_container').css({
-            position: 'relative',
-            top: '11206px'
-          });
+          $('.animation_master_container').css({position: 'relative', top: '11206px'});
         }
       }
 
@@ -283,24 +276,17 @@ function RotateCarousel() {
         if (($(document).scrollTop() - 100) < $(window).height() ) {
           console.log('Hooldd!!!');
           go_animate = 'off';
-
-          $('.animation_master_container').css({
-            position: 'relative',
-            top: '130px'
-          });
+          $('.animation_master_container').css({position: 'relative', top: '130px'});
         }
 
         if (($(document).scrollTop() - 200) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
-
           animation_progress = (scroll_position - $(window).height())- 200;
           console.log('animation_progress  ' + animation_progress);
 
           $('.animation_master_container').css({
-            position: 'fixed',
-            top: '-25px'
-          });
+            position: 'fixed', top: '-25px'});
         }
 
         if (animation_progress > 10950) {
@@ -308,9 +294,7 @@ function RotateCarousel() {
           console.log('animation is ' + go_animate);
 
           $('.animation_master_container').css({
-            position: 'relative',
-            top: '11146px'
-          });
+            position: 'relative', top: '11146px'});
         }
       }
 
@@ -318,21 +302,17 @@ function RotateCarousel() {
       if ($(window).height() <= 640 && $(window).width() <= 360 ) {
         console.log('small mobile animation 2');
 
-        if (($(document).scrollTop() - 150) < $(window).height() ) {
+        if (($(document).scrollTop() - 0) < $(window).height() ) {
           console.log('Hooldd!!!');
           go_animate = 'off';
-
-          $('.animation_master_container').css({
-            position: 'relative',
-            top: '130px'
-          });
+          $('.animation_master_container').css({position: 'relative', top: '100px'});
         }
 
-        if (($(document).scrollTop() - 150) > $(window).height() ) {
+        if (($(document).scrollTop() - 375) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
-          animation_progress = (scroll_position - $(window).height())- 150;
+          animation_progress = (scroll_position - $(window).height())- 375;
           console.log('animation_progress  ' + animation_progress);
 
           $('.animation_master_container').css({
@@ -345,78 +325,64 @@ function RotateCarousel() {
         if (animation_progress > 10950) {
           go_animate = 'off'
           console.log('animation is ' + go_animate);
-
-          $('.animation_master_container').css({
-            position: 'relative',
-            top: '11146px'
-          });
+          $('.animation_master_container').css({position: 'relative', top: '11146px'});
         }
       }
-
-
 
 
       if (go_animate  == 'on') {
         console.log('animating...');
 
-
         //transition snap fixes
+
         if (animation_progress > 1700 && animation_progress <2500 && $('.animation_sheet_3').css('left') != 0) {
           console.log('animation sheet 3 is not aligned');
           $('.animation_sheet_3').css({left: 0});
           $('.animation_step_set_3').css({left: 0});
         }
-
         if (animation_progress > 2782 && animation_progress < 4900 && $('.animation_sheet_3').css('left') != 281) {
           console.log('animation sheet 3 is not aligned');
           $('.animation_sheet_3').css({left: -280});
           $('.animation_step_set_3').css({left: -280});
         }
-
         if (animation_progress > 2500 && animation_progress < 2783 && $('.animation_press_chats').css('top') != 0) {
           console.log('chats box is not vertically aligned');
           $('.animation_press_chats').css({top: 0});
         }
-
         if (animation_progress > 2853 && animation_progress < 4400 && $('.animation_press_chats').css('top') != -72) {
           console.log('chats box is not vertically aligned yet again');
           $('.animation_press_chats').css({top: -72});
         }
-
         if (animation_progress > 4470 && animation_progress < 4900 && $('.animation_press_chats').css('top') != -72) {
           console.log('chats box is not vertically aligned yet again');
           $('.animation_press_chats').css({top: -72});
         }
-
         if (animation_progress > 4900 && animation_progress < 6100 && $('.animation_sheet_4').css('left') != 0) {
           console.log('animation sheet 4 is out of horizontal alignment');
           $('.animation_sheet_4').css({ left: 0 });
           $('.animation_step_set_4').css({ left: 0 });
         }
-
         if (animation_progress > 6380 && animation_progress < 7400 && $('.animation_sheet_4').css('left') != -277) {
           console.log('animation sheet 4 is out of horizontal alignment yet again');
           $('.animation_sheet_4').css({ left: -277 });
           $('.animation_step_set_4').css({ left: -277 });
         }
-
         if (animation_progress > 7685 && animation_progress < 8700 && $('.animation_sheet_4').css('left') != -561) {
           console.log('animation sheet 4 is out of horizontal alignment yet again');
           $('.animation_sheet_4').css({ left: -561 });
           $('.animation_step_set_4').css({ left: -561 });
         }
-
         if (animation_progress > 8983 && animation_progress < 9500 && $('.animation_sheet_4').css('top') != 0) {
           console.log('animation sheet 4 is out of vertical alignment yet again');
           $('.animation_sheet_4').css({ top: 0 });
           $('.animation_step_set_4').css({ top: 0 });
         }
-
         if (animation_progress > 8983 && animation_progress < 10950 && $('.animation_sheet_4').css('left') != -840) {
           console.log('animation sheet 4 is out of horizontal alignment yet again');
           $('.animation_sheet_4').css({ left: -840 });
           $('.animation_step_set_4').css({ left: -840 });
         }
+
         //transition snap fixes
 
 
@@ -425,26 +391,22 @@ function RotateCarousel() {
         if (animation_progress < 400) {
           $('.animation_text_subcontainer').slick('slickGoTo', '0');
         }
-
         if (animation_progress > 400 && animation_progress < 2782) {
           $('.animation_text_subcontainer').slick('slickGoTo', '1');
         }
-
         if (animation_progress > 2782 && animation_progress < 4900) {
           $('.animation_text_subcontainer').slick('slickGoTo', '2');
         }
-
         if (animation_progress > 4900 && animation_progress < 8983) {
           $('.animation_text_subcontainer').slick('slickGoTo', '3');
         }
-
         if (animation_progress > 8983 && animation_progress < 10700) {
           $('.animation_text_subcontainer').slick('slickGoTo', '4');
         }
-
         if (animation_progress > 10700) {
           $('.animation_text_subcontainer').slick('slickGoTo', '5');
         }
+        //txt changes
 
 
         if (animation_progress > 400 && animation_progress < 900) {
@@ -560,7 +522,7 @@ function RotateCarousel() {
             display: 'inline-block',
             transformOrigin: 'top',
             animation: 'zoom .2s ease-out',
-            animationFillMode: 'forwards'})
+            animationFillMode: 'forwards'});
         } else {
           $('.animation_press_9').fadeOut(300);
         }
@@ -583,10 +545,7 @@ function RotateCarousel() {
           $('.animation_sheet_4').slideDown(300);
           $('.animation_step_set_4').slideDown(300);
           $('.animation_press_18').css({display: 'inline-block'});
-          $('.animation_press_19').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-          });
+          $('.animation_press_19').css({display: 'inline-block', animation: 'bulge .15s linear'});
         }
 
 
@@ -602,14 +561,8 @@ function RotateCarousel() {
 
         if (animation_progress > 5400 && animation_progress < 5900) {
           console.log('light up icon 20 & 21');
-          $('.animation_press_20').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-          });
-          $('.animation_press_21').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-          });
+          $('.animation_press_20').css({display: 'inline-block', animation: 'bulge .15s linear'});
+          $('.animation_press_21').css({display: 'inline-block', animation: 'bulge .15s linear'});
             $('.animation_press_18').css({display: 'none'});
             $('.animation_press_19').css({display: 'none'});
         }
@@ -618,33 +571,20 @@ function RotateCarousel() {
           $('.animation_press_20').css({display: 'none'});
           $('.animation_press_21').css({display: 'none'});
 
-          $('.animation_press_18').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-          });
-          $('.animation_press_19').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-          });
+          $('.animation_press_18').css({display: 'inline-block', animation: 'bulge .15s linear'});
+          $('.animation_press_19').css({display: 'inline-block', animation: 'bulge .15s linear'});
         }
 
         if (animation_progress > 6100 &&  animation_progress < 6380) {
           console.log('new trips ahoy');
-          $('.animation_sheet_4').css({
-            left: -(animation_progress - 6100)
-          });
-          $('.animation_step_set_4').css({
-            left: -(animation_progress - 6100)
-          });
+          $('.animation_sheet_4').css({left: -(animation_progress - 6100)});
+          $('.animation_step_set_4').css({left: -(animation_progress - 6100)});
         }
 
 
         if (animation_progress > 6900 && animation_progress < 7400) {
           console.log('light up icon 22');
-          $('.animation_press_22').css({
-            display: 'inline-block',
-            animation: 'bulge .15s linear'
-          });
+          $('.animation_press_22').css({display: 'inline-block', animation: 'bulge .15s linear'});
         }
         else {
           $('.animation_press_22').css({display: 'none'});
@@ -654,516 +594,29 @@ function RotateCarousel() {
         if (animation_progress > 7400 && animation_progress < 7685) {
           console.log('swiping left');
           var temp_slide_measure = $('.animation_sheet_4').css('left');
-          $('.animation_sheet_4').css({
-            left: -((animation_progress - 7400) + 276)
-          });
-          $('.animation_step_set_4').css({
-            left: -((animation_progress - 7400) + 276)
-          });
+          $('.animation_sheet_4').css({left: -((animation_progress - 7400) + 276)});
+          $('.animation_step_set_4').css({left: -((animation_progress - 7400) + 276)});
         }
 
         if (animation_progress > 8200 && animation_progress < 8700) {
           console.log('snap b-code');
-          $('.animation_press_23').css({
-            display: 'inline-block'
-          })
+          $('.animation_press_23').css({display: 'inline-block'});
         }
         else {
           $('.animation_press_23').css({display: 'none'});
         }
-        //
+
         if (animation_progress > 8700 && animation_progress < 8983) {
           console.log('swiping left');
-          $('.animation_sheet_4').css({
-            left: -((animation_progress - 8700) + 559)
-          });
-          $('.animation_step_set_4').css({
-            left: -((animation_progress - 8700) + 559)
-          });
+          $('.animation_sheet_4').css({left: -((animation_progress - 8700) + 559)});
+          $('.animation_step_set_4').css({left: -((animation_progress - 8700) + 559)});
         }
-
 
         if (animation_progress > 9500 && animation_progress < 11050) {
           console.log('prepare to dive');
-          $('.animation_sheet_4').css({
-            top: -(animation_progress - 9500)
-          });
+          $('.animation_sheet_4').css({top: -(animation_progress - 9500)});
         }
-
-
-
-
-      //   if (animation_progress < 1230) {
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '0');
-      //   }
-      //
-      //   if (animation_progress > 50 && animation_progress < 1230) {
-      //     console.log('light up icon 1');
-      //     $('.animation_press_1').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .1s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_1').css({display: 'none'});
-      //   }
-      //
-      //
-      //   if (animation_progress > 80 && animation_progress < 1230) {
-      //     console.log('light up icon 2');
-      //     $('.animation_press_2').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .1s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_2').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 350 && animation_progress < 1230) {
-      //     console.log('light up icon 3');
-      //     $('.animation_press_3').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .1s linear'
-      //     });
-      //     $('.animation_press_2').css({display: 'none'});
-      //   }
-      //   else {
-      //     $('.animation_press_3').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 380 && animation_progress < 1230) {
-      //     console.log('light up icon 4');
-      //     $('.animation_press_4').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .1s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_4').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 700 && animation_progress < 1230) {
-      //     console.log('light up icon 5');
-      //     $('.animation_press_5').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_5').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 950 && animation_progress < 1230 ) {
-      //     console.log('swiping right');
-      //     $('.animation_sheet').css({left: -(animation_progress - 950) });
-      //     $('.animation_step_set').css({left: -(animation_progress - 950) });
-      //   }
-      //   else  if ($('.animation_sheet').css('left') != 0 && animation_progress < 1230){
-      //     $('.animation_sheet').css({left: 0});
-      //     $('.animation_step_set').css({left: 0});
-      //   }
-      //
-      //   //screen transition snap
-      //   if (animation_progress < 950 && $('.animation_sheet').css('left') != 0) {
-      //     console.log('animation sheet 1 is not aligned');
-      //     $('.animation_sheet').css({left: 0});
-      //     $('.animation_step_set').css({left: 0});
-      //   }
-      //   if (animation_progress > 1230 && animation_progress < 3000 && $('.animation_sheet').css('left') != 280) {
-      //     console.log('animation sheet 1 is not aligned');
-      //     $('.animation_sheet').css({left: -279});
-      //     $('.animation_step_set').css({left: -279});
-      //   }
-      //   //screen transition snap
-      //
-      //
-      //   if (animation_progress > 1050 && animation_progress < 3000) {
-      //     //text change 1
-      //     console.log('go to slide 1');
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '1');
-      //   }
-      //
-      //   if (animation_progress > 1230 && animation_progress < 3000) {
-      //     console.log('light up icon 6');
-      //     $('.animation_press_6').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //     $('.location_slide_line').css({display: 'inline-block'})
-      //   }
-      //   else {
-      //     $('.animation_press_6').css({display: 'none'});
-      //     $('.location_slide_line').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 1500 && animation_progress < 3000) {
-      //     console.log('light up icon 7');
-      //     $('.animation_press_7').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_7').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 1800 && animation_progress < 3000) {
-      //     console.log('light up icon 8');
-      //     $('.animation_press_8').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_8').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 2100 && animation_progress < 3000) {
-      //     console.log('light up icon 9');
-      //     $('.animation_press_9').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_9').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 2400 && animation_progress < 2505 ) {
-      //     var location_slide_measure = animation_progress - 2400;
-      //     console.log('location slider ' + location_slide_measure);
-      //     $('.animation_press_6').css({left: 302+location_slide_measure});
-      //     $('.location_slide_line').css({width: location_slide_measure});
-      //   }
-      //
-      //   if (animation_progress > 2700 && animation_progress < 3000) {
-      //     console.log('light up icon 10');
-      //     $('.animation_press_10').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_10').css({display: 'none'});
-      //   }
-      //
-      //
-      //   if (animation_progress > 3000 && animation_progress < 3500) {
-      //     console.log('moving to card screen');
-      //     $('.animation_sheet').fadeOut(250);
-      //     $('.animation_step_set').fadeOut(250);
-      //     $('.animation_sheet_2').fadeIn(250);
-      //     //text change 2
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '2');
-      //   }
-      //   else if (animation_progress < 3000){
-      //     $('.animation_sheet').fadeIn(250);
-      //     $('.animation_step_set').fadeIn(250);
-      //     $('.animation_sheet_2').fadeOut(250);
-      //   }
-      //
-      //   if (animation_progress > 3000 && animation_progress < 3300) {
-      //     console.log('lighting up icon 11');
-      //     $('.animation_press_11').fadeIn(250);
-      //     console.log('lighting up icon 12');
-      //     $('.animation_press_12').fadeIn(250);
-      //   }
-      //   else {
-      //     $('.animation_press_11').css({display: 'none'});
-      //     $('.animation_press_12').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 3300 && animation_progress < 3500) {
-      //     $('.animation_press_11').css({display: 'none'});
-      //     $('.animation_press_12').css({display: 'none'});
-      //     console.log('light up icon 14');
-      //     $('.animation_press_14').css({display: 'inline-block'});
-      //     console.log('light up icon 13');
-      //     $('.animation_press_13').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else if (animation_progress < 3300 && animation_progress > 3000 ) {
-      //     $('.animation_press_13').css({display: 'none'});
-      //     $('.animation_press_14').css({display: 'none'});
-      //
-      //     $('.animation_press_11').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //     $('.animation_press_12').css({display: 'inline-block'});
-      //   }
-      //
-      //
-      //   if (animation_progress > 3500 && animation_progress < 4000) {
-      //     console.log('to the map');
-      //     $('.animation_sheet_2').slideUp(250);
-      //     $('.animation_sheet_3').slideDown(250);
-      //     $('.animation_press_15').css({
-      //       display: 'inline-block',
-      //       animation: 'wiggle 4s linear'
-      //     });
-      //     $('.animation_press_14').css({display: 'none'});
-      //     $('.animation_press_13').css({display: 'none'});
-      //   }
-      //   else if (animation_progress < 3500 && animation_progress > 3300) {
-      //     $('.animation_sheet_2').slideDown(250);
-      //     $('.animation_sheet_3').slideUp(250);
-      //     $('.animation_press_15').css({display: 'none'});
-      //     $('.animation_press_14').css({display: 'inline-block'});
-      //     $('.animation_press_13').css({display: 'inline-block'});
-      //   }
-      //
-      //   if (animation_progress < 3500 ) {
-      //       $('.animation_press_15').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 3800 && animation_progress < 4000) {
-      //     console.log('light up icon 16');
-      //     $('.animation_press_16').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_16').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 4000 && animation_progress < 6200 ) {
-      //     console.log('to the swipe screen robin');
-      //     $('.animation_sheet_3').slideUp(250);
-      //     $('.animation_press_13').css({display: 'none'});
-      //     $('.animation_press_14').css({display: 'none'});
-      //     $('.animation_press_15').css({display: 'none'});
-      //     $('.animation_sheet_4').slideDown(250);
-      //     //txt change 3
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '3');
-      //   }
-      //   else if (animation_progress < 4000) {
-      //     $('.animation_sheet_4').slideUp(250);
-      //   }
-      //
-      //   if (animation_progress > 4300 && animation_progress < 4600) {
-      //     console.log('pressing the screen... light up icon 17');
-      //     $('.animation_press_17').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_17').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 4600 && animation_progress < 4880) {
-      //     console.log('sliding left...');
-      //     $('.animation_press_17').css({display: 'none'});
-      //     $('.animation_sheet_4').css({left: -(animation_progress - 4600)})
-      //   }
-      //
-      //   //animation sheet transition snap 2
-      //   if (animation_progress < 4600 && animation_progress > 4000 && $('.animation_sheet_4').css('left') != 0) {
-      //       console.log('animation sheet 4 is out of horizontal alignment');
-      //       $('.animation_sheet_4').css({left: 0});
-      //     }
-      //   if (animation_progress < 4600 && animation_progress > 4000 && $('.animation_sheet_4').css('top') != 0) {
-      //     console.log('animation sheet 4 is out of vertical alignment');
-      //     $('.animation_sheet_4').css({top: 0});
-      //   }
-      //
-      //
-      //   if (animation_progress > 4880 && animation_progress < 5100 && $('.animation_sheet_4').css('left') != -280) {
-      //     console.log('animation sheet 4 is out of horizontal alignment');
-      //     $('.animation_sheet_4').css({left: -280});
-      //   }
-      //   if (animation_progress > 4880 && animation_progress < 5100 && $('.animation_sheet_4').css('top') != -280 && scroll_direction == 'up') {
-      //     console.log('animation sheet 4 is out of vertical alignment');
-      //     $('.animation_sheet_4').css({top: 0});
-      //   }
-      //   //animation sheet transition snap 2
-      //
-      //
-      //   if (animation_progress > 5100 && animation_progress < 5870 ) {
-      //     console.log('were going dooown');
-      //     var profile_vert_slide = animation_progress - 5100;
-      //     $('.animation_sheet_4').css({top: -(animation_progress - 5100)})
-      //   }
-      //
-      //
-      //
-      //
-      //   if (animation_progress > 6200 ) {
-      //     console.log('thats far enough! go to android');
-      //     $('.animation_sheet_4').css({display: 'none'});
-      //     $('.animation_sheet_5').fadeIn(250);
-      //     $('.animation_press_18').css({display: 'inline-block'});
-      //     $('.animation_press_19').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //       ,
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_sheet_5').fadeOut(250);
-      //     $('.animation_press_18').css({display: 'none'});
-      //     $('.animation_press_19').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 6200 && animation_progress < 9085) {
-      //     //txt change 4
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '4');
-      //   }
-      //
-      //   //animation sheet transition snap 3
-      //   if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('left') != 0) {
-      //     console.log('animation sheet 5 is out of horizontal alignment');
-      //     $('.animation_sheet_5').css({ left: 0 });
-      //     $('.animation_step_set_3').css({ left: 0 });
-      //   }
-      //   if (animation_progress > 6200 && animation_progress < 6800 && $('.animation_sheet_5').css('top') != 0) {
-      //     console.log('animation sheet 5 is out of vertical alignment yet again');
-      //     $('.animation_sheet_5').css({ top: 0 });
-      //     $('.animation_step_set_3').css({ top: 0 });
-      //   }
-      //   //animation sheet transition snap 3
-      //
-      //   if (animation_progress > 6500 && animation_progress < 6980) {
-      //     console.log('light up icon 20 & 21');
-      //     $('.animation_press_20').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //     $('.animation_press_21').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //
-      //     });
-      //
-      //       $('.animation_press_18').css({display: 'none'});
-      //       $('.animation_press_19').css({display: 'none'});
-      //   }
-      //   else {
-      //     $('.animation_press_20').css({display: 'none'});
-      //     $('.animation_press_21').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 6800 &&  animation_progress < 7080) {
-      //     console.log('new trips ahoy');
-      //     $('.animation_sheet_5').css({
-      //       left: -(animation_progress - 6800)
-      //     });
-      //     $('.animation_step_set_3').css({
-      //       left: -(animation_progress - 6800)
-      //     });
-      //   }
-      //
-      //   //animation sheet transition snap 4
-      //   if (animation_progress > 7080 && animation_progress < 7700 && $('.animation_sheet_5').css('left') != -279) {
-      //     console.log('animation sheet 5 is out of horizontal alignment again');
-      //     $('.animation_sheet_5').css({ left: -279 });
-      //     $('.animation_step_set_3').css({ left: -279 });
-      //   }
-      //   if (animation_progress > 7080 && animation_progress < 7700 && $('.animation_sheet_5').css('top') != 0) {
-      //     console.log('animation sheet 5 is out of vertical alignment yet again');
-      //     $('.animation_sheet_5').css({ top: 0 });
-      //     $('.animation_step_set_3').css({ top: 0 });
-      //   }
-      //   //animation sheet transition snap 4
-      //
-      //   if (animation_progress > 7400 && animation_progress < 7700) {
-      //     console.log('light up icon 22');
-      //     $('.animation_press_22').css({
-      //       display: 'inline-block',
-      //       animation: 'bulge .15s linear'
-      //     });
-      //   }
-      //   else {
-      //     $('.animation_press_22').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 7700 && animation_progress < 7985) {
-      //     console.log('swiping left');
-      //     var temp_slide_measure = $('.animation_sheet_5').css('left');
-      //     $('.animation_sheet_5').css({
-      //       left: -((animation_progress - 7700) + 276)
-      //     });
-      //     $('.animation_step_set_3').css({
-      //       left: -((animation_progress - 7700) + 276)
-      //     });
-      //   }
-      //
-      //   //animation sheet transition snap 5
-      //   if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_5').css('left') != -561) {
-      //     console.log('animation sheet 5 is out of horizontal alignment yet again');
-      //     $('.animation_sheet_5').css({ left: -561 });
-      //     $('.animation_step_set_3').css({ left: -561 });
-      //   }
-      //   if (animation_progress > 7985 && animation_progress < 8800 && $('.animation_sheet_5').css('top') != 0) {
-      //     console.log('animation sheet 5 is out of vertical alignment yet again');
-      //     $('.animation_sheet_5').css({ top: 0 });
-      //     $('.animation_step_set_3').css({ top: 0 });
-      //   }
-      //   //animation sheet transition snap 5
-      //
-      //
-      //   if (animation_progress > 8300 && animation_progress < 8500) {
-      //     console.log('snap b-code');
-      //     $('.animation_press_23').css({
-      //       display: 'inline-block'
-      //     })
-      //   }
-      //   else {
-      //     $('.animation_press_23').css({display: 'none'});
-      //   }
-      //
-      //   if (animation_progress > 8800 && animation_progress < 9083) {
-      //     console.log('swiping left');
-      //     $('.animation_sheet_5').css({
-      //       left: -((animation_progress - 8800) + 559)
-      //     });
-      //     $('.animation_step_set_3').css({
-      //       left: -((animation_progress - 8800) + 559)
-      //     });
-      //   }
-      //
-      //   if (animation_progress < 9411 && animation_progress > 9085 && scroll_direction == 'down' && $('animation_sheet_5').css('top') != 0) {
-      //     console.log('animation sheet 5 is out of vertical alignment');
-      //     $('animation_sheet_5').css({top: 0})
-      //   }
-      //
-      //   //animation sheet transition snap 6
-      //   if (animation_progress > 9085 && $('.animation_sheet_5').css('left') != -841) {
-      //     console.log('animation sheet 5 is out of horizontal alignment');
-      //     $('.animation_sheet_5').css({ left: -841 });
-      //     $('.animation_step_set_3').css({ left: -841 });
-      //   }
-      //   //animation sheet transition snap 6
-      //
-      //   if (animation_progress > 9083 && animation_progress < 10000 ) {
-      //     //txt change 5
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '5');
-      //   }
-      //
-      //   if (animation_progress > 9400 && animation_progress < 10950) {
-      //     console.log('prepare to dive');
-      //     $('.animation_sheet_5').css({
-      //       top: -(animation_progress - 9400)
-      //     });
-      //   }
-      //
-      //   if (animation_progress > 10600) {
-      //     //txt change 6
-      //     if (direction == 'up') {
-      //       console.log('previous txt slide');
-      //     } else if (direction == 'down') {
-      //       console.log('next carousel slide');
-      //     }
-      //     $('.animation_text_subcontainer').slick('slickGoTo', '6');
-      //   }
-
       }
-
   });
 
 
@@ -1171,19 +624,13 @@ function RotateCarousel() {
   $('#burger_menu_link_download').click(function () {
     console.log('telporting to downloads');
     // window.moveTo(0, 0);
-    $('html, body').animate({
-      scrollTop: 0,
-      scrollLeft: 0
-    }, 800);
+    $('html, body').animate({ scrollTop: 0, scrollLeft: 0}, 800);
   });
 
   $('#footer_site_links_download').click(function () {
     console.log('telporting to downloads');
     // window.moveTo(0, 0);
-    $('html, body').animate({
-      scrollTop: 0,
-      scrollLeft: 0
-    }, 800);
+    $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 800);
   });
 
 
@@ -1200,7 +647,6 @@ function RotateCarousel() {
       scrollTop: $('.unknown_container').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
     }, 800);
   });
-
 
   $('#burger_menu_link_contact').click(function () {
     console.log('telporting to contact');
@@ -1223,55 +669,38 @@ function RotateCarousel() {
       $('.chatlio-widget.closed').css({right: '15px'});
     }
     else {
-      $('.chatlio-widget.close').css({right: '155px'});
+      $('.chatlio-widget.closed').css({right: '155px'});
     }
   }
 
   if ($(window).width() == 414) {
     console.log('adjust chatlio for mobile');
     if (go_animate = 'on') {
-      $('.chatlio-widget').css({
-        right: '10px',
-        width: '380px'
-      });
+      console.log('chat widget mobile adjust');
+      $('#chatlio-widget,.chatlio-widget').css({right: '10px'});
     }
     else {
-      $('.chatlio-widget').css({
-        right: '65px',
-        width: '380px'
-      });
+      $('#chatlio-widget,.chatlio-widget').css({right: '65px'});
     }
   }
 
   if ($(window).width() == 375) {
     console.log('adjust chatlio for small mobile');
     if (go_animate = 'on') {
-      $('.chatlio-widget').css({
-        right: '10px',
-        width: '375px'
-      });
+      $('#chatlio-widget .chatlio-widget').css({right: '10px'});
     }
     else {
-      $('.chatlio-widget').css({
-        right: '65px',
-        width: '375px'
-      });
+      $('#chatlio-widget .chatlio-widget').css({right: '65px'});
     }
   }
 
   if ($(window).width() == 360) {
     console.log('adjust chatlio for x-small mobile');
     if (go_animate = 'on') {
-      $('.chatlio-widget').css({
-        right: '10px',
-        width: '360px'
-      });
+      $('#chatlio-widget .chatlio-widget').css({right: '10px'});
     }
     else {
-      $('.chatlio-widget').css({
-        right: '65px',
-        width: '360px'
-      });
+      $('#chatlio-widget .chatlio-widget').css({right: '65px'});
     }
   }
 
