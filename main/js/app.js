@@ -308,11 +308,11 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'relative', top: '100px'});
         }
 
-        if (($(document).scrollTop() - 375) > $(window).height() ) {
+        if (($(document).scrollTop() - 450) > $(window).height() ) {
           console.log('Nowwww!!!');
           go_animate = 'on';
 
-          animation_progress = (scroll_position - $(window).height())- 375;
+          animation_progress = (scroll_position - $(window).height())- 450;
           console.log('animation_progress  ' + animation_progress);
 
           $('.animation_master_container').css({
@@ -677,10 +677,10 @@ function RotateCarousel() {
     console.log('adjust chatlio for mobile');
     if (go_animate = 'on') {
       console.log('chat widget mobile adjust');
-      $('#chatlio-widget,.chatlio-widget').css({right: '10px'});
+      $('#chatlio-widget .chatlio-widget').css({right: '10px'});
     }
     else {
-      $('#chatlio-widget,.chatlio-widget').css({right: '65px'});
+      $('#chatlio-widget .chatlio-widget').css({right: '65px'});
     }
   }
 

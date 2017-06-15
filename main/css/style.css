@@ -891,10 +891,10 @@ a {
 
 .blurb_container {
   display: inline-block;
-  border: 2px solid #ffffff;
+  /*border: 2px solid #ffffff;*/
   border-radius: 5px;
-  width: 650px;
-  height: 190px;
+  width: 660px;
+  height: 155px;
   vertical-align: top;
   background-color: rgba(0,0,0,.7);
 }

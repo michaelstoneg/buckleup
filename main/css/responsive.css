@@ -309,7 +309,7 @@
   }
 
   #chatlio-widget .chatlio-widget {
-    right: 155px;
+    /*right: 155px;*/
   }
 
 }
@@ -348,12 +348,31 @@
     font-size: 25px;
   }
 
+  .blurb_container {
+    width: 350px;
+    height: 120px;
+    border: none;
+  }
+
+  .blurb_text {
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  .download_badges_wrapper {
+    display: block;
+    width: auto;
+    margin-top: 50px;
+  }
+
   .download_badges {
     height: 45px;
   }
 
   #download_badge_1 {
-    margin: 0 50px 0 0;
+    /*margin: 0 50px 0 0;*/
+    margin: 10px;
+    height: 45px;
   }
 
   #download_badge_1, #download_badge_2 {
@@ -660,10 +679,10 @@
     font-size: 8px;
   }
 
-  #chatlio-widget .chatlio-widget {
+  /*#chatlio-widget .chatlio-widget {
     right: 65px;
-    /*width: 380px;*/
-  }
+    width: 380px;
+  }*/
 
 }
 
