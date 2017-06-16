@@ -356,7 +356,7 @@
 
   .blurb_text {
     font-size: 15px;
-    line-height: normal;
+    line-height: 1.5;
   }
 
   .download_badges_wrapper {
@@ -679,10 +679,10 @@
     font-size: 8px;
   }
 
-  /*#chatlio-widget .chatlio-widget {
+  #chatlio-widget .chatlio-widget {
     right: 65px;
-    width: 380px;
-  }*/
+    /*width: 380px;*/
+  }
 
 }
 
