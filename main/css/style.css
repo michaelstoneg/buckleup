@@ -218,7 +218,7 @@ a {
 
 .unknown_container {
   background-color: #ffffff;
-  height: 12050px;
+  height: 12200px;
   border-bottom: 1px solid rgba(75,228,196,0.2);
 }
 
@@ -282,9 +282,9 @@ a {
   /*content: "\1F1f7\1f1f4";*/
   content: url('../images/icons/flags/romania.svg');
 }
-.flag_poland::after {
+.flag_bulgaria::after {
   /*content: "\1F1f5\1f1f1";*/
-  content: url('../images/icons/flags/poland.svg');
+  content: url('../images/icons/flags/bulgaria.svg');
 }
 .flag_morocco::after {
   /*content: "\1F1f2\1f1e6";*/

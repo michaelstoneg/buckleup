@@ -146,9 +146,9 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'fixed', top: '80px'});
         }
 
-        if (animation_progress > 10950) {
+        if (animation_progress > 11070) {
           go_animate = 'off'
-          $('.animation_master_container').css({position: 'relative', top: '11146px'});
+          $('.animation_master_container').css({position: 'relative', top: '11250px'});
         }
       }
 
@@ -165,9 +165,9 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'fixed', top: '150px'});
         }
 
-        if (animation_progress > 10950) {
+        if (animation_progress > 11070) {
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11146px'});
+          $('.animation_master_container').css({position: 'relative', top: '11400px'});
         }
       }
 
@@ -183,10 +183,10 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'fixed', top: '5px'});
         }
 
-        if (animation_progress > 10950) {
+        if (animation_progress > 11070) {
           go_animate = 'off'
           console.log('animation is ' + go_animate);
-          $('.animation_master_container').css({position: 'relative', top: '11206px'});
+          $('.animation_master_container').css({position: 'relative', top: '11326px'});
         }
       }
 
@@ -202,9 +202,9 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'fixed', top: '-25px'});
         }
 
-        if (animation_progress > 10950) {
+        if (animation_progress > 11070) {
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11146px'});
+          $('.animation_master_container').css({position: 'relative', top: '11206px'});
         }
       }
 
@@ -221,9 +221,9 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'fixed', top: '-40px'});
         }
 
-        if (animation_progress > 10950) {
+        if (animation_progress > 11070) {
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11146px'});
+          $('.animation_master_container').css({position: 'relative', top: '11436px'});
         }
       }
 
@@ -460,7 +460,7 @@ function RotateCarousel() {
           $('.animation_step_set_4').css({left: -((animation_progress - 8700) + 559)});
         }
 
-        if (animation_progress > 9500 && animation_progress < 11050) {
+        if (animation_progress > 9500 && animation_progress < 11200) {
           $('.animation_sheet_4').css({top: -(animation_progress - 9500)});
         }
       }
@@ -536,5 +536,5 @@ function RotateCarousel() {
       $('#chatlio-widget .chatlio-widget').css({right: '65px'});
     }
   }
-  
+
 });
