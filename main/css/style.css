@@ -1,6 +1,7 @@
 body {
   margin: 0 !important;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h3 {
@@ -104,23 +105,33 @@ a {
 
 .main_logo_1, .main_logo_2 {
   display: block;
-  margin: 30px auto;
+  margin: 40px auto;
+}
+
+.main_logo_1 {
+  height: 180px;
+}
+
+.main_logo_2 {
+  height: 50px;
 }
 
 .main_tagline {
   text-align: center;
   display: block;
-  font-size: 70px;
+  font-size: 30px;
+  /*font-size: 70px;*/
   /*margin: 50px auto 50px;*/
-  margin: 30px auto 30px;
+  margin: 40px auto 40px;
 }
 
 .download_badges_wrapper {
-  /*display: block;*/
-  display: inline-block;
-  /*text-align: center;*/
-  width: 300px;
+  display: block;
+  /*display: inline-block;*/
+  text-align: center;
+  /*width: 300px;*/
   /*border: 2px solid white;*/
+  margin: 40px 0 40px 0;
 }
 
 .download_badges {
@@ -135,9 +146,9 @@ a {
 }
 
 #download_badge_1 {
-  margin: 10px 0px 10px 0;
-  /*margin: 10px 200px 10px 0;*/
-  height: 57px;
+  /*margin: 10px 0px 10px 0;*/
+  margin: 10px 130px 10px 0;
+  /*height: 57px;*/
 }
 
 .download_badges {
@@ -890,13 +901,16 @@ a {
 }
 
 .blurb_container {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: block;
+  margin: 0 auto;
   /*border: 2px solid #ffffff;*/
   border-radius: 5px;
   width: 660px;
   height: 155px;
   vertical-align: top;
   background-color: rgba(0,0,0,.7);
+  /*background-color: #66ccff;*/
 }
 
 .blurb_text {
@@ -908,13 +922,13 @@ a {
 }
 
 .special_text_1 {
-  color: #66ccff;
+  /*color: #66ccff;*/
 }
 
 .special_text_2 {
-  color: #ff738e;
+  /*color: #ff738e;*/
 }
 
 .special_text_3 {
-  color: #4be4c4;
+  /*color: #4be4c4;*/
 }
