@@ -113,7 +113,7 @@ a {
 }
 
 .main_logo_2 {
-  height: 50px;
+  height: 60px;
 }
 
 .main_tagline {
@@ -121,8 +121,7 @@ a {
   display: block;
   font-size: 30px;
   /*font-size: 70px;*/
-  /*margin: 50px auto 50px;*/
-  margin: 40px auto 40px;
+  margin: 60px auto 60px;
 }
 
 .download_badges_wrapper {
@@ -906,10 +905,11 @@ a {
   margin: 0 auto;
   /*border: 2px solid #ffffff;*/
   border-radius: 5px;
-  width: 660px;
-  height: 155px;
+  width: 620px;
+  height: 140px;
   vertical-align: top;
   background-color: rgba(0,0,0,.7);
+  padding-top: 1px;
   /*background-color: #66ccff;*/
 }
 

@@ -3,9 +3,6 @@
 $(document).ready(function(){
   console.log("It's Aliiive!!");
 
-if (go_animate == 'on') {
-  console.log("oh you caught me mid animation");
-}
 
   var scroll_position = 0;
   var scroll_position_a = 0;
