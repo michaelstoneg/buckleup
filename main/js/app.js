@@ -78,6 +78,13 @@ $(document).ready(function(){
     $(".burger_menu_list").slideToggle(1000);
   });
 
+  var SiteStartDate = '2017/09/15 14:00';
+  if( $('#countdown').length > 0 ) {
+  		$('#countdown').countdown({
+  			until: new Date(SiteStartDate),
+  			format: 'DHMS'
+  		});
+  	}
 
 setTimeout(RotateCarousel, 1000);
 function RotateCarousel() {

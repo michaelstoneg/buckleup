@@ -1,6 +1,5 @@
 body {
   margin: 0 !important;
-  /*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Roboto', sans-serif;
 }
 
@@ -121,7 +120,20 @@ a {
   display: block;
   font-size: 30px;
   /*font-size: 70px;*/
-  margin: 60px auto 60px;
+  margin: 40px auto 40px;
+}
+
+.countdown_container {
+  /*width: 500px;*/
+  display: inline-block;
+  /*border: 2px solid #fff;*/
+  /*background-color: #cc66ff;*/
+}
+
+.countdown-amount, .countdown-period, .countdown_text {
+  color: #fff;
+  display: inline;
+  margin: 2px 2px 0 2px;
 }
 
 .download_badges_wrapper {
