@@ -90,21 +90,21 @@ setTimeout(RotateCarousel, 1000);
 function RotateCarousel() {
 
   if ($(window).width() > 768) {
-    $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 8000, 'linear', function () {
+    $(".media_scroll_list li:first-child").animate({ marginLeft: -500 }, 10000, 'linear', function () {
     $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
     $(".media_scroll_list li:last-child").css({marginLeft: '0'});
     RotateCarousel();
     });
   }
   else if ( $(window).width() == 768) {
-    $(".media_scroll_list li:first-child").animate({ marginLeft: -350 }, 5000, 'linear', function () {
+    $(".media_scroll_list li:first-child").animate({ marginLeft: -350 }, 8000, 'linear', function () {
     $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
     $(".media_scroll_list li:last-child").css({marginLeft: '0'});
     RotateCarousel();
     });
   }
   else if ($(window).width() <= 420) {
-    $(".media_scroll_list li:first-child").animate({ marginLeft: -250 }, 5000, 'linear', function () {
+    $(".media_scroll_list li:first-child").animate({ marginLeft: -250 }, 8000, 'linear', function () {
     $(".media_scroll_list li:first-child").appendTo('.media_scroll_list');
     $(".media_scroll_list li:last-child").css({marginLeft: '0'});
     RotateCarousel();
