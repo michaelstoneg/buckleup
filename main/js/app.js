@@ -82,7 +82,8 @@ $(document).ready(function(){
   if( $('#countdown').length > 0 ) {
   		$('#countdown').countdown({
   			until: new Date(SiteStartDate),
-  			format: 'DHMS'
+  			format: 'DHMS',
+        compact: true
   		});
   	}
 

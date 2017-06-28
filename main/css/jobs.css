@@ -1,0 +1,20 @@
+.jobs_page_header {
+  display: inline;
+  text-align: center;
+}
+
+.jobs_page_header_subcontainer {
+  display: block;
+  margin: 0 auto;
+}
+
+.jobs_page_section_1 {
+
+}
+
+.jobs_page_section_1_subcontainer {
+  width: 400px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
