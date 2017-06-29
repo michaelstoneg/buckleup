@@ -6,15 +6,43 @@
 .jobs_page_header_subcontainer {
   display: block;
   margin: 0 auto;
+  border: 2px solid green;
+}
+
+.jobs_page_main {
+  background-image: url("../images/backgrounds/bg4.jpg");
+
 }
 
 .jobs_page_section_1 {
-
+  text-align: center;
+  border: 2px solid red;
+  z-index: 1;
 }
 
 .jobs_page_section_1_subcontainer {
   width: 400px;
   display: inline-block;
   margin: 0 auto;
+  text-align: left;
+  border: 2px solid blue;
+  background-color: #fff;
+}
+
+.jobs_page_section_2 {
+  text-align: left;
+  border: 2px solid yellow;
+  z-index: 1;
+}
+
+.jobs_page_section_2_subcontainer {
+  width: 500px;
+  display: inline-block;
+  background-color: #fff;
+  border: 2px solid purple;
   text-align: center;
+}
+
+.jobs_page_section_2_list {
+  list-style: none; 
 }

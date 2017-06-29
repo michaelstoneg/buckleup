@@ -346,19 +346,25 @@
   }
 
   .burger_menu_wrapper {
-    top: 9px;
-    left: 12px;
+    top: 7px;
+    left: 5px;
   }
 
   .burger_menu_img {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     display: inline-block;
   }
 
   .burger_menu_img_wrapper {
     top: 10px;
     left: 15px;
+  }
+
+  .burger_menu_list {
+    top: 5px;
+    left: 9px;
+    padding-top: 30px;
   }
 
   .countdown_container {
@@ -720,12 +726,18 @@
 @media (max-width: 375px) {
 
   .burger_menu_img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 
   .burger_menu_img_wrapper {
-    left: 10px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .burger_menu_list {
+    top: 4px;
+    left: 4px;
   }
 
   .countdown_container {
@@ -792,6 +804,10 @@
     margin: 0 15px 0 15px;
   }
 
+  .animation_press_9 {
+    left: 75px;
+  }
+
   .team_list_item_box {
     margin: 20px 0px 20px 0px;
   }
@@ -842,6 +858,38 @@
 
 @media (max-width: 360px) {
 
+  .burger_menu_img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .burger_menu_img_wrapper {
+    top: 5px;
+    left: 5px;
+  }
+
+  .burger_menu_list {
+    top: 4px;
+    left: 4px;
+    width: 100px;
+    height: 200px;
+    padding-top: 40px;
+  }
+
+  .burger_menu_list_item {
+    margin-left: 5px;
+  }
+
+  .burger_menu_list_item_text {
+    font-size: 12px;
+  }
+
+  .menu_social_link_img {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+  }
+
   .main_tagline {
     font-size: 21px;
   }
@@ -854,7 +902,7 @@
 
   .blurb_text {
     font-size: 15px;
-    line-height: normal;
+    line-height: 1.5;
   }
 
   .download_badges_wrapper {
@@ -866,6 +914,10 @@
   #download_badge_1, #download_badge_2 {
     height: 30px;
     margin: 10px;
+  }
+
+  .unknown_container {
+    height: 12300px;
   }
 
   .animation_container {
@@ -915,12 +967,56 @@
 
 @media (min-width: 2560px) {
 
+  .burger_menu_img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .countdown_container {
+    margin-top: 45px;
+  }
+
+  .countdown_text, .countdown-amount, .countdown-period {
+    font-size: 30px;
+  }
+
+  .burger_menu_list {
+    padding-top: 120px;
+    width: 200px;
+    height: 400px;
+  }
+
+  .burger_menu_list_item_text {
+    font-size: 25px;
+  }
+
+  .menu_social_link_img {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+  }
+
   .main_logo_2 {
-    margin: 100px auto;
+    margin: 200px 0 80px 200px;
+    height: 80px;
   }
 
   .main_tagline {
-    margin: 100px auto 100px;
+    margin: 100px 0 80px 200px;
+    font-size: 45px;
+  }
+
+  .blurb_download_container {
+    margin-left: 200px;
+  }
+
+  .blurb_container {
+    width: 750px;
+    height: 220px;
+  }
+
+  .blurb_text {
+    font-size: 25px;
   }
 
   .animation_master_container {

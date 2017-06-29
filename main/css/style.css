@@ -53,7 +53,7 @@ a {
   left: 15px;
   list-style: none;
   width: 160px;
-  height: 320px;
+  height: 280px;
   z-index: 3;
   background-color: rgba(0,0,0,0.5);
   border-radius: 10px;
@@ -87,7 +87,7 @@ a {
 .menu_social_link_img {
   height: 20px;
   width: 20px;
-  margin: 3px;
+  margin: 8px;
 }
 
 /*burger menu styling*/
@@ -478,7 +478,7 @@ a {
 
 .copyright_text {
   color: #f1f1f1;
-  margin: 0;
+  margin: 10px;
   font-size: 10px;
 }
 

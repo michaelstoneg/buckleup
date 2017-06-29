@@ -237,8 +237,12 @@ function RotateCarousel() {
       }
 
 
+
+
       if (go_animate  == 'on') {
         console.log('animating...');
+
+        $('.countdown_container').hide();
 
         //transition snap fixes
 
@@ -472,6 +476,9 @@ function RotateCarousel() {
         if (animation_progress > 9500 && animation_progress < 11200) {
           $('.animation_sheet_4').css({top: -(animation_progress - 9500)});
         }
+      }
+      else {
+        $('.countdown_container').show();
       }
   });
 
