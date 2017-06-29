@@ -98,14 +98,14 @@ a {
 /*landing page*/
 
 .main_container {
-  background-image: url('../images/backgrounds/bg1.jpg');
+  background-image: url('../images/backgrounds/bg3.jpeg');
   background-size: cover;
   height: 95vh;
 }
 
 .main_logo_1, .main_logo_2 {
   display: block;
-  margin: 200px 0 40px 150px;
+  margin: 200px 0 40px 100px;
 }
 
 .main_logo_1 {
@@ -121,7 +121,7 @@ a {
   display: block;
   font-size: 30px;
   /*font-size: 70px;*/
-  margin: 60px 0 60px 150px;
+  margin: 60px 0 60px 100px;
 }
 
 .countdown_container {
@@ -146,7 +146,7 @@ a {
 .blurb_download_container {
   display: block;
   /*text-align: center;*/
-  margin: 60px 0 60px 150px;
+  margin: 60px 0 60px 100px;
 }
 
 .blurb_container {

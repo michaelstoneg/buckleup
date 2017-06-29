@@ -132,6 +132,11 @@
 
 @media (max-width: 768px) {
 
+  .main_container {
+    background-image: url('../images/backgrounds/bg2_small.jpg');
+    /*background-size: cover;*/
+  }
+
   .burger_menu_img_wrapper {
     top: 10px;
     left: 14px;
@@ -362,15 +367,31 @@
   }
 
   .burger_menu_list {
-    top: 5px;
-    left: 9px;
-    padding-top: 30px;
+    top: 4px;
+    left: 4px;
+    width: 120px;
+    height: 240px;
+    padding-top: 40px;
+  }
+
+  .burger_menu_list_item {
+    margin-left: 5px;
+  }
+
+  .burger_menu_list_item_text {
+    font-size: 15px;
+  }
+
+  .menu_social_link_img {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
   }
 
   .countdown_container {
     display: inline-block;
     vertical-align: top;
-    margin-top: 18px;
+    margin-top: 11px;
   }
 
   .main_logo_2 {

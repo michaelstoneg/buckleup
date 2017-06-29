@@ -60,6 +60,10 @@ $(document).ready(function(){
     $('.subscribe_popup_wrapper').show();
   });
 
+  $('#download_badge_1').click(function () {
+    $('.subscribe_popup_wrapper').show();
+  });
+
   $('#subscribe_popup_close').click(function () {
     $('.subscribe_popup_wrapper').hide();
   });
