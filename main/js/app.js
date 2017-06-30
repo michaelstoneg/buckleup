@@ -184,14 +184,17 @@ function RotateCarousel() {
         }
       }
 
-      if (($(window).height() == 736 || $(window).height() == 731) && ($(window).width() == 414 || $(window).width() == 411 )) {
+      // if (($(window).height() == 736 || $(window).height() == 731) && ($(window).width() == 414 || $(window).width() == 411 )) {
+      if ($(window).width() < 412 || $(window).width() > 410) {
         if (($(document).scrollTop() - 200) < $(window).height() ) {
           go_animate = 'off';
+
           $('.animation_master_container').css({position: 'relative', top: '270px'});
         }
 
         if (($(document).scrollTop() - 300) > $(window).height() ) {
           go_animate = 'on';
+
           animation_progress = (scroll_position - $(window).height())- 300;
           $('.animation_master_container').css({position: 'fixed', top: '5px'});
         }
@@ -203,7 +206,8 @@ function RotateCarousel() {
         }
       }
 
-      if ($(window).height() <= 680 && $(window).width() <= 375 ) {
+      // if ($(window).height() <= 680 && $(window).width() <= 375 ) {
+      if ($(window).width() > 380 || $(window).width() < 373 ) {
         if (($(document).scrollTop() - 100) < $(window).height() ) {
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '130px'});
@@ -246,7 +250,6 @@ function RotateCarousel() {
       if (go_animate  == 'on') {
         console.log('animating...');
 
-        $('.countdown_container').hide();
 
         //transition snap fixes
 
@@ -481,9 +484,7 @@ function RotateCarousel() {
           $('.animation_sheet_4').css({top: -(animation_progress - 9500)});
         }
       }
-      else {
-        $('.countdown_container').show();
-      }
+      
   });
 
 

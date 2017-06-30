@@ -126,11 +126,10 @@ a {
 
 .countdown_container {
   /*width: 500px;*/
-  display: inline-block;
-  /*border: 2px solid #fff;*/
-  /*background-color: #cc66ff;*/
+  /*display: inline-block;*/
+  /*background-color: rgba(0,0,0,.5);*/
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 #countdown {
@@ -138,9 +137,12 @@ a {
 }
 
 .countdown-amount, .countdown-period, .countdown_text {
-  color: #66ccff;
+  color: #ffffff;
   display: inline;
   margin: 2px 2px 0 2px;
+  font-size: 25px;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 3px;
 }
 
 .blurb_download_container {
@@ -193,20 +195,23 @@ a {
 }
 
 .download_badges {
-  height: 60px;
   margin: 10px;
   /*vertical-align: top;*/
 }
 
-.download_badges_main {
+/*.download_badges_main {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-}
+}*/
 
 #download_badge_1 {
-  margin: 10px 0px 10px 0;
+  /*margin: 10px 0px 10px 0;*/
   /*margin: 10px 130px 10px 0;*/
   height: 57px;
+}
+
+#download_badge_2 {
+  height: 55px;
 }
 
 .download_badges {
@@ -269,12 +274,12 @@ a {
 }
 
 #mashable_img {
-  height: 70px;
-  width: 290px;
+  height: 55px;
+  width: 275px;
 }
 
 #maxim_img {
-  height: 70px
+  height: 55px
 }
 
 #gma_img {
