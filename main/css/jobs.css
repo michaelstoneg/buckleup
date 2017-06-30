@@ -1,48 +1,301 @@
+
+body {
+  margin: 0 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, h3 {
+  border-bottom: 1px solid #Fff;
+  margin-bottom: 2px;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
 .jobs_page_header {
   display: inline;
   text-align: center;
+  width: 100%;
 }
 
 .jobs_page_header_subcontainer {
   display: block;
   margin: 0 auto;
-  border: 2px solid green;
+  /*border: 2px solid green;*/
+  background-image: url("../images/backgrounds/bg4.jpg");
+  background-size: cover;
+  padding: 50px;
+}
+
+.jobs_page_logo_1 {
+  height: 150px;
+  margin: 30px;
+  display: block;
+  margin: 30px auto;
+}
+
+.jobs_page_logo_2 {
+  height: 40px;
 }
 
 .jobs_page_main {
-  background-image: url("../images/backgrounds/bg4.jpg");
+  /*background-image: url("../images/backgrounds/bg4.jpg");*/
 
 }
 
 .jobs_page_section_1 {
   text-align: center;
-  border: 2px solid red;
+  /*background-color: #fff;*/
+  background-color: rgba(102,204,255,.8);
+  /*border: 2px solid red;*/
   z-index: 1;
 }
 
 .jobs_page_section_1_subcontainer {
-  width: 400px;
+  width: 600px;
   display: inline-block;
   margin: 0 auto;
   text-align: left;
-  border: 2px solid blue;
-  background-color: #fff;
+  padding: 70px;
+  /*border: 2px solid blue;*/
+  /*background-color: #fff;*/
+}
+
+.jobs_page_section_1_text, .jobs_page_team_about {
+  line-height: 1.8;
 }
 
 .jobs_page_section_2 {
   text-align: left;
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
   z-index: 1;
+  display: block;
+}
+
+.jobs_page_section_2_img_container {
+  vertical-align: top;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  /*border: 4px solid red;*/
+  /*float: right;*/
+}
+
+.jobs_page_section_2_img {
+  height: 640px;
+  margin-left: -10px;
 }
 
 .jobs_page_section_2_subcontainer {
-  width: 500px;
+  width: 42%;
+  height: 450px;
   display: inline-block;
-  background-color: #fff;
-  border: 2px solid purple;
+  background-color: rgb(255,115,142);
+  /*border: 2px solid purple;*/
   text-align: center;
+  padding: 80px;
 }
 
 .jobs_page_section_2_list {
-  list-style: none; 
+  list-style: none;
+}
+
+.jobs_page_section_2_list_item {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.jobs_page_section_3 {
+  text-align: right;
+  /*border: 2px solid green;*/
+  z-index: 1;
+  display: block;
+}
+
+.jobs_page_section_3_img_container {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  /*border: 4px solid red;*/
+  float: left;
+  z-index: 0;
+}
+
+.jobs_page_section_3_img {
+  height: 610px;
+  width: 960px;
+  z-index: 0;
+}
+
+.jobs_page_section_3_subcontainer {
+  width: 42%;
+  height: 450px;
+  display: inline-block;
+  background-color: rgb(75,228,196);
+  /*border: 2px solid purple;*/
+  text-align: center;
+  padding: 80px;
+}
+
+.jobs_page_section_3_list {
+  list-style: none;
+}
+
+.jobs_page_section_3_list_item {
+  text-align: left;
+  margin-top: 25px;
+}
+
+
+
+.footer_bottom_subcontainer {
+  height: 270px;
+  /*border: 1px solid yellow;*/
+  background-color: #545454;
+  z-index: 1;
+}
+
+.footer_site_links {
+  height: 250px;
+  /*border: 1px solid red;*/
+  display: block;
+  padding: 10px 0 0 0;
+  margin: 0 40px 0 40px;
+}
+
+.address_ul {
+  width: 150px;
+}
+
+.footer_logo_img {
+  height: 35px;
+}
+
+.footer_logo_wrapper {
+  text-align: justify;
+}
+
+.footer_site_links_list {
+  list-style: none;
+  padding: 0 0 0 0px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 160px 0 0px;
+}
+
+.footer_site_links_list > li {
+  text-align: justify;
+}
+
+.footer_site_link {
+  text-decoration: none;
+}
+
+.footer_site_links_list_item_text {
+  color:  #f1f1f1;
+  margin: 10px 0 10px 0;
+  font-size: 12px;
+  font-weight: 100 !important;
+}
+
+.footer_site_links_list_item_text_1 {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer_social_links {
+  margin: 20px 0 0 0;
+}
+
+.footer_social_links_list {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0 0;
+  position: relative;
+  right: -280px;
+}
+
+.footer_social_links_list_item {
+  display: inline;
+}
+
+.footer_social_link_img {
+  height: 20px;
+  width: 20px;
+  margin: 0 15px 0 15px;
+}
+
+.footer_subscribe_link_text {
+  color: #fff;
+  /*border: 2px solid #fff;*/
+}
+
+.footer_address_wrapper {
+  border: 2px solid #fff;
+  height: 150px;
+}
+
+.address {
+  color: #f1f1f1;
+  display: inline;
+}
+
+.email {
+  font-size: 12px;
+  color: #f1f1f1;
+}
+
+.email_link {
+  display: block;
+}
+
+.copyright_text {
+  color: #f1f1f1;
+  margin: 10px;
+  font-size: 10px;
+}
+
+.footer_partners_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: block;
+  border-top: 1px solid rgba(225,225,225,.3);
+  border-bottom: 1px solid rgba(225,225,225,.3);
+}
+
+.footer_partners_list_item {
+  display: inline;
+}
+
+.footer_partners_link {
+  text-decoration: none;
+}
+
+.footer_partners_img {
+  height: 40px;
+  width: 40px;
+  margin: 10px 100px 10px 100px;
+}
+
+#aws_img {
+  height: 30px;
+  width: 160px;
+  /*margin-bottom: 30px;*/
+}
+
+#fbstart_img {
+  height: 30px;
+  width: 130px;
+}
+
+#wework_img {
+  width: 110px;
 }
