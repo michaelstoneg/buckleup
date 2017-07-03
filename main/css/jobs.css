@@ -128,7 +128,7 @@ a {
 .jobs_page_section_3_img_container {
   display: inline-block;
   /*height: 200px;*/
-  /*width: 45%;*/
+  width: 45%;
   /*border: 4px solid red;*/
   float: left;
   z-index: 0;
@@ -432,8 +432,8 @@ a {
 
   .footer_social_links_list {
     position: relative;
-    right: -550px;
-    top: -130px;
+    right: -40%;
+    top: 5px;
   }
 
   .footer_social_link_img {
@@ -492,7 +492,7 @@ a {
 
   .jobs_page_section_2_subcontainer {
     width: 35%;
-    padding: 20px;
+    padding: 10px;
   }
 
   .jobs_page_section_2_list {
@@ -505,23 +505,25 @@ a {
 
   .jobs_page_section_2_img_container {
     height: 100%;
+    float: right;
+    width: 249px;
   }
 
   .jobs_page_section_2_img {
-    width: 300px;
+    width: 370px;
     height: 100%;
     /*height: 400px;*/
   }
 
   .jobs_page_section_3 {
-    height:560px;
+    height:563px;
   }
 
   .jobs_page_section_3_subcontainer {
     width: 35%;
-    padding: 20px;
+    padding: 10px;
     /*height: 640px;*/
-    /*height: 100%;*/
+    height: 96.5%;
   }
 
   .jobs_page_section_3_list {
@@ -534,16 +536,20 @@ a {
 
   .jobs_page_section_3_img_container {
     height: 100%;
+    width: 249px;
+    /*overflow: hidden;*/
+    z-index: 0;
+    float: left;
   }
 
   .jobs_page_section_3_img {
     height: 100%;
     /*height: 610px;*/
-    width: 150px;
+    width: 370px;
   }
 
   .footer_bottom_subcontainer {
-    height: 260px;
+    height: 270px;
   }
 
   .footer_site_links {
@@ -562,9 +568,9 @@ a {
   }
 
   .address_ul {
-    width: 100px;
+    width: 90px;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .email {
@@ -678,10 +684,23 @@ a {
 
 }
 
+@media (max-width: 411px) {
+
+  .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
+    width: 237px;
+  }
+
+
+}
+
 @media (max-width: 375px) {
 
+  .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
+    width: 223px;
+  }
+
   .footer_bottom_subcontainer {
-    height: 250px;
+    height: 260px;
   }
 
   .footer_site_links {
@@ -690,7 +709,7 @@ a {
   }
 
   .address_ul {
-    width: 90px;
+    width: 80px;
   }
 
   .footer_site_links_list {
@@ -720,6 +739,18 @@ a {
 }
 
 @media (max-width: 360px) {
+
+  .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
+    width: 210px;
+  }
+
+  .jobs_page_section_2_img, .jobs_page_section_3_img {
+    width: 355px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 270px;
+  }
 
   .footer_site_links_list_item_text {
     font-size: 9px;
