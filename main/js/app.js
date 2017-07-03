@@ -118,6 +118,10 @@ function RotateCarousel() {
 }
 
 
+
+
+
+
   $(window).scroll(function () {
       scroll_position = $(window).scrollTop();
       console.log("scroll position: " + scroll_position);
@@ -129,6 +133,9 @@ function RotateCarousel() {
         scroll_direction = 'up';
       }
       scroll_position_a = scroll_position_b;
+
+
+      
 
 
 
@@ -185,7 +192,7 @@ function RotateCarousel() {
       }
 
       // if (($(window).height() == 736 || $(window).height() == 731) && ($(window).width() == 414 || $(window).width() == 411 )) {
-      if ($(window).width() < 412 || $(window).width() > 410) {
+      if ($(window).width() < 416 && $(window).width() > 410) {
         if (($(document).scrollTop() - 200) < $(window).height() ) {
           go_animate = 'off';
 
@@ -207,7 +214,7 @@ function RotateCarousel() {
       }
 
       // if ($(window).height() <= 680 && $(window).width() <= 375 ) {
-      if ($(window).width() > 380 || $(window).width() < 373 ) {
+      if ($(window).width() > 380 && $(window).width() < 373 ) {
         if (($(document).scrollTop() - 100) < $(window).height() ) {
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '130px'});
@@ -484,7 +491,7 @@ function RotateCarousel() {
           $('.animation_sheet_4').css({top: -(animation_progress - 9500)});
         }
       }
-      
+
   });
 
 
