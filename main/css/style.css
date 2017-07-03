@@ -24,7 +24,7 @@ a {
   display: inline-block;
   top: 15px;
   left: 15px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .burger_menu_img {
