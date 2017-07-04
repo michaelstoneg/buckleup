@@ -135,7 +135,7 @@ function RotateCarousel() {
       scroll_position_a = scroll_position_b;
 
 
-      
+
 
 
 
@@ -203,7 +203,7 @@ function RotateCarousel() {
           go_animate = 'on';
 
           animation_progress = (scroll_position - $(window).height())- 300;
-          $('.animation_master_container').css({position: 'fixed', top: '5px'});
+          $('.animation_master_container').css({position: 'fixed', top: '0px'});
         }
 
         if (animation_progress > 11070) {
