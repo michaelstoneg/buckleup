@@ -379,6 +379,10 @@ a {
   /*content: "\1F1f8\1f1ee";*/
   content: url('../images/icons/flags/slovenia.svg');
 }
+.flag_uk::after {
+  /*content: "\1F1f8\1f1ee";*/
+  content: url('../images/icons/flags/uk.svg');
+}
 
 
 /*footer page*/

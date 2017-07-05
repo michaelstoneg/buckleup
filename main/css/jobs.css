@@ -720,7 +720,7 @@ a {
 @media (max-width: 375px) {
 
   .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
-    width: 223px;
+    width: 204px;
   }
 
   .footer_bottom_subcontainer {
@@ -765,7 +765,7 @@ a {
 @media (max-width: 360px) {
 
   .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
-    width: 210px;
+    width: 190px;
   }
 
   .jobs_page_section_2_img, .jobs_page_section_3_img {
