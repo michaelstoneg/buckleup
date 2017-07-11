@@ -136,9 +136,6 @@ function RotateCarousel() {
 
 
 
-
-
-
       // if (scroll_position >= 50 ) {
       //   $('.burger_menu_img_wrapper').css({
       //     position: 'fixed',
@@ -251,11 +248,32 @@ function RotateCarousel() {
         }
       }
 
+      if ($(window).height() <= 740 && $(window).width() <= 360 ) {
+        if (($(document).scrollTop() - 0) < $(window).height() ) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '100px'});
+        }
 
+        if (($(document).scrollTop() - 250) > $(window).height() ) {
+          go_animate = 'on';
+          animation_progress = (scroll_position - $(window).height())- 450;
+          $('.animation_master_container').css({position: 'fixed', top: '-40px'});
+        }
+
+        if (animation_progress > 11070) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '11436px'});
+        }
+      }
 
 
       if (go_animate  == 'on') {
         console.log('animating...');
+
+        if ($(window).width() < 417) {
+          $('.chatlio-widget.closed').fadeOut(100);
+          $('#chatlio-widget').fadeOut(100);
+        }
 
 
         //transition snap fixes
@@ -350,8 +368,8 @@ function RotateCarousel() {
           $('.animation_sheet_1').css({display: 'none'});
           $('.animation_step_set_1').css({display: 'none'});
 
-          $('.animation_sheet_2').slideDown(500);
-          $('.animation_step_set_2').slideDown(500);
+          $('.animation_sheet_2').slideDown(700);
+          $('.animation_step_set_2').slideDown(700);
 
           console.log('turn on step 5');
           $('.animation_press_5').css({display: 'inline-block', animation: 'wiggle 5s linear'});
@@ -361,8 +379,8 @@ function RotateCarousel() {
           $('.animation_sheet_2').css({display: 'none'});
           $('.animation_step_set_2').css({display: 'none'});
 
-          $('.animation_sheet_1').slideDown(500);
-          $('.animation_step_set_1').slideDown(500);
+          $('.animation_sheet_1').slideDown(700);
+          $('.animation_step_set_1').slideDown(700);
         }
 
         if (animation_progress > 1300 && animation_progress < 1700) {
@@ -372,11 +390,11 @@ function RotateCarousel() {
         }
 
         if (animation_progress > 1700 && animation_progress < 2500) {
-          $('.animation_sheet_2').slideUp(500);
-          $('.animation_step_set_2').slideUp(500);
+          $('.animation_sheet_2').slideUp(700);
+          $('.animation_step_set_2').slideUp(700);
 
-          $('.animation_sheet_3').slideDown(500);
-          $('.animation_step_set_3').slideDown(500);
+          $('.animation_sheet_3').slideDown(700);
+          $('.animation_step_set_3').slideDown(700);
           $('.animation_press_chats').css({display: 'inline-block'});
         }
 
@@ -385,8 +403,8 @@ function RotateCarousel() {
           $('.animation_step_set_3').css({display: 'none'});
           $('.animation_press_chats').css({display: 'none'});
 
-          $('.animation_sheet_2').slideDown(500);
-          $('.animation_step_set_2').slideDown(500);
+          $('.animation_sheet_2').slideDown(700);
+          $('.animation_step_set_2').slideDown(700);
         }
 
 
@@ -422,23 +440,23 @@ function RotateCarousel() {
         }
 
         if (animation_progress > 4900 && animation_progress < 4980) {
-          $('.animation_sheet_3').fadeOut(300);
-          $('.animation_press_chats').fadeOut(300);
+          $('.animation_sheet_3').fadeOut(600);
+          $('.animation_press_chats').fadeOut(600);
           $('.animation_step_set_3').css({display: 'none'});
 
-          $('.animation_sheet_4').slideDown(300);
-          $('.animation_step_set_4').slideDown(300);
+          $('.animation_sheet_4').slideDown(600);
+          $('.animation_step_set_4').slideDown(600);
           $('.animation_press_18').css({display: 'inline-block'});
           $('.animation_press_19').css({display: 'inline-block', animation: 'bulge .15s linear'});
         }
 
         if (animation_progress < 4900 && animation_progress > 4840) {
-          $('.animation_sheet_3').slideDown(300);
-          $('.animation_press_chats').slideDown(300);
+          $('.animation_sheet_3').slideDown(600);
+          $('.animation_press_chats').slideDown(600);
           $('.animation_step_set_3').css({display: 'inline-block'});
 
-          $('.animation_sheet_4').fadeOut(300);
-          $('.animation_step_set_4').fadeOut(300);
+          $('.animation_sheet_4').fadeOut(600);
+          $('.animation_step_set_4').fadeOut(600);
         }
 
         if (animation_progress > 5400 && animation_progress < 5900) {
@@ -491,7 +509,11 @@ function RotateCarousel() {
           $('.animation_sheet_4').css({top: -(animation_progress - 9500)});
         }
       }
+      else {
+        $('.chatlio-widget.closed').show();
+        $('#chatlio-widget').show();
 
+      }
   });
 
 
@@ -529,40 +551,5 @@ function RotateCarousel() {
     }, 800);
   });
 
-  if ($(window).width() == 768) {
-    if (go_animate = 'on') {
-      $('.chatlio-widget.closed').css({right: '15px'});
-    }
-    else {
-      $('.chatlio-widget.closed').css({right: '155px'});
-    }
-  }
-
-  if ($(window).width() == 414) {
-    if (go_animate = 'on') {
-      $('#chatlio-widget .chatlio-widget').css({right: '10px'});
-    }
-    else {
-      $('#chatlio-widget .chatlio-widget').css({right: '65px'});
-    }
-  }
-
-  if ($(window).width() == 375) {
-    if (go_animate = 'on') {
-      $('#chatlio-widget .chatlio-widget').css({right: '10px'});
-    }
-    else {
-      $('#chatlio-widget .chatlio-widget').css({right: '65px'});
-    }
-  }
-
-  if ($(window).width() == 360) {
-    if (go_animate = 'on') {
-      $('#chatlio-widget .chatlio-widget').css({right: '10px'});
-    }
-    else {
-      $('#chatlio-widget .chatlio-widget').css({right: '65px'});
-    }
-  }
 
 });

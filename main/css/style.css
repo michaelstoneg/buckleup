@@ -46,7 +46,7 @@ a {
   display: none;
   position: fixed;
   top: 10px;
-  left: 15px;
+  left: 10px;
   list-style: none;
   width: 160px;
   height: 280px;
@@ -251,6 +251,10 @@ a {
 
 .adjust_list_item_2 {
   margin-top: 15px;
+}
+
+.adjust_list_item_3 {
+  margin-top: 30px;
 }
 
 #gma_list_item {
