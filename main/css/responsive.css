@@ -965,7 +965,7 @@
   }
 
   .unknown_container {
-    height: 12300px;
+    height: 12100px;
   }
 
   .animation_container {
@@ -1011,6 +1011,15 @@
     right: 65px;
     /*width: 360px;*/
   }
+}
+
+@media (max-height: 740px;) {
+
+  .animation_text_subcontainer {
+    left: -5px;
+    top: 20px;
+  }
+
 }
 
 @media (min-width: 2560px) {

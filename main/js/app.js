@@ -236,33 +236,36 @@ function RotateCarousel() {
           $('.animation_master_container').css({position: 'relative', top: '100px'});
         }
 
-        if (($(document).scrollTop() - 450) > $(window).height() ) {
+        if (($(document).scrollTop() - 180) > $(window).height() ) {
           go_animate = 'on';
-          animation_progress = (scroll_position - $(window).height())- 450;
+          animation_progress = (scroll_position - $(window).height())- 180;
           $('.animation_master_container').css({position: 'fixed', top: '-40px'});
         }
 
         if (animation_progress > 11070) {
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11436px'});
+          $('.animation_master_container').css({position: 'relative', top: '11190px'});
         }
       }
 
-      if ($(window).height() <= 740 && $(window).width() <= 360 ) {
+      if ($(window).height() == 740 && $(window).width() <= 360 ) {
+        console.log('we have an s8 on our hands');
         if (($(document).scrollTop() - 0) < $(window).height() ) {
           go_animate = 'off';
+          console.log('hoooold');
           $('.animation_master_container').css({position: 'relative', top: '100px'});
         }
 
-        if (($(document).scrollTop() - 250) > $(window).height() ) {
+        if (($(document).scrollTop() - 130) > $(window).height() ) {
           go_animate = 'on';
-          animation_progress = (scroll_position - $(window).height())- 450;
-          $('.animation_master_container').css({position: 'fixed', top: '-40px'});
+          console.log('now');
+          animation_progress = (scroll_position - $(window).height())- 130;
+          $('.animation_master_container').css({position: 'fixed', top: '0px'});
         }
 
         if (animation_progress > 11070) {
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11436px'});
+          $('.animation_master_container').css({position: 'relative', top: '11136px'});
         }
       }
 

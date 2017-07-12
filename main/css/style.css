@@ -31,6 +31,7 @@ a {
   height: 80px;
   width: 80px;
   display: inline-block;
+  z-index: inherit;
 }
 
 .burger_menu_wrapper {
@@ -50,7 +51,7 @@ a {
   list-style: none;
   width: 160px;
   height: 280px;
-  z-index: 3;
+  z-index: inherit;
   background-color: rgba(0,0,0,0.5);
   border-radius: 10px;
   margin: 0;
@@ -224,12 +225,13 @@ a {
   overflow: hidden;
   background-color: #66ccff;
   z-index: 6;
+  position: relative;
 }
 
 .media_scroll_list {
   list-style: none;
   width: 10000px;
-  z-index: 6;
+  z-index: inherit;
 }
 
 .media_scroll_list_item {
@@ -238,11 +240,11 @@ a {
   width: 500px;
   margin: 15px 0px 0px 0px;
   text-align: center;
-  z-index: 6;
+  z-index: inherit;
 }
 
 .media_scroll_list_item_img {
-  z-index: 6;
+  z-index: inherit;
 }
 
 .adjust_list_item {
