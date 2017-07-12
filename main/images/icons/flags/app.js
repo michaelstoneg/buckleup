@@ -28,6 +28,7 @@ $(document).ready(function(){
 
   if($(window).width() < 377 && $(window).width() > 300) {
     small_mobile_mode = 'on';
+    console.log('small mobile mode is ' + small_mobile_mode);
     $('.responsive_off').hide();
     $('.mobile_off').hide();
     $('.responsive_on').show();
@@ -36,6 +37,7 @@ $(document).ready(function(){
 
   if($(window).width() < 450 && $(window).width() > 400) {
     mobile_mode = 'on';
+    console.log('mobile mode is ' + mobile_mode);
     $('.responsive_off').hide();
     $('.mobile_off').hide();
     $('.responsive_on').show();
@@ -44,6 +46,7 @@ $(document).ready(function(){
 
   if ($(window).width() < 769 && $(window).width() > 700 ) {
     tablet_mode = 'on';
+    console.log('tablet mode is ' + tablet_mode);
     $('.responsive_off').hide();
     $('.tablet_off').hide();
     $('.mobile_on').hide();
@@ -121,6 +124,7 @@ function RotateCarousel() {
 
   $(window).scroll(function () {
       scroll_position = $(window).scrollTop();
+      console.log("scroll position: " + scroll_position);
 
       var scroll_position_b = $(this).scrollTop();
       if (scroll_position_b > scroll_position_a) {
@@ -201,6 +205,7 @@ function RotateCarousel() {
 
         if (animation_progress > 11070) {
           go_animate = 'off'
+          console.log('animation is ' + go_animate);
           $('.animation_master_container').css({position: 'relative', top: '11326px'});
         }
       }
@@ -225,7 +230,7 @@ function RotateCarousel() {
       }
 
 
-      if ($(window).height() <= 640 && $(window).width() == 360 ) {
+      if ($(window).height() <= 640 && $(window).width() <= 360 ) {
         if (($(document).scrollTop() - 0) < $(window).height() ) {
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '100px'});
@@ -244,13 +249,16 @@ function RotateCarousel() {
       }
 
       if ($(window).height() == 740 && $(window).width() <= 360 ) {
+        console.log('we have an s8 on our hands');
         if (($(document).scrollTop() - 0) < $(window).height() ) {
           go_animate = 'off';
+          console.log('hoooold');
           $('.animation_master_container').css({position: 'relative', top: '100px'});
         }
 
         if (($(document).scrollTop() - 130) > $(window).height() ) {
           go_animate = 'on';
+          console.log('now');
           animation_progress = (scroll_position - $(window).height())- 130;
           $('.animation_master_container').css({position: 'fixed', top: '0px'});
         }
@@ -261,28 +269,9 @@ function RotateCarousel() {
         }
       }
 
-      if ($(window).width() == 320 ) {
-
-        if (($(document).scrollTop() - 0) < $(window).height() ) {
-          go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '100px'});
-        }
-
-        if (($(document).scrollTop() - 280) > $(window).height() ) {
-          go_animate = 'on';
-          animation_progress = (scroll_position - $(window).height())- 280;
-          $('.animation_master_container').css({position: 'fixed', top: '-100px'});
-        }
-
-        if (animation_progress > 11070) {
-          go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11136px'});
-        }
-
-      }
-
 
       if (go_animate  == 'on') {
+        console.log('animating...');
 
         if ($(window).width() < 417) {
           $('.chatlio-widget.closed').fadeOut(100);
@@ -385,6 +374,7 @@ function RotateCarousel() {
           $('.animation_sheet_2').slideDown(700);
           $('.animation_step_set_2').slideDown(700);
 
+          console.log('turn on step 5');
           $('.animation_press_5').css({display: 'inline-block', animation: 'wiggle 5s linear'});
         }
 

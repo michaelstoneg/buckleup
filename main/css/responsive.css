@@ -1022,6 +1022,106 @@
 
 }
 
+@media (max-width: 320px) {
+
+  .burger_menu_img_wrapper {
+    top: 10px;
+    left: 10px;
+  }
+
+  .burger_menu_img {
+    background: rgba(0,0,0,.5);
+    border-radius: 20px;
+  }
+
+  .burger_menu_list {
+    top: 8px;
+    left: 8px;
+  }
+
+  .main_logo_2 {
+    width: 280px;
+    margin: 150px 0 20px 20px;
+  }
+
+  .main_tagline {
+    font-size: 20px;
+    margin: 0px 0px 20px 20px;
+  }
+
+  .blurb_download_container {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .blurb_container {
+    width: 300px;
+  }
+
+  .animation_master_container {
+    left: -20px;
+  }
+
+  .animation_container {
+    /*height: 650px;*/
+  }
+
+  .animation_subcontainer {
+    /*width: 258px;*/
+    /*height: 452px;*/
+    /*top: 94px;*/
+    /*left: 28px;*/
+  }
+
+  .animation_text_container {
+    position: relative;
+    top: 90px;
+    height: 90px;
+    margin: 5px 0 20px 20px;
+  }
+
+  .animation_text_heading {
+    padding: 1px 10px;
+    display: inline;
+    width: 200px;
+    background: rgba(0,0,0,.5);
+  }
+
+  .animation_text {
+    padding: 0px;
+    background: rgba(0,0,0,.5);
+  }
+
+  .unknown_container {
+    height: 12100px;
+  }
+
+  .team_list_item_box {
+    width: 100px;
+  }
+
+  .team_list_item_img {
+    height: 85px;
+    width: 85px;
+  }
+
+  .address_ul {
+    width: 80px;
+  }
+
+  .footer_site_links_list {
+    margin: 5px 0 0 0;
+  }
+
+  .footer_social_link_img {
+    margin: 0 25px 0 25px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 270px;
+  }
+
+}
+
 @media (min-width: 2560px) {
 
   .burger_menu_img {
