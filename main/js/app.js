@@ -411,6 +411,7 @@ function RotateCarousel() {
         }
 
 
+
         if (animation_progress > 2100 && animation_progress < 2500) {
           $('.animation_press_7').css({display: 'inline-block', animation: 'bulge .1s linear'});
         } else {
@@ -461,6 +462,24 @@ function RotateCarousel() {
           $('.animation_sheet_4').fadeOut(600);
           $('.animation_step_set_4').fadeOut(600);
         }
+
+
+        //mid animation jump fix
+        if (animation_progress > 4900) {
+          $('.animation_sheet_4').show();
+          $('.animation_step_set_4').show();
+
+
+          $('.animation_sheet_3').hide();
+          $('.animation_step_set_3').hide();
+
+          $('.animation_sheet_2').hide();
+          $('.animation_step_set_2').hide();
+
+          $('.animation_sheet_1').hide();
+          $('.animation_step_set_1').hide();
+        }
+
 
         if (animation_progress > 5400 && animation_progress < 5900) {
           $('.animation_press_20').css({display: 'inline-block', animation: 'bulge .15s linear'});
