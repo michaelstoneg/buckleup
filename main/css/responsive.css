@@ -130,7 +130,7 @@
 }*/
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-height: 1024px) {
 
   .main_container {
     background-image: url('../images/backgrounds/bg2_small.jpg');
@@ -148,18 +148,23 @@
   }
 
   .main_tagline {
-    font-size: 45px;
+    font-size: 40px;
+  }
+
+  .blurb_container {
+    width: 550px;
   }
 
   #download_badge_1, #download_badge_2 {
-    /*margin: 0 100px 0 0;*/
-    margin: 50px;
+    margin: 50px 100px 50px 0;
+    /*margin: 50px;*/
     height: 57px;
   }
 
   .download_badges_wrapper {
     display: inline;
     width: auto;
+
   }
 
   .media_scroll_list_item {
@@ -258,7 +263,7 @@
   }
 
   .team_container {
-    height: 840px;
+    height: 1050px;
   }
 
   .team_list_item_box {
@@ -297,8 +302,8 @@
 
   .footer_social_links_list {
     position: relative;
-    right: -550px;
-    top: -130px;
+    right: -25px;
+    top: 0px;
   }
 
   .footer_social_link_img {
@@ -331,6 +336,153 @@
 
   #chatlio-widget .chatlio-widget {
     /*right: 155px;*/
+  }
+
+}
+
+/*ipad landscape*/
+
+@media (max-width: 1112px) and (max-height: 738px) {
+
+  .main_tagline {
+    font-size: 30px;
+    margin: 30px 0 30px 150px;
+  }
+
+  .blurb_download_container {
+    margin: 40px 0 40px 150px;
+  }
+
+  .blurb_container {
+    width: 611px;
+  }
+
+  #download_badge_1 {
+    height: 50px;
+  }
+
+  #download_badge_2 {
+    height: 48px;
+  }
+
+  .download_badges {
+    margin: 0 100px 0 0;
+  }
+
+  .download_badges_wrapper {
+    width: 650px;
+    margin: 20px 0 10px 0;
+    text-align: left;
+  }
+
+  .animation_master_container {
+    margin: 0px 0px 0px 10px;
+  }
+
+  .animation_container {
+    margin: 0 100px 0 50px;
+  }
+
+  .animation_text_container {
+    margin: 120px 40px;
+  }
+
+  .animation_press_9 {
+    left: 600px;
+    height: 15px;
+  }
+
+  .team_list_item_box {
+    margin: 0 20px 0 20px;
+  }
+
+  .footer_site_links_list {
+    margin: 10px 35px 0 0;
+  }
+
+  .footer_social_links_list {
+    right: -50px;
+  }
+
+  .footer_partners_img {
+    margin: 10px 40px 10px 40px;
+  }
+
+}
+
+@media (max-width: 834px) and (max-height: 1016px) {
+
+  .main_logo_2 {
+    margin-bottom: 20px;
+  }
+
+  .main_tagline {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .blurb_download_container {
+    margin: 40px 0 60px 150px;
+  }
+
+  .download_badges_wrapper {
+    width: 600px;
+    text-align: left;
+
+  }
+
+  .download_badges {
+    margin: 40px 50px 40px 0;
+  }
+
+  .animation_master_container {
+    margin: 0;
+  }
+
+  .animation_container {
+    margin: 0px;
+  }
+
+  .animation_text_container {
+    width: 400px;
+    margin: 100px 40px;
+  }
+
+  .animation_text_heading {
+    font-size: 35px;
+  }
+
+  .animation_text_subcontainer > .slick-list {
+    height: 330px;
+  }
+
+  .animation_press_9 {
+    left: 300px;
+  }
+
+  .team_list_item_box {
+    width: 180px;
+    margin: 0 10px 0 10px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 310px;
+  }
+
+  .footer_site_links_list {
+    margin: 10px 10px 0 0;
+  }
+
+  .footer_site_links_list_item {
+    margin-bottom: 20px;
+  }
+
+  .footer_social_links_list {
+    right: -20px;
+  }
+
+  .footer_partners_img {
+    margin: 10px 25px 10px 25px;
   }
 
 }
@@ -548,7 +700,7 @@
   }
 
   .animation_text_subcontainer {
-    left: 0px;
+    left: 10px;
   }
 
   .animation_text_subcontainer > .slick-list {
@@ -805,7 +957,7 @@
   }
 
   .download_badges_wrapper {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   #download_badge_1, #download_badge_2 {

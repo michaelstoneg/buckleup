@@ -149,11 +149,13 @@ function RotateCarousel() {
       if ($(window).width() >= 1280 ) {
         if (($(document).scrollTop()-200) < $(window).height() ) {
           go_animate = 'off';
+
           $('.animation_master_container').css({position: 'relative', top: '180px'});
         }
 
         if (($(document).scrollTop()-200) > $(window).height() ) {
           go_animate = 'on';
+
           var animation_container_adjust_1 = $('.main_container').height() / 12;
           animation_progress = (scroll_position - $(window).height())- 200;
           $('.animation_master_container').css({position: 'fixed', top: '80px'});
@@ -166,23 +168,73 @@ function RotateCarousel() {
       }
 
 
-      if ($(window).height() == 1024 && $(window).width() == 768 ) {
-        if (($(document).scrollTop() - 100) < $(window).height() ) {
+
+      // if ($(window).height() == 1024 && $(window).width() == 768 ) {
+      //   if (($(document).scrollTop() - 100) < $(window).height() ) {
+      //     go_animate = 'off';
+      //     $('.animation_master_container').css({position: 'relative', top: '350px'});
+      //   }
+      //
+      //   if (($(document).scrollTop() - 300) > $(window).height() ) {
+      //     go_animate = 'on';
+      //     animation_progress = (scroll_position - $(window).height())- 300;
+      //     $('.animation_master_container').css({position: 'fixed', top: '150px'});
+      //   }
+      //
+      //   if (animation_progress > 11070) {
+      //     go_animate = 'off';
+      //     $('.animation_master_container').css({position: 'relative', top: '11400px'});
+      //   }
+      // }
+
+
+//ipad portrait
+
+      if ($(window).height() == 1016 && $(window).width() == 834 ) {
+        console.log('congratulations your baby is an ipad');
+        if (($(document).scrollTop() -100) < $(window).height() ) {
+          console.log('hooold!');
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '350px'});
+          $('.animation_master_container').css({position: 'relative', top: '300px'});
         }
 
         if (($(document).scrollTop() - 300) > $(window).height() ) {
           go_animate = 'on';
+          console.log('engage');
           animation_progress = (scroll_position - $(window).height())- 300;
-          $('.animation_master_container').css({position: 'fixed', top: '150px'});
+          $('.animation_master_container').css({position: 'fixed', top: '100px'});
         }
 
         if (animation_progress > 11070) {
           go_animate = 'off';
-          $('.animation_master_container').css({position: 'relative', top: '11400px'});
+          $('.animation_master_container').css({position: 'relative', top: '11300px'});
         }
       }
+
+
+//ipad landscape
+
+      if ($(window).height() == 738 && $(window).width() == 1112 ) {
+        console.log('congratulations your baby is an ipad');
+        if (($(document).scrollTop() - 150) < $(window).height() ) {
+          console.log('hooold!');
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '150px'});
+        }
+
+        if (($(document).scrollTop() - 300) > $(window).height() ) {
+          go_animate = 'on';
+          console.log('engage');
+          animation_progress = (scroll_position - $(window).height())- 300;
+          $('.animation_master_container').css({position: 'fixed', top: '20px'});
+        }
+
+        if (animation_progress > 11070) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '11200px'});
+        }
+      }
+
 
       // if (($(window).height() == 736 || $(window).height() == 731) && ($(window).width() == 414 || $(window).width() == 411 )) {
       if ($(window).width() < 416 && $(window).width() > 410) {
@@ -205,8 +257,8 @@ function RotateCarousel() {
         }
       }
 
-      // if ($(window).height() <= 680 && $(window).width() <= 375 ) {
-      if ($(window).width() > 380 && $(window).width() < 373 ) {
+      if ($(window).width() == 375 ) {
+      // if ($(window).width() > 380 && $(window).width() < 373 ) {
         if (($(document).scrollTop() - 100) < $(window).height() ) {
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '130px'});

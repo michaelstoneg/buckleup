@@ -95,7 +95,7 @@ a {
 /*landing page*/
 
 .main_container {
-  background-image: url('../images/backgrounds/bg3.jpeg');
+  background-image: url('../images/backgrounds/bg3a.jpg');
   background-size: cover;
   height: 95vh;
 }
@@ -637,7 +637,7 @@ a {
   color: #ff738e;
   padding: 5px;
   margin: 10px 0 5px 0;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .animation_text {
@@ -646,7 +646,7 @@ a {
   color: #66ccff;
   line-height: 1.7;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .animation_subcontainer {
