@@ -169,23 +169,43 @@ function RotateCarousel() {
 
 
 
-      // if ($(window).height() == 1024 && $(window).width() == 768 ) {
-      //   if (($(document).scrollTop() - 100) < $(window).height() ) {
-      //     go_animate = 'off';
-      //     $('.animation_master_container').css({position: 'relative', top: '350px'});
-      //   }
-      //
-      //   if (($(document).scrollTop() - 300) > $(window).height() ) {
-      //     go_animate = 'on';
-      //     animation_progress = (scroll_position - $(window).height())- 300;
-      //     $('.animation_master_container').css({position: 'fixed', top: '150px'});
-      //   }
-      //
-      //   if (animation_progress > 11070) {
-      //     go_animate = 'off';
-      //     $('.animation_master_container').css({position: 'relative', top: '11400px'});
-      //   }
-      // }
+      if ($(window).height() == 1024 && $(window).width() == 768 ) {
+        console.log('chrome tools ipad size');
+        if (($(document).scrollTop() - 100) < $(window).height() ) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '350px'});
+        }
+
+        if (($(document).scrollTop() - 300) > $(window).height() ) {
+          go_animate = 'on';
+          animation_progress = (scroll_position - $(window).height())- 300;
+          $('.animation_master_container').css({position: 'fixed', top: '150px'});
+        }
+
+        if (animation_progress > 11070) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '11400px'});
+        }
+      }
+
+      if ($(window).height() == 768 && $(window).width() == 1024 ) {
+        console.log('chrome tools ipad size');
+        if (($(document).scrollTop() - 50) < $(window).height() ) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '250px'});
+        }
+
+        if (($(document).scrollTop() - 300) > $(window).height() ) {
+          go_animate = 'on';
+          animation_progress = (scroll_position - $(window).height())- 300;
+          $('.animation_master_container').css({position: 'fixed', top: '50px'});
+        }
+
+        if (animation_progress > 11070) {
+          go_animate = 'off';
+          $('.animation_master_container').css({position: 'relative', top: '11400px'});
+        }
+      }
 
 
 //ipad portrait

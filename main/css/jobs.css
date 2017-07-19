@@ -485,6 +485,44 @@ a {
 
 }
 
+@media (max-width: 768px) and (max-height:1024px) {
+
+  .jobs_page_section_2_subcontainer, .jobs_page_section_3_subcontainer {
+    width: 30%;
+    padding: 80px 20px 80px 0px;
+  }
+
+  .jobs_page_section_3_img {
+    height:  750px;
+  }
+
+  .footer_social_links_list {
+    right: -3%;
+  }
+
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+
+  .jobs_page_section_2_subcontainer, .jobs_page_section_3_subcontainer {
+    width: 30%;
+    padding: 80px 20px 80px 0px;
+  }
+
+  .jobs_page_section_3 {
+    overflow: hidden;
+  }
+
+  .jobs_page_section_3_img {
+    height: 678px;
+  }
+
+  .footer_social_links_list {
+    right: -25%;
+  }
+
+}
+
 @media (max-width: 834px) and (max-height: 1016px) {
 
   .jobs_page_section_3 {

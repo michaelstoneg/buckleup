@@ -487,6 +487,68 @@
 
 }
 
+@media (max-width: 768px) and (max-height:1024) {
+
+  .main_logo_2 {
+    margin-left: 120px;
+  }
+
+  .main_tagline {
+    margin-left: 120px;
+  }
+
+  .blurb_download_container {
+    margin-left: 120px;
+  }
+
+  .animation_master_container {
+    margin: 0px;
+  }
+
+}
+
+@media (max-width: 1024px) and (max-height:768px) {
+
+  .main_logo_2 {
+    margin: 150px 0 40px 150px;
+  }
+
+  .main_tagline {
+    font-size: 40px;
+    margin: 30px 0 30px 150px;
+  }
+
+  .blurb_download_container {
+    margin: 30px 0 30px 150px;
+  }
+
+  .download_badges_wrapper {
+    width: 600px;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  #download_badge_1 {
+    height: 50px;
+    margin: 0px 50px 0 0;
+  }
+
+  #download_badge_2 {
+    height: 48px;
+    margin: 0px 50px 0 0;
+  }
+
+  .animation_master_container {
+    margin: 0px;
+  }
+
+  .animation_container {
+    margin: 0 100px 0 20px;
+  }
+
+}
+
+
 
 @media (max-width: 450px) {
 
@@ -1084,6 +1146,7 @@
 
   .main_tagline {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 
   .blurb_container {
@@ -1098,7 +1161,7 @@
   }
 
   .countdown_container {
-    top: -100px;
+    top: -110px;
   }
 
   .countdown_text, .countdown-amount, .countdown-period {
@@ -1109,6 +1172,7 @@
     display: block;
     width: auto;
     margin-top: 50px;
+    text-align: center;
   }
 
   #download_badge_1, #download_badge_2 {
