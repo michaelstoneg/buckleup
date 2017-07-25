@@ -310,9 +310,10 @@ a {
 .team_container {
   text-align: center;
   /*height: 120vh;*/
+  border-bottom: 1px solid rgba(75,228,196,0.2);
 }
 
-.team_header {
+.team_header, .ambassador_heading {
   font-size: 50px;
   color: #66ccff;
   margin-top: 50px;
@@ -323,20 +324,20 @@ a {
   margin: 40px 0 30px 0;
 }
 
-.team_list_item_box {
+.team_list_item_box, .ambassador_list_item_box {
   /*text-align: center;*/
   width: 200px;
   height: 200px;
   margin: 0 100px 0 100px;
 }
 
-.team_list_item {
+.team_list_item, .ambassador_list_item {
   vertical-align: top;
   display: inline-block;
   margin: 0;
 }
 
-.team_list_item_img {
+.team_list_item_img, .ambassador_list_item_img {
   background-color: #66ccff;
   border-radius: 50%;
   height: 150px;
@@ -344,7 +345,7 @@ a {
   /*margin-bottom: 20px;*/
 }
 
-.team_text {
+.team_text, .ambassador_text {
   margin: 5px 0;
   font-size: 12px;
 }
@@ -389,6 +390,34 @@ a {
   /*content: "\1F1f8\1f1ee";*/
   content: url('../images/icons/flags/uk.svg');
 }
+
+/* ambassadors */
+
+.ambassador_container {
+  background-color: #ffffff;
+  height: 500px;
+  text-align: center;
+}
+
+.ambassador_list {
+  padding: 0;
+}
+
+.ambassador_flag_1::after {
+  content: url("../images/icons/flags/china.svg")
+}
+
+.ambassador_flag_2::after {
+  content: url("../images/icons/flags/canada.svg")
+}
+
+.ambassador_flag_3::after {
+  content: url("../images/icons/flags/ghana.svg")
+}
+
+
+/* ambassadors */
+
 
 
 /*footer page*/
@@ -573,37 +602,36 @@ a {
   left: 440px;
 }
 
+/*footer page*/
+
+
+/*animation*/
+
+
 .animation_master_container {
-  /*border: 2px solid black;*/
   margin-left: 100px;
   width: 1400px;
   height: 700px;
-  /*position: relative;*/
   top: 200px;
   left: 200px;
-  /*z-index: 9;*/
 }
 
 .animation_container {
   width: 400px;
   height: 700px;
   margin: 0 100px 0 300px;
-  /*border: 2px solid black;*/
   background-image: url('../images/screens/screen0.png');
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  /*z-index: inherit;*/
 }
 
 .animation_text_container {
   width: 500px;
   height: 400px;
   margin: 0 40px;
-  /*border: 2px solid black;*/
   display: inline-block;
   overflow: hidden;
-  /*z-index: inherit;*/
 }
 
 .mobile_on {
@@ -633,7 +661,6 @@ a {
 .animation_text_heading {
   font-size: 50px;
   margin-bottom: 0px;
-  /*color: #ff738e;*/
   color: #ff738e;
   padding: 5px;
   margin: 10px 0 5px 0;
@@ -642,7 +669,6 @@ a {
 
 .animation_text {
   font-size: 20px;
-  /*color: #66ccff;*/
   color: #66ccff;
   line-height: 1.7;
   padding: 5px;
@@ -699,7 +725,6 @@ a {
   position: absolute;
   top: 23px;
   left: 115px;
-  /*display: none;*/
 }
 
 .animation_press_2 {
@@ -708,7 +733,6 @@ a {
   position: absolute;
   top: 22px;
   left: 172px;
-  /*display: none;*/
 }
 
 .animation_press_3 {
@@ -763,10 +787,8 @@ a {
 .animation_chat_box {
   z-index: 2;
   position: absolute;
-  /*display: none;*/
   top: 70px;
   left: 290px;
-  /*border: 2px solid black;*/
   height: 360px;
   width: 250px;
   overflow: hidden;
@@ -786,7 +808,6 @@ a {
   left: 870px;
   background: #ff738e;
   border: 2px solid black;
-  /*border-radius: 5px;*/
   padding: 10px;
 }
 
@@ -974,10 +995,12 @@ a {
   100% {transform: rotate(0deg);}
 }
 
-.blog_page {
+/*animation*/
+
+
+/*.blog_page {
   background-image: url('../images/backgrounds/bg4.jpg');
   background-size: cover;
-  /*background-repeat: no-repeat;*/
 }
 
 
@@ -1027,4 +1050,4 @@ th, td {
 .arrivals_table_row_text {
   color: #66ccff;
   margin: 1px;
-}
+}*/

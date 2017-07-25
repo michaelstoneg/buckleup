@@ -87,7 +87,7 @@
   .footer_partners_img {
     height: 40px;
     width: 40px;
-    margin: 10px 60px 10px 60px;
+    margin: 10px 50px 10px 50px;
   }
 
   #aws_img {
@@ -806,7 +806,7 @@
     height: 200px;
   }
 
-  .team_list_2, .team_list_3, .team_list_4, .team_list_5 {
+  .team_list_2, .team_list_3, .team_list_4, .team_list_5, .ambassador_list {
     padding: 0;
     margin: 0;
     height: 200px;
@@ -818,12 +818,12 @@
     vertical-align: top;
   }
 
-  .team_list_item_box {
+  .team_list_item_box, .ambassador_list_item_box {
     width: 121px;
     margin: 20px 5px 20px 5px;
   }
 
-  .team_list_item_img {
+  .team_list_item_img, .ambassador_list_item_img {
     height: 100px;
     width: 100px;
   }
@@ -932,7 +932,7 @@
   .footer_partners_img {
     height: 20px;
     width: 20px;
-    margin: 5px 12px 5px 12px;
+    margin: 5px 10px 5px 10px;
   }
 
   #aws_img {
@@ -1062,7 +1062,7 @@
     left: 75px;
   }
 
-  .team_list_item_box {
+  .team_list_item_box, .ambassador_list_item_box {
     margin: 20px 0px 20px 0px;
   }
 
@@ -1096,7 +1096,25 @@
   }
 
   .footer_partners_img {
-    margin: 5px 10px 5px 10px;
+    margin: 5px 8px 5px 8px;
+    height: 16px;
+    width: 16px;
+  }
+
+  #fbstart_img {
+    height: 16px;
+    width: 66px;
+  }
+
+  #wework_img {
+    height: 21px;
+    width: 46px;
+    margin-top: 8px;
+  }
+
+  #aws_img {
+    height: 16px;
+    width: 76px;
   }
 
   .copyright_text {
@@ -1209,7 +1227,7 @@
     font-size: 20px;
   }
 
-  .team_list_item_box {
+  .team_list_item_box, .ambassador_list_item_box {
     margin: 5px 0 5px 0;
     width: 110px;
   }
