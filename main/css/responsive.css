@@ -1354,6 +1354,14 @@
     height: 270px;
   }
 
+  #fbstart_img {
+    width: 60px;
+  }
+
+  #aws_img {
+    width: 72px;
+  }
+
 }
 
 @media (min-width: 2560px) {

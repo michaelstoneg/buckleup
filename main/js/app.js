@@ -121,6 +121,7 @@ function RotateCarousel() {
 
   $(window).scroll(function () {
       scroll_position = $(window).scrollTop();
+      console.log(scroll_position);
 
       var scroll_position_b = $(this).scrollTop();
       if (scroll_position_b > scroll_position_a) {
