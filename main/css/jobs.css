@@ -26,13 +26,42 @@ a {
   /*width: 100%;*/
 }
 
+.seatbelt_animation_container {
+  /*border: 1px solid white;*/
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.seatbelt_animation_arrow {
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+.seatbelt_animation_left {
+  position: relative;
+  z-index: 2;
+}
+
+.seatbelt_animation_right {
+  position: relative;
+  z-index: 2;
+}
+
+.jobs_page_heading {
+  color: #ffffff;
+}
+
+
+
 .jobs_page_header_subcontainer {
   display: block;
   margin: 0 auto;
   /*border: 2px solid green;*/
-  background-image: url("../images/backgrounds/bg4.jpg");
+  background-image: url("../images/backgrounds/jobs/sky3.jpeg");
   background-size: cover;
-  padding: 50px;
+  /*padding: 50px;*/
+  padding: 150px;
 }
 
 .jobs_page_logo_1 {
@@ -610,6 +639,40 @@ a {
     font-size: 18px;
   }
 
+  .seatbelt_animation_container {
+    /*border: 1px solid white;*/
+    /*display: inline-block;*/
+    text-align: center;
+    margin-bottom: 25px;
+    width: 400px;
+  }
+
+  .seatbelt_animation_arrow {
+    margin-bottom: 15px;
+    z-index: 1;
+    height: 50px;
+  }
+
+  .seatbelt_animation_left {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+  }
+
+  .seatbelt_animation_right {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+  }
+
+  .jobs_page_heading {
+    color: #ffffff;
+  }
+
+  .jobs_page_header_subcontainer {
+    padding: 100px 0 100px 0;
+  }
+
   .jobs_page_section_1_text, .jobs_page_team_about {
     font-size: 12px;
   }
@@ -647,6 +710,10 @@ a {
     width: 370px;
     height: 100%;
     /*height: 400px;*/
+  }
+
+  .join_us_button, .join_us_button_link {
+    display: none;
   }
 
   .jobs_page_section_3 {
@@ -834,6 +901,41 @@ a {
 
 @media (max-width: 375px) {
 
+  .seatbelt_animation_container {
+    /*border: 1px solid white;*/
+    /*display: inline-block;*/
+    text-align: center;
+    margin-bottom: 25px;
+    width: 400px;
+  }
+
+  .seatbelt_animation_arrow {
+    margin-bottom: 15px;
+    z-index: 1;
+    height: 40px;
+  }
+
+  .seatbelt_animation_left {
+    position: relative;
+    z-index: 2;
+    height: 80px;
+  }
+
+  .seatbelt_animation_right {
+    position: relative;
+    z-index: 2;
+    height: 80px;
+  }
+
+  .jobs_page_heading {
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  .jobs_page_header_subcontainer {
+    padding: 100px 0 100px 0;
+  }
+
   .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
     width: 204px;
   }
@@ -912,4 +1014,20 @@ a {
     right: -800px;
   }
 
+}
+
+
+@keyframes left_seatbelt {
+  from {left: 0px}
+  to {left: 28px}
+}
+
+@keyframes right_seatbelt {
+  from {right: 0px}
+  to {right: 28px}
+}
+
+@keyframes arrow_seatbelt {
+  from { opacity: 1}
+  to {opacity: .2}
 }
