@@ -27,7 +27,6 @@ $(document).ready(function(){
 
   // $('.seatbelt_animation_left').click(function () {
 
-    console.log('belts up');
     $('.seatbelt_animation_left').css({
       animation: 'left_seatbelt 1.5s infinite'
     });
