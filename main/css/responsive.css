@@ -823,6 +823,10 @@
     margin: 20px 5px 20px 5px;
   }
 
+  .team_box_special {
+    margin: 20px 30px 20px 30px;
+  }
+
   .team_list_item_img, .ambassador_list_item_img {
     height: 100px;
     width: 100px;
@@ -834,6 +838,13 @@
 
   #new_team_member {
     margin: 0;
+  }
+
+  .new_team_img {
+    padding: 15px;
+    border-radius: 45%;
+    height: 75px;
+    width: 75px;
   }
 
   .footer_bottom_subcontainer {
@@ -1066,6 +1077,10 @@
     margin: 20px 0px 20px 0px;
   }
 
+  .team_box_special {
+    margin: 20px 20px 20px 20px;
+  }
+
   .footer_bottom_subcontainer {
     height: 250px;
   }
@@ -1230,6 +1245,11 @@
   .team_list_item_box, .ambassador_list_item_box {
     margin: 5px 0 5px 0;
     width: 110px;
+  }
+
+  .team_box_special {
+    margin: 20px 20px 20px 20px;
+    border-radius: 50%;
   }
 
   .footer_site_links_list_item_text {
