@@ -1,0 +1,25 @@
+.tech_page_header {
+  border: 1px solid blue;
+  height: 600px;
+}
+
+.tech_page_heading {
+  text-align: center;
+}
+
+.tech_page_section {
+  border: 1px solid blue;
+  height: 500px
+}
+
+.tech_section_right {
+  border: 1px solid red;
+  width: 200px;
+  height: 450px;
+}
+
+.tech_section_left {
+  border: 1px solid green;
+  width: 200px;
+  height: 450px;
+}
