@@ -1,46 +1,73 @@
+
+body {
+  /*background-image: url("../images/icons/test2.jpg");*/
+  margin: 0 !important;
+  font-family: 'Roboto', sans-serif;
+  /*background-size: cover;*/
+}
+
+h1, h2, h3 {
+  color: #66ccff;
+}
+
 p {
   line-height: 1.5;
 }
 
 .tech_page_header {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   height: 650px;
   text-align: center;
+  margin: 20px 0 50px 0px;
+  /*background-image: url("../images/icons/test2.jpg");*/
 }
 
 .tech_page_header_subcontainer {
-  border: 1px solid purple;
+  /*border: 1px solid purple;*/
   display: inline-block;
   width: 750px;
   height: 350px;
   padding: 30px;
   display: block;
   margin: 0 auto;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px;
 }
 
 .tech_page_heading {
   text-align: center;
-  margin: 50px 0px 50px 0px;
+  margin: 20px 0px 60px 0px;
+  background-color: rgba(255,255,255,0.9);
 }
 
 .tech_page_header_img {
   height: 150px;
+  border-radius: 20%;
+  margin: 40px;
+}
+
+.tech_page_header_text {
+  line-height: 2;
 }
 
 .tech_page_section {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   height: 550px;
   text-align: center;
 }
 
 .tech_section_left {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   display: inline-block;
-  width: 180px;
-  height: 80px;
+  width: 110px;
+  height: 100px;
   margin: 0 50px 0 5px;
   vertical-align: top;
   padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px;
 }
 
 .tech_page_section_img_main {
@@ -48,27 +75,35 @@ p {
 }
 
 .tech_section_center {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   width: 450px;
-  height: 230px;
+  height: 240px;
   display: inline-block;
   margin: 0 100px 0 100px;
   padding: 30px;
   vertical-align: top;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px;
 }
 
 
 .tech_section_right {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 400px;
   height: 300px;
   display: inline-block;
   margin: 0 100px 0 100px;
   padding: 30px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px;
 }
 
+
+
 .footer_bottom_subcontainer {
-  height: 270px;
+  height: 290px;
   /*border: 1px solid yellow;*/
   background-color: #545454;
   z-index: 1;
