@@ -1,14 +1,21 @@
+p {
+  line-height: 1.5;
+}
+
 .tech_page_header {
-  /*border: 1px solid blue;*/
-  height: 600px;
+  border: 1px solid blue;
+  height: 650px;
   text-align: center;
 }
 
 .tech_page_header_subcontainer {
-  /*border: 1px solid purple;*/
+  border: 1px solid purple;
   display: inline-block;
-  width: 800px;
-  height: 400px;
+  width: 750px;
+  height: 350px;
+  padding: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
 .tech_page_heading {
@@ -16,39 +23,49 @@
   margin: 50px 0px 50px 0px;
 }
 
+.tech_page_header_img {
+  height: 150px;
+}
+
 .tech_page_section {
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
   height: 550px;
   text-align: center;
 }
 
 .tech_section_left {
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   display: inline-block;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 80px;
   margin: 0 50px 0 5px;
   vertical-align: top;
+  padding: 20px;
 }
 
-.tech_section_right {
-  /*border: 1px solid red;*/
-  width: 500px;
-  height: 400px;
-  display: inline-block;
-  margin: 0 100px 0 100px;
-  /*float: right;*/
+.tech_page_section_img_main {
+  height: 50px;
 }
 
 .tech_section_center {
-  /*border: 1px solid green;*/
-  width: 500px;
-  height: 250px;
+  border: 1px solid green;
+  width: 450px;
+  height: 230px;
   display: inline-block;
   margin: 0 100px 0 100px;
+  padding: 30px;
+  vertical-align: top;
 }
 
 
+.tech_section_right {
+  border: 1px solid red;
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+  margin: 0 100px 0 100px;
+  padding: 30px;
+}
 
 .footer_bottom_subcontainer {
   height: 270px;
