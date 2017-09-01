@@ -1,6 +1,6 @@
 
 body {
-  /*background-image: url("../images/icons/test2.jpg");*/
+  background-image: url("../images/icons/slice.jpg");
   margin: 0 !important;
   font-family: 'Roboto', sans-serif;
   /*background-size: cover;*/
@@ -30,7 +30,7 @@ p {
   padding: 30px;
   display: block;
   margin: 0 auto;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   border-radius: 5px;
   box-shadow: 1px 1px 2px;
 }
@@ -65,13 +65,35 @@ p {
   margin: 0 50px 0 5px;
   vertical-align: top;
   padding: 20px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   border-radius: 50%;
   box-shadow: 1px 1px 2px;
 }
 
 .tech_page_section_img_main {
   height: 50px;
+}
+
+.text_mask_1 {
+  border: 1px solid red;
+  height: 300px;
+  width: 510px;
+  z-index: 2;
+  margin: 0;
+  position: relative;
+  top: -296px;
+  left: -30px;
+}
+
+.text_mask_2 {
+  border: 1px solid red;
+  height: 361px;
+  width: 460px;
+  z-index: 2;
+  margin: 0;
+  position: relative;
+  top: -321px;
+  left: -30px;
 }
 
 .tech_section_center {
@@ -82,7 +104,7 @@ p {
   margin: 0 100px 0 100px;
   padding: 30px;
   vertical-align: top;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   border-radius: 5px;
   box-shadow: 1px 1px 2px;
 }
@@ -95,7 +117,7 @@ p {
   display: inline-block;
   margin: 0 100px 0 100px;
   padding: 30px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   border-radius: 5px;
   box-shadow: 1px 1px 2px;
 }
