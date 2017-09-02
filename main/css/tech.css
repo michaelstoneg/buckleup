@@ -1,25 +1,27 @@
 
 body {
-  background-image: url("../images/icons/slice.jpg");
+  /*background-image: url("../images/backgrounds/swirl_bg_3.jpg");*/
   margin: 0 !important;
   font-family: 'Roboto', sans-serif;
   /*background-size: cover;*/
 }
 
 h1, h2, h3 {
-  color: #66ccff;
+  /*color: #66ccff;*/
+  color: #ffffff;
 }
 
 p {
   line-height: 1.5;
+  color: #ffffff;
 }
 
 .tech_page_header {
   /*border: 1px solid blue;*/
   height: 650px;
   text-align: center;
-  margin: 20px 0 50px 0px;
-  /*background-image: url("../images/icons/test2.jpg");*/
+  margin: 20px 0 0px 0px;
+  background-image: url("../images/backgrounds/swirl_bg_3.jpg");
 }
 
 .tech_page_header_subcontainer {
@@ -30,15 +32,23 @@ p {
   padding: 30px;
   display: block;
   margin: 0 auto;
-  background-color: rgba(255,255,255,1);
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px;
+  background-color: rgba(255,255,255,.7);
+  /*border-radius: 5px;*/
+  /*box-shadow: 1px 1px 2px;*/
 }
 
 .tech_page_heading {
   text-align: center;
   margin: 0px 0px 30px 0px;
-  background-color: rgba(255,255,255,0.9);
+  color: #fffff;
+  /*background-color: rgba(255,255,255,1);*/
+}
+
+.tech_page_heading_main {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+  color: #66ccff;
+  /*background-color: rgba(255,255,255,1);*/
 }
 
 .tech_page_header_img {
@@ -55,29 +65,96 @@ p {
 
 .tech_page_header_text {
   line-height: 2;
+  color: #66ccff;
 }
 
 .tech_page_section {
   /*border: 1px solid blue;*/
-  height: 550px;
+  height: 600px;
   text-align: center;
-  margin: 80px 0;
+  /*margin: 10px 0;*/
+}
+
+.tech_section_1 {
+  /*background-color: #66ccff;*/
+  border-top: 1px solid #66ccff;
+}
+
+.tech_heading_1, .tech_subheading_1, .tech_subheading_1a, .tech_subheading_1b {
+  color: #66ccff;
+}
+
+.tech_heading_2, .tech_subheading_2, .tech_subheading_2a, .tech_subheading_2b {
+  color: #ff738e;
+}
+
+.tech_heading_3, .tech_subheading_3, .tech_subheading_3a, .tech_subheading_3b {
+  color: #4be4c4;
+}
+
+.tech_heading_4, .tech_subheading_4, .tech_subheading_4a, .tech_subheading_4b {
+  color: #66ccff;
+}
+
+.tech_heading_5, .tech_subheading_5, .tech_subheading_5a, .tech_subheading_5b {
+  color: #ff738e;
+}
+
+.tech_text_1, .tech_text_1a {
+  color: #66ccff;
+}
+
+.tech_text_2, .tech_text_2a {
+  color: #ff738e;
+}
+
+.tech_text_3, .tech_text_3a {
+  color: #4be4c4;
+}
+
+.tech_text_4, .tech_text_4a {
+  color: #66ccff;
+}
+
+.tech_text_5, .tech_text_5a {
+  color: #ff738e;
+}
+
+.tech_section_2 {
+  /*background-color: #ff738e;*/
+  border-top: 1px solid #ff738e;
+}
+
+.tech_section_3 {
+  /*background-color: #4be4c4;*/
+  border-top: 1px solid #4be4c4;
+}
+
+.tech_section_4 {
+  /*background-color: #66ccff;*/
+  border-top: 1px solid #66ccff;
+}
+
+.tech_section_5 {
+  /*background-color: #ff738e;*/
+  border-top: 1px solid #ff738e;
 }
 
 .tech_page_section_heading_container {
   /*background-color: rgba(255,255,255,.9);*/
   display: block;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 .tech_page_section_heading_img {
   height: 70px;
   width: 70px;
   /*background-color: rgba(75,228,196,.7);*/
-  background-color: rgba(255,255,255,.9);
+  /*background-color: rgba(255,255,255,1);*/
   border: 1px soild red;
   border-radius: 20%;
-  margin: 20px;
+  margin: 30px;
+  /*padding: 10px;*/
 }
 
 .tech_section_left {
@@ -88,9 +165,9 @@ p {
   margin: 0 50px 0 5px;
   vertical-align: top;
   padding: 20px;
-  background-color: rgba(255,255,255,1);
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px;
+  /*background-color: rgba(255,255,255,1);*/
+  /*border-radius: 50%;*/
+  /*box-shadow: 1px 1px 2px;*/
   text-align: center;
 }
 
@@ -128,10 +205,10 @@ p {
   margin: 0 50px 0 50px;
   padding: 30px;
   vertical-align: top;
-  background-color: rgba(255,255,255,1);
+  /*background-color: rgba(255,255,255,1);*/
   /*background-color: rgba(75,258,196,.7);*/
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px;
+  /*border-radius: 5px;*/
+  /*box-shadow: 1px 1px 2px;*/
 }
 
 
@@ -142,9 +219,9 @@ p {
   display: inline-block;
   margin: 0 50px 0px 50px;
   padding: 30px;
-  background-color: rgba(255,255,255,1);
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px;
+  /*background-color: rgba(255,255,255,1);*/
+  /*border-radius: 5px;*/
+  /*box-shadow: 1px 1px 2px;*/
 }
 
 

@@ -1,50 +1,17 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="957.177px" height="957.176px" viewBox="0 0 957.177 957.176" style="enable-background:new 0 0 957.177 957.176;"
-	 xml:space="preserve">
-<g>
-	<g>
-		<path d="M0,816.385h957.177V140.792H0V816.385z M65,205.792h827.177v545.594H65V205.792z"/>
-		<path d="M105.146,715.052h316.987v-231.54H105.146V715.052z M170.146,548.512h186.987v101.541H170.146V548.512z"/>
-		<path d="M263.639,459.778c62.572,0,113.479-50.906,113.479-113.479c0-62.572-50.906-113.478-113.479-113.478
-			c-62.571,0-113.478,50.906-113.478,113.478C150.161,408.872,201.068,459.778,263.639,459.778z M263.639,297.821
-			c26.731,0,48.479,21.747,48.479,48.478s-21.747,48.479-48.479,48.479c-26.73,0-48.478-21.748-48.478-48.479
-			S236.909,297.821,263.639,297.821z"/>
-		<rect x="497.129" y="593.667" width="344.982" height="65"/>
-		<rect x="497.129" y="446.287" width="344.982" height="65"/>
-		<rect x="497.129" y="298.905" width="344.982" height="65"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="958px" height="677px" viewBox="0 0 958 677" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>user_data</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user_data" fill-rule="nonzero" fill="#66CCFF">
+            <path d="M0,676.385 L957.177,676.385 L957.177,0.792 L0,0.792 L0,676.385 Z M65,65.792 L892.177,65.792 L892.177,611.386 L65,611.386 L65,65.792 Z" id="Shape"></path>
+            <path d="M105.146,575.052 L422.133,575.052 L422.133,343.512 L105.146,343.512 L105.146,575.052 Z M170.146,408.512 L357.133,408.512 L357.133,510.053 L170.146,510.053 L170.146,408.512 Z" id="Shape"></path>
+            <path d="M263.639,319.778 C326.211,319.778 377.118,268.872 377.118,206.299 C377.118,143.727 326.212,92.821 263.639,92.821 C201.068,92.821 150.161,143.727 150.161,206.299 C150.161,268.872 201.068,319.778 263.639,319.778 Z M263.639,157.821 C290.37,157.821 312.118,179.568 312.118,206.299 C312.118,233.03 290.371,254.778 263.639,254.778 C236.909,254.778 215.161,233.03 215.161,206.299 C215.161,179.568 236.909,157.821 263.639,157.821 Z" id="Shape"></path>
+            <rect id="Rectangle-path" x="497.129" y="453.667" width="344.982" height="65"></rect>
+            <rect id="Rectangle-path" x="497.129" y="306.287" width="344.982" height="65"></rect>
+            <rect id="Rectangle-path" x="497.129" y="158.905" width="344.982" height="65"></rect>
+        </g>
+    </g>
 </svg>
