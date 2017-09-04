@@ -224,7 +224,52 @@ p {
   /*box-shadow: 1px 1px 2px;*/
 }
 
+.tech_section_slack {
+  height: 380px;
+  border-top: 1px solid #4be4c4;
+}
 
+.tech_page_slack_img {
+  height: 70px;
+  width: 70px;
+  margin-top: 30px;
+}
+
+.tech_page_slack_heading {
+  color: #4be4c4;
+}
+
+.tech_page_slack_text {
+  color: #4be4c4;
+}
+
+.tech_page_slack_subcontainer {
+  border:  1px solid #4be4c4;
+  border-radius: 5px;
+  display: inline-block;
+  width: 256px;
+  height: 31px;
+  margin: 20px;
+}
+
+.tech_section_slack_input {
+  display: inline-block;
+  vertical-align: top;
+  height: 25px;
+  width: 125px;
+}
+
+.tech_section_slack_button {
+  display: inline-block;
+  height: 31px;
+  width: 120px;
+  background-color: #4be4c4;
+}
+
+.tech_section_slack_button_text {
+  padding: 5px;
+  margin: 0;
+}
 
 .footer_bottom_subcontainer {
   height: 290px;
