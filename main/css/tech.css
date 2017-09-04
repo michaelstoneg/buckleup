@@ -81,6 +81,10 @@ p {
   border-top: 1px solid #66ccff;
 }
 
+.tech_section_subheading {
+  text-align: justify;
+}
+
 .tech_heading_1, .tech_subheading_1, .tech_subheading_1a, .tech_subheading_1b {
   color: #66ccff;
 }
@@ -98,11 +102,41 @@ p {
 }
 
 .tech_heading_5, .tech_subheading_5, .tech_subheading_5a, .tech_subheading_5b {
-  color: #ff738e;
+  color: #66ccff;
 }
 
 .tech_section_text {
   text-align: justify;
+}
+
+.tech_page_whatisit_list {
+  list-style-type: none;
+  text-align: justify;
+  padding: 0;
+}
+
+.tech_page_whatisit_list_item {
+  margin: 30px 0;
+}
+
+.tech_page_whatisit_list_item_link {
+  text-decoration: none;
+}
+
+.tech_page_whatisit_list_item_text_1 {
+  color: #66ccff;
+}
+
+.tech_page_whatisit_list_item_text_2 {
+  color: #ff738e;
+}
+
+.tech_page_whatisit_list_item_text_3 {
+  color: #4be4c4;
+}
+
+.tech_page_whatisit_list_item_text_4 {
+  color: #66ccff;
 }
 
 .tech_text_1, .tech_text_1a {
@@ -122,7 +156,7 @@ p {
 }
 
 .tech_text_5, .tech_text_5a {
-  color: #ff738e;
+  color: #66ccff;
 }
 
 .tech_section_2 {
@@ -142,7 +176,7 @@ p {
 
 .tech_section_5 {
   /*background-color: #ff738e;*/
-  border-top: 1px solid #ff738e;
+  border-top: 1px solid #66ccff;
 }
 
 .tech_page_section_heading_container {
@@ -165,7 +199,7 @@ p {
 .tech_section_left {
   /*border: 1px solid black;*/
   display: inline-block;
-  width: 110px;
+  width: 150px;
   height: 100px;
   margin: 0 50px 0 5px;
   vertical-align: top;
@@ -173,7 +207,7 @@ p {
   /*background-color: rgba(255,255,255,1);*/
   /*border-radius: 50%;*/
   /*box-shadow: 1px 1px 2px;*/
-  text-align: center;
+  text-align: justify;
 }
 
 .tech_page_section_img_main {
@@ -219,7 +253,7 @@ p {
 
 .tech_section_right {
   /*border: 1px solid red;*/
-  width: 400px;
+  width: 420px;
   height: 300px;
   display: inline-block;
   margin: 0 50px 0px 50px;
