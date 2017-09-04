@@ -47,7 +47,7 @@ p {
 .tech_page_heading_main {
   text-align: center;
   margin: 0px 0px 30px 0px;
-  color: #66ccff;
+  color: #4be4c4;
   /*background-color: rgba(255,255,255,1);*/
 }
 
@@ -65,12 +65,13 @@ p {
 
 .tech_page_header_text {
   line-height: 2;
-  color: #66ccff;
+  color: #4BE4C4;
+  text-align: justify;
 }
 
 .tech_page_section {
   /*border: 1px solid blue;*/
-  height: 600px;
+  height: 700px;
   text-align: center;
   /*margin: 10px 0;*/
 }
@@ -98,6 +99,10 @@ p {
 
 .tech_heading_5, .tech_subheading_5, .tech_subheading_5a, .tech_subheading_5b {
   color: #ff738e;
+}
+
+.tech_section_text {
+  text-align: justify;
 }
 
 .tech_text_1, .tech_text_1a {
