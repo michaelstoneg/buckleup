@@ -2,6 +2,12 @@ $(document).ready(function(){
 
   console.log("It's the tech page");
 
+
+  $(".burger_menu_list").hide();
+  $(".burger_menu_img_wrapper").click(function() {
+    $(".burger_menu_list").slideToggle(1000);
+  });
+
   var addSlackMember = function(){
     var email           = $('.tech_section_slack_input').val(),
         // time                = new Date().getTime(),

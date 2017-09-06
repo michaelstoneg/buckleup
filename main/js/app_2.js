@@ -1,6 +1,11 @@
 $(document).ready(function(){
   console.log("It's the job page");
 
+  $(".burger_menu_list").hide();
+  $(".burger_menu_img_wrapper").click(function() {
+    $(".burger_menu_list").slideToggle(1000);
+  });
+
 
   $('.subscribe_popup_wrapper').hide();
   $('#subscribe_general').click(function () {

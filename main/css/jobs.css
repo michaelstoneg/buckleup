@@ -20,6 +20,80 @@ a {
 }
 
 
+/*burger menu styling*/
+
+.burger_menu_img_wrapper {
+  position: fixed;
+  /*position: absolute;*/
+  display: inline-block;
+  top: 15px;
+  left: 15px;
+  z-index: 11;
+}
+
+.burger_menu_img {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  z-index: inherit;
+}
+
+.burger_menu_wrapper {
+  /*background-color: rgba(0,0,0,0.25);*/
+  /*position: fixed;*/
+  top: 10px;
+  left: 18px;
+  display: inline-block !important;
+  z-index: 3;
+}
+
+.burger_menu_list {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  list-style: none;
+  width: 160px;
+  height: 310px;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  margin: 0;
+  padding: 90px 0 0 5px;
+}
+
+.burger_menu_list_item {
+  margin-left: 22px;
+}
+
+.burger_menu_list_item > a {
+  text-decoration: none;
+}
+
+.burger_menu_list_item > a > p{
+  color: #fff;
+  margin-left: 20px;
+}
+
+.menu_social_link_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_social_link {
+  display: inline;
+}
+
+.menu_social_link_img {
+  height: 20px;
+  width: 20px;
+  margin: 8px;
+}
+
+/*burger menu styling*/
+
+
 .jobs_page_header {
   display: inline;
   text-align: center;
