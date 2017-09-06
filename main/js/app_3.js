@@ -28,4 +28,16 @@ $(document).ready(function(){
       addSlackMember();
     })
 
+    $('#burger_menu_link_contact').click(function () {
+      $('html, body').animate({
+        scrollTop: $('.footer_bottom_subcontainer').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
+      }, 800);
+    });
+
+    $('#footer_site_links_contact').click(function () {
+      $('html, body').animate({
+        scrollTop: $('.footer_bottom_subcontainer').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
+      }, 800);
+    });
+
 });

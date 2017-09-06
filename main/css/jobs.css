@@ -43,7 +43,7 @@ a {
   /*position: fixed;*/
   top: 10px;
   left: 18px;
-  display: inline-block !important;
+  /*display: inline-block !important;*/
   z-index: 3;
 }
 
@@ -63,7 +63,7 @@ a {
 }
 
 .burger_menu_list_item {
-  margin-left: 22px;
+  margin-left: -22px;
 }
 
 .burger_menu_list_item > a {

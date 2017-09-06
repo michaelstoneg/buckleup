@@ -21,7 +21,7 @@ a {
 .burger_menu_img_wrapper {
   position: fixed;
   /*position: absolute;*/
-  display: inline-block;
+  /*display: inline-block;*/
   top: 15px;
   left: 15px;
   z-index: 11;
