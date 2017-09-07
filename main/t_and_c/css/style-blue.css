@@ -459,7 +459,7 @@ article {
     padding-top: 0; }
 
 #main {
-  margin-bottom: 60px; }
+  margin: 0 0 60px 60px; }
   #main > .section:first-child {
     padding-top: 0; }
 
@@ -6259,9 +6259,11 @@ ul.filter-categories > li {
     line-height: 1;
     padding: 25px 30px;
     border: 1px solid #edf6ff;
-    border-bottom: none; }
+    border-bottom: none;
+    color: #66ccff;}
     .faqs .panel-title a.active {
-      border-top: 1px solid #00a2ee; }
+      /*border-top: 1px solid #00a2ee;*/
+      border-top: 1px solid #66ccff;}
       .faqs .panel-title a.active .open-sub {
         border-color: #00a2ee;
         background: #00a2ee;
@@ -6269,8 +6271,10 @@ ul.filter-categories > li {
         .faqs .panel-title a.active .open-sub:before {
           content: "\f068"; }
   .faqs .panel-content {
-    padding: 30px 40px;
-    background: #66ccff; }
+    /*padding: 35px 40px;*/
+    background: #66ccff;
+    color: #ffffff;
+    /*height: 70px;}*/
 
 /* terms and conditions */
 ul.filter-options li {
