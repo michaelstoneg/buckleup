@@ -8,12 +8,12 @@ body {
 
 h1, h2, h3 {
   /*color: #66ccff;*/
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 p {
   line-height: 1.5;
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 
@@ -98,6 +98,7 @@ p {
   text-align: center;
   /*margin: 20px 0 0px 0px;*/
   background-image: url("../images/backgrounds/swirl_bg_4.jpg");
+  background-size: cover;
 }
 
 .tech_page_header_subcontainer {
