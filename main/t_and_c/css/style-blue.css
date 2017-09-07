@@ -172,13 +172,14 @@ $theme-skin-light-bgcolor: #ddc541;
 $theme-skin-light-fontcolor: #eee9cb;*/
 /* 1) Reset */
 * {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  /*box-sizing: border-box;*/
+  /*-moz-box-sizing: border-box;*/
   /* Firefox */
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: transparent;
-  zoom: 1; }
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*-webkit-tap-highlight-color: transparent;*/
+  /*zoom: 1; */
+}
 
 html {
   font-size: 16px;
@@ -214,10 +215,10 @@ a:hover, a:focus {
 a:focus {
   outline: none; }
 
-p {
+/*p {
   font-size: 1.0833em;
   line-height: 1.8;
-  margin-bottom: 15px; }
+  margin-bottom: 15px; }*/
 
 .text {
   font-size: 1.0833em;
@@ -3066,7 +3067,7 @@ ul.filter-categories > li {
 
 /* 3.3. Page Title Container ~~~~~~~~~~~~~~~~~~~~~~~ */
 .page-title-container {
-  /*background: url(../images/inner/style1-pattern.png) repeat;*/
+  background: url("../../images/backgrounds/swirl_bg_4.jpg");
   position: relative;
   overflow: visible; }
   .page-title-container .entry-title {
@@ -3074,7 +3075,9 @@ ul.filter-categories > li {
     font-size: 3.3333em;
     /*color: #343434;*/
     color: #66ccff;
-    text-align: center; }
+    text-align: center;
+    background-color: rgba(255,255,255,.92);
+    }
   .page-title-container .page-title {
     padding: 120px 0 25px; }
   .page-title-container .breadcrumbs {

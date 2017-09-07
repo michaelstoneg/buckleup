@@ -539,6 +539,40 @@ p {
   width: 110px;
 }
 
+.subscribe_popup_wrapper {
+  position: fixed;
+  top: 10%;
+  left: 36%;
+  height: 270px;
+  width: 470px;
+  z-index: 4;
+  background-color: #66ccff;
+  display: none;
+}
+
+#subscribe_popup_close {
+  position: relative;
+  top: 5px;
+  left: 440px;
+}
+
+.press_subscribe_popup_wrapper {
+  position: fixed;
+  top: 10%;
+  left: 36%;
+  height: 270px;
+  width: 470px;
+  z-index: 4;
+  background-color: #ff738e;
+  display: none;
+}
+
+#press_subscribe_popup_close {
+  position: relative;
+  top: 5px;
+  left: 440px;
+}
+
 @media (max-width: 1440px) {
 
   .footer_site_links_list {
