@@ -25,7 +25,7 @@ sjq(document).ready(function($) {
         e.preventDefault();
         $("html,body").animate({scrollTop: 0}, 800);
     });
-    
+
     // parallax
     if (!stGlobals.isMobileWebkit && $(".parallax").length > 0 && $(".parallax-elem").length < 1) {
         $.stellar({
@@ -82,33 +82,33 @@ sjq(document).ready(function($) {
         $(this).parent().children(".main-nav-search-form").find("input[type=text]").focus();
     });
 
-    $(".soap-gallery.metro-style").magnificPopup({ 
+    $(".soap-gallery.metro-style").magnificPopup({
         delegate: 'a.image, a.soap-mfp-popup',
         type: 'image',
         gallery: { enabled:true }
         // other options
     });
-    $(".iso-container").magnificPopup({ 
+    $(".iso-container").magnificPopup({
         delegate: 'a.soap-mfp-popup',
         type: 'image',
         gallery: { enabled:true }
         // other options
     });
     $(".post-slider").each(function() {
-        $(this).magnificPopup({ 
+        $(this).magnificPopup({
             delegate: 'a.soap-mfp-popup',
             type: 'image',
             gallery: { enabled:true }
             // other options
         });
     });
-    $(".flickr-feeds").magnificPopup({ 
+    $(".flickr-feeds").magnificPopup({
         delegate: 'li a',
         type: 'image',
         gallery: {enabled:true}
         // other options
     });
-    $(".soap-gallery:not(.metro-style)").magnificPopup({ 
+    $(".soap-gallery:not(.metro-style)").magnificPopup({
         delegate: 'a.image.sgImg, a.soap-mfp-popup',
         type: 'image',
         gallery: {enabled:true}
@@ -160,7 +160,7 @@ sjq(document).ready(function($) {
             $("#header").removeClass("header-sticky");
             return;
         }
-        
+
         if ($(window).scrollTop() > sticky_header_offset_top) {
             $("#header").addClass("header-sticky");
         } else {
@@ -182,7 +182,7 @@ sjq(document).ready(function($) {
 
     });
 
-    // custom select 
+    // custom select
     if ($.fn.customSelect) {
         if (stGlobals.isSafari) {
             $("select.selector").each(function() {
@@ -241,18 +241,18 @@ sjq(document).ready(function($) {
                     type = "fadeIn";
                 }
                 $(this).addClass(type);
-                
+
                 var duration = $(this).data("animation-duration");
                 if (typeof duration == "undefined" || duration == false) {
                     duration = "1";
                 }
                 $(this).css("animation-duration", duration + "s");
-                
+
                 var delay = $(this).data("animation-delay");
                 if (typeof delay != "undefined" && delay != false) {
                     $(this).css("animation-delay", delay + "s");
                 }
-                
+
                 $(this).css("visibility", "visible");
 
                 setTimeout(function() {
@@ -455,7 +455,7 @@ sjq(document).ready(function($) {
                                 $this.closest(".mejs-container").find(".mejs-poster").show();
                             }
                         });
-                        
+
                         resizeMediaElementPlayer(media);
                     }
                 });
@@ -573,7 +573,7 @@ sjq(document).ready(function($) {
                         $(".soap-quick-view-lightbox .selector").customSelect();
                     },
                     change: function() {
-                        
+
                     }
                 },
                 removalDelay: 300,
@@ -993,7 +993,7 @@ function initPostFullContentHeight() {
             $(this).parent().children("a").removeClass("active");
             $(this).addClass("active");
             $(this).closest(".responsive-section").find(".callout-image img.active").removeClass("active").siblings().addClass("active");
-            
+
         });
 
         // resize event
@@ -1011,6 +1011,7 @@ function initPostFullContentHeight() {
         });
     });
 })(sjq);
+
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

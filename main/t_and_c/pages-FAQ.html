@@ -30,6 +30,7 @@
 
     <!-- Main Style -->
     <link id="main-style" rel="stylesheet" href="css/style-blue.css">
+    <link id="main-style" rel="stylesheet" href="../css/tech.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/custom.css">
@@ -45,6 +46,9 @@
         <link rel="stylesheet" type="text/css" href="css/ie.css" />
     <![endif]-->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="../js/app_2.js"></script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- [if lt IE 9] -->
       <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,6 +58,30 @@
 </head>
 <body>
     <div id="page-wrapper">
+
+
+      <div class="burger_menu_img_wrapper">
+        <img src="../images/logos/bu_logo_trans.svg" alt="menu" class="burger_menu_img">
+      </div>
+
+      <div class="burger_menu_wrapper">
+        <ul class="burger_menu_list">
+          <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_download"><p class="burger_menu_list_item_text">Download</p></a></li>
+          <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_features"><p class="burger_menu_list_item_text">Features</p></a></li>
+          <li class="burger_menu_list_item"><a href="pages/tech.html" class="burger_menu_link" id="burger_menu_link_tech"><p>Tech</p></a></li>
+          <li class="burger_menu_list_item"><a href="pages/jobs.html" target="_blank" class="burger_menu_link" id="burger_menu_link_jobs"><p class="burger_menu_list_item_text">Jobs</p></a></li>
+          <li class="burger_menu_list_item"><a href="t_and_c/pages-terms-conditions.html" class="burger_menu_link" id="burger_menu_link_tc" target="_blank"><p class="burger_menu_list_item_text">T&C</p></a></li>
+          <li class="burger_menu_list_item"><a href="mailto:support@airdates.co" class="burger_menu_link support_link" id="burger_menu_link_support"><p class="burger_menu_list_item_text">Support</p></a></li>
+          <li class="burger_menu_list_item"><a href="#" class="burger_menu_link" id="burger_menu_link_contact"><p class="burger_menu_list_item_text">Contact</p></a></li>
+
+          <li class="menu_social_link"><a href="https://www.facebook.com/airdatesapp/" target="_blank"><img src="../images/icons/facebook_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+          <li class="menu_social_link"><a href="https://twitter.com/AirDatesApp" target="_blank"><img src="../images/icons/twitter_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+          <li class="menu_social_link"><a href="https://www.instagram.com/airdatesapp" target="_blank"><img src="../images/icons/instagram_burger_menu.svg" alt="" class="menu_social_link_img"></a></li>
+          <li class="menu_social_link"><a href="https://angel.co/airdates/jobs" target="_blank"><img src="../images/icons/angel_footer.svg" alt="" class="menu_social_link_img"></a></li>
+          <!-- <li class="menu_social_link"><a href="#" target="_blank"><img src="images/icons/medium.svg" alt="" class="menu_social_link_img"></a></li> -->
+      </ul>
+    </div>
+
 
       <header id="header" class="header-color-white">
             <div class="container">
@@ -277,19 +305,80 @@
                     </div>
                 </div>
 
-
-
           </div>
-
-
-
-
-
 
 
       </section>
 
-        <footer id="footer" class="style4">
+
+      <div class="footer_bottom_subcontainer">
+
+        <div class="footer_site_links">
+          <div class="footer_logo_wrapper">
+            <img src="../images/logos/magnet_logo_2.svg" alt="" class="footer_logo_img">
+          </div>
+            <ul class="footer_site_links_list">
+              <li class="footer_site_links_list_item"><a href="#" class="footer_site_link" id="footer_site_links_download"><p class="footer_site_links_list_item_text">Download</p></a></li>
+              <li class="footer_site_links_list_item"><a href="#" class="footer_site_link" id="footer_site_links_features"><p class="footer_site_links_list_item_text">Features</p></a></li>
+              <!-- <li class="footer_site_links_list_item"><a href="pages/tech.html" class="footer_site_link" id="footer_site_links_tech"><p class="footer_site_links_list_item_text">Tech</p></a></li> -->
+              <li class="footer_site_links_list_item"><a href="../pages/jobs.html" class="footer_site_link" id="footer_site_links_jobs" target="_blank"><p class="footer_site_links_list_item_text">Jobs</p></a></li>
+              <!-- <li class="footer_site_links_list_item"><a href="blog/blog.html" class="footer_site_link" id="footer_site_links_blog"><p class="footer_site_links_list_item_text" target="_blank">Blog</p></a></li> -->
+            </ul>
+            <ul class="footer_site_links_list">
+              <!-- <li class="footer_site_links_list_item"><a href="https://angel.co/airdates/jobs" class="footer_site_link" id="footer_site_links_jobs"><p class="footer_site_links_list_item_text" target="_blank">Jobs</p></a></li> -->
+              <!-- <li class="footer_site_links_list_item"><a href="pages/jobs.html" class="footer_site_link" id="footer_site_links_jobs" target="_blank"><p class="footer_site_links_list_item_text">Jobs</p></a></li> -->
+              <li class="footer_site_links_list_item"><a href="t_and_c/pages-terms-conditions.html" class="footer_site_link" id="footer_site_links_tc" target="_blank"><p class="footer_site_links_list_item_text">T&C</p></a></li>
+              <li class="footer_site_links_list_item"><a href="mailto:support@airdates.co" class="footer_site_link support_link" id="footer_site_links_support"><p class="footer_site_links_list_item_text">Support</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list">
+              <li class="footer_site_links_list_item"><a href="#" class="footer_subscribe_link" id="subscribe_general"><p class="footer_site_links_list_item_text">Get Updates</p></a></li>
+              <li class="footer_site_links_list_item"><a href="#" class="footer_subscribe_link" id="subscribe_press"><p class="footer_site_links_list_item_text">Press Kit</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list address_ul">
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">WeWork Chancery lane</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">14 Gray’s Inn Road</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">WC1X 8HN - London</p></li>
+              <li class="footer_site_links_list_item"><a href="mailto:info@airdates.co" class="email_link"><p class="email">info@airdates.co</p></a></li>
+            </ul>
+            <ul class="footer_site_links_list address_ul">
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">WeWork Soho</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">154 Grand Street NY</p></li>
+              <li class="footer_site_links_list_item"><p class="footer_site_links_list_item_text_1">10013 - New York</p></li>
+            </ul>
+            <!-- <ul class="footer_site_links_list">
+              <li class="footer_site_links_list_item"><a href="mailto:info@airdates.co" class="email_link"><p class="email">info@airdates.co</p></a></li>
+            </ul> -->
+            <ul class="footer_site_links_list footer_social_links_list">
+              <li class="footer_social_links_list_item"><a href="https://www.facebook.com/airdatesapp/" target="_blank"class="footer_social_link"><img src="../images/icons/facebook_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="https://twitter.com/AirDatesApp" target="_blank"class="footer_social_link"><img src="../images/icons/twitter_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="https://www.instagram.com/airdatesapp" target="_blank"class="footer_social_link"><img src="../images/icons/instagram_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <li class="footer_social_links_list_item"><a href="https://angel.co/airdates/jobs" target="_blank"class="footer_social_link"><img src="../images/icons/angel_footer.svg" alt="" class="footer_social_link_img"></a></li>
+              <!-- <li class="footer_social_links_list_item"><a href="#" target="_blank"class="footer_social_link"><img src="images/icons/pinterest_footer.svg" alt="" class="footer_social_link_img"></a></li> -->
+              <!-- <li class="footer_social_links_list_item"><a href="#" target="_blank"class="footer_social_link"><img src="images/icons/medium.svg" alt="" class="footer_social_link_img"></a></li> -->
+            </ul>
+
+            <div class="footer_partners_subcontainer ">
+              <ul class="footer_partners_list">
+                <li class="footer_partners_list_item"><a href="https://websummit.com/startups/alpha" target="_blank" class="footer_partners_link"><img src="../images/logos/partners/partners_alpha.png" alt="" class="footer_partners_img"></a></li>
+                <!-- <li class="footer_partners_list_item"><a href="https://aws.amazon.com/activate/" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_aws.png" alt="" class="footer_partners_img" id="aws_img"></a></li> -->
+                <li class="footer_partners_list_item"><a href="https://www.bluetooth.com/develop-with-bluetooth" target="_blank" class="footer_partners_link"><img src="../images/logos/partners/partners_bluetooth.png" alt="" class="footer_partners_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://developers.facebook.com/fbstart" target="_blank" class="footer_partners_link"><img src="../images/logos/partners/partners_fbstart.png" alt="" class="footer_partners_img" id="fbstart_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://www.wework.com/promos/mission-possible-london" target="_blank" class="footer_partners_link"><img src="../images/logos/partners/partners_wework.png" alt="" class="footer_partners_img" id="wework_img"></a></li>
+                <li class="footer_partners_list_item"><a href="https://thenextweb.com/#.tnw_3pQivJ5z" target="_blank" class="footer_partners_link"><img src="../images/logos/partners/partners_tnw.png" alt="" class="footer_partners_img"></a></li>
+                <!-- <li class="footer_partners_list_item"><a href="https://www.bluetooth.com/develop-with-bluetooth" target="_blank" class="footer_partners_link"><img src="images/logos/partners/partners_bluetooth.png" alt="" class="footer_partners_img"></a></li> -->
+                <li class="footer_partners_list_item"><a href="https://aws.amazon.com/activate/" target="_blank" class="footer_partners_link"><img src="../images/logos/partners/partners_aws.png" alt="" class="footer_partners_img" id="aws_img"></a></li>
+              </ul>
+            </div>
+
+
+            <div class="footer_copyright_wrapper">
+              <p class="copyright_text">©2015-2017 AirDates.co | BuckleUp.co | An EMCT Investments Ltd. Co | All Rights Reserved</p>
+            </div>
+        </div>
+      </div>
+
+
+        <!-- <footer id="footer" class="style4">
 
             <div class="footer-wrapper">
                 <div class="container">
@@ -318,7 +407,7 @@
 </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
 
     <!-- Javascript -->

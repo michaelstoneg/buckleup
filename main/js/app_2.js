@@ -1,8 +1,9 @@
-$(document).ready(function(){
+jQuery(document).ready(function($){
   console.log("It's the job page");
 
   $(".burger_menu_list").hide();
   $(".burger_menu_img_wrapper").click(function() {
+    console.log('menu please');
     $(".burger_menu_list").slideToggle(1000);
   });
 

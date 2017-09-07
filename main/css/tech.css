@@ -25,7 +25,7 @@ p {
   display: inline-block;
   top: 15px;
   left: 15px;
-  z-index: 11;
+  z-index: 102;
 }
 
 .burger_menu_img {
@@ -69,8 +69,8 @@ p {
 
 .burger_menu_list_item > a > p{
   color: #fff;
-  margin-left: 20px;
-  line-height: 1;
+  margin-left: 20px !important;
+  line-height: 1 !important;
 }
 
 .menu_social_link_list {
@@ -108,7 +108,7 @@ p {
   padding: 30px;
   display: block;
   margin: 0 auto;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,.96);
   /*border-radius: 5px;*/
   /*box-shadow: 1px 1px 2px;*/
 }
