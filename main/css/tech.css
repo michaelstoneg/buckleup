@@ -443,7 +443,7 @@ p {
   color:  #f1f1f1;
   margin: 10px 0 10px 0;
   font-size: 12px;
-  font-weight: 100 !important;
+  /*font-weight: 100 !important;*/
 }
 
 
@@ -608,6 +608,370 @@ p {
 
 }
 
-@keyframes .tech_section_center {
+
+.privacy_subheading, .privacy_text, .terms_heading, .terms_text {
+  color: #66ccff;
+}
+
+@media (max-width: 1680px) {
+
+  .footer_partners_img {
+    margin: 10px 80px 10px 80px;
+  }
+
+  .footer_social_links_list {
+    right: -100px;
+  }
+
+}
+
+@media (max-width: 1440px) {
+
+  .tech_section_left {
+    margin: 0 80px 0 100px;
+  }
+
+  .tech_section_center {
+    width: 250px;
+    margin: 0 25px 0 50px;
+  }
+
+  .footer_partners_img {
+    margin: 10px 60px 10px 60px;
+  }
+
+  .footer_social_links_list {
+    right: -250px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .tech_section_left {
+    margin: 0 20px 0 100px;
+  }
+
+  .tech_section_center {
+    width: 200px;
+  }
+
+  .tech_section_right {
+    margin: 0 50px 0 0;
+  }
+
+  .flight_stats {
+    height: 40px;
+  }
+
+  .footer_partners_img {
+    margin: 10px 50px 10px 50px;
+  }
+
+  .footer_social_links_list {
+    right: -120px;
+  }
+
+}
+
+@media (max-width: 414px) {
+
+  p {
+    line-height: 1.7;
+  }
+
+  .burger_menu_img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .tech_page_header {
+    height: 750px;
+  }
+
+  .tech_page_header_subcontainer {
+    width: 300px;
+    height: 400px;
+  }
+
+  .tech_page_header_img_2 {
+    height: 50px;
+    width: 50px;
+  }
+
+  .tech_page_header_text {
+    line-height: 1.7;
+  }
+
+  .tech_page_section {
+    height: 980px;
+  }
+
+  .tech_page_section_heading_img {
+    height: 50px;
+    width: 50px;
+    margin: 20px 0;
+  }
+
+  .tech_section_left {
+    width: 130px;
+    margin: 0 20px 0 40px;
+    padding: 0px;
+  }
+
+  .flight_stats {
+    height: 25px;
+  }
+
+  .tech_section_center {
+    width: 170px;
+    height: 150px;
+    margin: 0 0 0 10px;
+    padding: 0;
+  }
+
+  .tech_page_whatisit_list_item {
+    margin: 10px 0;
+  }
+
+  .tech_page_worldmate_img {
+    margin-left: 10px;
+    height: 20px;
+  }
+
+  .tech_section_right {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .tech_section_slack {
+    height: 380px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 300px;
+  }
+
+  .footer_site_links {
+    margin: 0 0 0 0;
+    display: block;
+    height: 200px;
+  }
+
+  .footer_site_links_list {
+    padding: 0 0 0 10px;
+    margin: 5px 5px 0 0;
+  }
+
+  .footer_site_links_list_item {
+    margin: 20px 0 5px 0;
+  }
+
+  .address_ul {
+    width: 90px;
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  .email {
+    font-size: 9px;
+  }
+
+  .footer_site_links_list_item_text {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .footer_site_links_list_item_text_1 {
+    font-size: 9px;
+  }
+
+  .footer_site_links_list > li {
+    text-align: center;
+  }
+
+
+  .footer_logo_wrapper {
+    text-align: center;
+  }
+
+  .footer_logo_img {
+    height: 20px;
+  }
+
+  .footer_contact {
+    float: none;
+    display: block;
+    width: 100vw;
+  }
+
+  .footer_header {
+    margin: 10px 0 20px 0;
+    font-size: 35px;
+  }
+
+  .footer_subscribe_link_text {
+    border: none;
+    margin: 0 35px 0 35px;
+    line-height: 1;
+  }
+
+  .footer_address_wrapper {
+    border: none;
+  }
+
+  .footer_social_links_list {
+    position: relative;
+    right: -40px;
+    top: 0px;
+  }
+
+
+  .address_divider_1, .address_divider_2 {
+    height: 50px;
+    width: 350px;
+    margin: 10px 0 10px 0;
+  }
+
+  .footer_social_links {
+    margin: 40px 0 0 0;
+  }
+
+  .footer_social_link_img {
+    height: 15px;
+    width: 15px;
+    margin: 0 30px 0px 30px;
+  }
+
+  .footer_partners_img {
+    height: 20px;
+    width: 20px;
+    margin: 5px 10px 5px 10px;
+  }
+
+  #aws_img {
+    width: 80px;
+    height: 20px;
+  }
+
+  #fbstart_img {
+    height: 20px;
+    width: 70px;
+  }
+
+  #wework_img {
+    height: 25px;
+    width: 50px;
+  }
+
+  .footer_copyright_wrapper {
+    display: block;
+  }
+
+  .copyright_text {
+    /*margin: 40px 0 0 0;*/
+    font-size: 8px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .tech_page_header_subcontainer {
+    padding: 15px;
+    width: 250px;
+    height: 430px;
+  }
+
+  .tech_section_left {
+    margin: 0 10px 0 40px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 290px;
+  }
+
+  .footer_site_links {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .address_ul {
+    width: 80px;
+  }
+
+  .footer_site_links_list {
+    padding: 0;
+  }
+
+  .footer_site_links_list_item_text {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .footer_site_links_list_item_text_1 {
+    font-size:  8px;
+  }
+
+  .footer_social_links {
+    margin: 55px 0 0 0;
+  }
+
+  .footer_social_links_list {
+    right: -25px;
+  }
+
+  .footer_partners_img {
+    margin: 5px 8px 5px 8px;
+  }
+
+  #aws_img {
+    width: 70px;
+  }
+
+  #fbstart_img {
+    width: 60px;
+  }
+
+  .copyright_text {
+    /*margin: 60px 0 0 0;*/
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .tech_section_left {
+    width: 100px;
+    margin: 0 10px 0 10px;
+  }
+
+  .tech_section_center {
+    margin: 0 0 0 20px;
+  }
+
+  .flight_stats {
+    height: 20px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 280px;
+  }
+
+  .footer_site_links_list_item_text {
+    font-size: 9px;
+    margin: 6px 0 10px 0;
+    line-height: 1;
+  }
+
+  .footer_partners_img {
+    margin: 5px;
+  }
+
+  .copyright_text {
+    line-height: 1;
+    margin: 8px;
+  }
 
 }

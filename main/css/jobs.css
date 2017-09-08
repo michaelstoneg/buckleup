@@ -591,7 +591,7 @@ a {
 @media (max-width: 1280px) {
 
   .footer_bottom_subcontainer {
-    height: 300px;
+    height: 270px;
   }
 
   .footer_site_links {
@@ -630,7 +630,7 @@ a {
   .footer_partners_img {
     height: 40px;
     width: 40px;
-    margin: 5px 30px 5px 30px;
+    margin: 5px 60px 5px 60px;
   }
 
   #aws_img {
@@ -735,6 +735,11 @@ a {
 
   h2 {
     font-size: 18px;
+  }
+
+  .burger_menu_img {
+    height: 60px;
+    width: 60px;
   }
 
   .seatbelt_animation_container {
@@ -945,7 +950,7 @@ a {
   .footer_partners_img {
     height: 20px;
     width: 20px;
-    margin: 5px 12px 5px 12px;
+    margin: 5px 10px 5px 10px;
   }
 
   #aws_img {
@@ -1070,7 +1075,15 @@ a {
   }
 
   .footer_partners_img {
-    margin: 5px 10px 5px 10px;
+    margin: 5px 8px 5px 8px;
+  }
+
+  #aws_img {
+    width: 70px;
+  }
+
+  #fbstart_img {
+    width: 60px;
   }
 
   .copyright_text {
