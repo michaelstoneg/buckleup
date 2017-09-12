@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" standalone="no"?>
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20050904/DTD/svg10.dtd">
-<svg xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+"https://www.w3.org/TR/2001/REC-SVG-20050904/DTD/svg10.dtd">
+<svg xmlns="https://www.w3.org/2000/svg"
+xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1">
   <title>Module Gradient</title>
   <defs>
     <linearGradient id="grad" x1="0" y1="0" x2="0" y2="100%">

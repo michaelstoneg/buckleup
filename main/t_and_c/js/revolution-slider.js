@@ -1,6 +1,6 @@
 /*
  * Title:   Miracle | Responsive Multi-Purpose HTML5 Template - Homepage Revolution Slider
- * Author:  http://themeforest.net/user/soaptheme
+ * Author:  https://themeforest.net/user/soaptheme
  */
 
 "use strict";

@@ -1,10 +1,10 @@
 /**
  *
  * Sky jQuery Touch Carousel
- * URL: http://www.skyplugins.com
+ * URL: https://www.skyplugins.com
  * Version: 1.0.2
  * Author: Sky Plugins
- * Author URL: http://www.skyplugins.com
+ * Author URL: https://www.skyplugins.com
  *
  */
 

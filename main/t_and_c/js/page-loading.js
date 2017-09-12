@@ -1,6 +1,6 @@
 /*
  * Title:   Travelo | Responsive HTML5 Travel Template - Page Loading Js
- * Author:  http://themeforest.net/user/soaptheme
+ * Author:  https://themeforest.net/user/soaptheme
  */
 
 // pace.js should be active

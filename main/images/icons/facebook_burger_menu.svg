@@ -1,11 +1,12 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <svg width="18px" height="35px" viewBox="0 0 18 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook_burger_menu</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Menu" transform="translate(-29.000000, -505.000000)" fill="#fFF">
-            <path d="M40.5945493,540 L33.3541308,540 L33.3541308,522.5 L29.7359117,522.5 L29.7359117,516.467645 L33.3541308,516.467645 L33.3541308,512.847435 C33.3541308,507.929603 35.3980862,505 41.199576,505 L46.0318289,505 L46.0318289,511.032355 L43.012666,511.032355 C40.7537668,511.032355 40.6025101,511.876208 40.6025101,513.448482 L40.5945493,516.467645 L46.0676529,516.467645 L45.4268022,522.5 L40.5945493,522.5 L40.5945493,540" id="Facebook"></path>
+        <g id="facebook_burger_menu" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M11.5945493,35 L4.3541308,35 L4.3541308,17.5 L0.7359117,17.5 L0.7359117,11.467645 L4.3541308,11.467645 L4.3541308,7.847435 C4.3541308,2.929603 6.3980862,0 12.199576,0 L17.0318289,0 L17.0318289,6.032355 L14.012666,6.032355 C11.7537668,6.032355 11.6025101,6.876208 11.6025101,8.448482 L11.5945493,11.467645 L17.0676529,11.467645 L16.4268022,17.5 L11.5945493,17.5 L11.5945493,35" id="Facebook"></path>
         </g>
     </g>
 </svg>

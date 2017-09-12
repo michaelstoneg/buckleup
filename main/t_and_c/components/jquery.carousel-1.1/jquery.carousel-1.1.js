@@ -1,7 +1,7 @@
 ﻿/*
 Item Name: jQuery Carousel Evolution
 Author: Mapalla
-Author URI: http://codecanyon.net/user/Mapalla
+Author URI: https://codecanyon.net/user/Mapalla
 Version: 1.1
 */
 
@@ -26,12 +26,12 @@ Version: 1.1
                     reg: /youtube\.com\/watch/i, 
                     split: '=', 
                     index: 1, 
-                    url:'http://www.youtube.com/embed/%id%?autoplay=1&amp;fs=1&amp;rel=0'},
+                    url:'https://www.youtube.com/embed/%id%?autoplay=1&amp;fs=1&amp;rel=0'},
                 vimeo: {
                     reg: /vimeo\.com/i, 
                     split: '/', 
                     index: 3, 
-                    url: 'http://player.vimeo.com/video/%id%?portrait=0&amp;autoplay=1'}
+                    url: 'https://player.vimeo.com/video/%id%?portrait=0&amp;autoplay=1'}
             };
             
         this.current = currentSlide;

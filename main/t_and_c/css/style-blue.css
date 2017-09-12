@@ -1,6 +1,6 @@
 /*
  * Title:   Miracle | Responsive Multi-Purpose HTML5 Template - Main Style file
- * Author:  http://themeforest.net/user/soaptheme
+ * Author:  https://themeforest.net/user/soaptheme
  */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
@@ -49,7 +49,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*
  * Title:   Miracle | Responsive Multi-Purpose HTML5 Template - SCSS Mixin
- * Author:  http://themeforest.net/user/soaptheme
+ * Author:  https://themeforest.net/user/soaptheme
  */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
@@ -82,7 +82,7 @@
 /* 1.1. Reset ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*
  * Title:   Miracle | Responsive Multi-Purpose HTML5 Template - Basic Style
- * Author:  http://themeforest.net/user/soaptheme
+ * Author:  https://themeforest.net/user/soaptheme
  */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
@@ -99,7 +99,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*
  * Title:   Miracle | Responsive Multi-Purpose HTML5 Template - SCSS Variables for style customization
- * Author:  http://themeforest.net/user/soaptheme
+ * Author:  https://themeforest.net/user/soaptheme
  */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
@@ -3147,20 +3147,20 @@ ul.filter-categories > li {
         font-size: 1.1667em;
         color: #00a2ee; }
   .page-title-container.style2 {
-    background: url("http://placehold.it/1920x240") no-repeat; }
+    background: url("https://placehold.it/1920x240") no-repeat; }
     .page-title-container.style2 .entry-title {
       color: #fff; }
   .page-title-container.style3 {
-    background-image: url("http://placehold.it/1920x358");
+    background-image: url("https://placehold.it/1920x358");
     background-size: cover; }
   .page-title-container.style4 .banner {
     height: 682px;
-    background-image: url("http://placehold.it/1920x684"); }
+    background-image: url("https://placehold.it/1920x684"); }
   .page-title-container.style4 .caption {
     text-transform: none; }
   .page-title-container.style5 .banner {
     height: 682px;
-    background-image: url("http://placehold.it/1920x1280"); }
+    background-image: url("https://placehold.it/1920x1280"); }
   .page-title-container.style5 .caption {
     text-transform: none; }
     .page-title-container.style5 .caption .caption-lg {
@@ -3171,7 +3171,7 @@ ul.filter-categories > li {
       color: #343434; }
   .page-title-container.style6 .banner {
     height: 682px;
-    background-image: url("http://placehold.it/1920x812"); }
+    background-image: url("https://placehold.it/1920x812"); }
   .page-title-container.style6 .caption {
     text-transform: none; }
     .page-title-container.style6 .caption [class^="caption-"], .page-title-container.style6 .caption [class*=" caption-"] {
@@ -7575,23 +7575,23 @@ ul.filter-options li {
   margin-right: 100px; }
 
 .parallax-image1 {
-  background-image: url("http://placehold.it/1920x1280"); }
+  background-image: url("https://placehold.it/1920x1280"); }
 
 .parallax-image2 {
-  background-image: url("http://placehold.it/1920x1280");
+  background-image: url("https://placehold.it/1920x1280");
   height: 488px; }
 
 .banner-image1 {
-  background-image: url("http://placehold.it/1920x469"); }
+  background-image: url("https://placehold.it/1920x469"); }
 
 .banner-image2 {
-  background-image: url("http://placehold.it/1920x312"); }
+  background-image: url("https://placehold.it/1920x312"); }
 
 .banner-color1 {
   background-color: rgba(237, 246, 255, 0.75); }
 
 .bg-client-section {
-  background: url("http://placehold.it/1920x555") no-repeat center center;
+  background: url("https://placehold.it/1920x555") no-repeat center center;
   background-size: cover; }
   .bg-client-section > .section {
     background: rgba(15, 37, 65, 0.7); }

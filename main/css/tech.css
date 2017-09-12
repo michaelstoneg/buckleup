@@ -577,6 +577,20 @@ p {
   left: 440px;
 }
 
+
+.signup_page_logo {
+  height: 700px;
+  width: 700px;
+  margin: 100px 100px;
+  background-color: rgba(255,255,255,.7);
+  z-index: -1;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  opacity: .9;
+}
+
+
 @media (max-width: 1440px) {
 
   .footer_site_links_list {
@@ -674,7 +688,7 @@ p {
 
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
 
   p {
     line-height: 1.7;
@@ -873,6 +887,21 @@ p {
     /*margin: 40px 0 0 0;*/
     font-size: 8px;
   }
+
+
+
+  .signup_page_logo {
+    height: 350px;
+    width: 350px;
+    margin: 100px 30px;
+    left: 50px;
+  }
+
+  .subscribe_popup_wrapper_2 {
+    margin: 50px auto;
+  }
+
+
 
 }
 
