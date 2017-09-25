@@ -22,8 +22,6 @@ a {
 
 .burger_menu_img_wrapper {
   position: fixed;
-  /*position: absolute;*/
-  /*display: inline-block;*/
   top: 15px;
   left: 15px;
   z-index: 11;
@@ -37,8 +35,6 @@ a {
 }
 
 .burger_menu_wrapper {
-  /*background-color: rgba(0,0,0,0.25);*/
-  /*position: fixed;*/
   top: 10px;
   left: 18px;
   display: inline-block !important;
@@ -116,17 +112,12 @@ a {
 }
 
 .main_tagline {
-  /*text-align: center;*/
   display: block;
   font-size: 30px;
-  /*font-size: 70px;*/
   margin: 60px 0 60px 150px;
 }
 
 .countdown_container {
-  /*width: 500px;*/
-  /*display: inline-block;*/
-  /*background-color: rgba(0,0,0,.5);*/
   vertical-align: top;
   margin-top: 10px;
 }
@@ -146,22 +137,18 @@ a {
 
 .blurb_download_container {
   display: block;
-  /*text-align: center;*/
   margin: 60px 0 60px 150px;
 }
 
 .blurb_container {
   display: inline-block;
-  /*display: block;*/
   margin: 0 auto;
-  /*border: 2px solid #ffffff;*/
   border-radius: 5px;
   width: 620px;
   height: 150px;
   vertical-align: top;
   background-color: rgba(0,0,0,.7);
   padding-top: 1px;
-  /*background-color: #66ccff;*/
 }
 
 .blurb_text {
@@ -172,40 +159,18 @@ a {
   text-align: justify;
 }
 
-.special_text_1 {
-  /*color: #66ccff;*/
-}
-
-.special_text_2 {
-  /*color: #ff738e;*/
-}
-
-.special_text_3 {
-  /*color: #4be4c4;*/
-}
 
 .download_badges_wrapper {
-  /*display: block;*/
   display: inline-block;
   text-align: center;
   width: 300px;
-  /*border: 2px solid white;*/
-  /*margin: 40px 0 40px 0;*/
 }
 
 .download_badges {
   margin: 10px;
-  /*vertical-align: top;*/
 }
 
-/*.download_badges_main {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}*/
-
 #download_badge_1 {
-  /*margin: 10px 0px 10px 0;*/
-  /*margin: 10px 130px 10px 0;*/
   height: 57px;
 }
 
@@ -299,19 +264,10 @@ a {
 }
 
 
-/*under construction*/
-
-.unknown_container {
-  background-color: #ffffff;
-  height: 12200px;
-  border-bottom: 1px solid rgba(75,228,196,0.2);
-}
-
 /*team page*/
 
 .team_container {
   text-align: center;
-  /*height: 120vh;*/
   border-bottom: 1px solid rgba(75,228,196,0.2);
 }
 
@@ -327,7 +283,6 @@ a {
 }
 
 .team_list_item_box, .ambassador_list_item_box {
-  /*text-align: center;*/
   width: 200px;
   height: 200px;
   margin: 0 100px 0 100px;
@@ -344,7 +299,6 @@ a {
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  /*margin-bottom: 20px;*/
 }
 
 .new_team_img {
@@ -356,7 +310,6 @@ a {
 
 .team_box_special {
   margin: 20px 100px 20px 100px;
-  /*border-radius: 50%;*/
 }
 
 .team_text, .ambassador_text {
@@ -369,39 +322,30 @@ a {
 }
 
 .flag_france::after {
-  /*content: "\1F1eb\1f1f7";*/
   content: url('../images/icons/flags/france.svg');
 }
 .flag_italy::after {
-  /*content: "\1F1ee\1f1f9";*/
   content: url('../images/icons/flags/italy.svg');
 }
 .flag_romania::after {
-  /*content: "\1F1f7\1f1f4";*/
   content: url('../images/icons/flags/romania.svg');
 }
 .flag_bulgaria::after {
-  /*content: "\1F1f5\1f1f1";*/
   content: url('../images/icons/flags/bulgaria.svg');
 }
 .flag_morocco::after {
-  /*content: "\1F1f2\1f1e6";*/
   content: url('../images/icons/flags/morocco.svg');
 }
 .flag_jamaica::after {
-  /*content: "\1F1ef\1f1f2";*/
   content: url('../images/icons/flags/jamaica.svg');
 }
 .flag_latvia::after {
-  /*content: "\1F1f1\1f1fb";*/
   content: url('../images/icons/flags/latvia.svg');
 }
 .flag_slovenia::after {
-  /*content: "\1F1f8\1f1ee";*/
   content: url('../images/icons/flags/slovenia.svg');
 }
 .flag_uk::after {
-  /*content: "\1F1f8\1f1ee";*/
   content: url('../images/icons/flags/uk.svg');
 }
 
@@ -414,7 +358,6 @@ a {
 }
 
 .ambassador_list {
-  /*padding: 0;*/
   margin: 30px 0 30px 0;
 }
 
@@ -440,13 +383,11 @@ a {
 
 .footer_bottom_subcontainer {
   height: 270px;
-  /*border: 1px solid yellow;*/
   background-color: #545454;
 }
 
 .footer_site_links {
   height: 250px;
-  /*border: 1px solid red;*/
   display: block;
   padding: 10px 0 0 0;
   margin: 0 40px 0 40px;
@@ -516,7 +457,6 @@ a {
 
 .footer_subscribe_link_text {
   color: #fff;
-  /*border: 2px solid #fff;*/
 }
 
 .footer_address_wrapper {
@@ -571,7 +511,6 @@ a {
 #aws_img {
   height: 30px;
   width: 160px;
-  /*margin-bottom: 30px;*/
 }
 
 #fbstart_img {
@@ -1024,8 +963,6 @@ a {
   }
 
   .footer_partners_img {
-    /*height: 150px;
-    width: 150px;*/
     margin: 10px 80px 10px 80px;
   }
 
@@ -1108,7 +1045,6 @@ a {
   #aws_img {
     height: 30px;
     width:140px;
-    /*margin-bottom: 10px;*/
   }
 
   #wework_img {
@@ -1138,18 +1074,11 @@ a {
 
 }
 
-/*@media (max-height: 900px) {
-  .features_container {
-    height: 130vh;
-  }
-}*/
-
 
 @media (max-width: 768px) and (max-height: 1024px) {
 
   .main_container {
     background-image: url('../images/backgrounds/bg2_small.jpg');
-    /*background-size: cover;*/
   }
 
   .burger_menu_img_wrapper {
@@ -1172,7 +1101,6 @@ a {
 
   #download_badge_1, #download_badge_2 {
     margin: 50px 100px 50px 0;
-    /*margin: 50px;*/
     height: 57px;
   }
 
@@ -1183,7 +1111,6 @@ a {
   }
 
   .media_scroll_list_item {
-    /*vertical-align: middle;*/
     float: left;
     margin: 15px 0px 15px 0px;
     width: 350px;
@@ -1228,10 +1155,8 @@ a {
   }
 
   .animation_master_container {
-    /*border: 2px solid black;*/
     width: 900px;
     height: 700px;
-    /*top: 200px;*/
     left: -90px;
   }
 
@@ -1239,7 +1164,6 @@ a {
     width: 400px;
     height: 700px;
     margin: 0 10px;
-    /*border: 2px solid black;*/
     background-image: url('../images/screens/screen0.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -1256,7 +1180,6 @@ a {
     width: 350px;
     height: 400px;
     margin: 0 10px;
-    /*border: 2px solid black;*/
     display: inline-block;
     overflow: hidden;
   }
@@ -1350,7 +1273,6 @@ a {
   }
 
   #chatlio-widget .chatlio-widget {
-    /*right: 155px;*/
   }
 
 }
@@ -1667,14 +1589,12 @@ a {
 
 
   #download_badge_1, #download_badge_2 {
-    /*width: 100px;*/
     margin: 30px;
     height: 30px;
   }
 
 
   .animation_master_container {
-    /*border: 2px solid black;*/
     width: 410px;
     height: 800px;
     position: relative;
@@ -1687,21 +1607,16 @@ a {
     width: 400px;
     height: 700px;
     margin: 0 35px 0 35px;
-    /*border: 2px solid black;*/
     background-image: url('../images/screens/screen0.png');
     background-repeat: no-repeat;
     background-size: contain;
-    /*display: inline-block;*/
   }
 
   .animation_text_container {
     width: 480px;
     height: 200px;
-    /*margin: 0 50px;*/
-    /*border: 2px solid black;*/
     display: block;
     overflow: hidden;
-    /*display: none;*/
   }
 
   .media_scroll {
@@ -1714,7 +1629,6 @@ a {
   }
 
   .media_scroll_list_item {
-    /*vertical-align: middle;*/
     margin: 15px 0px 15px 0px;
     width: 250px;
   }
@@ -1768,12 +1682,10 @@ a {
   }
 
   .animation_text_container {
-    /*background-color: rgba(0,0,0,0.5);*/
     text-align: center;
     height: 110px;
     width: 395px;
     margin: 5px 0 10px 20px;
-    /*border-radius: 20px;*/
   }
 
   .animation_text_subcontainer {
@@ -1787,8 +1699,6 @@ a {
 
   .animation_text_list_item {
     margin: 0;
-    /*margin: 15px 0 15px 0 !important;*/
-    /*padding: 5px;*/
     height: 80px;
   }
 
@@ -1884,7 +1794,6 @@ a {
   .address_ul {
     width: 100px;
     padding: 0;
-    /*margin-left: 20px;*/
   }
 
   .email {
@@ -1981,13 +1890,11 @@ a {
   }
 
   .copyright_text {
-    /*margin: 40px 0 0 0;*/
     font-size: 8px;
   }
 
   #chatlio-widget .chatlio-widget {
     right: 65px;
-    /*width: 380px;*/
   }
 
   .subscribe_popup_wrapper, .press_subscribe_popup_wrapper {
@@ -2049,7 +1956,6 @@ a {
   }
 
   #download_badge_1, #download_badge_2 {
-    /*width: 110px;*/
     height: 35px;
   }
 
@@ -2147,13 +2053,8 @@ a {
     width: 76px;
   }
 
-  .copyright_text {
-    /*margin: 60px 0 0 0;*/
-  }
-
   #chatlio-widget .chatlio-widget {
     right: 65px;
-    /*width: 375px;*/
   }
 
 }
@@ -2278,7 +2179,6 @@ a {
 
   #chatlio-widget .chatlio-widget {
     right: 65px;
-    /*width: 360px;*/
   }
 }
 
@@ -2328,17 +2228,6 @@ a {
 
   .animation_master_container {
     left: -20px;
-  }
-
-  .animation_container {
-    /*height: 650px;*/
-  }
-
-  .animation_subcontainer {
-    /*width: 258px;*/
-    /*height: 452px;*/
-    /*top: 94px;*/
-    /*left: 28px;*/
   }
 
   .animation_text_container {
@@ -2477,7 +2366,9 @@ a {
 
 /*  Main Page Responsive End  */
 
+
 /*  Main Page End */
+
 
 
 /*  Jobs Page Styling Start */
@@ -2487,7 +2378,6 @@ a {
 
 .burger_menu_img_wrapper {
   position: fixed;
-  /*position: absolute;*/
   display: inline-block !important;
   top: 15px;
   left: 15px;
@@ -2502,11 +2392,9 @@ a {
 }
 
 .burger_menu_wrapper_jobs {
-  /*background-color: rgba(0,0,0,0.25);*/
   position: fixed;
   top: 10px;
   left: 18px;
-  /*display: inline-block !important;*/
   z-index: 3;
 }
 
@@ -2526,7 +2414,6 @@ a {
 }
 
 .burger_menu_list_item {
-  /*margin-left: -22px;*/
 }
 
 .burger_menu_list_item > a {
@@ -2565,11 +2452,9 @@ a {
 .jobs_page_header {
   display: inline;
   text-align: center;
-  /*width: 100%;*/
 }
 
 .seatbelt_animation_container {
-  /*border: 1px solid white;*/
   display: inline-block;
   text-align: center;
   margin-bottom: 25px;
@@ -2599,10 +2484,8 @@ a {
 .jobs_page_header_subcontainer {
   display: block;
   margin: 0 auto;
-  /*border: 2px solid green;*/
   background-image: url("../images/backgrounds/bg_jobs.jpeg");
   background-size: cover;
-  /*padding: 50px;*/
   padding: 150px;
 }
 
@@ -2615,11 +2498,6 @@ a {
 
 .jobs_page_logo_2 {
   height: 40px;
-}
-
-.jobs_page_main {
-  /*background-image: url("../images/backgrounds/bg4.jpg");*/
-
 }
 
 .jobs_page_section_1_heading, .jobs_page_section_1_heading_2 {
@@ -2645,8 +2523,6 @@ a {
 
 .jobs_page_section_1 {
   text-align: center;
-  /*background-color: #fff;*/
-  /*background-color: rgba(102,204,255,.8);*/
   background-color: #ffffff;
   border-top: 1px solid #66ccff;
   z-index: 1;
@@ -2658,8 +2534,6 @@ a {
   margin: 0 auto;
   text-align: left;
   padding: 50px;
-  /*border: 2px solid blue;*/
-  /*background-color: #fff;*/
 }
 
 .jobs_page_section_1_text, .jobs_page_team_about {
@@ -2680,13 +2554,9 @@ a {
   display: inline-block;
   height: 610px;
   width: 45%;
-  /*overflow: hidden;*/
-  /*border: 4px solid red;*/
-  /*float: right;*/
 }
 
 .jobs_page_section_2_img {
-  /*width: 200px;*/
   height: 610px;
   margin-left: -10px;
 }
@@ -2695,16 +2565,12 @@ a {
   width: 42%;
   height: 450px;
   display: inline-block;
-  /*background-color: rgb(255,115,142);*/
   background-color: #ffffff;
-  /*border: 2px solid purple;*/
   text-align: center;
   padding: 80px;
 }
 
 .jobs_page_section_2_list {
-  /*list-style: none;*/
-  /*color: #ffffff;*/
   color: #ff738e;
 }
 
@@ -2727,58 +2593,38 @@ a {
 
 .join_us_button_text {
   color: #ff738e;
-  /*color: #66ccff;*/
   font-size: 20px;
 }
-
-/*.jobs_page_section_2_list > li::before {
-  content: "\2022";
-  color: #ffffff;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}*/
 
 .jobs_page_section_3 {
   text-align: right;
   border-top: 1px solid #4be4c4;
   z-index: 1;
   display: block;
-  /*width: 100vw;*/
 }
 
 .jobs_page_section_3_img_container {
   display: inline-block;
-  /*height: 200px;*/
   width: 45%;
-  /*border: 4px solid red;*/
   float: left;
   z-index: 0;
-  /*overflow: hidden;*/
 }
 
 .jobs_page_section_3_img {
   height: 655px;
-  /*height: 660px;*/
-  /*width: 200px;*/
   z-index: 0;
 }
 
 .jobs_page_section_3_subcontainer {
   width: 42%;
-  /*height: 450px;*/
   display: inline-block;
   background-color: #ffffff;
-  /*background-color: rgb(75,228,196);*/
-  /*border: 2px solid purple;*/
   text-align: center;
   padding: 80px;
 }
 
 .jobs_page_section_3_list {
-  /*list-style: none;*/
   color: #4be4c4;
-  /*color: #ffffff;*/
 }
 
 .jobs_page_section_3_list_item {
@@ -2892,10 +2738,6 @@ a {
 
 @media (max-width: 450px) {
 
-  body {
-    /*width: 98vw;*/
-  }
-
   h2 {
     font-size: 18px;
   }
@@ -2906,8 +2748,6 @@ a {
   }
 
   .seatbelt_animation_container {
-    /*border: 1px solid white;*/
-    /*display: inline-block;*/
     text-align: center;
     margin-bottom: 25px;
     width: 400px;
@@ -2976,7 +2816,6 @@ a {
   .jobs_page_section_2_img {
     width: 370px;
     height: 100%;
-    /*height: 400px;*/
   }
 
   .join_us_button, .join_us_button_link {
@@ -2990,7 +2829,6 @@ a {
   .jobs_page_section_3_subcontainer {
     width: 150px;
     padding: 10px;
-    /*height: 640px;*/
     height: 96.5%;
   }
 
@@ -3006,14 +2844,12 @@ a {
   .jobs_page_section_3_img_container {
     height: 100%;
     width: 240px;
-    /*overflow: hidden;*/
     z-index: 0;
     float: left;
   }
 
   .jobs_page_section_3_img {
     height: 100%;
-    /*height: 610px;*/
     width: 370px;
   }
 
@@ -3136,7 +2972,6 @@ a {
   }
 
   .copyright_text {
-    /*margin: 40px 0 0 0;*/
     font-size: 8px;
   }
 
@@ -3156,8 +2991,6 @@ a {
 @media (max-width: 375px) {
 
   .seatbelt_animation_container {
-    /*border: 1px solid white;*/
-    /*display: inline-block;*/
     text-align: center;
     margin-bottom: 25px;
     width: 350px;
@@ -3235,10 +3068,6 @@ a {
     width: 60px;
   }
 
-  .copyright_text {
-    /*margin: 60px 0 0 0;*/
-  }
-
 }
 
 @media (max-width: 360px) {
@@ -3295,7 +3124,6 @@ a {
 
 .burger_menu_img_wrapper {
   position: fixed;
-  /*position: absolute;*/
   display: inline-block;
   top: 15px;
   left: 15px;
@@ -3310,11 +3138,8 @@ a {
 }
 
 .burger_menu_wrapper {
-  /*background-color: rgba(0,0,0,0.25);*/
-  /*position: fixed;*/
   top: 10px;
   left: 18px;
-  /*display: inline-block !important;*/
   z-index: 3;
 }
 
@@ -3343,7 +3168,6 @@ a {
 
 .burger_menu_list_item > a > p{
   color: #fff;
-  /*margin-left: 20px !important;*/
   line-height: 1 !important;
 }
 
@@ -3367,16 +3191,13 @@ a {
 
 
 .tech_page_header {
-  /*border: 1px solid blue;*/
   height: 650px;
   text-align: center;
-  /*margin: 20px 0 0px 0px;*/
   background-image: url("../images/backgrounds/swirl_bg_4.jpg");
   background-size: cover;
 }
 
 .tech_page_header_subcontainer {
-  /*border: 1px solid purple;*/
   display: inline-block;
   width: 750px;
   height: 300px;
@@ -3384,22 +3205,18 @@ a {
   display: block;
   margin: 0 auto;
   background-color: rgba(255,255,255,.96);
-  /*border-radius: 5px;*/
-  /*box-shadow: 1px 1px 2px;*/
 }
 
 .tech_page_heading {
   text-align: center;
   margin: 0px 0px 30px 0px;
   color: #fffff;
-  /*background-color: rgba(255,255,255,1);*/
 }
 
 .tech_page_heading_main {
   text-align: center;
   margin: 0px 0px 30px 0px;
   color: #4be4c4;
-  /*background-color: rgba(255,255,255,1);*/
 }
 
 .tech_page_header_img {
@@ -3421,14 +3238,11 @@ a {
 }
 
 .tech_page_section {
-  /*border: 1px solid blue;*/
   height: 700px;
   text-align: center;
-  /*margin: 10px 0;*/
 }
 
 .tech_section_1 {
-  /*background-color: #66ccff;*/
   border-top: 1px solid #66ccff;
 }
 
@@ -3517,53 +3331,40 @@ a {
 }
 
 .tech_section_2 {
-  /*background-color: #ff738e;*/
   border-top: 1px solid #ff738e;
 }
 
 .tech_section_3 {
-  /*background-color: #4be4c4;*/
   border-top: 1px solid #4be4c4;
 }
 
 .tech_section_4 {
-  /*background-color: #66ccff;*/
   border-top: 1px solid #66ccff;
 }
 
 .tech_section_5 {
-  /*background-color: #ff738e;*/
   border-top: 1px solid #66ccff;
 }
 
 .tech_page_section_heading_container {
-  /*background-color: rgba(255,255,255,.9);*/
   display: block;
-  /*margin: 10px;*/
 }
 
 .tech_page_section_heading_img {
   height: 70px;
   width: 70px;
-  /*background-color: rgba(75,228,196,.7);*/
-  /*background-color: rgba(255,255,255,1);*/
   border: 1px soild red;
   border-radius: 20%;
   margin: 30px;
-  /*padding: 10px;*/
 }
 
 .tech_section_left {
-  /*border: 1px solid black;*/
   display: inline-block;
   width: 150px;
   height: 100px;
   margin: 0 150px 0 5px;
   vertical-align: top;
   padding: 20px;
-  /*background-color: rgba(255,255,255,1);*/
-  /*border-radius: 50%;*/
-  /*box-shadow: 1px 1px 2px;*/
   text-align: justify;
 }
 
@@ -3594,30 +3395,21 @@ a {
 }
 
 .tech_section_center {
-  /*border: 1px solid green;*/
   width: 350px;
   height: 240px;
   display: inline-block;
   margin: 0 50px 0 50px;
   padding: 30px;
   vertical-align: top;
-  /*background-color: rgba(255,255,255,1);*/
-  /*background-color: rgba(75,258,196,.7);*/
-  /*border-radius: 5px;*/
-  /*box-shadow: 1px 1px 2px;*/
 }
 
 
 .tech_section_right {
-  /*border: 1px solid red;*/
   width: 420px;
   height: 300px;
   display: inline-block;
   margin: 0 50px 0px 50px;
   padding: 30px;
-  /*background-color: rgba(255,255,255,1);*/
-  /*border-radius: 5px;*/
-  /*box-shadow: 1px 1px 2px;*/
 }
 
 .tech_section_slack {
@@ -3669,14 +3461,12 @@ a {
 
 .footer_bottom_subcontainer {
   height: 290px;
-  /*border: 1px solid yellow;*/
   background-color: #545454;
   z-index: 1;
 }
 
 .footer_site_links {
   height: 250px;
-  /*border: 1px solid red;*/
   display: block;
   padding: 10px 0 0 0;
   margin: 0 40px 0 40px;
@@ -3714,7 +3504,6 @@ a {
   color:  #f1f1f1;
   margin: 10px 0 10px 0;
   font-size: 12px;
-  /*font-weight: 100 !important;*/
 }
 
 
@@ -3747,7 +3536,6 @@ a {
 
 .footer_subscribe_link_text {
   color: #fff;
-  /*border: 2px solid #fff;*/
 }
 
 .footer_address_wrapper {
@@ -3802,7 +3590,6 @@ a {
 #aws_img {
   height: 30px;
   width: 160px;
-  /*margin-bottom: 30px;*/
 }
 
 #fbstart_img {
@@ -4158,7 +3945,6 @@ a {
   }
 
   .copyright_text {
-    /*margin: 40px 0 0 0;*/
     font-size: 8px;
   }
 
@@ -4235,10 +4021,6 @@ a {
 
   #fbstart_img {
     width: 60px;
-  }
-
-  .copyright_text {
-    /*margin: 60px 0 0 0;*/
   }
 
 }
