@@ -2392,7 +2392,7 @@ a {
 
 /*burger menu styling*/
 
-.burger_menu_wrapper_jobs, .burger_menu_wrapper_tech {
+.burger_menu_wrapper_jobs, .burger_menu_wrapper_tech, .burger_menu_wrapper_legal {
   position: fixed;
   top: 10px;
   left: 18px;
