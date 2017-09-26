@@ -132,21 +132,6 @@ function RotateCarousel() {
       scroll_position_a = scroll_position_b;
 
 
-
-      // if (scroll_position >= 50 ) {
-      //   $('.burger_menu_img_wrapper').css({
-      //     position: 'fixed',
-      //     top: '10px',
-      //     left: '15px'
-      //   });
-      // }
-      // else {
-      //   $('.burger_menu_img_wrapper').css({
-      //     position: 'sticky'
-      //   });
-      // }
-
-
       if ($(window).width() >= 1280 ) {
         if (($(document).scrollTop()-200) < $(window).height() ) {
           go_animate = 'off';
