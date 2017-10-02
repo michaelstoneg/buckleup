@@ -1536,7 +1536,7 @@ a {
     left: 4px;
     width: 120px;
     height: 290px;
-    padding-top: 40px;
+    padding-top: 60px;
   }
 
   .burger_menu_list_item {
@@ -2092,7 +2092,7 @@ a {
     left: 4px;
     width: 100px;
     height: 240px;
-    padding-top: 40px;
+    padding-top: 60px;
   }
 
   .burger_menu_list_item {
@@ -3194,6 +3194,7 @@ a {
 .tech_section_slack_button_text {
   padding: 5px;
   margin: 0;
+  color: #ffffff;
 }
 
 .signup_page_logo {
@@ -3614,6 +3615,72 @@ a {
   .copyright_text {
     line-height: 1;
     margin: 8px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .burger_menu_img {
+    background: rgba(0,0,0,.2);
+    border-radius: 5px;
+  }
+
+  .seatbelt_animation_left, .seatbelt_animation_right {
+    height: 60px;
+  }
+
+  .seatbelt_animation_arrow {
+    height: 30px;
+  }
+
+  .menu_social_link_img {
+    margin: 4px;
+  }
+
+  .jobs_page_heading {
+    font-size: 25px;
+  }
+
+  .jobs_page_section_2, .jobs_page_section_3 {
+    text-align: center;
+  }
+
+  .jobs_page_section_2_img_container, .jobs_page_section_3_img_container {
+    display: none;
+  }
+
+  .tech_section_1 {
+    height: 1070px;
+  }
+
+  .tech_section_left {
+    margin: 0 10px 0 15px;
+  }
+
+  .tech_section_right {
+    width: 260px;
+  }
+
+  .footer_bottom_subcontainer {
+    height: 310px;
+  }
+
+  .address_ul {
+    margin-left: 0px;
+    width: 75px;
+  }
+
+  .footer_social_link_img {
+    margin: 0 20px 0 20px;
+  }
+
+  .footer_partners_img {
+    margin: 3px;
+  }
+
+  #fbstart_img {
+    margin: 5px 0 5px 0;
   }
 
 }
