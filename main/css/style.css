@@ -3460,6 +3460,7 @@ a {
     position: relative;
     right: -40px;
     top: 0px;
+    margin-bottom: 5px;
   }
 
 
@@ -3877,7 +3878,7 @@ article {
     /*color: #343434;*/
     color: #66ccff;
     text-align: center;
-    background-color: rgba(255,255,255,.92);
+    background-color: rgba(255,255,255,.9);
     }
   .page-title-container .page-title {
     padding: 120px 0 25px; }
