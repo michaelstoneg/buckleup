@@ -1501,8 +1501,6 @@ a {
 
 @media (max-width: 450px) {
 
-
-
   .team_container {
     height: 860px;
   }
@@ -2280,7 +2278,7 @@ a {
   }
 
   .address_ul {
-    width: 80px;
+    width: 75px;
   }
 
   .footer_site_links_list {
@@ -3663,7 +3661,15 @@ a {
   }
 
   .footer_bottom_subcontainer {
-    height: 310px;
+    height: 280px;
+  }
+
+  .footer_site_links_list {
+    margin: 5px 4px 0 0;
+  }
+
+  .footer_social_links_list {
+    margin: 5px;
   }
 
   .address_ul {
