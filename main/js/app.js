@@ -57,7 +57,8 @@ $(document).ready(function(){
     $('.subscribe_popup_wrapper').show();
   });
 
-  $('#download_badge_1').click(function () {
+  $('#download_badge_2').click(function () {
+    console.log("asdasd");
     $('.subscribe_popup_wrapper').show();
   });
 
