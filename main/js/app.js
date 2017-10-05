@@ -618,6 +618,18 @@ function RotateCarousel() {
     $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 800);
   });
 
+  $('.animation_skip_up_img').click(function () {
+    console.log("skip it up good");
+      $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 800);
+  });
+
+  $('.animation_skip_down_img').click(function () {
+    console.log("skip it down good");
+    $('html, body').animate({
+      scrollTop: $('.team_container').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
+    }, 800);
+  });
+
   $('#footer_site_links_features').click(function () {
     $('html, body').animate({
       scrollTop: $('.unknown_container').offset().top - $('html, body').offset().top + $('html, body').scrollTop()

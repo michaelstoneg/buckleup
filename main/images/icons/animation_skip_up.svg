@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="42px" viewBox="0 0 65 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>animation_skip_up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="animation_skip_up" fill-rule="nonzero" fill="#FF738E">
+            <path d="M2.312,41.757 L62.548,41.757 C63.318,41.757 64.017,41.317 64.35,40.624 C64.684,39.933 64.591,39.11 64.113,38.51 L33.994,0.753 C33.614,0.277 33.039,0 32.431,0 C31.823,0 31.247,0.277 30.868,0.753 L0.748,38.51 C0.269,39.111 0.176,39.933 0.51,40.624 C0.843,41.317 1.542,41.757 2.312,41.757 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -587,6 +587,29 @@ a {
   display: inline-block;
 }
 
+.animation_skip_button {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  bottom: 91px;
+  left: 890px;
+}
+
+.animation_skip_up_img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: -5px;
+}
+.animation_skip_down_img {
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+}
+/*.animation_skip_img {
+  width: 30px;
+  height: 30px;
+}*/
+
 .animation_text_container {
   width: 500px;
   height: 400px;
