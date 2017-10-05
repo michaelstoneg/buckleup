@@ -1647,6 +1647,14 @@ a {
     background-size: contain;
   }
 
+  .animation_skip_button {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -150px;
+    left: 8px;
+  }
+
   .animation_text_container {
     width: 480px;
     height: 200px;
@@ -2024,6 +2032,10 @@ a {
     margin: 0 15px 0 15px;
   }
 
+  .animation_skip_button {
+    top: -190px;
+  }
+
   .animation_press_9 {
     left: 75px;
   }
@@ -2266,6 +2278,11 @@ a {
 
   .animation_master_container {
     left: -20px;
+  }
+
+  .animation_skip_button {
+    top: -220px;
+    left: 25px;
   }
 
   .animation_text_container {
