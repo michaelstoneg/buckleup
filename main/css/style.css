@@ -389,7 +389,7 @@ a {
 
 
 .footer_bottom_subcontainer {
-  height: 270px;
+  height: 290px;
   background-color: #545454;
 }
 
@@ -485,11 +485,13 @@ a {
   display: block;
 }
 
-.copyright_text {
+.copyright_text, .site_version {
   color: #f1f1f1;
   margin: 10px;
   font-size: 10px;
 }
+
+
 
 .footer_partners_list {
   list-style: none;
@@ -1931,8 +1933,9 @@ a {
     display: block;
   }
 
-  .copyright_text {
+  .copyright_text, .site_version {
     font-size: 8px;
+    margin: 5px;
   }
 
   #chatlio-widget .chatlio-widget {
@@ -2099,7 +2102,7 @@ a {
     width: 76px;
   }
 
-  .copyright_text {
+  .copyright_text, .site_version {
   }
 
   #chatlio-widget .chatlio-widget {
@@ -2996,8 +2999,9 @@ a {
 
 .tech_page_header_img {
   height: 150px;
-  border-radius: 20%;
+  border-radius: 10%;
   margin: 40px;
+  background-color: rgba(255,255,255,0.85);
 }
 
 .tech_page_header_img_2 {
@@ -3544,7 +3548,7 @@ a {
     display: block;
   }
 
-  .copyright_text {
+  .copyright_text, .site_version {
     font-size: 8px;
   }
 
@@ -3637,7 +3641,7 @@ a {
   }
 
   .footer_bottom_subcontainer {
-    height: 280px;
+    height: 290px;
   }
 
   .footer_site_links_list_item_text {
@@ -3650,7 +3654,7 @@ a {
     margin: 5px;
   }
 
-  .copyright_text {
+  .copyright_text, .site_version {
     line-height: 1;
     margin: 8px;
   }
@@ -3701,7 +3705,7 @@ a {
   }
 
   .footer_bottom_subcontainer {
-    height: 280px;
+    height: 290px;
   }
 
   .footer_site_links_list {

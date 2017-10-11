@@ -16,6 +16,8 @@ $(document).ready(function(){
   var mobile_mode = 'off';
   var tablet_mode = 'off';
 
+  var whatOS = undefined;
+
   $('.responsive_on').hide();
   $('.responsive_on_2').hide();
   $('.tablet_on').hide();
@@ -58,7 +60,6 @@ $(document).ready(function(){
   });
 
   $('#download_badge_2').click(function () {
-    console.log("asdasd");
     $('.subscribe_popup_wrapper').show();
   });
 
@@ -122,7 +123,7 @@ function RotateCarousel() {
 
   $(window).scroll(function () {
       scroll_position = $(window).scrollTop();
-      console.log(scroll_position);
+      // console.log(scroll_position);
 
       var scroll_position_b = $(this).scrollTop();
       if (scroll_position_b > scroll_position_a) {
@@ -157,7 +158,7 @@ function RotateCarousel() {
 
 
       if ($(window).height() == 1024 && $(window).width() == 768 ) {
-        console.log('chrome tools ipad size');
+        // console.log('chrome tools ipad size');
         if (($(document).scrollTop() - 100) < $(window).height() ) {
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '350px'});
@@ -176,7 +177,7 @@ function RotateCarousel() {
       }
 
       if ($(window).height() == 768 && $(window).width() == 1024 ) {
-        console.log('chrome tools ipad size');
+        // console.log('chrome tools ipad size');
         if (($(document).scrollTop() - 50) < $(window).height() ) {
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '250px'});
@@ -198,16 +199,16 @@ function RotateCarousel() {
 //ipad portrait
 
       if ($(window).height() == 1016 && $(window).width() == 834 ) {
-        console.log('congratulations your baby is an ipad');
+        // console.log('congratulations your baby is an ipad');
         if (($(document).scrollTop() -100) < $(window).height() ) {
-          console.log('hooold!');
+          // console.log('hooold!');
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '300px'});
         }
 
         if (($(document).scrollTop() - 300) > $(window).height() ) {
           go_animate = 'on';
-          console.log('engage');
+          // console.log('engage');
           animation_progress = (scroll_position - $(window).height())- 300;
           $('.animation_master_container').css({position: 'fixed', top: '100px'});
         }
@@ -222,16 +223,16 @@ function RotateCarousel() {
 //ipad landscape
 
       if ($(window).height() == 738 && $(window).width() == 1112 ) {
-        console.log('congratulations your baby is an ipad');
+        // console.log('congratulations your baby is an ipad');
         if (($(document).scrollTop() - 150) < $(window).height() ) {
-          console.log('hooold!');
+          // console.log('hooold!');
           go_animate = 'off';
           $('.animation_master_container').css({position: 'relative', top: '150px'});
         }
 
         if (($(document).scrollTop() - 300) > $(window).height() ) {
           go_animate = 'on';
-          console.log('engage');
+          // console.log('engage');
           animation_progress = (scroll_position - $(window).height())- 300;
           $('.animation_master_container').css({position: 'fixed', top: '20px'});
         }
@@ -619,14 +620,12 @@ function RotateCarousel() {
   });
 
   $('.animation_skip_up_img').click(function () {
-    console.log("skip it up good");
       $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 800);
   });
 
   $('.animation_skip_down_img').click(function () {
-    console.log("skip it down good");
     $('html, body').animate({
-      scrollTop: $('.team_container').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
+      scrollTop: $('.footer_bottom_subcontainer').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
     }, 800);
   });
 
@@ -686,15 +685,14 @@ $('.seatbelt_animation_arrow').css({
         inviteUrl = 'https://slack.com/api/users.admin.invite?token=' + authToken + '&email=' + email + '&channels=' + joinChannels;
 
         $.post(inviteUrl, function() {
-          console.log(inviteUrl);
+          // console.log(inviteUrl);
         });
       }
 
     $('.tech_section_slack_button').click(function () {
-      console.log('go go gadget slack invite');
+      // console.log('go go gadget slack invite');
       addSlackMember();
-    })
-
+    });
 
 
 });
