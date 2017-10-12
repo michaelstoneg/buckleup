@@ -280,8 +280,14 @@ a {
 
 .team_header, .ambassador_heading {
   font-size: 50px;
-  color: #66ccff;
+  color: #4be4c4;
   margin-top: 50px;
+}
+
+.ambassador_subheading {
+  font-size: 30px;
+  color: #4be4c4;
+  margin: 20px;
 }
 
 .team_list_1, .team_list_2, .team_list_3, .team_list_4 {
@@ -360,7 +366,7 @@ a {
 
 .ambassador_container {
   background-color: #ffffff;
-  height: 550px;
+  height: 950px;
   text-align: center;
 }
 
@@ -380,6 +386,45 @@ a {
   content: url("../images/icons/flags/ghana.svg")
 }
 
+.ambassador_heading {
+}
+
+.ambassador_info_container {
+  height: 410px;
+  width: 460px;
+  overflow: hidden;
+  display: inline-block;
+  border-bottom: 1px solid #4be4c4;
+  margin: 50px 80px;
+}
+
+.ambassador_info_left, .ambassador_info_center, .ambassador_info_right {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  /*border-bottom: 1px solid #66ccff;*/
+  border-top: 1px solid #4be4c4;
+  display: inline-block;
+  /*margin: 50px 80px;*/
+}
+
+.ambassador_info_heading {
+  color: #66ccff;
+  /*border-bottom: 1px solid #4be4c4;*/
+  margin: 20px;
+  padding: 10px;
+}
+
+.ambassador_info_list {
+  /*list-style: none;*/
+  color: #66ccff;
+}
+
+.ambassador_info_text {
+  color: #ff738e;
+  line-height: 2;
+  text-align: justify;
+}
 
 /* ambassadors */
 
@@ -449,7 +494,8 @@ a {
   padding: 0;
   margin: 25px 0 0 0;
   position: relative;
-  right: -280px;
+  /*right: -280px;*/
+  right: -180px;
 }
 
 .footer_social_links_list_item {
@@ -594,7 +640,7 @@ a {
   width: 30px;
   position: relative;
   bottom: 91px;
-  left: 890px;
+  left: 1040px;
 }
 
 .animation_skip_up_img {
@@ -606,6 +652,14 @@ a {
   width: 30px;
   height: 30px;
   margin-top: -5px;
+}
+
+.animation_skip_cover {
+  width: 274px;
+  height: 486px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  visibility: hidden;
 }
 /*.animation_skip_img {
   width: 30px;
@@ -1003,6 +1057,10 @@ a {
 }
 
 @media (max-width: 1440px) {
+
+  .animation_skip_button {
+    left: 890px;
+  }
 
   .team_list_item_box {
     margin: 0 60px 0 60px;
@@ -3305,6 +3363,12 @@ a {
 
 @media (max-width: 1440px) {
 
+  .ambassador_info_container {
+    height: 360px;
+    width: 380px;
+    margin: 50px 30px;
+  }
+
   .tech_section_left {
     margin: 0 80px 0 100px;
   }
@@ -3319,12 +3383,19 @@ a {
   }
 
   .footer_social_links_list {
-    right: -250px;
+    /*right: -250px;*/
+    right: -180px;
   }
 
 }
 
 @media (max-width: 1280px) {
+
+  .ambassador_info_container {
+    height: 310px;
+    width: 330px;
+    margin: 50px 30px;
+  }
 
   .tech_section_left {
     margin: 0 20px 0 100px;

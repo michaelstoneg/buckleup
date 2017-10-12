@@ -16,7 +16,7 @@ $(document).ready(function(){
   var mobile_mode = 'off';
   var tablet_mode = 'off';
 
-  var whatOS = undefined;
+  var scroll_speed = undefined;
 
   $('.responsive_on').hide();
   $('.responsive_on_2').hide();
@@ -118,12 +118,24 @@ function RotateCarousel() {
 
 
 
-
+// var scrollSpeedMonitor = new ScrollSpeedMonitor(function (speedInPxPerMs, timeStamp, newDirection)
+// {
+//   scroll_speed = speedInPxPerMs;
+//   console.log('Scroll speed: ' + speedInPxPerMs);
+// });
 
 
   $(window).scroll(function () {
       scroll_position = $(window).scrollTop();
       // console.log(scroll_position);
+
+      // if (scroll_speed > 14) {
+      //   console.log("too fast animation might be skipping");
+      //   $('.animation_skip_cover').show();
+      // } else {
+      //   $('.animation_skip_cover').hide();
+      // }
+
 
       var scroll_position_b = $(this).scrollTop();
       if (scroll_position_b > scroll_position_a) {
@@ -667,8 +679,6 @@ $('.seatbelt_animation_right').css({
 $('.seatbelt_animation_arrow').css({
   animation: 'arrow_seatbelt 1.5s infinite'
 })
-
-
 
 
 // Tech Page
