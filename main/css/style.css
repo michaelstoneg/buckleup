@@ -366,7 +366,7 @@ a {
 
 .ambassador_container {
   background-color: #ffffff;
-  height: 950px;
+  height: 980px;
   text-align: center;
 }
 
@@ -415,6 +415,11 @@ a {
   padding: 10px;
 }
 
+.ambassador_heading_img {
+  height: 100px;
+  width: 100px;
+}
+
 .ambassador_info_list {
   /*list-style: none;*/
   color: #66ccff;
@@ -424,6 +429,21 @@ a {
   color: #ff738e;
   line-height: 2;
   text-align: justify;
+}
+
+.ambassador_join_button {
+  height: 100px;
+  width: 220px;
+  border-radius: 10px;
+  background-color: #ff738e;
+  margin: 20px;
+  display: inline-block;
+}
+
+.ambassador_join_link_text {
+  margin: 30px;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 /* ambassadors */
