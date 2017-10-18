@@ -290,6 +290,10 @@ a {
   margin: 20px;
 }
 
+.ambassador_description {
+  color: #ff738e;
+}
+
 .team_list_1, .team_list_2, .team_list_3, .team_list_4 {
   padding: 0;
   margin: 40px 0 30px 0;
@@ -1694,6 +1698,7 @@ a {
     display: block;
     width: auto;
     margin-top: 60px;
+    text-align: center;
   }
 
   .download_badges {
@@ -1703,8 +1708,8 @@ a {
 
   #download_badge_1, #download_badge_2 {
     /*width: 100px;*/
-    margin: 30px;
-    height: 30px;
+    margin: 10px;
+    height: 50px;
   }
 
 
@@ -2255,7 +2260,7 @@ a {
   }
 
   #download_badge_1, #download_badge_2 {
-    height: 30px;
+    height: 40px;
     margin: 10px;
   }
 
