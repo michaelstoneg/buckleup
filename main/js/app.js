@@ -76,6 +76,15 @@ $(document).ready(function(){
     $('.press_subscribe_popup_wrapper').hide();
   });
 
+  $('.ambassador_apply_popup_wrapper').hide();
+  $('.ambassador_join_button').click(function () {
+    $('.ambassador_apply_popup_wrapper').show();
+  });
+
+  $('.ambassador_apply_popup_close').click(function () {
+    $('.ambassador_apply_popup_wrapper').hide();
+  });
+
   $(".burger_menu_list").hide();
   $(".burger_menu_img_wrapper").click(function() {
     $(".burger_menu_list").slideToggle(1000);

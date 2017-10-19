@@ -612,12 +612,6 @@ a {
   display: none;
 }
 
-#subscribe_popup_close {
-  position: relative;
-  top: 5px;
-  left: 440px;
-}
-
 .press_subscribe_popup_wrapper {
   position: fixed;
   top: 20%;
@@ -627,6 +621,30 @@ a {
   z-index: 4;
   background-color: #ff738e;
   display: none;
+}
+
+.ambassador_apply_popup_wrapper {
+  position: fixed;
+  /*top: 20%;*/
+  top: 2%;
+  left: 36%;
+  height: 270px;
+  width: 350px;
+  z-index: 30;
+  background-color: #4be4c4;
+  display: none;
+}
+
+#subscribe_popup_close {
+  position: relative;
+  top: 5px;
+  left: 440px;
+}
+
+.ambassador_apply_popup_close {
+  position: relative;
+  top: 5px;
+  left: 320px;
 }
 
 #press_subscribe_popup_close {
@@ -2025,13 +2043,13 @@ a {
     right: 65px;
   }
 
-  .subscribe_popup_wrapper, .press_subscribe_popup_wrapper {
+  .subscribe_popup_wrapper, .press_subscribe_popup_wrapper, .ambassador_apply_popup_wrapper {
     top: 0%;
     left: 12%;
     width: 300px;
   }
 
-  #subscribe_popup_close, #press_subscribe_popup_close {
+  #subscribe_popup_close, #press_subscribe_popup_close, .ambassador_apply_popup_close {
     top: 1px;
     left: 275px;
   }
