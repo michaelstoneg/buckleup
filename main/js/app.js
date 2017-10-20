@@ -638,16 +638,19 @@ function RotateCarousel() {
   $('#footer_site_links_download').click(function () {
     // window.moveTo(0, 0);
     $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 800);
+
   });
 
   $('.animation_skip_up_img').click(function () {
-      $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 800);
+      $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 1000);
+
   });
 
   $('.animation_skip_down_img').click(function () {
     $('html, body').animate({
+      // scrollTop: ($('.team_container').offset().top)
       scrollTop: $('.footer_bottom_subcontainer').offset().top - $('html, body').offset().top + $('html, body').scrollTop()
-    }, 800);
+    }, 1000);
   });
 
   $('#footer_site_links_features').click(function () {

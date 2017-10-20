@@ -631,7 +631,7 @@ a {
   height: 270px;
   width: 350px;
   z-index: 30;
-  background-color: #4be4c4;
+  background-color: #66ccff;
   display: none;
 }
 
@@ -678,21 +678,23 @@ a {
 }
 
 .animation_skip_button {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   position: relative;
-  bottom: 91px;
-  left: 1040px;
+  /*bottom: 91px;*/
+  bottom: 150px;
+  /*left: 1040px;*/
+  left: 810px;
 }
 
 .animation_skip_up_img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-bottom: -5px;
 }
 .animation_skip_down_img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-top: -5px;
 }
 
@@ -1101,7 +1103,13 @@ a {
 @media (max-width: 1440px) {
 
   .animation_skip_button {
-    left: 890px;
+    left: 640px;
+  }
+
+  .ambassador_info_container {
+    height: 360px;
+    width: 380px;
+    margin: 50px 30px;
   }
 
   .team_list_item_box {
@@ -1160,6 +1168,12 @@ a {
   .main_tagline {
     margin-bottom: 20px;
     font-size: 50px;
+  }
+
+  .ambassador_info_container {
+    height: 310px;
+    width: 330px;
+    margin: 50px 30px;
   }
 
   .team_list_item_box {
@@ -1754,7 +1768,7 @@ a {
     height: 30px;
     width: 30px;
     position: relative;
-    top: -150px;
+    top: -190px;
     left: 8px;
   }
 
@@ -1866,6 +1880,20 @@ a {
   .animation_text {
     font-size: 16px;
     margin: 0;
+  }
+
+  .ambassador_container {
+    height: 1800px;
+  }
+
+  .ambassador_join_button {
+    height: 80px;
+    width: 200px;
+  }
+
+  .ambassador_join_link_text {
+    margin: 20px;
+    font-size: 25px;
   }
 
   .team_header {
@@ -2410,6 +2438,30 @@ a {
 
   .unknown_container {
     height: 12100px;
+  }
+
+  .ambassador_container {
+    height: 1700px;
+  }
+
+  .ambassador_info_container {
+    height: 310px;
+    width: 280px;
+    margin: 20px 10px;
+  }
+
+  .ambassador_info_text {
+    text-align: left;
+  }
+
+  .ambassador_join_button {
+    height: 60px;
+    width: 180px;
+  }
+
+  .ambassador_join_text {
+    font-size: 20px;
+    margin: 15px;
   }
 
   .team_list_item_box {
@@ -3406,12 +3458,6 @@ a {
 
 @media (max-width: 1440px) {
 
-  .ambassador_info_container {
-    height: 360px;
-    width: 380px;
-    margin: 50px 30px;
-  }
-
   .tech_section_left {
     margin: 0 80px 0 100px;
   }
@@ -3433,12 +3479,6 @@ a {
 }
 
 @media (max-width: 1280px) {
-
-  .ambassador_info_container {
-    height: 310px;
-    width: 330px;
-    margin: 50px 30px;
-  }
 
   .tech_section_left {
     margin: 0 20px 0 100px;
